@@ -1,4 +1,6 @@
- def remove_possible_method(method)
+# TODO: make file less ugly.
+
+def remove_possible_method(method)
   if method_defined?(method) || private_method_defined?(method)
     remove_method(method)
   end
