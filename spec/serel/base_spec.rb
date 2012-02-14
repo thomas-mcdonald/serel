@@ -5,26 +5,47 @@ class OneAttribute < Serel::Base
   attributes :test
 end
 
+class MultipleAttribute < Serel::Base
+  attributes :testing, :test_id
+end
+
 
 describe Serel::Base do
-  it "should provide a [] getter for data" do
+  it "should provide a generic [] getter for data" do
     test_value = 'abc'
     base = Serel::Base.new({}, {})
-    # Set the internal information
     base.instance_variable_set(:@data, { :test => test_value })
-    base[:test].should eq(test_value)
+    base[:test].should ==  test_value
   end
 
-  it "should provide a []= setter for data" do
+  it "should provide a generic []= setter for data" do
     test_value = 'abc'
     base = Serel::Base.new({}, {})
     base[:test] = test_value
-    base.instance_variable_get(:@data)[:test].should eq(test_value)
+    base.instance_variable_get(:@data)[:test].should == test_value
   end
 
-  it "should create instance getters and setters for an attribute when attribute is called in class definition with a single symbol" do
-    base = Tester.new({}, {})
-    base.should respond_to(:test)
-    base.should respond_to(:test=)
+  context 'attribute definition' do
+    it 'should create a getter and setter for one attribute' do
+      base = OneAttribute.new({}, {})
+      base.should respond_to(:test)
+      base.should respond_to(:test=)
+    end
+
+    it 'should create getters and setters for multiple attributes' do
+      base = MultipleAttribute.new({}, {})
+      base.should respond_to(:testing)
+      base.should respond_to(:testing=)
+      base.should respond_to(:test_id)
+      base.should respond_to(:test_id=)
+    end
+
+    it 'should get and, er, set' do
+      base = OneAttribute.new({}, {})
+      val = 'abc'
+      base.test.should_not == val
+      base.test = val
+      base.test.should == val
+    end
   end
 end
