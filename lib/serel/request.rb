@@ -1,12 +1,11 @@
 module Serel
   class Request
-    def initialize(method, options, context)
-      @method = method
-      @options = options
-      @type = @options.delete :type
-      @context = context
-      @site = @context[:site]
-      @api_key = @context[:api_key]
+    def initialize(type, scoping)
+      @type = type
+      @scope = scoping
+      @site = @scope.delete :site
+      @api_key = @scope.delete :api_key
+      @method = @scope.delete :url
     end
 
     def execute
@@ -14,9 +13,9 @@ module Serel
       build_request_path
       make_request
     end
-    
+
     def build_query_string
-      query_hash = @options
+      query_hash = @scope
       query_hash[:site] = @site
       query_hash[:key] = @api_key
       @query_string = query_hash.map { |k,v| "#{CGI::escape(k.to_s)}=#{CGI::escape(v.to_s)}"}.join('&')

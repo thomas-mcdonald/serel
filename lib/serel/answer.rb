@@ -6,7 +6,7 @@ module Serel
     associations :comments => :comment, :owner => :user
 
     def comments
-      @comments ||= request("answers/#{id}/comments", :comment)
+      type(:comment).url("answers/#{id}/comments")
     end
   end
 end

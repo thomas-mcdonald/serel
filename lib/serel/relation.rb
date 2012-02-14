@@ -1,54 +1,76 @@
 module Serel
   class Relation
     include Serel::FinderMethods
-    class_attribute :scopes
-    self.scopes = {}
 
     def initialize(type)
       @type = type
       @klass = Serel.const_get(type.to_s.capitalize)
-      @context = { 
-        :api_key => Serel::Base.api_key,
-        :site => Serel::Base.site
+      @scope = {
+        api_key: Serel::Base.api_key,
+        site: Serel::Base.site
       }
     end
 
-    # Public: Sets the pagesize of the request.
+    # Public: Merges two relation objects together. This is used in our awesome
+    #         new scoping engine!
     #
-    # limit - The Integer size of results to retrieve.
+    # relation - A Serel::Relation object with the same base class as the
+    #            current relation
     #
-    # Returns self.
-    def per(limit)
-      @per = limit
-      self
-    end
-
-    # Public: Sets the sort parameter of the request.
-    #
-    # by - The String parameter to sort by.
-    #
-    # Returns self.
-    def sort(by)
-      @sort = by.to_s
-      self
-    end
-
-    def self.define_scope(namespace, name, l)
-      self.scopes[namespace] = {} unless self.scopes[namespace]
-      self.scopes[namespace][name] = l
-    end
-
-    # Scopes!
-    def method_missing(sym, *attrs, &block)
-      if self.scopes[@klass.name][sym]
-        puts *attrs
-        return instance_exec(*attrs, &self.scopes[@klass.name][sym])
+    # Returns self
+    def merge(relation)
+      if relation.instance_variable_get(:@type) != @type
+        raise ArgumentError, 'You cannot merge two relation objects based on different classes'
       end
-      super(sym, *attrs, &block)
+      @scope.merge!(relation.scoping)
+    end
+
+    # Scoping returns our internal scope defition. Things like url etc.
+    def scoping
+      @scope
     end
 
     def new_relation
       self
+    end
+
+    def method_missing(sym, *attrs, &block)
+      # If the base relation class responds to the method, call
+      # it and merge in the resulting relation scope
+      if @klass.respond_to?(sym)
+        relation = @klass.send(sym, *attrs, &block)
+        merge(relation)
+        self
+      end
+    end
+
+    #
+    #
+    #
+    # Scope methods
+    def per(limit)
+      @scope[:per] = limit
+      self
+    end
+
+    def sort(by)
+      @scope[:by] = by.to_s
+      self
+    end
+    
+    def url(url)
+      @scope[:url] = url
+      self
+    end
+
+    def page(number)
+      @scope[:page] = number
+      self
+    end
+
+    # Request stuff
+    def request
+      Serel::Request.new(@type, scoping).execute
     end
 
     private

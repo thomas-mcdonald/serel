@@ -5,14 +5,20 @@ module Serel
 
     associations :user => :user
 
-    scope :named, -> { request("badges/name", :badge) }
-    scope :recipients, ->(id = nil) do
-      if !id
-        request("badges/recipients", :badge)
+    def self.named
+      url("badges/name")
+    end
+
+    def self.recipients(id = nil)
+      if id
+        url("badges/#{id}/recipients")
       else
-        request("badges/#{id}/recipients", :badge)
+        url("badges/recipients")
       end
     end
-    scope :tags, -> { request("badges/tags", :badge) }
+
+    def self.tags
+      url("badges/tags")
+    end
   end
 end

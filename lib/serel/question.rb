@@ -5,7 +5,7 @@ module Serel
     alias :id :question_id
 
     def answers
-      @answers ||= request("questions/#{@id}/answers", :answer)
+      type(:answer).url("questions/#{@id}/answers")
     end
   end
 end

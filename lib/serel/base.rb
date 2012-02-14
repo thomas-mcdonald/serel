@@ -36,6 +36,10 @@ module Serel
       self.api_key = api_key
     end
 
+    # Public: Provides a nice and quick way to inspec the properties of a
+    #         Serel instance inheriting from Serel::Base
+    #
+    # Returns a String representation of the class
     def inspect
       attribute_collector = {}
       self.class.attributes.each { |attr| attribute_collector[attr] = self.send(attr) }
@@ -46,10 +50,6 @@ module Serel
       "#<#{self.class}:#{self.object_id} #{inspected_attributes} #{inspected_associations}>"
     end
     alias :to_s :inspect
-
-    def self.new_relation
-      Serel::Relation.new(name.split('::').last.downcase)
-    end
 
     # Internal: Defines the attributes for a subclass of Serel::Base
     #
@@ -82,25 +82,31 @@ module Serel
       end
     end
 
-    # Internal: Defines a Relation scope for a subclass of Serel::Base
+    # Public: Creates a new relation scoped to the class
     #
-    # name - The String used to refer to the scope
-    # lam - The Lambda to be execute when the scope is called
+    # klass - the name of the class to scope the relation to
     #
-    # Returns nothing.
-    def self.scope(name, lam)
-      Serel::Relation.define_scope(self.name, name, lam)
+    # Returns an instance of Serel::Relation
+    def self.new_relation(klass = nil)
+      klass = name.split('::').last.downcase unless klass
+      Serel::Relation.new(klass.to_s)
     end
 
+
     ## Pass these methods direct to a new Relation
-    # TODO: refactor with metaprogramming!
-    def self.find(id); new_relation.find(id); end
-    def self.per(limit); new_relation.per(limit); end
-    def self.sort(by); new_relation.sort(by); end
+    # TODO: clean these up
+    %w(find per sort page url).each do |meth|
+      class_eval <<-RUBY, __FILE__, __LINE__ + 1
+        def self.#{meth}(val)
+          new_relation.#{meth}(val)
+        end
+      RUBY
+    end
     def self.get; new_relation.get; end
     def self.request(path, type = nil); new_relation.request(path, type); end
-    # TODO: Need a way of defining scope here, since you may want to call answer.comments.page(x), for instance
-    def request(path, type = nil); new_relation.request(path, type); end
+    def type(klass)
+      self.class.new_relation(klass)
+    end
 
     def self.method_missing(sym, *attrs, &block)
       # TODO: see if the new_relation responds to the method being called
