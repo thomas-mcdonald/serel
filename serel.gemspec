@@ -7,6 +7,8 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/thomas-mcdonald/serel"
 
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'webmock'
 
   s.files = Dir["lib/**/*"] + ["README.md"]
 end

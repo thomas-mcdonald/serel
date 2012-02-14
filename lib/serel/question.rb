@@ -4,8 +4,36 @@ module Serel
     associations :answers => :answer, :comments => :comment, :owner => :user
     alias :id :question_id
 
+    def self.featured
+      url("questions/featured")
+    end
+
+    def self.unanswered
+      url("questions/unanswered")
+    end
+
+    def self.no_answers
+      url("questions/no-answers")
+    end
+
     def answers
       type(:answer).url("questions/#{@id}/answers")
+    end
+
+    def comments
+      type(:comment).url("questions/#{@id}/comments")
+    end
+
+    def linked
+      type(:question).url("questions/#{@id}/linked")
+    end
+
+    def related
+      type(:question).url("questions/#{@id}/related")
+    end
+
+    def timeline
+      type(:timeline).url("questions/#{@id}/timeline")
     end
   end
 end
