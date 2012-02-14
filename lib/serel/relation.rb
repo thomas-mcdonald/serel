@@ -2,13 +2,14 @@ module Serel
   class Relation
     include Serel::FinderMethods
 
-    def initialize(type)
+    def initialize(type, qty)
       @type = type
       @klass = Serel.const_get(type.to_s.capitalize)
       @scope = {
         api_key: Serel::Base.api_key,
         site: Serel::Base.site
       }
+      @qty = qty
     end
 
     # Public: Merges two relation objects together. This is used in our awesome
@@ -70,7 +71,7 @@ module Serel
 
     # Request stuff
     def request
-      Serel::Request.new(@type, scoping).execute
+      Serel::Request.new(@type, scoping, @qty).execute
     end
 
     private

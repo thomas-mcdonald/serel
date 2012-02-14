@@ -87,9 +87,9 @@ module Serel
     # klass - the name of the class to scope the relation to
     #
     # Returns an instance of Serel::Relation
-    def self.new_relation(klass = nil)
+    def self.new_relation(klass = nil, qty = :singular)
       klass = name.split('::').last.downcase unless klass
-      Serel::Relation.new(klass.to_s)
+      Serel::Relation.new(klass.to_s, qty)
     end
 
 
@@ -104,8 +104,8 @@ module Serel
     end
     def self.get; new_relation.get; end
     def self.request(path, type = nil); new_relation.request(path, type); end
-    def type(klass)
-      self.class.new_relation(klass)
+    def type(klass, qty = :plural)
+      self.class.new_relation(klass, qty)
     end
 
     def self.method_missing(sym, *attrs, &block)

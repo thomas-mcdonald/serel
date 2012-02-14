@@ -1,11 +1,12 @@
 module Serel
   class Request
-    def initialize(type, scoping)
+    def initialize(type, scoping, qty)
       @type = type
       @scope = scoping
       @site = @scope.delete :site
       @api_key = @scope.delete :api_key
       @method = @scope.delete :url
+      @qty = qty
     end
 
     def execute
@@ -26,7 +27,8 @@ module Serel
     end
 
     def make_request
-      puts "making request to #{@path}"
+      # TODO: remove debugging line
+#      puts "making request to #{@path}"
       request = Net::HTTP::Get.new(@path)
       response = Net::HTTP.start("api.stackexchange.com") { |http| http.request(request) }
       body = Zlib::GzipReader.new(StringIO.new(response.body)).read
@@ -36,7 +38,12 @@ module Serel
       body["items"].each do |q|
         result << Serel.const_get(@type.to_s.capitalize).new(@context, q)
       end
-      result.length == 1 ? result.pop : result
+      puts @qty
+      if (@qty == :plural) || (result.length > 1)
+        result
+      else
+        result.pop
+      end
     end
   end
 end

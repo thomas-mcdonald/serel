@@ -8,5 +8,9 @@ module Serel
     def comments
       type(:comment).url("answers/#{id}/comments")
     end
+
+    def question
+      type(:question, :singular).url("questions/#{question_id}").request
+    end
   end
 end
