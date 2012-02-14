@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Serel::Answer do
   context 'the class' do
-    it 'should support finding an answer and setting its attributes' do
+    it 'should support finding an answer and accessing its attributes' do
       VCR.use_cassette('answer-find') do
         # Pick a random awesome answer
         answer = Serel::Answer.find(16573)
@@ -11,6 +11,8 @@ describe Serel::Answer do
         answer.id.should == 16573
         answer.answer_id.should == 16573
         answer.question_id.should == 16568
+        answer.is_accepted.should == true
+        answer.score.should == 23
 
         answer.owner.should be_a(Serel::User)
       end

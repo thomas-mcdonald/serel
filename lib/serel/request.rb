@@ -38,7 +38,7 @@ module Serel
       body["items"].each do |q|
         result << Serel.const_get(@type.to_s.capitalize).new(@context, q)
       end
-      puts @qty
+
       if (@qty == :plural) || (result.length > 1)
         result
       else
