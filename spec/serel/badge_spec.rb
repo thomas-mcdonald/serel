@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pp'
 
 describe Serel::Badge do
   it 'should be able to retrieve a list of badges' do
@@ -10,6 +9,7 @@ describe Serel::Badge do
       badge = badges.first
       badge.should be_a(Serel::Badge)
       badge.id.should == 1
+      badge.id.should == badge.badge_id
       badge.badge_type.should == 'named'
       badge.link.should == 'http://gaming.stackexchange.com/badges/1/teacher'
       badge.name.should == 'Teacher'

@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/comments?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Wed, 15 Feb 2012 11:08:47 GMT
+      Content-Length:
+      - '2837'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380rRaLfNn+/sXso0cP
+      9nf2H4w+WlWN/H1/d+f+7uijaZ1nbVEtf/9Z1uYfPdq9t/fw3s69vQf3Rh/l
+      M4JELc+zsslHH1VXy7z+6NEv/mjd5DWD2D3Yv7c/+mhWNKsyu/79l9mCIHx0
+      Mq+LJn1So/1Ho4/qfLVuuYuPHu3vfjqS19vrFdrW+UXRtHlN3RBqdXVelPnv
+      XyyyC3w5b9vVo7t3r66uxhd1dpm1WT2mEd2VX++e7zyczKYPJ/enO3sPH+xk
+      D7LsfP88P9jdv3f+6TTb/z1mnxUzGn0xrZa/sP7s5efURVks3zrIF9miWF6M
+      mzabvs3fTefZ8iLnHoBic5eHd3eK4WxPZDi/5JeM+lT91KfqzsOHBwNU3dnf
+      370NVfcfPLjfo+obwqLNlh2C3ru/8w1S9GH2MMuy2c79fO/TbHZ/9mCG0ezv
+      zc4ne3k2mXw4RTG0u60dSjad5qv296+ZSA93fgkPrrz+/dvq98cLAVn27oF6
+      Hargj5ZHm06Ktumx2/79b4460we72ezTe3uzew8fTHamO7tEnfsHDyb3Hu7k
+      u+cHH85vGOFdN6JtHVFIpHtRFrzfEeydIRbcffjgFiz4YHe3T+s38zw9oX7X
+      SyJh+nQ9fdsl98GDh98cuQ8enk8PJgf796fTT+/t37ufzfJ79x/sPjw/mJKI
+      f7r7weTGIO+283x7aga1PZNBhRS/H6X4fkjxvbjQ7z18eP9T+qqZVjU+ugXt
+      dx8e7D3oEf9t1eZvf1C1HZLvfvoNiv+n+e6DB7sP8vv3Zuf39vd2DvLpXjaZ
+      Ptjb2//004f3730wxXlod+1QonTdDZXp/f0Buj7Y29+7FTUf3tuLm6hvE7Sf
+      6tLz3oNvjp7ne58+3H1wP9t/OM2Ih6eTh7NPd/by6cHBzr17WZZ/A/SkwYmB
+      mtNgfvDRRgX68OCgb1aa1fqiKfPrrijv37v3zRHi04P9LJ9mB/nO7s40z/fv
+      5bv3Z+f5pwcPP53e39+dfTAhMLS73lBCAd6NMtpOyGjwTOKMtrN3K1/oR4xm
+      SXH/0771+OmrbDbLy7LrwOzf/yZN9P704cPJzvmn+d7ubHc3n54/PJiSRzN7
+      cP/hZDp78OGEoKHd9YYSMNpB1Dbfexgw2v0B27z38D7Zitsw2v7OTo+6z8av
+      xx3K7u19kyJ8kBGKu3t7M9LQ5/f3Jrv3Jg/OH9zLZ/f39vL8/v0PpywN6+75
+      ds/hOYia33sHt4pkQNR7O7ch6j2ifp+q1XlVdmMY6uybI+uDe3v3HpLBnU7O
+      z+9l9+9nOXHv5EH2YLrzYGd38g1ILgZ291wGslFq9+89vNejwKu8qWge5h0a
+      fLqz8w3y1nT26XSW3Zvcf3B+fyef0MBJvmY0c/cePLx3/nDvg4mAod2t3VBu
+      4VHf64bKg1JLquUWDHaw87Avtcdl/q4rtQ/3v0Ef+uHu7MGn0/OMUL2/N9s9
+      oBjuQTY9eLD3MJveozD/gymLYd3NZBghVT+NUjUIlYmq9wapuntLo/vg0x5Z
+      nxYXRZuV6e/doe3BN0fYjEJjUoOfPngwoeDk/OG9+59+en7/3v383r3pbPLp
+      zgcTlkd2dyYj2X4X9ZXvBVHfBhdm/wBu9M3U/FHi4UfuzI3uTBD47nyKfEKc
+      6T4Ff97MdHv78JA65H3d5udt1bW83yRtZ/ey/CGlQ3Z37z2c7U72dncezvaz
+      HVKVB7uT872DD6ctBna3kYFEKXnvlj7MPjlet6Dkjwx4QN29gE/3D4YSNHs7
+      D2+lHMle7vXI+52sIXDT37/Lqvf2dr858ua72e6nD3ZIg2X37p1P7k0f3sv2
+      diZE8J3pgwcPsg8mL4/t7k9jLNvT7QFuDRIzu+yBR+m5u7N7G3o++PR+n5yv
+      59msukq/W/wgq2cdkj689w2SNJs8ONh/uDehLBclGM8py7WTH9x/8HDn4D5l
+      GPMPJymGd7fh4WxfmeGE6vUgSuYgLbHL6jZK5p1PbxXY7N1/cNAj85Nynb/K
+      fjpLt9On2XJ5nb48L9cX84pUVVdPHHyTOnf/0x1i5MnD++fnxMqf3kMm/cFs
+      NrlPPmq+8+AbyKDTaO9OaHQ1jW57hrFtr/yxBTPwIJoY2gvi9Q2ZXZqr2+TS
+      d/f3I4rjSX3d96n2oKS+KWLTulh+/3zv/MH+AeXczs/PDyafUoR5b3d28On9
+      bO8bcB4wsLsTHkiUkB1nH/naGCEpS7V7mxBqd/fhp31P4U2VNb2s+N43ybU7
+      E/K1pvv75GF/+mCfovN702xnQquM+YPJ/sHkGyAkBna31YEELLq7s9k3vbe7
+      1yfJ87xpXlar3/8LWnN4VvzgBx3q7N3/Rp3Uvez+DkWZB/vn9w527k8fHpAL
+      kO1m+7PdaZbff/jhmSGM8W5JY1pVq+0FjelcxhTK8oMoC/oR0v6Dh0Mu1gG1
+      PbgNCx48iFitt/llsTzP5t0k+jcozLTM/eB8Z7p/bze7v3twPpnRiuODvU/P
+      Ke+dE+X9ePPrEZlHdteNJEpN3/Xf3/l0b0igH3D65EZq3rt30GfeL7L6bfqm
+      zlarrlBTEPsNegD5+cGM8mz37k/v59MHu9PJffJc7iM1QouktKr74WxLo7u7
+      oNFstzqa0Gvdi5J4r2N8hkj86YMfkfhrkrjjYQ2apfv3bqUTfqSCN6pgmPbb
+      uFMH+w8O9uxC+W0yBz8i/GbCB0skOwcbCH//01uQe/dTTt92A+AK8cOTDpm/
+      2dXj2Qxdnz/cz6aTgwezh/cpgtjfy7L7s/sPKE/8wUTmkd39aYxke9IlbjwL
+      thssD1AMOUTcew92b6Onaa2uz8tvsx/8IFtkZZn19DSyG98UfSefPpySQ3Ev
+      /3S6d76///ABsgx7n86yh+TrUr7xg+mLwd0NBtNdn9+Yfv1072E/hP18vZh0
+      hfv+vW8yJU1rJ9nu3s6DKS+jk72aTR5M7t+b7D88P9j/BqjC47p7oeO4RWC6
+      G8RTOwefDqT7D/ZIpm/BczS4gwd956BOXy+qqpcxpLXfvW/QoZ3ktHq8S8ks
+      4rPZwd7+/izboTUUEuyd++fZww/3DXh0dxf1dmNGEzLd/mam2/80YlwuqVWH
+      Kve+yeW6/OBe9uDTh5TVO9id0jLS+fT8QUaGJD/PP80ns2+A5zCsuzKMkBzR
+      VfZdP3xCMmpgEZRWAT+9jQmhZbL+IihloNJXWbNYN03ezYjsPrj3DfIchTgP
+      9h/u0EL7/u5eTtaauC8n7/TebG92P995+MHkxfjuUtZpu/bGE1qT6LLobrCm
+      ssspqBidKT8Jb/VGOtMaxv79HqGJRsv24NOuR0Tp72+QxvtZRmsBtNK8vz+9
+      f74Lt+OA1kQf3D+/l98nFfbBNOax3XVjuQ0b+wstG+LWBwcPb5W6prXZT/ue
+      UH6R15dZXXRZGEnCb4q62eThp/cfnn86JT9zf+d8Qq7bwUGWE30fTnfuZecf
+      Tl0M7a4dSpSae7dTCg8O7u3fcg3/074Z+k51nZVdUn5zhNzfu5d9unsvz/f2
+      D/YmD/c+vXd+b3qPLE82pXTfN0TIB+RTYhSbLc3P06zmL/n+6KNftK7a7Pev
+      80VWLAkUye9DZMDl40X2jlvuEH/Ns+b3X3Bg2Nbr/Jf8PwEAAP//4aMDs+My
+      AAA=
+    http_version: 
+  recorded_at: Wed, 15 Feb 2012 11:08:50 GMT
+recorded_with: VCR 2.0.0.rc1

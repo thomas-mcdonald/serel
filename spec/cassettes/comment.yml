@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/comments/63977?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Wed, 15 Feb 2012 11:10:04 GMT
+      Content-Length:
+      - '471'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380rRaLfNn+/sXso0ef
+      3nv44MHoo1XVyN/7+3sH9Pe0zrO2qJa//yxr848e7d7bu79z797evU9HHzXT
+      qqaPDkYf5TOCSe+cZ2WTjz6qrpZ5/dGjX/zRuslrBnawtzv6aFY0qzK7/v2X
+      2YJe++jNvFpkTfrF9Gm1zMrZR6OP6ny1brm3jx7d2/2UADOA9nqF9nV+UTRt
+      Xudouqqr86LMf/9ikV3gy3nbrh7dvXt1dTW+qLPLrM3qMY3urvx6d29/Ort/
+      P5vsZp/unZ9PdnfvZZOD6c7e+af704f3dnZ/j9lnxYwoUUyr5S+sP3v5OXVR
+      Fsu3DvJFtiiWF+OmzaZv83fTeba8yLkHoNjcpQHebXlA24vpzAwom07zVfv7
+      10K6nZ1f8ku+P/roF62rNvv963yRFUsC+dGjhw9BaPl4kb3jljs7o4/mWfP7
+      L5jETNdf8v8EAAD//0bQfkW6AQAA
+    http_version: 
+  recorded_at: Wed, 15 Feb 2012 11:10:08 GMT
+recorded_with: VCR 2.0.0.rc1
