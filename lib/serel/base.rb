@@ -2,14 +2,13 @@ module Serel
   class Base
     class_attribute :attributes, :associations, :api_key, :site
 
-    def initialize(context, data)
-      @context = context
+    def initialize(data)
       @data = {}
       attributes.each { |k| @data[k] = data[k.to_s] }
       if associations
         associations.each do |k,v|
           if data[k.to_s]
-            @data[k] = Serel.const_get(v.to_s.capitalize).new(@context, data[k.to_s])
+            @data[k] = Serel.const_get(v.to_s.capitalize).new(data[k.to_s])
           end
         end
       end

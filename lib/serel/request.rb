@@ -35,8 +35,8 @@ module Serel
       body = JSON.parse(body)
 
       result = []
-      body["items"].each do |q|
-        result << Serel.const_get(@type.to_s.capitalize).new(@context, q)
+      body["items"].each do |item|
+        result << Serel.const_get(@type.to_s.capitalize).new(item)
       end
 
       if (@qty == :plural) || (result.length > 1)
