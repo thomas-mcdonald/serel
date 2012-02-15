@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/badges/name?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Wed, 15 Feb 2012 00:23:40 GMT
+      Content-Length:
+      - '1025'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380yWYX+e9fzD56tDv6
+      qM6Wbz969NGkrpY/yD8afbTMFjn9/SbPpvO8pg+yq6ye/f7Tar1sP3q0v3//
+      wUgBtNcrtMQLM2pXFgxo3rarR3fvXmSLYnkxbtps+jZ/N51ny4t8PK0Wd/nd
+      5u7u3VZ7+CUjH6O9QYxet+tZTjh0MLr38GDnG8Fo726jPYQY3RvE6HRWtFWP
+      RHu7B3vfCEL37ubSQYjP/iA+J2WeLderLkK7Ow+/EXz27061gxCh+4MIfVlf
+      ZMviBxE22tn/RlC6f7eyXYRIfTrMR+vVqqrbPlL393e/Gaw+vdvYPkKsHgzP
+      XV20xbSL0sNviJUe3J0K/BCdg2F0qPUP8mX6Mmvrquyi9enONyNyB3en0s/2
+      SvoJ0Xs4iN7xuq0mRXVRZ6uYknr4DeH38G4WdhTit7szzGTTeVVmfd3w6cHB
+      N4LZ7s7dRrvo4DSsHl7n5fn28zyrl32S7T3c/Wbw2r/boJtSu+ko92GCvSim
+      efoT67xpi2rZw27/4JtRYXs7d5fU0fYvMh118BvW9Yzf8bK56tPu3s7+NyOl
+      e/cEu0y66eA2rNFeVqs1ccIg+e7df/DNzO7ep3dX0tcQBe8NexQn1WJB1jWL
+      mMyDTz/9RvC7t3t36vXSQW1Y+T4tmmmxor64z1CX3PtmMHtwd+Z10sFsWA+/
+      zPM6fVnnTbOu8y5u978Ztrt3cHdF3WyvTDcdSzosFG/Wi0mZX+V9su0+/Gbc
+      xE/v3W1dJ11VN6zrviDrm9WTilDqobZ//xtBjbq/u/C66SD3YHhSz5aXJDx9
+      Mfj0m+E16vpuYbroYjVsU1/W1aKKuEXflDtLfd9dmT46aB0MG4Yn+TI/z6YR
+      cu1+Q+4a9X534nrpojas0Y7Ltl4XTS8kuf/NeB/U9d3MdNHFapi73mQXaTwy
+      2b33TRHs4G6bXWxHw5Pdgw1u23JJmEwjPLb3TZGMXDbbSQexh8M0e5VfFpdZ
+      z8/dO/hm7CZ1fbfWLrpIDVPrTVa+zdrisqf3d+9/Q/P48CHNo+mk66oNiyTZ
+      o2l1sSxiuH1jjtoOKQuvmy52w1L5E+uqXi+6eN3b/WY4jHq++4ukhw5Ku8Mo
+      /WT1LmUnrejrsG9GuVLvdy+rd9sr6eWXfH/0EWHZZr9/nS+yYknvIpjE5MjH
+      i+wd4pcdzPI8a35/MmTUOema/Jf8PwEAAP//46xp1ioSAAA=
+    http_version: 
+  recorded_at: Wed, 15 Feb 2012 00:23:56 GMT
+recorded_with: VCR 2.0.0.rc1

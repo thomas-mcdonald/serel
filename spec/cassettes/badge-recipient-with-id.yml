@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/badges/1/recipients?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Wed, 15 Feb 2012 10:50:36 GMT
+      Content-Length:
+      - '2184'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380yWYX+e9fzD56tDv6
+      qM6Wbz969NGkrpY/yD8afbTMFjn9/SbPpvO8pg+kdXu9wsf4dkYfrhv67tEv
+      5p8M6eH+w/3RR7OiWZXZ9e+vQF7O82UxfdvQC3W+WrdZW1TLjx7d2xUABmid
+      XxRNm9cMeVVX50VJ6C2yC3w5b9vVo7t3r66uxhd1dpm1WT2eVou78uvd8wez
+      /HxvenC+vzeZ7OTT+/sHs/s7eZ7tn+fnn+7v/h6zz4pZvmyLabX8hfVnLz+n
+      LsqCh6yQL7JFsbwYN202fZu/m86z5UXOPQDF5i4GdndlBvJLbv02k625u3u3
+      VUr+ktHPDuV3Hz68v9sj/et5Nquu5utly6B88u99GpJ/vfyQCcjvnx/cuz/N
+      753new9nk4OD3YNdov6nsyybPMym0w+eAB7f3cYfz/8rZ2Fnvy8AX2TtvChn
+      efo6n1b1LC9/FiXhXnZvtrd77/zBg9lsdu/g/sFkf3p/b/bw4Dzbzx6cfxMT
+      QUO8u9AhbTdmSP+vnI2Hn/Zn43Venv/+Z4tV1bRVVyj2731zM3G+9+nDT7Pz
+      h+fZ7m4+y3ans/zB/emDew/3aIY+3f8mZoKGd7eh4WwXZjj/b5yFB7t7D3qz
+      gK/5m84M7H6DsjCdZnvn2WT33v1Pd/OHO+f3z3cPdh4e3N/dufdgdvDg4MNn
+      AAO464by/0bqHzzYOehR/zvFYtF2DcLDb47yB7N7uw+I//PJ7GDv0/uT6S7R
+      /eDB+d75dGdK6unDKY9h3f1pHsb/G6n+8MHDPs8/Ld79LHL7g50H9x5kB3v3
+      Ps2z7NP8YP/+p5+e72c7u9Ps0/17WfbhNMeg7s5oEP9vpPj+7v1PI5a3botl
+      ejKvQdZlky97E/ANavy9T3f2yAPa/XQvO7938On5w537+w8ens/2D3Y+3d+f
+      frgXyoMk24tBbU+9Qf2/cUIePtzvK57prLq4d+8GKfgwV/R8/9P92c456Z4H
+      B+cPaQJmDw7I7Ga7Dw52zw/yb2AWMLK7OpL/V1J+58FOj/InWb177+HDn1XS
+      T6bk/WfT3fNP94hG5+cPSUnD+J4fTPd3yAv6BkhPQ7s71aH8v5H2B/sRrm+v
+      r69/Vgmf7e9OyfMnQ5vv7E2J5/fI97mfne/ef0iTMNn5cMJjXHd5HP9vpDqJ
+      +V6P6r9P9oO2rhZVh/IP7n9zGv/ep7vkzjwkUzvJHz48nz7cmd0/2CUFtL9z
+      MJvtzT6c7hjZ3Wszkv9X0p5yI33DWyzbnrPTTTl8COUPHu7nk3vZwf3pw/uT
+      g73d2b37Dz59cH/ycLozO9if7X8DlKdx3V3wOP7fSfbdfmz7JF8ui59VTbM/
+      O/+U+p7ufTp7ONnb2Z/uEIPO7u9OJvv7n96b3P8m6L67f3fCA/l/Jd0PItHs
+      26rN3/6g6oZUu59+gxz/ab774MHug/z+vdn5vf29nYN8updNpg/29vY//fTh
+      /W8gpsLQ7tqh/L+S+A/v9fU8e/ffztr8p7rkv/fgmyM/0jm7D+5n+w+n2fTT
+      e9PJwxnc/enBwc49iq6+Cd+GBneXvfo5DeYH/y+dAKiTzgS8un6X9QOrb1Lr
+      kF95P9t7kM8+3SPHb0ZJtdnOw73s4f6n9w/uZdNvIralgd2teSD/76T7Xt+l
+      f1pXzdufXXV/794sv0cMTimzT/PzfcqdTXc+ne3tPMzIpSdn/Jsg/N7O3ZmM
+      5P+NlH9w8Gnfoa/K4jKvL7OLrEP9B99gQodY8uGD2b383uTT88n5ZP/8wcPp
+      w/zT+/c/Pd+d7p9PPpz2GNtdbyz/b6T/Q8qi9Oj/plp0CN9dQ/kwtt+bHXya
+      ZQf75FJOJrPpvb1PkVa7tzPJsz3kdD6c9BjW3ZaG8f9Gmt/fedDPpR1fFr30
+      2b1v0sF5sLv76f3zWTah5ZHs/qcP9vIsp4TN+T1axNp7cLD34UTHuKg3GQet
+      Suar9vevydbSkHd2/t84EQ8PInHtm2r13Tor2vn7a/73mI37ef6AnM2De9MH
+      u/n9bOfTyc6nO/dnBwf7B9n9+9k3oflpcCQCqysZzP8b6X+wt9M3u2+KNlsW
+      09+rzN5VXYE4+Ab1/5RSaFOi0mR3P8tzyiw/nH5KAUBGec39XbKaHz4DGN7d
+      VobzVobz/8ZZIEbpm4DjSZ3Ns0X6ctyZgr1v1BLMPj3/9OGD6d7D6cH+5MHD
+      /dnD/N7B3l5GBiG7t/Pwm1jFpdHdzWQ026v/l07Ap/0UT7bscf83a4SntFB7
+      nk8mDyfk9x9M7k+ntJr18Jx0+IOd3Xzn/Jsg/acP7/I4/t9JddCzQ/XfK8+X
+      86woe4b4m6T8g31ayprep/T9+T3y/Xkha+/hObmdu9OcVna/Ccrf27371ozl
+      /53Uv9/3+78o2mY6X//sGt692Ww/3zvfu3fv/Pw8u59PHu7me4TNw08p47n7
+      DbhBGBplNmUo/y+lfSSl/CZb1x3Kf7O6/t55vv/pg2w/n96/9/DTT+/t7+w/
+      PN99eH9/Z2d6fm/6TWTzaWB3Fy0G8v9Out+716P7y6yti7fps/J6UhOCP6u8
+      nz04eLA7zXLK4t/7dLp7Lz8nV5OU/v69vcmD+/k3kV2mId5d8ZC2z82Q/t85
+      F7t7/Uxb8baX8Plmje75NKPE5v7+vfzB7uThvZ0He9PJp9lBtnOPltEnu9+I
+      DOzu3a15IB9C9++PPvpF66rNfv86X2TFEtP46OHDh5+ajxfZOw7r4MDPs+b3
+      X1Q1Db+t1/kv+X8CAAD///VIQlQGLQAA
+    http_version: 
+  recorded_at: Wed, 15 Feb 2012 10:50:40 GMT
+recorded_with: VCR 2.0.0.rc1
