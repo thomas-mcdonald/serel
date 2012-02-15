@@ -64,5 +64,15 @@ def class_attribute(*attrs)
       RUBY
 
       attr_writer name if instance_writer
-    end
   end
+end
+
+def find_constant(symbol)
+  str = symbol.to_s.dup
+  match = /_([a-z])/.match(str)
+  if match
+    str.gsub!(match[0], match[1].upcase)
+  end
+  str[0] = str[0].upcase
+  Serel.const_get(str)
+end

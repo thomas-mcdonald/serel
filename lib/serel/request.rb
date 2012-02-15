@@ -36,7 +36,7 @@ module Serel
 
       result = []
       body["items"].each do |item|
-        result << Serel.const_get(@type.to_s.capitalize).new(item)
+        result << find_constant(@type).new(item)
       end
 
       if (@qty == :plural) || (result.length > 1)

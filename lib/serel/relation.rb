@@ -4,7 +4,7 @@ module Serel
 
     def initialize(type, qty)
       @type = type
-      @klass = Serel.const_get(type.to_s.capitalize)
+      @klass = find_constant(type)
       @scope = {
         api_key: Serel::Base.api_key,
         site: Serel::Base.site

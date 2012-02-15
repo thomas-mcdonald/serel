@@ -8,7 +8,7 @@ module Serel
       if associations
         associations.each do |k,v|
           if data[k.to_s]
-            @data[k] = Serel.const_get(v.to_s.capitalize).new(data[k.to_s])
+            @data[k] = find_constant(v).new(data[k.to_s])
           end
         end
       end
