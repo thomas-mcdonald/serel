@@ -1,6 +1,7 @@
 module Serel
   class Relation
     include Serel::FinderMethods
+    attr_reader :type, :klass, :qty
 
     def initialize(type, qty)
       @type = type

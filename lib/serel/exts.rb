@@ -76,3 +76,13 @@ def find_constant(symbol)
   str[0] = str[0].upcase
   Serel.const_get(str)
 end
+
+class String
+  # Yeah, it's #underscore in Rails, but that's not half as fun.
+  def to_snake
+    gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').
+    gsub(/([a-z\d])([A-Z])/,'\1_\2').
+    tr("-", "_").
+    downcase
+  end
+end

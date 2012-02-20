@@ -9,7 +9,6 @@ class MultipleAttribute < Serel::Base
   attributes :testing, :test_id
 end
 
-
 describe Serel::Base do
   it "should provide a generic [] getter for data" do
     test_value = 'abc'
@@ -53,5 +52,43 @@ describe Serel::Base do
     Serel::Base.config(:stackoverflow, 'test')
     Serel::Base.api_key.should == 'test'
     Serel::Base.site.should == :stackoverflow
+  end
+
+  context '#new_relation' do
+    it 'should return a new relation scoped to the class' do
+      relation = Serel::Badge.new_relation
+      relation.type.should == 'badge'
+      relation.klass.should == Serel::Badge
+      relation.qty.should == :singular
+    end
+
+    it 'should work with camelcased classes' do
+      relation = Serel::SuggestedEdit.new_relation
+      relation.type.should == 'suggested_edit'
+      relation.klass.should == Serel::SuggestedEdit
+    end
+
+    it 'should scope the relation class to the first argument' do
+      relation = Serel::Base.new_relation(:badge)
+      relation.type.should == 'badge'
+      relation.klass.should == Serel::Badge
+    end
+
+    it 'even with snake case' do
+      relation = Serel::Base.new_relation(:suggested_edit)
+      relation.type.should == 'suggested_edit'
+      relation.klass.should == Serel::SuggestedEdit
+    end
+
+    it 'should honour the first argument, even when calling from a class' do
+      relation = Serel::Badge.new_relation(:suggested_edit)
+      relation.type.should == 'suggested_edit'
+      relation.klass.should == Serel::SuggestedEdit
+    end
+
+    it 'should pass the qty argument through to the relation' do
+      relation = Serel::Badge.new_relation(:suggested_edit, :plural)
+      relation.qty.should == :plural
+    end
   end
 end

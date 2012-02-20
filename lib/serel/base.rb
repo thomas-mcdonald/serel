@@ -87,7 +87,7 @@ module Serel
     #
     # Returns an instance of Serel::Relation
     def self.new_relation(klass = nil, qty = :singular)
-      klass = name.split('::').last.downcase unless klass
+      klass = name.split('::').last.to_snake unless klass
       Serel::Relation.new(klass.to_s, qty)
     end
 
