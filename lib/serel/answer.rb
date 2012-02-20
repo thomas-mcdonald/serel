@@ -12,5 +12,13 @@ module Serel
     def question
       type(:question, :singular).url("questions/#{question_id}").request
     end
+
+    def revisions
+      type(:revision).url("posts/#{id}/revisions")
+    end
+
+    def suggested_edits
+      type(:suggested_edit).url("posts/#{id}/suggested-edits")
+    end
   end
 end

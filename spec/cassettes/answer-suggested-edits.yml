@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/answers/14264?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Mon, 20 Feb 2012 20:51:26 GMT
+      Content-Length:
+      - '486'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3/0i9Z50xbV8vcvZh89
+      2t3f+/Te6KNs2Vzltf1kf/TRtM4zbjXL2pw+3Xu4/+nep7sHB6OPyqxpf/98
+      VrTmu3t7Dx/cu39/575+l03b4rJoryPfN9Oqpo+og6KhdtN81ebU6XlWNvno
+      o+pqmdcfPfrFH60bxWbv3r2Ho49mRbMqs+vff5kt6OWP3mY/+EG2yMoy+2j0
+      UZ2v1i2jSj0d3H8wkpfb6xWa1vlF0bR5TZ2MPlrV1XlR5r9/scgu8OW8bVeP
+      7t69uroaX9TZZdZm9XhaLe7Kr3cnnz6cTmb5vfzT6d75/v7DB9m9e+d7n86y
+      h+eTBwfT7PeYfVbM8mVbTKvlL6w/e/k5dVEWy7cO8kW2KJYX46bNpm/zd9N5
+      trzIuQeg2NzF4O4GgxGK/P410+3h7i/5Jd8f0XxVbfb71/kiK5YEjT5/+PBT
+      8/Eie0fD3qFn9NE8a37/BZOXyflL/p8AAAD//6syv3b1AQAA
+    http_version: 
+  recorded_at: Mon, 20 Feb 2012 20:51:27 GMT
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/posts/14264/suggested-edits?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Mon, 20 Feb 2012 20:51:27 GMT
+      Content-Length:
+      - '522'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3/UrC8u8qbNZ79/Piva
+      37+YffTo3v2dg9FHq6qRP3f39z7d17/b61X+0aOPsmVzldcfjT6aVotFvmzp
+      o5NqlqfnVb3I2rZYXozSOp+tp/ksXa4Xk7xOq/N0ldXZRZ2t5k2KV+s8a4tq
+      +fvPspZg7t7be/jg3v29+9RVtlrV1WVWhl/d37lPWNQVIUId/P7rhjB49Is/
+      wk9B++G9T0cfzYpmVWbXv/8yWwDT36dIv1NkywvqsM5X65a7JJAP9x6M5FUd
+      Up1fFEQGwvoj7uW8KPPfv1hkF/hy3rarR3fvXl1djWkAl1mb1WMa+l359W7+
+      6ezTh7u7n+7vTh4efDo9mBzsHHz6YHI+zXdns93pzu8x+6yYEZmKabX8hfVn
+      Lz+nLspi+dZBvsgWNKZx02bTt/m76ZwwzrkHoNjcxdDuXhfbP61DyabTfNX+
+      /jWT5/6DX/JLvj/66Betqzb7/et8kRVLgvXRo4cPH943Hy+ydzToHXpGH82z
+      5vdfVDW9eZ6VTf5L/p8AAAD//zSzt+kOAgAA
+    http_version: 
+  recorded_at: Mon, 20 Feb 2012 20:51:27 GMT
+recorded_with: VCR 2.0.0.rc1
