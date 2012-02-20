@@ -1,8 +1,17 @@
 # Serel
+[![Build Status](https://secure.travis-ci.org/thomas-mcdonald/serel.png?branch=master)](http://travis-ci.org/thomas-mcdonald/serel)
 
-Serel is an [AREL][1] inspired library developed for v2.0 of the [Stack Exchange API][2].
+Serel is an [AREL][1] inspired library developed for v2.0 of the [Stack Exchange API][2]. It's actually becoming pretty decent.
 
-I wouldn't touch this code with a 10 foot bargepole at the moment, so I recommend you don't. Come back later.
+### Things to do
+
+* Full API supoprt
+* Authentication
+* Initialize a relation object with IDs for vectorised parameters
+* Caching
+* Identity map
+* Filter support
+* Per class disabling of finder methods
 
 [1]: https://github.com/rails/arel
 [2]: https://api.stackexchange.com/
