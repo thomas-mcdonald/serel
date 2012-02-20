@@ -1,7 +1,6 @@
 $: << File.dirname(__FILE__)
 
 require 'serel/exts'
-require 'serel/finder_methods'
 require 'serel/relation'
 require 'serel/base'
 require 'serel/answer'

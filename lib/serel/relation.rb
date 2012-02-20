@@ -1,6 +1,5 @@
 module Serel
   class Relation
-    include Serel::FinderMethods
     attr_reader :type, :klass, :qty
 
     def initialize(type, qty)
@@ -69,6 +68,19 @@ module Serel
       @scope[:page] = number
       self
     end
+
+    #
+    #
+    #
+    # Finder methods
+    def find(id)
+      url("#{@type}s/#{id}").request
+    end
+
+    def get
+      url("#{@type}s").request
+    end
+
 
     # Request stuff
     def request
