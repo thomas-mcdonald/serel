@@ -25,7 +25,7 @@ describe Serel::Badge do
     end
   end
 
-  it 'should have a named scope on it' do
+  it 'should get only named badges' do
     VCR.use_cassette('badge-named') do
       badges = Serel::Badge.named.request
       badges.should be_a(Array)
@@ -65,7 +65,7 @@ describe Serel::Badge do
     end
   end
 
-  it 'should have a tags scope on it' do
+  it 'should get only tag based badges' do
     VCR.use_cassette('badge-tags') do
       badges = Serel::Badge.tags.request
       badges.should be_a(Array)

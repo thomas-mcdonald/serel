@@ -25,7 +25,7 @@ describe Serel::Comment do
     end
   end
 
-  it 'should retrieve the post given a call to #post' do
+  it 'should get the post the comment is on' do
     VCR.use_cassette('comment-post') do
       comment = Serel::Comment.find(63977)
       post = comment.post

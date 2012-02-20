@@ -26,7 +26,7 @@ describe Serel::Post do
     end
   end
 
-  it 'should retrieve the comments on the post' do
+  it 'should get the comments on the post' do
     VCR.use_cassette('post-comments') do
       post = Serel::Post.find(29552)
       comments = post.comments.request
@@ -38,7 +38,7 @@ describe Serel::Post do
     end
   end
 
-  it 'should retrieve revision on the post' do
+  it 'should get the revisions on the post' do
     VCR.use_cassette('post-revisions') do
       post = Serel::Post.find(34055)
       revisions = post.revisions.request
@@ -51,7 +51,7 @@ describe Serel::Post do
     end
   end
 
-  it 'should retrive suggested edits on the post' do
+  it 'should get the suggested edits on the post' do
     VCR.use_cassette('post-suggested-edits') do
       post = Serel::Post.find(14665)
       suggested_edits = post.suggested_edits.request
