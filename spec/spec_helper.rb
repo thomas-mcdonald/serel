@@ -6,9 +6,17 @@ require 'vcr'
 
 require 'serel'
 
+RSpec.configure do |c|
+  # Make sure the api_key/site is set correctly
+  c.before(:each) { configure }
+end
+
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
 end
 
-Serel::Base.config(:gaming, '0p65aJUHxHo0G19*YF272A((')
+def configure
+  # Our test configuration
+  Serel::Base.config(:gaming, '0p65aJUHxHo0G19*YF272A((')
+end

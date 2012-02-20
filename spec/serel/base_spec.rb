@@ -48,4 +48,10 @@ describe Serel::Base do
       base.test.should == val
     end
   end
+
+  it 'should set the configuration options' do
+    Serel::Base.config(:stackoverflow, 'test')
+    Serel::Base.api_key.should == 'test'
+    Serel::Base.site.should == :stackoverflow
+  end
 end
