@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/privileges?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Tue, 21 Feb 2012 17:16:18 GMT
+      Content-Length:
+      - '729'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3/UzKu6/f1neTOti1Vb
+      VMuPHn00rfOszdNV1bTNR6OPwi+Pm7dptpzR/5urvE5/0Tpv8A0a1vlq3WbS
+      bveXjOLAV1ndFtNihR6KZbrI26zXx8uwzSqvtxtC2TT2+7k/1E+dL6rLPF3m
+      V+m6IURrwrMupgbXsPGrzY2Dge0M9ahkuyreFgO0O5EW02qxWC+L9no7aHu7
+      Xs7L7GIA/DP/qwDaIJUuK8JnveqB+kn53E2vN+e3h95m5VtM4HSetb0u3oRf
+      +hD3hmlMpMuXbZpf5vX11Tyv8z6RY00ClhmE3uRtOqnWy7bI+9R9TV9m8vV1
+      Wi3pd0OcDvwHg/TIZ0XrZp85pdfNab/NsJDt3MSMIG5aV9VimBn9FrcEzlwz
+      q66WPaA/ab65HefsDTNmQbI4LasmT9FbH/2f7DcIWGh4lpU0bXYxSBQoAv3e
+      B3pvmCQ1qaaLYKK6Gqb7fciSg4DphWxSFs08n7Fu6jOM1+AradCZxpsocZGV
+      JcnKLZgl2vK2vTH3D7FFRAhuw0F7N48OdG+ul9XyOjKu1+uLC+qFe2CuJsHu
+      vNDhquHuMoIjDAlodV6t8uUA855sbNthucEes9WqhtkCwqwnQOGIxdZmFeza
+      T+fTtv9ChxeHe5xO86ZJ2ypdVLO8zlqC2VZVGel0Q8suwwx2R3i3wHdYrF5G
+      WoS2aQP4tl437ZBYvczr86pepKbR+Xop/gCzyDxP4ZFEuHHnl3x/9NEvWldt
+      9vuTC5IVy2J58dGjhw8PHpqPF9k7Hffoo3nW/P6LikzUo/OsbPJf8v8EAAD/
+      /+yRa0GbCQAA
+    http_version: 
+  recorded_at: Tue, 21 Feb 2012 17:16:18 GMT
+recorded_with: VCR 2.0.0.rc1

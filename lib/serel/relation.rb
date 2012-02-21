@@ -74,6 +74,11 @@ module Serel
     #
     #
     # Finder methods
+    def all
+      # Actually paginate here
+      url("#{@type}s").request
+    end
+
     def find(id)
       url("#{@type}s/#{id}").request
     end
