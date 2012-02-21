@@ -43,6 +43,7 @@ module Serel
         merge(relation)
         self
       end
+      super(sym, *attrs, &block)
     end
 
     #
