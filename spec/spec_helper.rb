@@ -20,3 +20,7 @@ def configure
   # Our test configuration
   Serel::Base.config(:gaming, '0p65aJUHxHo0G19*YF272A((')
 end
+
+def new_relation(type)
+  Serel::Relation.new(type, :plural)
+end
