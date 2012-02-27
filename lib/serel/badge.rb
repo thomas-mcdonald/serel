@@ -4,6 +4,7 @@ module Serel
     alias :id :badge_id
 
     associations :user => :user
+    finder_methods :every
 
     def self.named
       url("badges/name")

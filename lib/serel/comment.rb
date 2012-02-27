@@ -4,6 +4,7 @@ module Serel
     alias :id :comment_id
 
     associations :owner => :user, :reply_to_user => :user
+    finder_methods :every
 
     def post
       type(:post, :singular).url("posts/#{post_id}").request

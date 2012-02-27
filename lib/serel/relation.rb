@@ -80,18 +80,29 @@ module Serel
     #
     # Finder methods
     def all
-      # Actually paginate here
-      url("#{@type}s").request
+      if klass.respond_to?(:all)
+        # TODO: Actually paginate here
+        url("#{@type}s").request
+      else
+        raise NoMethodError
+      end
     end
 
     def find(id)
-      url("#{@type}s/#{id}").request
+      if klass.respond_to?(:find)
+        url("#{@type}s/#{id}").request
+      else
+        raise NoMethodError
+      end
     end
 
     def get
-      url("#{@type}s").request
+      if klass.respond_to?(:get)
+        url("#{@type}s").request
+      else
+        raise NoMethodError
+      end
     end
-
 
     # Request stuff
     def request

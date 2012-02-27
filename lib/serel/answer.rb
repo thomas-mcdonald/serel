@@ -4,6 +4,7 @@ module Serel
     alias :id :answer_id
 
     associations :comments => :comment, :owner => :user
+    finder_methods :every
 
     def comments
       type(:comment).url("answers/#{id}/comments")

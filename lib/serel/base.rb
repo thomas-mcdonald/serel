@@ -1,6 +1,7 @@
 module Serel
   class Base
-    class_attribute :attributes, :associations, :api_key, :site, :logger
+    class_attribute :all_finder_methods, :api_key, :associations, :attributes, :finder_methods, :logger, :site
+    self.all_finder_methods = %w(find get all)
 
     def initialize(data)
       @data = {}
@@ -96,16 +97,68 @@ module Serel
     end
 
 
+    # Public: Sets the finder methods available to this type
+    #
+    # *splat - The Array of methods this class accepts. Also accepts :every,
+    #          which indicates that all finder methods are valid
+    #
+    # Returns nothing of value
+    def self.finder_methods(*splat)
+      self.finder_methods = splat
+    end
+
+    # Public: Provides an interface to show which methods this class responds to
+    #
+    # method_sym - The Symbol representation of the method you are interested in
+    # include_private - Whether to include private methods. We ignore this, but
+    #                   it is part of how the core library handles respond_to
+    #
+    # Returns Boolean indicating whether the class responds to it or not
+    def self.respond_to?(method_sym, include_private = true)
+      if self.all_finder_methods.include?(method_sym.to_s)
+        if (self.finder_methods.include?(:every)) || (self.finder_methods.include?(method_sym))
+          true
+        else
+          false
+        end
+      else
+        super(method_sym, include_private)
+      end
+    end
+
+    def all
+      if self.respond_to?(:all)
+        new_relation.all
+      else
+        raise NoMethodError
+      end
+    end
+
+    def find(id)
+      if self.respond_to?(:find)
+        new_relation.find(id)
+      else
+        raise NoMethodError
+      end
+    end
+
+    def get
+      if self.respond_to?(:get)
+        new_relation.get
+      else
+        raise NoMethodError
+      end
+    end
+
     ## Pass these methods direct to a new Relation
     # TODO: clean these up
-    %w(find filter per sort page url).each do |meth|
+    %w(filter per sort page url).each do |meth|
       class_eval <<-RUBY, __FILE__, __LINE__ + 1
         def self.#{meth}(val)
           new_relation.#{meth}(val)
         end
       RUBY
     end
-    def self.get; new_relation.get; end
     def self.request(path, type = nil); new_relation.request(path, type); end
     def type(klass, qty = :plural)
       self.class.new_relation(klass, qty)

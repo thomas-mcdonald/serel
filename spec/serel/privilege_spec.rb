@@ -16,8 +16,8 @@ describe Serel::Privilege do
     end
   end
 
-  # TODO
-#  it 'should not respond to .find' do
-#    -> { Serel::Privilege.find }.should raise_error(NoMethodError)
-#  end
+  it 'should not respond to .find' do
+    -> { Serel::Privilege.find(1) }.should raise_error(NoMethodError)
+    -> { Serel::Privilege.filter('test').find(1) }.should raise_error(NoMethodError)
+  end
 end
