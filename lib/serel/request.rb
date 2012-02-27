@@ -35,6 +35,13 @@ module Serel
       body = JSON.parse(body)
 
       result = Serel::Response.new
+
+      # Set the values of the response wrapper attributes
+      %w(backoff error_id error_message error_name has_more page page_size quota_max quota_remaining total type).each do |attr|
+        result.send("#{attr}=", body[attr])
+      end
+
+      # Insert into the response array the items returned
       body["items"].each do |item|
         result << find_constant(@type).new(item)
       end
