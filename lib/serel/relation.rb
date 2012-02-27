@@ -50,8 +50,8 @@ module Serel
     #
     #
     # Scope methods
-    def per(limit)
-      @scope[:per] = limit
+    def pagesize(limit)
+      @scope[:pagesize] = limit
       self
     end
 
