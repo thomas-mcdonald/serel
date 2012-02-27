@@ -81,8 +81,7 @@ module Serel
     # Finder methods
     def all
       if klass.respond_to?(:all)
-        # TODO: Actually paginate here
-        url("#{@type}s").request
+        all_helper(1)
       else
         raise NoMethodError
       end
@@ -110,7 +109,19 @@ module Serel
     end
 
     private
-    
+
+    def all_helper(page)
+      response = page(page).pagesize(100).url("#{@type}s").request
+      # TODO: find a query that triggers backoff.
+      # if response.backoff
+      #   Serel::Base.warn response.backoff
+      # end
+      if response.has_more
+        response.concat all_helper(page+1)
+      end
+      response
+    end
+
     def build_options
       opt = {}
       opt[:sort] = @sort if @sort
