@@ -2,7 +2,7 @@ module Serel
   class Request
     def initialize(type, scoping, qty)
       @type = type
-      @scope = scoping
+      @scope = scoping.dup
       @site = @scope.delete :site
       @api_key = @scope.delete :api_key
       @method = @scope.delete :url
