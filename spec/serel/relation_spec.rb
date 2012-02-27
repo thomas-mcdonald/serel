@@ -20,4 +20,18 @@ describe Serel::Relation do
       -> { rel1.merge(rel2) }.should raise_error(ArgumentError)
     end
   end
+
+  context '#filter' do
+    it 'should set the filter scope' do
+      rel = Serel::Relation.new('badge', :plural)
+      rel.filter('withbody')
+      rel.scoping[:filter].should == 'withbody'
+    end
+
+    it 'should convert filters passed as symbols to strings' do
+      rel = Serel::Relation.new('badge', :plural)
+      rel.filter(:withbody)
+      rel.scoping[:filter].should == 'withbody'
+    end
+  end
 end

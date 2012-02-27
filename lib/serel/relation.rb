@@ -70,6 +70,11 @@ module Serel
       self
     end
 
+    def filter(filter)
+      @scope[:filter] = filter.to_s
+      self
+    end
+
     #
     #
     #
