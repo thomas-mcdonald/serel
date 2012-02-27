@@ -1,7 +1,11 @@
 $: << File.dirname(__FILE__)
 
+# Utilities
 require 'serel/exts'
 require 'serel/relation'
+require 'serel/response'
+
+# Types
 require 'serel/base'
 require 'serel/answer'
 require 'serel/badge'
@@ -14,6 +18,7 @@ require 'serel/revision'
 require 'serel/suggested_edit'
 require 'serel/user'
 
+# HTTP magic
 require 'cgi'
 require 'json'
 require 'net/http'

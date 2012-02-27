@@ -34,7 +34,7 @@ module Serel
       body = Zlib::GzipReader.new(StringIO.new(response.body)).read
       body = JSON.parse(body)
 
-      result = []
+      result = Serel::Response.new
       body["items"].each do |item|
         result << find_constant(@type).new(item)
       end
