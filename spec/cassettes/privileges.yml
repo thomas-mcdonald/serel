@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/privileges?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: http://api.stackexchange.com/2.0/privileges?key=0p65aJUHxHo0G19*YF272A((&page=1&pagesize=100&site=gaming
     body: ''
     headers:
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'false'
       Date:
-      - Tue, 21 Feb 2012 17:16:18 GMT
+      - Mon, 27 Feb 2012 15:58:15 GMT
       Content-Length:
       - '729'
     body: !binary |-
@@ -46,8 +46,8 @@ http_interactions:
       vNDhquHuMoIjDAlodV6t8uUA855sbNthucEes9WqhtkCwqwnQOGIxdZmFeza
       T+fTtv9ChxeHe5xO86ZJ2ypdVLO8zlqC2VZVGel0Q8suwwx2R3i3wHdYrF5G
       WoS2aQP4tl437ZBYvczr86pepKbR+Xop/gCzyDxP4ZFEuHHnl3x/9NEvWldt
-      9vuTC5IVy2J58dGjhw8PHpqPF9k7Hffoo3nW/P6LikzUo/OsbPJf8v8EAAD/
-      /+yRa0GbCQAA
+      9vuTC5IVy2J58dGjhwcP9s3Hi+ydjnv00Txrfv9FRSbq0XlWNvkv+X8CAAD/
+      /yFx3pybCQAA
     http_version: 
-  recorded_at: Tue, 21 Feb 2012 17:16:18 GMT
+  recorded_at: Mon, 27 Feb 2012 15:58:16 GMT
 recorded_with: VCR 2.0.0.rc1
