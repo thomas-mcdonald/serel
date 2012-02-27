@@ -40,6 +40,10 @@ module Serel
         result.send("#{attr}=", body[attr])
       end
 
+      # Set some response values we know about but SE might not send back
+      result.page ||= (@scope[:page] || 1)
+      result.page_size ||= (@scope[:pagesize] || 30)
+
       # Insert into the response array the items returned
       body["items"].each do |item|
         result << find_constant(@type).new(item)
