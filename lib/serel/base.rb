@@ -1,6 +1,6 @@
 module Serel
   class Base
-    class_attribute :attributes, :associations, :api_key, :site
+    class_attribute :attributes, :associations, :api_key, :site, :logger
 
     def initialize(data)
       @data = {}
@@ -33,6 +33,10 @@ module Serel
     def self.config(site, api_key = nil)
       self.site = site.to_sym
       self.api_key = api_key
+      self.logger = Logger.new(STDOUT)
+      self.logger.formatter = proc { |severity, datetime, progname, msg|
+        %([#{severity}][#{datetime.strftime("%Y-%m-%d %H:%M:%S")}] #{msg}\n)
+      }
     end
 
     # Public: Provides a nice and quick way to inspec the properties of a

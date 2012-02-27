@@ -1,6 +1,7 @@
 $: << File.dirname(__FILE__)
 
 # Utilities
+require 'logger'
 require 'serel/exts'
 require 'serel/relation'
 require 'serel/response'

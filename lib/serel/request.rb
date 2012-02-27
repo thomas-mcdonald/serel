@@ -27,8 +27,7 @@ module Serel
     end
 
     def make_request
-      # TODO: remove debugging line
-#      puts "making request to #{@path}"
+      Serel::Base.logger.info "Making request to #{@path}"
       request = Net::HTTP::Get.new(@path)
       response = Net::HTTP.start("api.stackexchange.com") { |http| http.request(request) }
       body = Zlib::GzipReader.new(StringIO.new(response.body)).read
