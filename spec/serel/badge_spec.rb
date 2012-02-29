@@ -63,6 +63,19 @@ describe Serel::Badge do
         end
       end
     end
+
+    it 'should be able to restrict badges by multiple IDs' do
+      VCR.use_cassette('badge-recipient-with-ids') do
+        badges = Serel::Badge.recipients(1, 2, 3).request
+        badges.should be_a(Serel::Response)
+
+        badges.each do |badge|
+          badge.should be_a(Serel::Badge)
+          badge.user.should be_a(Serel::User)
+          [1,2,3].should include(badge.id)
+        end
+      end
+    end
   end
 
   it 'should get only tag based badges' do
