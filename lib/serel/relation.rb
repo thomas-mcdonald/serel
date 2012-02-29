@@ -87,9 +87,17 @@ module Serel
       end
     end
 
-    def find(id)
+    # Finds an object by an ID or list of IDs. For example:
+    #   Serel::Answer.find(1) # Find the answer with an ID of 1
+    #   Serel::Answer.find(1, 2, 3) # Find the answers with IDs of 1, 2 & 3
+    #
+    # @param [Array] ids The ID or IDs of the objects you want returning.
+    # @return [Serel::Response] The data returned by the Stack Exchange API, parsed and pushed into our
+    #                           handy response wrapper.
+    def find(*ids)
       if klass.respond_to?(:find)
-        url("#{@type}s/#{id}").request
+        arg = ids.length > 1 ? ids.join(';') : ids.pop
+        url("#{@type}s/#{arg}").request
       else
         raise NoMethodError
       end
