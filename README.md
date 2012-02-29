@@ -6,7 +6,6 @@ Serel is an [AREL][1] inspired library developed for v2.0 of the [Stack Exchange
 ### Things to do
 
 * Full API supoprt
-* Authentication
 * Initialize a relation object with IDs for vectorised parameters
 * Caching
 * Identity map
