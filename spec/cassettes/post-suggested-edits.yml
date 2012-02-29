@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/posts/14665?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/posts/14665?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:33 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,8 +34,6 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 15 Feb 2012 13:47:42 GMT
       Content-Length:
       - '462'
     body: !binary |-
@@ -40,15 +46,17 @@ http_interactions:
       3oPz89neg+z+g9mD/Qfnu/d2p7/H7LNili/bYlotf2H92cvPqYuyWL51kC+y
       RbG8GDdtNn2bv5vOs+VFzj0AxeYuRnV3hlH8ktFH0zrnQfz+s6wl5Hb3Ht7f
       3Xuwe0BkKjMiUzZti8uivTbf39v99P69Bw/3H+j3+axoI98106qmjz79Jd8f
-      EYmrNvv963yRFUvC66NHDx9++sB8vMje0Zs79Iw+mmfN77/g986zssl/yf8T
-      AAD///I0eCnEAQAA
+      EYmrNvv963yRFUvC66NHDx88vG8+XmTv6M0dekYfzbPm91/we+dZ2eS/5P8J
+      AAD//wtzTDfEAQAA
     http_version: 
-  recorded_at: Wed, 15 Feb 2012 13:47:46 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:33 GMT
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/posts/14665/suggested-edits?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/posts/14665/suggested-edits?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -58,10 +66,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:34 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -70,10 +84,8 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 15 Feb 2012 13:47:43 GMT
       Content-Length:
-      - '553'
+      - '554'
     body: !binary |-
       H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
       kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
@@ -82,12 +94,12 @@ http_interactions:
       dnWVtlW6bvL05et76VXRztMsXVTLoq3q3wMNswt0+NGquUd/rcrsumkzBZKt
       Z0X10fdHH02rxSJftgTvpMzq4rzIZyn3MEpNn2NqP61zfvX3n2Utdb57b+fT
       3Qd7Dz79lECtVnV1mZXBVwcP9/epz7qiQRTLi9+fsKw/evSLP8JPHuPe3qd7
-      o49mRQO8fv9ltsCQfi/qI/+9qLs6X60V10e7B/eoJb+oxKjzi4LoV+ezj7iP
-      86LMf/9ikV3gy3nbrh7dvXt1dTW+qLPLrM3qMQ3yrvx6d2f34UF2cH9yPst3
-      P51+mj2cTQ7u79zb2b83mX56cL7/e8w+K2ZEkGJaLX9h/dnLz6mLsli+dZAv
-      sgWNaEy0nL7N303n2fIi5x6AYnMXA7v7FgN5CzpPp/mq/f1rJs3Bw1/yS4jk
-      v2hdtdnvX+eLrFgSpI8ePXwIOsrHi+wdDXmHntFH86z5/RdVTW+eZ2WT/5L/
-      JwAA///gN81DRQIAAA==
+      o49mRQO8fv9ltsCQfi/qI/+9qLs6X60V10e7Dx/eG8mLSow6vyiIfnU++4j7
+      OC/K/PcvFtkFvpy37erR3btXV1fjizq7zNqsHtMg78qvd3d2Hx5kB/cn57N8
+      99Ppp9nD2eTg/s69nf17k+mnB+f7v8fss2JGBCmm1fIX1p+9/Jy6KIvlWwf5
+      IlvQiMZEy+nb/N10ni0vcu4BKDZ3MbC7bzGQt6DzdJqv2t+/ZtIcPPwlv4RI
+      /ovWVZv9/nW+yIolQfro0cMHD/fNx4vsHQ15h57RR/Os+f0XVU1vnmdlk/+S
+      /ycAAP//z7tdqkUCAAA=
     http_version: 
-  recorded_at: Wed, 15 Feb 2012 13:47:46 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:34 GMT
 recorded_with: VCR 2.0.0.rc1

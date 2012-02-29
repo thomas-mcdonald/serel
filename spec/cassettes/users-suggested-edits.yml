@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/users/3936?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/users/3936?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:58 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,10 +34,8 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 17:49:41 GMT
       Content-Length:
-      - '598'
+      - '592'
     body: !binary |-
       H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
       kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
@@ -37,21 +43,23 @@ http_interactions:
       pyP5s71e5R89+qjOL4qmzet89tHoo2mdZ21RLX//WdbSl7t7B5/u73+6/3Bv
       9NGsaFZldv37L7MFXvt9ivQ7Rba8oJdWdXVelPnvXyyyC3w1b9vVo7t3r66u
       xhd1dpm1WT2eVou78uvd/NPZpw93dz/d3508PPh0ejA52Dn49MHkfJrvzma7
-      053fY/ZZMcuXbTGtlr+w/uzl59RFna/WLWP20aO9nU93/E9+/+mc8MgJ5euP
-      HkW/ucrztx892t6Lfbeolu2cgN7fjX37i9ZZTbQhuu09iH1/nWfmSx777sHo
-      ozJr2t8/m07zpjFkvHdv5/7ew4e7D/TbRTUrzot8Zr/fe/hg/+H9h4RD0fz+
-      +WJVVtc5fXGelU1O7xTLt46uF9miWF6Mmzabvs3fCSJMX8xqcxczfPe62P5p
-      nZ2rfNIQI/z+67okGPRBWU2Vkh+9JkDZqqrzUWp/pRaEfLVetswwu3s7DzH9
-      k2xG4+XPiaV+8UcXVYlvRx81RXkJCtHYJnW1/AHGc/+XMJB81f7+NY/w/oNf
-      8v3RR79oXbXZ71/ni6xYUncfPXr4cOfAfLzI3tGbO/SMPppnDdGoNhT4Jf9P
-      AAAA//+V9ouTywIAAA==
+      053fY/ZZMcuXbTGtlr+w/uzl59RFna/WLWP20aO9nQc7/ie//3ROeOSE8vVH
+      j6LfXOX524GvFtWynRPM+w9j3/6idVYTaYhs9x7Evr/OM/MlD333YPRRmTXt
+      759Np3nTGCreu7dzf+/hw90H+u2imhXnRT7zv9/fuffp7uijovn988WqrK5z
+      +uI8K5uc3imWbx1ZL7JFsbwYN202fZu/E0SYvJjU5i4m+O51sf3TOjlX+aQh
+      Pvj913VJMOiDspoqIT96TYCyVVXno9T+Si0I+Wq9bJlfdvd2HmL2J9mMxsuf
+      E0f94o8uqhLfjj5qivISFKKxTepq+QOM5/4vYSD5qv39ax7h/Qe/5Pujj37R
+      umqz37/OF1mxpO4+evTwwaf3zceL7B29uUPP6KN51hCNakOBX/L/BAAA//8V
+      mNPPygIAAA==
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 17:49:42 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:58 GMT
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/users/3936/suggested-edits?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/users/3936/suggested-edits?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -61,10 +69,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:59 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -73,8 +87,6 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 17:49:41 GMT
       Content-Length:
       - '2020'
     body: !binary |-
@@ -85,44 +97,44 @@ http_interactions:
       vl1dpbMqPUvzd/l03eZpO8+bPP3q2Ul6L11Ul3nze6TUfFotFvmypRdOl5O8
       bfM6n6UMg7+t8wxwf/9Z1hLQ3Xv3dnYO7j/Y3x19lK1WdXWZlcFXn+7s7BFm
       dUXIFcuL33/d5PVHj37xR/gpQ3l479PRR7OiWZXZ9e+/zBZA9fcp0u8U2fKC
-      Oqzz1brlLj96tLfz6c5IXtVh1vlF0TCKH3Ev50WZ//7FIrvAl/O2XT26e/fq
-      6mp8UWeXWZvVYxrdXfn1bv7p7NOHu7uf7u9OHh58Oj2YHBC6Dybn03x3Ntud
-      7vwes8+KGVGimFbLX1h/9vJz6qIslm8d5ItsQWMaN202fZu/m84J45x7AIrN
-      XQzt7nWx/dM6lGw6zVft718zee4/+CW/ZDQwuXYyeXIJxQeDk+tm6yRbFW1W
-      Fj9gYqXZcpY2q7wkjC9i87b38MG9+/f270Xmjb+6v/PgR/P2vvN24M3b7v7e
-      p/vhvGXL5orIGMxaNcvT86peZG1LOI1SIsl6ShK3XC8meZ1W5+kqqzOiw2re
-      RAWQZ2vv/v7wRN7/0US+30TuPwwFkOTkxol8ZudwYJY+JXbY3YnO0qd7D/Ye
-      3vvRLL3vLN0PZmn//t7Ns1S8y51eHJip+59+eu8grhjvf/pg//7Oj2bqfWfK
-      yI/M1N6nRlF+gDzdv7//8NOY24GvHpJT8qNZes9ZumfcDJ6lnfufGvm6SZ7W
-      q/R0eVEWzTzN0knRDszYzv39e/ceRmdsBzP26Y9m7H1nLIgCiIidKCAyY69V
-      943SvJ2Oh2Zq7+DT+w/iM0Ve/f7ej2bqPWdq71NvpvYfHjz4cI/i4CHMVFQD
-      0lf7Dw5+ZKfed5Z29wJ5unfP/H2TBlytl9N2zdRq4pN1sP/w3kFU+eGrTz/9
-      UbT1npN1z5onEakH925WfidVXedTgpPSUBeLrB6QLHL4H+7FJev+vfu7D3d/
-      NFnvOVn7vgdI/H5g9OHwZD0nMnih8cBU7ZNc3YuaKny1v3fwo6l6z6m6F8rV
-      /Qed7FNkql7lyB/O0nyRFSWnnqZW0tQzHMenj1IXDx/E1SKlpx6yAv7R9L3X
-      9O1407e3/3DnZklznsaIJ6/W6WznWZuWGYnhqiqWbZpNqnWbvs3zFeSxnRdN
-      qkBSSjxexhPEewd7Dw7uPYiLKH21/yO//33neM+KJIvowQPrt2wwfWWeLcNY
-      LTpbNCESR/Rni74i7vpRnuq9ZytQqOTuGQkdXqv5LiRvTlOQL5u0rUjMmna9
-      yNNVkU/zZkTySPPb5G0jUdzVPF/Sws6M5gWtz+s8XxTrxe8xxAGmx9FNvEAB
-      30E0s0xf3dvb+5Hkvi8vBDmWfdKLNzutxrgSroRNmxbL80ps7G1Fmvyggwd7
-      0WncR/J5/0fT+J7TuBO4sw8o43j7aazX5+3In7yNy3QP9vZ2KTyMTt4efbf/
-      Iwf3PSdv92Eggw8ODkwW7TZZs5sCkge79w92Po2uHuCrh/duFTv+aL7cfO1Y
-      e8nz9emu9XCH7ee3q6t0VqXX1Zry0aQqM2jPpipzdlihPMlMZuTKXpM6TV+/
-      va6Lm61lfMLJWaIFjajDhK8OfjTh7z3hSL24Cb9/cP/m5SKX2fEEFPO8yGiB
-      nZYksrQsWmKOdFHV4II5EW05sFJxnzJyB/EVdUJmZ//+j3zg953SXT//fe/h
-      Q16ei8vwpphlYLrIID+Imkh8tbf7o+l67+kKQpZ9IuQtJHB1DQiDlpGnaXfD
-      NP1IUb7fNFHmzChGUZSfdqfpJqm6wbI92Nvf3b8fnTD66v7OjybsfSdsP5Sr
-      B1YtbkqDL982aTOv1uUsneQpEKUMwLJq01/44/ceHpZIkxdtvuC/4hP56c7u
-      7s5BdCLpq3sP9340ke85kYE926fweljy/JwOzxFldOa5plSr8/SLvM3K9PM8
-      q0MPVFYWeTjRSaVFlfuIQyOTSisi+3s/WlF830m1qXKVzofGD92QOudJMhH8
-      yK4r+mn09XKJrF2T1dfpjCa7KJsBhYts28Od6JTuPXz46cMfxfrvPaV73pTu
-      HTywi8Y3xY55k36RTefFMqspk0q52OWMgocmo1UOwjVvQln9AlEGA6BA4war
-      Spbz4NO9+CSTRdjb+dEkv98kH3waZOP273XjxZgyruq3WV2tlxwwskI+If2c
-      Z2sS4XyJ6aSAY8oBR2yWJ3nbiiroT/DOgwf78I0iE7zz4GCXF2t+NMHvM8H7
-      QUJgf3evsyQdmeA3xSLHamXRNOs8JWF8fvwi/WJdtgXomtfpVdHO0+OLHCb4
-      dLEqapL4s7NH6RuwQrUkkHVVN3jzu5RBqq6a9EHIDLJEml0gg8S9jiTZwA6Z
-      l4XQpfC4NqBEw94+lFSfWfAVZyF+xCxRZvn+iOa9arPfn+xsViwJ1kePHj7c
-      eWA+XmTviI479Iw+mmfN74/Ez0eP2nqd/5L/JwAA//+Y16HiXzUAAA==
+      Oqzz1brlLj96tLfzYGckr+ow6/yiaBjFj7iX86LMf/9ikV3gy3nbrh7dvXt1
+      dTW+qLPLrM3qMY3urvx6N/909unD3d1P93cnDw8+nR5MDgjdB5Pzab47m+1O
+      d36P2WfFjChRTKvlL6w/e/k5dVEWy7cO8kW2oDGNmzabvs3fTeeEcc49AMXm
+      LoZ297rY/mkdSjad5qv296+ZPPcf/JJfMhqYXDuZPLmE4oPByXWzdZKtijYr
+      ix8wsdJsOUubVV4Sxhexedt7+ODe/Xv79yLzxl/d33nwo3l733k78OZtd3/v
+      0/1w3rJlc0VkDGatmuXpeVUvsrYlnEYpkWQ9JYlbrheTvE6r83SV1RnRYTVv
+      ogLIs7V3f394Iu//aCLfbyL3H4YCSHJy40Q+s3M4MEufEjvs7kRn6dO9B3sP
+      7/1olt53lu4Hs7R/f+/mWSre5U4vDszU/U8/vXcQV4z3P32wf3/nRzP1vjNl
+      5Edmau9Toyg/QJ7u399/+GnM7cBXD8kp+dEsvecs3TNuBs/Szv1PjXzdJE/r
+      VXq6vCiLZp5m6aRoB2Zs5/7+vXsPozO2gxn79Ecz9r4zFkQBRMROFBCZsdeq
+      +0Zp3k7HQzO1d/Dp/QfxmSKvfn/vRzP1njO196k3U/sPDx58uEdx8BBmKqoB
+      6av9Bwc/slPvO0u7e4E83btn/r5JA67Wy2m7Zmo18ck62H947yCq/PDVp5/+
+      KNp6z8m6Z82TiNSDezcrv5OqrvMpwUlpqItFVg9IFjn8D/fiknX/3v3dh7s/
+      mqz3nKx93wMkfj8w+nB4sp4TGbzQeGCq9kmu7kVNFb7a3zv40VS951TdC+Xq
+      /oNO9ikyVa9y5A9nab7IipJTT1MraeoZjuPTR6mLhw/iapHSUw9ZAf9o+t5r
+      +na86dvbf7hzs6Q5T2PEk1frdLbzrE3LjMRwVRXLNs0m1bpN3+b5CvLYzosm
+      VSApJR4v4wnivYO9Bwf3HsRFlL7a/5Hf/75zvGdFkkX04IH1WzaYvjLPlmGs
+      Fp0tmhCJI/qzRV8Rd/0oT/XesxUoVHL3jIQOr9V8F5I3pynIl03aViRmTbte
+      5OmqyKd5MyJ5pPlt8raRKO5qni9pYWdG84LW53WeL4r14vcY4gDT4+gmXqCA
+      7yCaWaav7u3t/Uhy35cXghzLPunFm51WY1wJV8KmTYvleSU29rYiTX7QwYO9
+      6DTuI/m8/6NpfM9p3Anc2QeUcbz9NNbr83bkT97GZboHe3u7FB5GJ2+Pvtv/
+      kYP7npO3+zCQwQcHByaLdpus2U0ByYPd+wc7n0ZXD/DVw3u3ih1/NF9uvnas
+      veT5+nTXerjD9vPb1VU6q9Lrak35aFKVGbRnU5U5O6xQnmQmM3Jlr0mdpq/f
+      XtfFzdYyPuHkLNGCRtRhwlcHP5rw955wpF7chN8/uH/zcpHL7HgCinleZLTA
+      TksSWVoWLTFHuqhqcMGciLYcWKm4Txm5g/iKOiGzs3//Rz7w+07prp//vvfw
+      IS/PxWV4U8wyMF1kkB9ETSS+2tv90XS993QFIcs+EfIWEri6BoRBy8jTtLth
+      mn6kKN9vmihzZhSjKMpPu9N0k1TdYNke7O3v7t+PThh9dX/nRxP2vhO2H8rV
+      A6sWN6XBl2+btJlX63KWTvIUiFIGYFm16S/88XsPD0ukyYs2X/Bf8Yn8dGd3
+      d+cgOpH01b2Hez+ayPecyMCe7VN4PSx5fk6H54gyOvNcU6rVefpF3mZl+nme
+      1aEHKiuLPJzopNKiyn3EoZFJpRWR/b0frSi+76TaVLlK50Pjh25InfMkmQh+
+      ZNcV/TT6erlE1q7J6ut0RpNdlM2AwkW27eFOdEr3Hj789OGPYv33ntI9b0r3
+      Dh7YReObYse8Sb/IpvNimdWUSaVc7HJGwUOT0SoH4Zo3oax+gSiDAVCgcYNV
+      Jct58OlefJLJIuzt/GiS32+SDz4NsnH797rxYkwZV/XbrK7WSw4YWSGfkH7O
+      szWJcL7EdFLAMeWAIzbLk7xtRRX0J3jnwYN9+EaRCd55cLDLizU/muD3meD9
+      ICGwv7vXWZKOTPCbYpFjtbJomnWekjA+P36RfrEu2wJ0zev0qmjn6fFFDhN8
+      ulgVNUn82dmj9A1YoVoSyLqqG7z5XcogVVdN+iBkBlkizS6QQeJeR5JsYIfM
+      y0LoUnhcG1CiYW8fSqrPLPiKsxA/YpYos3x/RPNetdnvT3Y2K5YE66NHDx9A
+      F8jHi+wd0XGHntFH86z5/ZH4+ehRW6/zX/L/BAAA//+eM1PgXzUAAA==
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 17:49:42 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:59 GMT
 recorded_with: VCR 2.0.0.rc1

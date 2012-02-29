@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/tags/moderator-only?key=0p65aJUHxHo0G19*YF272A((&site=meta.gaming
+    uri: https://api.stackexchange.com/2.0/tags/moderator-only?key=0p65aJUHxHo0G19*YF272A((&site=meta.gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:38 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,8 +34,6 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 16:48:45 GMT
       Content-Length:
       - '371'
     body: !binary |-
@@ -38,8 +44,8 @@ http_interactions:
       VvXvXy3L648etfWavphnze/fXC+r5TX64Na/ZNTtaXI9y5viYuk6unf/Z6Of
       WT4ti2UwoG+2n/PsF3mwd79R2DqGZVXnq7py3Tz4RnuhSV+sl0V7vZ3NGtfJ
       3jfaiQ5lVWbLcDZ+NnqZ5ed5Xf/sdXOeUzc/i/B1GDzrs/XU72jnZ6ejyyK/
-      +mY7+f7oo1+0rtqMwCyyYlksLz569PDh/j3z8SJ7R2TboUfeXxCTm3f/nwAA
-      AP//WDb19qEEAAA=
+      +mY7+f7oo1+0rtqMwCyyYlksLz569PDBwUPz8SJ7R2TboUfeXxCTm3f/nwAA
+      AP//uNyPeaEEAAA=
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 16:48:45 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:38 GMT
 recorded_with: VCR 2.0.0.rc1

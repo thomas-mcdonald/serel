@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/tags/battlefield-3/info?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/info?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:36 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,17 +34,15 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 16:12:17 GMT
       Content-Length:
-      - '257'
+      - '256'
     body: !binary |-
       H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
       kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
       AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+mmRtW+bn
       RV7Otu99NPpoWq2X7UeP9nY/HX1UNL9/nf+idVHns48enWdlk/Nni2qW11lb
-      1b9/tSyv7TfzrPn9m+tltbxGD/zhL/n+6KNftK7ajOAssmJZLC8+evTw4f17
-      5uNF9u6jR7s79Mj7i6rOzbv/TwAAAP//N9pVpq0AAAA=
+      1b9/tSyv7TfzrPn9m+tltbxGD/zhL/n+6KNftK7ajOAssmJZLC8+evTwwcNd
+      8/Eie/fRo90deuT9RVXn5t3/JwAA//+pnYn1rQAAAA==
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 16:12:18 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:36 GMT
 recorded_with: VCR 2.0.0.rc1

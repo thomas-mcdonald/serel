@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/badges/name?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/badges/name?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:22 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,34 +34,32 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 15 Feb 2012 00:23:40 GMT
       Content-Length:
-      - '1025'
+      - '1031'
     body: !binary |-
       H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
       kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
       AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380yWYX+e9fzD56tDv6
-      qM6Wbz969NGkrpY/yD8afbTMFjn9/SbPpvO8pg+yq6ye/f7Tar1sP3q0v3//
-      wUgBtNcrtMQLM2pXFgxo3rarR3fvXmSLYnkxbtps+jZ/N51ny4t8PK0Wd/nd
-      5u7u3VZ7+CUjH6O9QYxet+tZTjh0MLr38GDnG8Fo726jPYQY3RvE6HRWtFWP
-      RHu7B3vfCEL37ubSQYjP/iA+J2WeLderLkK7Ow+/EXz27061gxCh+4MIfVlf
-      ZMviBxE22tn/RlC6f7eyXYRIfTrMR+vVqqrbPlL393e/Gaw+vdvYPkKsHgzP
-      XV20xbSL0sNviJUe3J0K/BCdg2F0qPUP8mX6Mmvrquyi9enONyNyB3en0s/2
-      SvoJ0Xs4iN7xuq0mRXVRZ6uYknr4DeH38G4WdhTit7szzGTTeVVmfd3w6cHB
-      N4LZ7s7dRrvo4DSsHl7n5fn28zyrl32S7T3c/Wbw2r/boJtSu+ko92GCvSim
-      efoT67xpi2rZw27/4JtRYXs7d5fU0fYvMh118BvW9Yzf8bK56tPu3s7+NyOl
-      e/cEu0y66eA2rNFeVqs1ccIg+e7df/DNzO7ep3dX0tcQBe8NexQn1WJB1jWL
-      mMyDTz/9RvC7t3t36vXSQW1Y+T4tmmmxor64z1CX3PtmMHtwd+Z10sFsWA+/
-      zPM6fVnnTbOu8y5u978Ztrt3cHdF3WyvTDcdSzosFG/Wi0mZX+V9su0+/Gbc
-      xE/v3W1dJ11VN6zrviDrm9WTilDqobZ//xtBjbq/u/C66SD3YHhSz5aXJDx9
-      Mfj0m+E16vpuYbroYjVsU1/W1aKKuEXflDtLfd9dmT46aB0MG4Yn+TI/z6YR
-      cu1+Q+4a9X534nrpojas0Y7Ltl4XTS8kuf/NeB/U9d3MdNHFapi73mQXaTwy
-      2b33TRHs4G6bXWxHw5Pdgw1u23JJmEwjPLb3TZGMXDbbSQexh8M0e5VfFpdZ
-      z8/dO/hm7CZ1fbfWLrpIDVPrTVa+zdrisqf3d+9/Q/P48CHNo+mk66oNiyTZ
-      o2l1sSxiuH1jjtoOKQuvmy52w1L5E+uqXi+6eN3b/WY4jHq++4ukhw5Ku8Mo
-      /WT1LmUnrejrsG9GuVLvdy+rd9sr6eWXfH/0EWHZZr9/nS+yYknvIpjE5MjH
-      i+wd4pcdzPI8a35/MmTUOema/Jf8PwEAAP//46xp1ioSAAA=
+      qM6Wbz969NGkrpY/yD8afbTMFjn9/SbPpvO8pg+yq6ye/f7Tar1sP3q0/+nu
+      vZECaK9XaIkXZtSuLBjQvG1Xj+7evcgWxfJi3LTZ9G3+bjrPlhf5eFot7vK7
+      zd3du6328EtGPkZ7gxi9bteznHDoYrS7c/8bwWjvbqM9hBjdG8TodFa0VY9E
+      e3v7D78RhO7dzaWDEJ/9QXxOyjxbrlddhHZ3d74RfPbvTrWDEKH7gwh9WV9k
+      y+IHETbaOfhGULp/t7JdhEh9OsxH69Wqqts+Uvfv33vwjWD16d3G9hFi9WB4
+      7uqiLaa9qdvZ+WbE7cHdqXQQ4nMwjA+1/kG+TF9mbV2VXbw+3d39RtA6uDuV
+      frZX0k+I3sNB9I7XbTUpqos6W8W01MODb0YEH97Nwo5C/CBYQ1w2nVdl1lcO
+      Dz799BvBbHfnbqNddHAa1g+v8/J8+3me1cs+ye59Q4y2u3+3QTeldtPR7sME
+      e1FM8/Qn1nnTFtWyR7b7n34zCmNv5+6SOtr+RaajDn7Dyp7xO142VxHa7e5/
+      M+Kwd0+wy6SbDm7DKu1ltVoTJwyS796DB9+MZtv79O5K+hqi4L1hl+KkWizI
+      vGYRm3nw8JsxUfd27069XjqoDWvfp0UzLVbUF/cZ6pK9bwazB3dnXicdzIb1
+      8Ms8r9OXdd406zrv4vbpN0S1g7sr6mZ7ZbrpmNJhoXizXkzK/Crvk21v55vR
+      c5/eu9u6TrqqbljXfUHmN6snFaHURW33G/LPqPu7C6+bDnIPhif1bHlJwtMX
+      g0+/GU+Wur5bmC66WA3b1Jd1tagiftHuwTeF1sO7K9NHB62DYcPwJF/m59k0
+      Qq7d3W/GKFDvdyeuly5qwxrtuGzrddH0YpL734w5oK7vZqaLLlbD3PUmu0jj
+      ocnug29GKKn3u212sR2NT3YPNrhtyyVhMo3w2N43o2ap87uZ7aSD2MNhmr3K
+      L4vLrOfn7j3c/2bQenhwt9YuukgNU+tNVr7N2uKyp/d3739DjP/wIc2j6aTr
+      qg2LJNmjaXWxLGK4fUOeN3VPysLrpovdsFT+xLqq14suXvd2vxnep57v/iLp
+      oYPS7jBKP1m9S9lJK/qM/83oCur97mX1bnslvfyS748+Iizb7Pev80VWLOld
+      CqcOELDIx4vsHYeXmOV51vz+ZMioc9I1+S/5fwIAAP//trfZZisSAAA=
     http_version: 
-  recorded_at: Wed, 15 Feb 2012 00:23:56 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:22 GMT
 recorded_with: VCR 2.0.0.rc1

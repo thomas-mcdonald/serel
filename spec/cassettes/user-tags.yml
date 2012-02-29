@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:53:00 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,10 +34,8 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 18:08:19 GMT
       Content-Length:
-      - '602'
+      - '595'
     body: !binary |-
       H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
       kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
@@ -37,21 +43,23 @@ http_interactions:
       yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
       s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
       uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
-      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7uwwP/k99/Os+WFzlh
-      fv3Ro53YN1d5/pbGFP1uUS3b+UePPr0f+/IXrbOaKETv3nsQ+/46z8yXZda0
-      v382neZNY2h4797O/XsPHtzb128X1aw4L/KZ/X5v//4+jZjeLprfP1+syuo6
-      py/Os7LJ6Z1i+dZR8yJbFMuLcdNm07f5O+mfqYopbe7S7N5teWa2F9OZmZmr
-      fNIQK/z+67okSPRBWU2Vih+dLi/KbDkbpV8tqcks/b0I/KxaUCMaRbVetsI1
-      nx7s3xt9NMlmNFz+mNjqF390URF8ELspyksmEA1iUlfLHxD++/d/CQPJV+3v
-      X8tQd3Z+yfdHH/2iddVmv3+dL7JiSb199OjhwcN98/Eie8cNdwjqPGuIWrWh
-      xS/5fwIAAP//CgD2ddECAAA=
+      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7Og3v+J7//dJ4tL3LC
+      /PqjRzuxb67y/C2NKfrdolq2848effog9uUvWmc1UYjevRf9/jrPzJdl1rS/
+      fzad5k1jaHjv3s79/f179x/qt4tqVpwX+Sz4foe/L5rfP1+syuo6py/Os7LJ
+      6Z1i+dZR8yJbFMuLcdNm07f5O+mfqYopbe7S7N5teWa2F9OZmZmrfNIQK/z+
+      67okSPRBWU2Vih+dLi/KbDkbpV8tqcks/b0I/KxaUCMaRbVetsI1nx7sE7Un
+      2YyGyx8TW/3ijy4qgg9iN0V5yQQiEkzqavkDwn///i9hIPmq/f1rGerOzi/5
+      /uijX7Su2uz3r/NFViypt48ePXzw6T3z8SJ7xw13COo8a4hataHFL/l/AgAA
+      //9ZwLOV0QIAAA==
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 18:08:19 GMT
+  recorded_at: Wed, 29 Feb 2012 19:53:00 GMT
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/users/821/tags?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/users/821/tags?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -61,10 +69,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:53:00 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -73,8 +87,6 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 18:08:19 GMT
       Content-Length:
       - '557'
     body: !binary |-
@@ -89,8 +101,8 @@ http_interactions:
       JWadY1jNz1JvnVHV1fTt9iRbBvrmG+2wO7wmu8y3L+j3H9IIG2iYH05Xs/Jn
       i0e6Ha2XF3m13J7l5/mSgP1skbI7d/llUW5f5Mti/cPqcbJ++7bwjP3PamfT
       rCy3q/Pt2bq93p6UGYlGtfphjXRatEXebBfL7UUV2t+f1W7bvK6zuvAsxc9u
-      d+d72/M8u7z+We3v+6OPftG6ajOCusiKJazuo4cHD++ZjxfZO+p3hx55f1HV
-      uXn3/wkAAP//yC7ZVHUKAAA=
+      d+d72/M8u7z+We3v+6OPftG6ajOCusiKJazuo4cPPt0zHy+yd9TvDj3y/qKq
+      c/Pu/xMAAP//+F0FXnUKAAA=
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 18:08:20 GMT
+  recorded_at: Wed, 29 Feb 2012 19:53:00 GMT
 recorded_with: VCR 2.0.0.rc1

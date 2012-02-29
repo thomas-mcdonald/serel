@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/answers/16573?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/answers/16573?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:06 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,22 +34,20 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Tue, 14 Feb 2012 22:25:38 GMT
       Content-Length:
-      - '495'
+      - '494'
     body: !binary |-
       H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
       kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
       AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3/0i9Z50xbV8vcvZh89
       2v30/qcHo4+yZXOV1+aTB/dGH03rPONWs6zN6dO9hw8e7NzbP6DGZda0v38+
-      K1r33cO9Tx98en9Pv8umbXFZtNeR75tpVdNHe9RD0VDDab5qc+q1rdf56KPq
-      apnXHz36xR+tG8XmYG939NGsaFZldv37L7MFvfvRm3m1yJr0i+nTapmVs49G
-      H9X5at0yuh89urf7KQFnAO31Cu3r/KJo2rzO0XRVV+dFmf/+xSK7wJfztl09
-      unv36upqfFFnl1mb1eNptbgrv97d25/O7t/PJrvZp3vn55Pd3XvZ5GC6s3f+
-      6f704b2d3d9j9lkxy5dtMa2Wv7D+7OXn1EVZLN86yBfZolhejJs2m77N303n
-      2fIi5x6AYnOXBni35QFtL6YzMyAhzO9fC/12dn7JL/n+iCauarPfv84XWbEk
-      kB89evjw0wfm40X2jlvu7Iw+mmfN779gOp9nZZP/kv8nAAD//wCtccf+AQAA
+      K1r33cO9Tx98en9Pv8umbXFZtNeR75tpVdNHe/dHHxUNNZzmqzanXtt6nY8+
+      qq6Wef3Ro1/80bpRbA72dkcfzYpmVWbXv/8yW9C7H72ZV4usSb+YPq2WWTn7
+      aPRRna/WLaP70aN7O0CfAbTXK7Sv84uiafM6R9NVXZ0XZf77F4vsAl/O23b1
+      6O7dq6ur8UWdXWZtVo+n1eKu/Hp3b386u38/m+xmn+6dn092d+9lk4Ppzt75
+      p/vTh/d2dn+P2WfFLF+2xbRa/sL6s5efUxdlsXzrIF9ki2J5MW7abPo2fzed
+      Z8uLnHsAis1dGuDdlge0vZjOzICEML9/LfTb2fklv+T7I5q4qs1+/zpfZMWS
+      QH706CFTRz5eZO+45c7O6KN51vz+C6bzeVY2+S/5fwIAAP//jCdYcf4BAAA=
     http_version: 
-  recorded_at: Tue, 14 Feb 2012 22:25:54 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:06 GMT
 recorded_with: VCR 2.0.0.rc1

@@ -31,10 +31,10 @@ module Serel
 
     def make_request
       Serel::Base.logger.info "Making request to #{@path}"
-      request = Net::HTTP::Get.new(@path)
-      response = Net::HTTP.start("api.stackexchange.com") { |http| http.request(request) }
-      body = Zlib::GzipReader.new(StringIO.new(response.body)).read
-      body = JSON.parse(body)
+      http = Net::HTTP.new('api.stackexchange.com', 443)
+      http.use_ssl = true
+      response = http.get(@path)
+      body = JSON.parse(response.body)
 
       result = Serel::Response.new
 

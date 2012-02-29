@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/tags/battlefield-3/info?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/info?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:39 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,8 +34,6 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 16:50:56 GMT
       Content-Length:
       - '256'
     body: !binary |-
@@ -35,15 +41,17 @@ http_interactions:
       kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
       AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+mmRtW+bn
       RV7Otu99NPpoWq2X7UeP9nY/HX1UNL9/nf+idVHns48enWdlk/Nni2qW11lb
-      1b9/tSyv7TfzrPn9m+tltbxGD/zhL/n+6KNftK7ajOAssmJZLC8+evTw4f6O
-      +XiRvfvo0e4OPfL+oqpz8+7/EwAA//+1GLxxrQAAAA==
+      1b9/tSyv7TfzrPn9m+tltbxGD/zhL/n+6KNftK7ajOAssmJZLC8+evTwwcGB
+      +XiRvfvo0e4OPfL+oqpz8+7/EwAA//8q2lckrQAAAA==
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 16:50:56 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:39 GMT
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/tags/battlefield-3/related?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/related?key=0p65aJUHxHo0G19*YF272A((&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -53,10 +61,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:39 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -65,8 +79,6 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 16:50:55 GMT
       Content-Length:
       - '597'
     body: !binary |-
@@ -82,8 +94,8 @@ http_interactions:
       gU8qXyt9IOwu3tN5nn2D4DuoT6vtavWzBXxGdo34dHtWNG1dTNYhu35gX106
       rdb1lFp4gvcNd0DWISuLH3SE7gM76VBsVdXt9nlVk5adBcr8A7vpCUPtadhv
       GDb7S1BTdesr2w/spcu3ddU02+R0tEStn72xrNbLt5M1WSTPs/mGu7gqlrPq
-      qtl+8A338P3RR79oXbUZwVlkxRLc9Ojhw3sPzceL7B31tEOPvL+o6lzJ/P8E
-      AAD//5dEW969CwAA
+      qtl+8A338P3RR79oXbUZwVlkxRLc9Ojhg4MH5uNF9o562qFH3l9Uda5k/n8C
+      AAD//wNqTc29CwAA
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 16:50:57 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:39 GMT
 recorded_with: VCR 2.0.0.rc1

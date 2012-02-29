@@ -9,7 +9,7 @@ describe Serel::Post do
       post.id.should == 16573
       post.id.should == post.post_id
       post.post_type.should == 'answer'
-      post.score.should == 23
+      post.score.should be_a(Fixnum)
 
       post.owner.should be_a(Serel::User)
     end

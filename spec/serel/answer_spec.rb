@@ -11,7 +11,7 @@ describe Serel::Answer do
       answer.answer_id.should == 16573
       answer.question_id.should == 16568
       answer.is_accepted.should == true
-      answer.score.should == 23
+      answer.score.should be_a(Fixnum)
 
       answer.owner.should be_a(Serel::User)
     end

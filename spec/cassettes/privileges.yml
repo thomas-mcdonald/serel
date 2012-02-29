@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/privileges?key=0p65aJUHxHo0G19*YF272A((&page=1&pagesize=100&site=gaming
+    uri: https://api.stackexchange.com/2.0/privileges?key=0p65aJUHxHo0G19*YF272A((&page=1&pagesize=100&site=gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:35 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,8 +34,6 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Mon, 27 Feb 2012 15:58:15 GMT
       Content-Length:
       - '729'
     body: !binary |-
@@ -46,8 +52,8 @@ http_interactions:
       vNDhquHuMoIjDAlodV6t8uUA855sbNthucEes9WqhtkCwqwnQOGIxdZmFeza
       T+fTtv9ChxeHe5xO86ZJ2ypdVLO8zlqC2VZVGel0Q8suwwx2R3i3wHdYrF5G
       WoS2aQP4tl437ZBYvczr86pepKbR+Xop/gCzyDxP4ZFEuHHnl3x/9NEvWldt
-      9vuTC5IVy2J58dGjhwcP9s3Hi+ydjnv00Txrfv9FRSbq0XlWNvkv+X8CAAD/
-      /yFx3pybCQAA
+      9vuTC5IVy2J58dGjhw8e3jMfL7J3Ou7RR/Os+f0XFZmoR+dZ2eS/5P8JAAD/
+      /zOBSK+bCQAA
     http_version: 
-  recorded_at: Mon, 27 Feb 2012 15:58:16 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:35 GMT
 recorded_with: VCR 2.0.0.rc1

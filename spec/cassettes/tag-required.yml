@@ -2,9 +2,11 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.stackexchange.com/2.0/tags/required?key=0p65aJUHxHo0G19*YF272A((&site=meta.gaming
+    uri: https://api.stackexchange.com/2.0/tags/required?key=0p65aJUHxHo0G19*YF272A((&site=meta.gaming
     body: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - ! '*/*'
       User-Agent:
@@ -14,10 +16,16 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Feb 2012 19:52:37 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
       Content-Encoding:
       - gzip
       Access-Control-Allow-Origin:
@@ -26,18 +34,16 @@ http_interactions:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
-      Date:
-      - Wed, 29 Feb 2012 16:43:57 GMT
       Content-Length:
-      - '297'
+      - '298'
     body: !binary |-
       H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
       kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
       AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+mhXNdN00
-      RbX8aPTRtFov248effrw09FHRfP71/kvWhd1PvvoUVuvc/5oUc3yOmur+vev
-      luX1R4/Os7Khb+ZZ8/s318tqeQ3o/OEvGdk+JusLB3x3f/8bBd6sV6uqbv0O
-      7n2jHZznWbuu823Ayxu/o91vgkzfH330i9ZVmxGYRVYsi+XFR48ePgSR5ONF
-      9o662qFH3l9UdW7e/X8CAAD//6amM8XQAQAA
+      RbX8aPTRtFov248effrwweijovn96/wXrYs6n330qK3XOX+0qGZ5nbVV/ftX
+      y/L6o0fnWdnQN/Os+f2b62W1vAZ0/vCXjGwfk/WFA767v/+NAm/Wq1VVt34H
+      977RDs7zrF3X+Tbg5Y3f0e6n30BH3x999IvWVZsRmEVWLIvlxUePHj54uGM+
+      XmTvqKsdeuT9RVXn5t3/JwAA//+G473P0AEAAA==
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 16:43:58 GMT
+  recorded_at: Wed, 29 Feb 2012 19:52:37 GMT
 recorded_with: VCR 2.0.0.rc1
