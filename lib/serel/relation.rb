@@ -142,13 +142,5 @@ module Serel
       end
       response
     end
-
-    def build_options
-      opt = {}
-      opt[:sort] = @sort if @sort
-      opt[:pagesize] = @per if @per
-      opt[:type] = @type
-      opt
-    end
   end
 end
