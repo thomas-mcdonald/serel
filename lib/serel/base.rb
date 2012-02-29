@@ -157,7 +157,7 @@ module Serel
 
     ## Pass these methods direct to a new Relation
     # TODO: clean these up
-    %w(filter pagesize sort page url).each do |meth|
+    %w(access_token filter pagesize since sort page url).each do |meth|
       class_eval <<-RUBY, __FILE__, __LINE__ + 1
         def self.#{meth}(val)
           new_relation.#{meth}(val)

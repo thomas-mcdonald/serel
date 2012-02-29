@@ -50,8 +50,18 @@ module Serel
     #
     #
     # Scope methods
+    def access_token(access_token)
+      @scope[:access_token] = access_token
+      self
+    end
+
     def pagesize(limit)
       @scope[:pagesize] = limit
+      self
+    end
+
+    def since(date)
+      @scope[:since] = date
       self
     end
 
