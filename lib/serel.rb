@@ -33,3 +33,5 @@ require 'json'
 require 'net/http'
 require 'uri'
 require 'zlib'
+
+class Serel::NoAPIKeyError < StandardError; end

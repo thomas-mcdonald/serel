@@ -5,6 +5,7 @@ module Serel
       @scope = scoping.dup
       @site = @scope.delete :site
       @api_key = @scope.delete :api_key
+      raise Serel::NoAPIKeyError, 'You must configure Serel with an API key before you can make requests' if @api_key == nil
       @method = @scope.delete :url
       @network = @scope.delete :network
       @qty = qty
