@@ -22,6 +22,9 @@ require 'serel/revision'
 require 'serel/site'
 require 'serel/suggested_edit'
 require 'serel/tag'
+require 'serel/tag_score'
+require 'serel/tag_synonym'
+require 'serel/tag_wiki'
 require 'serel/user'
 
 # HTTP magic
