@@ -4,6 +4,6 @@ module Serel
     alias :id :revision_guid
 
     associations :user => :user
-    finder_methods :every
+    finder_methods :find
   end
 end
