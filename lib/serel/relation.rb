@@ -113,6 +113,9 @@ module Serel
 
     # Request stuff
     def request
+      if klass.network
+        @scope[:network] = true
+      end
       Serel::Request.new(@type, scoping, @qty).execute
     end
 

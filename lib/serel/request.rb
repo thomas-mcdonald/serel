@@ -6,6 +6,7 @@ module Serel
       @site = @scope.delete :site
       @api_key = @scope.delete :api_key
       @method = @scope.delete :url
+      @network = @scope.delete :network
       @qty = qty
     end
 
@@ -17,7 +18,9 @@ module Serel
 
     def build_query_string
       query_hash = @scope
-      query_hash[:site] = @site
+      unless @network
+        query_hash[:site] = @site
+      end
       query_hash[:key] = @api_key
       @query_string = query_hash.map { |k,v| "#{CGI::escape(k.to_s)}=#{CGI::escape(v.to_s)}"}.join('&')
     end

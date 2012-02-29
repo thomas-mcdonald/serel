@@ -1,6 +1,6 @@
 module Serel
   class Base
-    class_attribute :all_finder_methods, :api_key, :associations, :attributes, :finder_methods, :logger, :site
+    class_attribute :all_finder_methods, :api_key, :associations, :attributes, :finder_methods, :logger, :network, :site
     self.all_finder_methods = %w(find get all)
 
     def initialize(data)
@@ -105,6 +105,11 @@ module Serel
     # Returns nothing of value
     def self.finder_methods(*splat)
       self.finder_methods = splat
+    end
+
+    # Denotes that a class does not need the site parameter
+    def self.network_wide
+      self.network = true
     end
 
     # Public: Provides an interface to show which methods this class responds to
