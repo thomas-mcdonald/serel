@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Wed, 29 Feb 2012 17:09:52 GMT
+      Content-Length:
+      - '602'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
+      yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
+      s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
+      uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
+      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7uwwP/k99/Os+WFzlh
+      fv3Ro53YN1d5/pbGFP1uUS3b+UePPr0f+/IXrbOaKETv3nsQ+/46z8yXZda0
+      v382neZNY2h4797O/Xv7B/d29NtFNSvOi3xmv9/bv79PI6a3i+b3zxersrrO
+      6YvzrGxyeqdYvnXUvMgWxfJi3LTZ9G3+TvpnqmJKm7s0u3dbnpntxXRmZuYq
+      nzTECr//ui4JEn1QVlOl4keny4syW85G6VdLajJLfy8CP6sW1IhGUa2XrXDN
+      pwf790YfTbIZDZc/Jrb6xR9dVAQfxG6K8pIJRIOY1NXyB4T//v1fwkDyVfv7
+      1zLUnZ1f8v3RR79oXbXZ71/ni6xYUm8fPXr4cO+h+XiRveOGOwR1njVErdrQ
+      4pf8PwEAAP//clXqr9ECAAA=
+    http_version: 
+  recorded_at: Wed, 29 Feb 2012 17:09:54 GMT
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/users/821/comments?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Wed, 29 Feb 2012 17:09:53 GMT
+      Content-Length:
+      - '1808'
+    body: !binary |-
+      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
+      CXe1szo3AAA=
+    http_version: 
+  recorded_at: Wed, 29 Feb 2012 17:09:54 GMT
+recorded_with: VCR 2.0.0.rc1

@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Wed, 29 Feb 2012 17:24:09 GMT
+      Content-Length:
+      - '602'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
+      yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
+      s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
+      uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
+      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7uwwP/k99/Os+WFzlh
+      fv3Ro53YN1d5/pbGFP1uUS3b+UePPr0f+/IXrbOaKETv3nsQ+/46z8yXZda0
+      v382neZNY2h4797O/Xv3H+7t67eLalacF/nMfr+3f3+fRkxvF83vny9WZXWd
+      0xfnWdnk9E6xfOuoeZEtiuXFuGmz6dv8nfTPVMWUNndpdu+2PDPbi+nMzMxV
+      PmmIFX7/dV0SJPqgrKZKxY9OlxdltpyN0q+W1GSW/l4EflYtqBGNolovW+Ga
+      Tw/2740+mmQzGi5/TGz1iz+6qAg+iN0U5SUTiAYxqavlDwj//fu/hIHkq/b3
+      r2WoOzu/5Pujj37Rumqz37/OF1mxpN4+evTw4e6B+XiRveOGOwR1njVErdrQ
+      4pf8PwEAAP//IHDi29ECAAA=
+    http_version: 
+  recorded_at: Wed, 29 Feb 2012 17:24:10 GMT
+- request:
+    method: get
+    uri: http://api.stackexchange.com/2.0/users/821/mentioned?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Wed, 29 Feb 2012 17:24:10 GMT
+      Content-Length:
+      - '1276'
+    body: !binary |-
+      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
+      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
+      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380rRaLfNn+/sXso0ef
+      PjjY3R19tKoa+Xv/0529ndFH0zrP2qJa/v6zrM0/erR7b+/T+zs7BwcPRx/l
+      M4JELc+zsslHH1VXy7z+6NEv/mjd5DWD2H3w4OG90UezolmV2fXvv8wWBOGj
+      Z8uqnqUv6/w8n7YfjT6q89W65T7ojX3qkt9vr1dovF7W+UXRtHlNPRF2dXVe
+      lPnvXyyyC3w9b9vVo7t3r66uxhd1dpm1WT2mQd2VX+/m2cPsYO/ep3uf7t/f
+      eTjZ2c33H+xO7j/Y2T+/P53k099j9lkxIwIU02r5C+vPXn5OXZTF8q2DfJEt
+      iuXFuGmz6dv83XSeLS9y7gFINnd5hHfPMaLtlY7ol/CQyuvfv61+f7QKSHKw
+      t9sjyJt5tcia9Ivp02qZlbMOSe7tPjwIafIhFNnbn87u388mu9mne+fnk93d
+      e9nkYLqzd/7p/vThvZ3dD6YIDfBuywPaXkxnZkDZdJqv2t+/Fh7a2fklv2QU
+      ch/NT8B993buf7oX4b7dT/cOHuzff3AL7tvrs94km6065N3beXi/Q99FNcsJ
+      06p+f/Lmn+5Pdvd2z/dnewcH+e75/eze/uwe/Tk9yCfnk4cfTN69e3d1EAFJ
+      H9z/Edd9Ha7b2Xtwz+O6vQf3H+zGuG7v4YODe/v3Rx8106qmj+7fgv92P93p
+      676sLPPlMSFfnl7nTU/77e0/+Oao/unOvXsH2Xm2e7Dz6af3sk8PHu7cf7jz
+      aXb+6XRndr7zDWi/T3funvOI8EWZy4gCqj/c+xFjfi3G3H1wEDDm/sF+nDF3
+      9vbu792CHe/d+7RH6lfZZb5MnxLURQ5t5xP60/v37u1/Y4pxh4i68+Bh/mB/
+      lh/c//Te+ew8e5DvZ9Pd2cGD2YNPP5jQNLy7NYazPbPDCTnx4Eec+DU48d79
+      T3f3fE7c378X40Sa3N2d/Qe3Msz37/dI/Xw9ZUqfVNcdMh/s736DVN45IBfi
+      /s7ep7Pd3Wz3wd40v7+3f//e3r0Hs72H+x+uEmlsd0uMhYg85bH8yE5/M0zo
+      e4cbmHCHwpjbqMMfMeGPmPC9mXDn4W2ZcHfn3o+Y8EdM+LPChJ/ekgk/Pbh3
+      mzjlR0z4IyZ8Tybcf3AvCJvvPbwfSxXuPNi7/5Bi2mEm7BAXWFGovf9RSMNZ
+      lTe//7Jqf//8HdHyRwm2rzlnu/u3m7O9g3uf7t5GcfwowfYjrruB63b29+77
+      XLe7+/BBjOv2791/uAc+uZHrPt3fPejRuq0Wk3VZHjzsUPnBvYffHJF3zvN7
+      00+zg9keLSjMdmbEedlOnj3Yuze9t3P+6c4HExlDu+sPJaDvwY9SaV+HBfcO
+      9j8N3Pade+CzPgve27u/c2//Norv4cM+B76pFul3i59uFtmyQ+bdnb2DzqrW
+      h9B5dm/y4P5kcm8yy+4fzO7P9rMHs3u7k4O9nXNKrE0/XAPS6MCE21d2ND0a
+      /4gPb8GH3x999IvWVZv9/nW+yIolgQTn7D4wHy+yd9xyh5hjnjW//4JXFpjp
+      fsn/EwAA///Yo+d3pR0AAA==
+    http_version: 
+  recorded_at: Wed, 29 Feb 2012 17:24:10 GMT
+recorded_with: VCR 2.0.0.rc1
