@@ -9,6 +9,14 @@ module Serel
       url("questions/featured")
     end
 
+    def self.search
+      url("search")
+    end
+
+    def self.similar
+      url("similar")
+    end
+
     def self.unanswered
       url("questions/unanswered")
     end
