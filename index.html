@@ -54,7 +54,7 @@
         <p>To start, drop Serel into your Ruby file of choice, and configure it with your API key and the site you are looking to query.</p>
         <pre class="prettyprint">
 require 'serel'
-Serel::Base.configure(:stackoverflow, 'api_key')</pre>
+Serel::Base.config(:stackoverflow, 'api_key')</pre>
       </div>
       <div class="span4">
         <h4>I can has API Key?</h4>
@@ -69,57 +69,34 @@ Serel::Base.configure(:stackoverflow, 'api_key')</pre>
         <p>We'll now go on a whirlwind tour of the basics of Serel. Open up <code>irb</code> and configure Serel as above.</p>
         <p>Stack Exchange is all about the questions, right? Lets start there. We'll retrieve a list of the 3 highest voted questions of all time on Stack Overflow.</p>
         <pre class="prettyprint">
-Serel::Question.pagesize(3).sort('votes').get</pre>
+questions = Serel::Question.pagesize(3).sort('votes').get
+=&gt; [#&lt;Serel::Question:70103133675940 @question_id=194812, @answer_count=112, ...>]
+question = questions.first
+ =&gt; #&lt;Serel::Question:70103133675940 @question_id=194812, @answer_count=112, ...>
+user = question.owner
+ =&gt; #&lt;Serel::User:70103133674960 @user_id=11110, @user_type=registered, ...>
+relation = user.tags.sort('name')
+=&gt; #&lt;Serel::Relation:0x007f8450c09f28 @type=&quot;tag&quot;, @klass=Serel::Tag, @scope={:api_key=&gt;&quot;0p65aJUHxHo0G19*YF272A((&quot;, :site=&gt;:stackoverflow, :url=&gt;&quot;users/11110/tags&quot;, :sort=&gt;&quot;name&quot;}, @qty=:plural&gt; 
+
+</pre>
       </div>
       <div class="span4">
         <h4>Here, take this with you</h4>
         <p>Despite using a library, the <a href="https://api.stackexchange.com/docs">Stack Exchange API documentation</a> will be invaluable. It provides all sorts of useful information, particularly what values are acceptable for which parameters, since this will change across methods.</p>
+        <h4>Ooh, what's this relation object here?</h4>
+        <p>The <code>Serel::Relation</code> class stores information about the current scope of the request. It's what we use to create the awesome chainable interface. You can pass these around if you like, and have reason to. Most people won't deal with Relation objects, but they're frequently used within the library.</p>
       </div>
     </div>
+    <div class="row">
+      <div class="span8">
+        <h3>Working with access tokens</h3>
+        <p>We have a handy helper class to get from access tokens to a user or to their inbox.</p>
+        <pre class="prettyprint">
+token = Serel::AccessToken.new('token')
+user = token.user
+inbox = token.inbox.request
+</pre>
+      </div>
   </div>
-<div class="container">
-    <div class="download">
-      <a href="https://github.com/thomas-mcdonald/serel/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/thomas-mcdonald/serel/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/thomas-mcdonald/serel">serel</a>
-      <span class="small">by <a href="https://github.com/thomas-mcdonald">thomas-mcdonald</a></span></h1>
-
-    <div class="description">
-      A Stack Exchange Relational Algebra. Or something along those lines.
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/thomas-mcdonald/serel/zipball/master">zip</a> or
-      <a href="https://github.com/thomas-mcdonald/serel/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/thomas-mcdonald/serel</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/thomas-mcdonald/serel">thomas-mcdonald/serel</a>
-    </div>
-
-  </div>
-
 </body>
 </html>
