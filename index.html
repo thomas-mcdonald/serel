@@ -2,39 +2,82 @@
 <html>
 <head>
   <meta charset='utf-8'>
-
-  <title>thomas-mcdonald/serel @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #a65ef5;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #59a10a; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #59a10a; }
-    h3 { text-align: center; color: #59a10a; }
-    a { color: #59a10a; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+  <title>Serel: A Ruby library for the Stack Exchange API</title>
+  <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/prettify.css" rel="stylesheet" />
+  <script src="javascripts/prettify.js"></script>
 </head>
 
-<body>
+<body onload="prettyPrint()">
+  <a id="top"></a>
+  <!-- GitHub fork link -->
   <a href="https://github.com/thomas-mcdonald/serel"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="#top">Serel</a>
+        <ul class="nav">
+          <li><a href="#install">install</a></li>
+          <li><a href="#use">use</a></li>
+          <li><a href="#api_mapping">api mapping</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="hero-unit">
+      <h1>Ruby, meet Stack Exchange.</h1>
+      <p>Serel is Stack Exchange RElational Algebra, a fully featured Ruby library for the Stack Exchange API.</p>
+      <p>
+        <a class="btn btn-primary btn-large">View on RubyGems</a>
+        <a class="btn btn-large" href="http://github.com/thomas-mcdonald/serel">View on GitHub</a>
+        <a class="btn btn-large" href="http://rdoc.info/github/thomas-mcdonald/serel">RDocs</a>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div id="install" class="page-header">
+      <h2>Installation</h2>
+    </div>
+    <div class="row">
+      <div class="span8">
+        <p>Installation is easy, provided you already have Ruby installed. If not, you're probably in the wrong place.</p>
+        <pre>gem install serel</pre>
+      </div>
+    </div>
+    <div id="use" class="page-header">
+      <h2>Usage</h2>
+    </div>
+    <div class="row">
+      <div class="span8">
+        <h3>Configuration</h3>
+        <p>To start, drop Serel into your Ruby file of choice, and configure it with your API key and the site you are looking to query.</p>
+        <pre class="prettyprint">
+require 'serel'
+Serel::Base.configure(:stackoverflow, 'api_key')</pre>
+      </div>
+      <div class="span4">
+        <h4>I can has API Key?</h4>
+        <p>Don't have an API key? Sign up for one on <a href="http://stackapps.com">Stack Apps</a></p>
+        <h4>Stop logging things</h4>
+        <p>By defaut, Serel will log the URL of every HTTP request made to STDOUT. If you don't want this, you can set the level of the logger to be higher: <code>Serel::Base.logger.level = Logger::WARN</code></p>
+      </div>
+    </div>
+    <div id="tour" class="row">
+      <div class="span8">
+        <h3>Tour</h3>
+        <p>We'll now go on a whirlwind tour of the basics of Serel. Open up <code>irb</code> and configure Serel as above.</p>
+        <p>Stack Exchange is all about the questions, right? Lets start there. We'll retrieve a list of the 3 highest voted questions of all time on Stack Overflow.</p>
+        <pre class="prettyprint">
+Serel::Question.pagesize(3).sort('votes').get</pre>
+      </div>
+      <div class="span4">
+        <h4>Here, take this with you</h4>
+        <p>Despite using a library, the <a href="https://api.stackexchange.com/docs">Stack Exchange API documentation</a> will be invaluable. It provides all sorts of useful information, particularly what values are acceptable for which parameters, since this will change across methods.</p>
+      </div>
+    </div>
+  </div>
+<div class="container">
     <div class="download">
       <a href="https://github.com/thomas-mcdonald/serel/zipball/master">
         <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>

@@ -1,0 +1,34 @@
+// I gather this file is a starting point for the project.
+@import "bootstrap";
+
+// Header
+.navbar-inner {
+  padding: 10px 0;
+  // Use our own gradient
+  @include gradient-vertical(#f8f8f8, #ffffff);
+  @include box-shadow(none);
+
+  .container {
+    border-bottom: 1px solid #ddd;
+  }
+  // Have a bold logo name.
+  .brand {
+    color: $black;
+    font-weight: bold;
+  }
+  .nav li > a {
+    color: $grayDark;
+    text-shadow: none;
+    &:hover {
+      color: $grayLight;
+    }
+  }
+}
+
+.hero-unit {
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.page-header { padding-bottom: 3px; }
+#tour { margin-top: 15px; }
