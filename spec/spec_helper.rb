@@ -16,9 +16,9 @@ VCR.configure do |c|
   c.hook_into :webmock
 end
 
-def configure
+def configure(site = :gaming)
   # Our test configuration
-  Serel::Base.config(:gaming, '0p65aJUHxHo0G19*YF272A((')
+  Serel::Base.config(site, '0p65aJUHxHo0G19*YF272A((')
   Serel::Base.logger.level = Logger::WARN
 end
 
