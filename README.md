@@ -10,8 +10,6 @@ Serel is an [AREL][1] inspired library developed for v2.0 of the [Stack Exchange
 * Initialize a relation object with IDs for vectorised parameters
 * Caching
 * Identity map
-* Filter support
-* Per class disabling of finder methods
 
 [1]: https://github.com/rails/arel
 [2]: https://api.stackexchange.com/
