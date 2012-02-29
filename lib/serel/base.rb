@@ -164,6 +164,7 @@ module Serel
         end
       RUBY
     end
+    def network; self.class.new_relation.network; end
     def self.request(path, type = nil); new_relation.request(path, type); end
     def type(klass, qty = :plural)
       self.class.new_relation(klass, qty)

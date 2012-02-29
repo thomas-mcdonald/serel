@@ -8,10 +8,12 @@ require 'serel/response'
 
 # Types
 require 'serel/base'
+require 'serel/access_token'
 require 'serel/answer'
 require 'serel/badge'
 require 'serel/comment'
 require 'serel/event'
+require 'serel/inbox'
 require 'serel/info'
 require 'serel/post'
 require 'serel/privilege'
