@@ -1,0 +1,40 @@
+module Serel
+  class Tag < Base
+    attributes :name, :count, :is_required, :is_moderator_only, :user_id, :has_synonyms, :last_activity_date
+    finder_methods :every
+
+    # Finds a tag by name
+    # @param [String] name The name of the tag you wish to find
+    # @return [Serel::Tag] The tag returned by the Stack Exchange API
+    def self.find_by_name(name)
+      url("tags/#{name}/info").request
+    end
+
+    # Retrieves tags that are required on the site
+    #   Serel::Tag.required.request
+    #
+    # This is a scoping method and can be combined with other scoping methods.
+    # @return [Serel::Relation] A relation scoped to the required URL.
+    def self.required
+      url("tags/required")
+    end
+
+    # Retrieves tags which can only be added or removed by a moderator
+    #  Serel::Tag.moderator_only.request
+    #
+    # This is a scoping method and can be combined with other scoping methods
+    # @return [Serel::Relation] A relation scoped to the moderator only URL.
+    def self.moderator_only
+      url("tags/moderator-only")
+    end
+
+    # Retrieves related tags.
+    #   Serel::Tag.find(1).related.request
+    #
+    # This is a scoping method and can be combined with other scoping methods.
+    # @return [Serel::Relation] A relation scoped to the related URL
+    def related
+      type(:tag).url("tags/#{name}/related")
+    end
+  end
+end

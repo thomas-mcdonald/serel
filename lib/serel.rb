@@ -17,6 +17,7 @@ require 'serel/question'
 require 'serel/request'
 require 'serel/revision'
 require 'serel/suggested_edit'
+require 'serel/tag'
 require 'serel/user'
 
 # HTTP magic
