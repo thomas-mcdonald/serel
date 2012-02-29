@@ -1,5 +1,3 @@
-$: << File.dirname(__FILE__)
-
 # Utilities
 require 'logger'
 require 'serel/exts'
@@ -35,9 +33,3 @@ require 'json'
 require 'net/http'
 require 'uri'
 require 'zlib'
-
-Serel::Base.config(:gaming, '0p65aJUHxHo0G19*YF272A((')
-
-# a = Serel::Comment.get
-
-# puts a

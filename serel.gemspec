@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name = "serel"
-  s.version = '0.0.1'
+  s.version = '1.0.0.rc1'
   s.authors = ["Thomas McDonald"]
   s.email = 'tom@conceptcoding.co.uk'
-  s.summary = "An AREL-like library for the Stack Exchange API"
-  s.homepage = "http://github.com/thomas-mcdonald/serel"
+  s.summary = "A Ruby library for the Stack Exchange API"
+  s.homepage = "http://serel.tom.is"
 
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'vcr'

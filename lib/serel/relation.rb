@@ -50,39 +50,13 @@ module Serel
     #
     #
     # Scope methods
-    def access_token(access_token)
-      @scope[:access_token] = access_token
-      self
-    end
-
-    def pagesize(limit)
-      @scope[:pagesize] = limit
-      self
-    end
-
-    def since(date)
-      @scope[:since] = date
-      self
-    end
-
-    def sort(by)
-      @scope[:by] = by.to_s
-      self
-    end
-    
-    def url(url)
-      @scope[:url] = url
-      self
-    end
-
-    def page(number)
-      @scope[:page] = number
-      self
-    end
-
-    def filter(filter)
-      @scope[:filter] = filter.to_s
-      self
+    %w(access_token filter fromdate inname intitle min max nottagged order page pagesize since sort tagged title todate url).each do |meth|
+      class_eval <<-RUBY, __FILE__, __LINE__ + 1
+        def #{meth}(val)
+          @scope[:#{meth}] = val.to_s
+          self
+        end
+      RUBY
     end
 
     def network

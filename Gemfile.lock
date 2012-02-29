@@ -7,7 +7,7 @@ GIT
 PATH
   remote: .
   specs:
-    serel (0.0.1)
+    serel (1.0.0.rc1)
 
 GEM
   remote: http://rubygems.org/
