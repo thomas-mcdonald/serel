@@ -93,10 +93,58 @@ relation = user.tags.sort('name')
         <p>We have a handy helper class to get from access tokens to a user or to their inbox.</p>
         <pre class="prettyprint">
 token = Serel::AccessToken.new('token')
+=> &gt;Serel::AccessToken&lt;
 user = token.user
+==> 
 inbox = token.inbox.request
+=>
 </pre>
       </div>
   </div>
+  <div id="api_mapping" class="row">
+    <div class="span12">
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr><th>API Route</th><th>Sarel Method</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Answers</b></td><td></td></tr>
+    <tr><td><a href="https://api.stackexchange.com/docs/answers">/answers</a></td><td><code>Serel::Answer.get</code></td></tr>
+    <tr><td><a href="https://api.stackexchange.com/docs/answers-by-ids">/answers/{ids}</a></td><td><code>Serel::Answer.find(ids)</code></td></tr>
+    <tr><td><a href="https://api.stackexchange.com/docs/comments-on-answers">/answers/{ids}/comments</a></td><td><code>answer = Serel::Answer.find(id)</code><br><code>answer.commments.get</code></td></tr>
+<!--            <tr><td><a href="">/</a></td><td><code>Serel::</code></td></tr>
+                <tr><td><a href="">/</a></td><td><code>Serel::</code></td></tr>
+                    <tr><td><a href="">/</a></td><td><code>Serel::</code></td></tr>
+                        <tr><td><a href="">/</a></td><td><code>Serel::</code></td></tr>
+                            <tr><td><a href="">/</a></td><td><code>Serel::</code></td></tr>
+                                <tr><td><a href="">/</a></td><td><code>Serel::</code></td></tr>
+                                    <tr><td><a href="">/</a></td><td><code>Serel::</code></td></tr>-->
+  </tbody>
+</table>
+    </div>
+  </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
