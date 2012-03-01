@@ -70,7 +70,7 @@ module Serel
       end
     end
 
-    def self.attribute(klass, name)
+    def self.attribute(name, klass)
       self.attributes = {} unless self.attributes
       self.attributes[name] = klass
       define_method(name) { self[name.to_sym] }
