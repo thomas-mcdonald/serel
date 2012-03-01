@@ -5,7 +5,7 @@ module Serel
 
     def initialize(data)
       @data = {}
-      attributes.each { |k| @data[k] = data[k.to_s] }
+      attributes.each { |k,v| @data[k] = data[k.to_s] }
       if associations
         associations.each do |k,v|
           if data[k.to_s]
@@ -47,7 +47,7 @@ module Serel
     # Returns a String representation of the class
     def inspect
       attribute_collector = {}
-      self.class.attributes.each { |attr| attribute_collector[attr] = self.send(attr) }
+      self.class.attributes.each { |attr, type| attribute_collector[attr] = self.send(attr) }
       inspected_attributes = attribute_collector.select { |k,v| v != nil }.collect { |k,v| "@#{k}=#{v}" }.join(", ")
       association_collector = {}
       self.class.associations.each { |name, type| association_collector[name] = self[name] }
@@ -62,8 +62,9 @@ module Serel
     #
     # Returns nothing.
     def self.attributes(*splat)
-      self.attributes = splat
+      self.attributes = {}
       splat.each do |meth|
+        self.attributes[meth] = String
         define_method(meth) { self[meth.to_sym] }
         define_method("#{meth}=") { |val| self[meth.to_sym] = val }
       end
