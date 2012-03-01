@@ -37,6 +37,10 @@ module Serel
       new_relation(:tag_synonym).url("tags/synonyms")
     end
 
+    def faq
+      type(:tag).url("tags/#{name}/faq")
+    end
+
     # Retrieves related tags.
     #   Serel::Tag.find(1).related.request
     #
