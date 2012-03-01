@@ -5,7 +5,7 @@ module Serel
   # The +/info+ route accepts no parameters and requires no IDs, so the default finder methods cannot be
   # used. We therefore have a custom finder defined, {.get_info}.
   class Info < Base
-    attributes :total_questions, :total_unanswered, :total_accepted, :total_answers, :questions_per_minute, :answers_per_minute, :total_comments, :total_votes, :total_badges, :badges_per_minute, :total_users, :new_active_users, :api_revision
+    attributes_on :total_questions, :total_unanswered, :total_accepted, :total_answers, :questions_per_minute, :answers_per_minute, :total_comments, :total_votes, :total_badges, :badges_per_minute, :total_users, :new_active_users, :api_revision
     associations :site => :site
     finder_methods :none
 

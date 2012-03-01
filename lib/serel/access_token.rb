@@ -5,7 +5,8 @@ module Serel
   # Creating a new AccessToken provides a couple of helper methods to access authorized methods and
   # identify who a user is.
   class AccessToken < Base
-    attributes :token
+    attributes_on :token
+
     finder_methods :none
 
     # Create a new instance of AccessToken.

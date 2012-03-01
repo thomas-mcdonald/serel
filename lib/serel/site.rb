@@ -15,7 +15,7 @@ module Serel
   #
   # Retrieves a page of sites, applying any scopes that have previously been defined.
   class Site < Base
-    attributes :site_type, :name, :logo_url, :api_site_parameter, :site_url, :audience, :icon_url, :aliases, :site_state, :styling, :closed_beta_date, :open_beta_date, :launch_date, :favicon_url, :related_sites, :twitter_account, :markdown_extensions
+    attributes_on :site_type, :name, :logo_url, :api_site_parameter, :site_url, :audience, :icon_url, :aliases, :site_state, :styling, :closed_beta_date, :open_beta_date, :launch_date, :favicon_url, :related_sites, :twitter_account, :markdown_extensions
     finder_methods :all, :get
     network_wide
   end

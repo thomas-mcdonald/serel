@@ -19,7 +19,7 @@ module Serel
   # Retrieves a page of Events. As per the +all+ method above, this defaults to events in the last 5
   # minutes.
   class Event < Base
-    attributes :event_type, :event_id, :creation_date, :link, :excerpt
+    attributes_on :event_type, :event_id, :creation_date, :link, :excerpt
     finder_methods :all, :get
   end
 end

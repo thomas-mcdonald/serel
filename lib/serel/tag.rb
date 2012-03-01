@@ -1,6 +1,6 @@
 module Serel
   class Tag < Base
-    attributes :name, :count, :is_required, :is_moderator_only, :user_id, :has_synonyms, :last_activity_date
+    attributes_on :name, :count, :is_required, :is_moderator_only, :user_id, :has_synonyms, :last_activity_date
     finder_methods :all, :get
 
     # Finds a tag by name

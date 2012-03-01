@@ -61,7 +61,7 @@ module Serel
     # *splat - The Array or List of attributes for the class
     #
     # Returns nothing.
-    def self.attributes(*splat)
+    def self.attributes_on(*splat)
       self.attributes = {}
       splat.each do |meth|
         self.attributes[meth] = String

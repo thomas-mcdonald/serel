@@ -41,7 +41,7 @@ module Serel
   #
   # See the documentation for {tags} below.
   class Badge < Base
-    attributes :badge_id, :badge_type, :description, :link, :name, :rank
+    attributes_on :badge_id, :badge_type, :description, :link, :name, :rank
     alias :id :badge_id
 
     associations :user => :user

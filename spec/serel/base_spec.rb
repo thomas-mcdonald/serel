@@ -2,11 +2,11 @@ require 'spec_helper'
 
 # Test classes and other unimportant stuff.
 class OneAttribute < Serel::Base
-  attributes :test
+  attributes_on :test
 end
 
 class MultipleAttribute < Serel::Base
-  attributes :testing, :test_id
+  attributes_on :testing, :test_id
 end
 
 describe Serel::Base do
