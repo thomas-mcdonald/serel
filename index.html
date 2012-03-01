@@ -67,7 +67,7 @@ Serel::Base.config(:stackoverflow, 'api_key')</pre>
       <div class="span8">
         <h3>Tour</h3>
         <p>We'll now go on a whirlwind tour of the basics of Serel. Open up <code>irb</code> and configure Serel as above.</p>
-        <p>Stack Exchange is all about the questions, right? Lets start there. We'll retrieve a list of the 3 highest voted questions of all time on Stack Overflow.</p>
+        <p>Stack Exchange is all about the questions, right? Lets start there. We'll retrieve a list of the 3 highest voted questions of all time on Stack Overflow, get the first one, find it's owner, and get a relation object with the tags he is active in sorted by name. Completely pointles in a practical sense? Yes, but you'll learn something.</p><p> See the little help box to the right for more information on the Relation object.</p>
         <pre class="prettyprint">
 questions = Serel::Question.pagesize(3).sort('votes').get
 =&gt; [#&lt;Serel::Question:70103133675940 @question_id=194812, @answer_count=112, ...>]
@@ -79,6 +79,7 @@ relation = user.tags.sort('name')
 =&gt; #&lt;Serel::Relation:0x007f8450c09f28 @type=&quot;tag&quot;, @klass=Serel::Tag, @scope={:api_key=&gt;&quot;0p65aJUHxHo0G19*YF272A((&quot;, :site=&gt;:stackoverflow, :url=&gt;&quot;users/11110/tags&quot;, :sort=&gt;&quot;name&quot;}, @qty=:plural&gt; 
 
 </pre>
+        <p>Obviously, once I get my video tour of Serel uploaded to YouTube this will be much more impressive.</p>
       </div>
       <div class="span4">
         <h4>Here, take this with you</h4>
