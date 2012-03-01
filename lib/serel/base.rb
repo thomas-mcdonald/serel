@@ -70,6 +70,13 @@ module Serel
       end
     end
 
+    def self.attribute(klass, name)
+      self.attributes = {} unless self.attributes
+      self.attributes[name] = klass
+      define_method(name) { self[name.to_sym] }
+      define_method("#{name}=") { |val| self[name.to_sym] = val }
+    end
+
     # Internal: Defines the associations for a subclass of Serel::Base
     #
     # options - The Hash options used to define associations
