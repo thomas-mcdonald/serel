@@ -38,6 +38,7 @@ module Serel
       self.logger.formatter = proc { |severity, datetime, progname, msg|
         %([#{severity}][#{datetime.strftime("%Y-%m-%d %H:%M:%S")}] #{msg}\n)
       }
+      nil # Return nothing, rather than that proc
     end
 
     # Public: Provides a nice and quick way to inspec the properties of a
