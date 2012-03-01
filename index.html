@@ -5,7 +5,9 @@
   <title>Serel: A Ruby library for the Stack Exchange API</title>
   <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
   <link href="stylesheets/prettify.css" rel="stylesheet" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="javascripts/prettify.js"></script>
+  <script src="javascripts/bootstrap-dropdown.js"></script>
 </head>
 
 <body onload="prettyPrint()">
@@ -20,6 +22,14 @@
           <li><a href="#install">install</a></li>
           <li><a href="#use">use</a></li>
           <li><a href="#api_mapping">api reference</a></li>
+<!--          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">classes<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="answers.html">answers</a></li>
+              </ul>
+            </li>
+          </ul>-->
         </ul>
       </div>
     </div>
@@ -83,7 +93,7 @@ relation = user.tags.sort('name')
       </div>
       <div class="span4">
         <h4>Here, take this with you</h4>
-        <p>Despite using a library, the <a href="https://api.stackexchange.com/docs">Stack Exchange API documentation</a> will be invaluable. It provides all sorts of useful information, particularly what values are acceptable for which parameters, since this will change across methods.</p>
+        <p>Despite using a library, the <a href="https://api.stackexchange.com/docs">Stack Exchange API documentation</a> will be invaluable. It provides all sorts of useful information, particularly with regards to what values are acceptable for which parameters, since this will change across methods.</p>
         <h4>Ooh, what's this relation object here?</h4>
         <p>The <code>Serel::Relation</code> class stores information about the current scope of the request. It's what we use to create the awesome chainable interface. You can pass these around if you like, and have reason to. Most people won't deal with Relation objects, but they're frequently used within the library.</p>
       </div>
@@ -94,12 +104,13 @@ relation = user.tags.sort('name')
         <p>We have a handy helper class to get from access tokens to a user or to their inbox.</p>
         <pre class="prettyprint">
 token = Serel::AccessToken.new('token')
-=> &gt;Serel::AccessToken&lt;
+=> &lt;Serel::AccessToken @token='token'&gt;
 user = token.user
-==> 
+=> &lt;Serel::User&gt;
 inbox = token.inbox.request
-=>
+==> [&lt;Serel::Inbox&gt;,...]
 </pre>
+        <p>Once you have retrieved the user associated with the access token it's simple to access any of the instance methods on the user - see the User documentation for more information</p>
       </div>
   </div>
   <div id="api_mapping" class="row">

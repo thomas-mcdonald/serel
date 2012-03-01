@@ -23,6 +23,10 @@
       color: $grayLight;
     }
   }
+  .nav li.dropdown.open {
+    > a { color: $grayDark; }
+    li a:hover { background-color: $grayLighter; }
+  }
 }
 
 .hero-unit {

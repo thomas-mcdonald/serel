@@ -4577,19 +4577,27 @@ a.thumbnail:hover {
 .navbar-inner .nav li > a:hover {
   color: #999999;
 }
-
+/* line 27, ../sass/styles.scss */
+.navbar-inner .nav li.dropdown.open > a {
+  color: #333333;
+}
 /* line 28, ../sass/styles.scss */
+.navbar-inner .nav li.dropdown.open li a:hover {
+  background-color: #eeeeee;
+}
+
+/* line 32, ../sass/styles.scss */
 .hero-unit {
   background: #fff;
   border: 1px solid #eee;
 }
 
-/* line 33, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 .page-header {
   padding-bottom: 3px;
 }
 
-/* line 34, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 #tour {
   margin-top: 15px;
 }
