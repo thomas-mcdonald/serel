@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "serel"
-  s.version = '1.0.0.rc1'
+  s.version = '1.0.0.rc2'
   s.authors = ["Thomas McDonald"]
   s.email = 'tom@conceptcoding.co.uk'
   s.summary = "A Ruby library for the Stack Exchange API"

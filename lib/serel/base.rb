@@ -112,6 +112,13 @@ module Serel
       self.network = true
     end
 
+    # Create an 'shallow' instance with multiple IDs. Used for vectorized requests
+    def self.with_ids(*ids)
+      idstr = ids.join(";")
+      n = name.split('::').last.to_snake
+      new({"#{n}_id".to_s => idstr})
+    end
+
     # Public: Provides an interface to show which methods this class responds to
     #
     # method_sym - The Symbol representation of the method you are interested in
