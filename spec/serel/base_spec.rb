@@ -12,14 +12,14 @@ end
 describe Serel::Base do
   it "should provide a generic [] getter for data" do
     test_value = 'abc'
-    base = Serel::Base.new({})
+    base = OneAttribute.new({})
     base.instance_variable_set(:@data, { :test => test_value })
     base[:test].should ==  test_value
   end
 
   it "should provide a generic []= setter for data" do
     test_value = 'abc'
-    base = Serel::Base.new({})
+    base = OneAttribute.new({})
     base[:test] = test_value
     base.instance_variable_get(:@data)[:test].should == test_value
   end
