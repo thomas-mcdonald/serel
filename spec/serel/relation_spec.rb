@@ -21,6 +21,30 @@ describe Serel::Relation do
     end
   end
 
+  context 'date related scoping' do
+    let(:rel) { new_relation('badge') }
+
+    it 'accepts integers as an argument' do
+      rel.fromdate(1000)
+      rel.scoping[:fromdate].should == 1000
+    end
+
+    it 'accepts Time objects as an argument' do
+      rel.fromdate(Time.at(1000))
+      rel.scoping[:fromdate].should == 1000
+    end
+
+    it 'accepts Date objects as an argument' do
+      rel.fromdate(Date.new(2012, 10, 1))
+      rel.scoping[:fromdate].should == 1349046000
+    end
+
+    it 'accepts DateTime objects as an argument' do
+      rel.fromdate(DateTime.new(1970, 1, 1, 0, 16, 40))
+      rel.scoping[:fromdate].should == 1000
+    end
+  end
+
   context '#filter' do
     it 'should set the filter scope' do
       rel = new_relation('badge')
