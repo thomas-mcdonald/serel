@@ -1,8 +1,34 @@
 module Serel
   class Question < Base
-    attributes_on :question_id, :accepted_answer_id, :answer_count, :body, :bounty_amount, :bounty_closes_date, :closed_reason, :community_owned_date, :creation_date, :down_vote_count, :favourite_count, :last_activity_date, :last_edit_date, :link, :locked_date, :migrated_to, :migrated_from, :protected_date, :score, :tags, :title, :up_vote_count, :view_count
-    associations :answers => :answer, :comments => :comment, :owner => :user
+    attribute :question_id, Integer
     alias :id :question_id
+
+    attribute :last_edit_date, DateTime
+    attribute :creation_date, DateTime
+    attribute :last_activity_date, DateTime
+    attribute :locked_date, DateTime
+    attribute :score, Integer
+    attribute :community_owned_date, DateTime
+    attribute :answer_count, Integer
+    attribute :accepted_answer_id, Integer
+    attribute :migrated_to, Hash
+    attribute :migrated_from, Hash
+    attribute :bounty_closes_date, DateTime
+    attribute :bounty_amount, Integer
+    attribute :closed_date, DateTime
+    attribute :protected_date, DateTime
+    attribute :body, String
+    attribute :title, String
+    attribute :tags, Array
+    attribute :closed_reason, String
+    attribute :up_vote_count, Integer
+    attribute :down_vote_count, Integer
+    attribute :favorite_count, Integer
+    attribute :view_count, Integer
+    attribute :link, String
+    attribute :is_answered, Boolean
+    associations :answers => :answer, :comments => :comment, :owner => :user
+
     finder_methods :every
 
     def self.featured

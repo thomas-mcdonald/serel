@@ -1,7 +1,16 @@
 module Serel
   class Post < Base
-    attributes_on :post_id, :post_type, :body, :creation_date, :last_activity_date, :last_edit_date, :score, :up_vote_count, :down_vote_count
+    attribute :post_id, Integer
     alias :id :post_id
+
+    attribute :post_type, String
+    attribute :body, String
+    attribute :creation_date, DateTime
+    attribute :last_activity_date, DateTime
+    attribute :last_edit_date, DateTime
+    attribute :score, Integer
+    attribute :up_vote_count, Integer
+    attribute :down_vote_count, Integer
 
     associations :comments => :comment, :owner => :user
     finder_methods :every

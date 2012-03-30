@@ -1,7 +1,22 @@
 module Serel
   class Revision < Base
-    attributes_on :revision_guid, :revision_number, :revision_type, :post_type, :post_id, :comment, :creation_date, :is_rollback, :last_body, :last_title, :last_tags, :body, :title, :tags, :set_community_wiki
+    attribute :revision_guid, String
     alias :id :revision_guid
+
+    attribute :revision_number, Integer
+    attribute :revision_type, String
+    attribute :post_type, String
+    attribute :post_id, Integer
+    attribute :comment, String
+    attribute :creation_date, DateTime
+    attribute :is_rollback, Boolean
+    attribute :last_body, String
+    attribute :last_title, String
+    attribute :last_tags, Array
+    attribute :body, String
+    attribute :title, String
+    attribute :tags, Array
+    attribute :set_community_wiki, Boolean
 
     associations :user => :user
     finder_methods :find

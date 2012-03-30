@@ -51,8 +51,16 @@ module Serel
   #
   # Retrieves a page of comments mentioning the specified user.
   class Comment < Base
-    attributes_on :comment_id, :body, :creation_date, :edited, :link, :post_id, :post_type, :score
+    attribute :comment_id, Integer
     alias :id :comment_id
+
+    attribute :post_id, Integer
+    attribute :creation_date, DateTime
+    attribute :post_type, String
+    attribute :score, Integer
+    attribute :edited, Boolean
+    attribute :body, String
+    attribute :link, String
 
     associations :owner => :user, :reply_to_user => :user
     finder_methods :every
