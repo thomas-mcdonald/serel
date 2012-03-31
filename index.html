@@ -144,192 +144,169 @@ inbox = token.inbox.request
         <strong>Heads up!</strong> All uses of <code>Serel::Class.with_ids</code> can be replaced by an instance of that class. The instance is the more likely use case but we wanted to show off the ability to use vectorized routes.
       </div>
       <h3>Per site methods</h3>
-        <table class="table table-bordered table-striped">
-          <thead>
-            <tr><th>API Route</th><th>Sarel Method</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><b>Answers</b></td><td></td></tr>
-              <tr><td><a href="https://api.stackexchange.com/docs/answers">/answers</a></td>
-            <td><code>Serel::Answer.get</code></td></tr>
-              <tr><td><a href="https://api.stackexchange.com/docs/answers-by-ids">/answers/{ids}</a></td>
-            <td><code>Serel::Answer.find(ids)</code></td></tr>
-              <tr><td><a href="https://api.stackexchange.com/docs/comments-on-answers">/answers/{ids}/comments</a></td>
-            <td><code>Serel::Answer.with_ids(1,2,3).comments.request</code></td></tr>
-              <tr><td><b>Badges</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/badges">/badges</a></td>
-              <td><code>Serel::Badge.get</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/badges-by-ids">/badges/{ids}</a></td>
-              <td><code>Serel::Badge.find(1,2,3)</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/badges-by-name">/badges/name</a></td>
-              <td><code>Serel::Badge.named.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/badge-recipients">/badges/recipients</a></td>
-              <td><code>Serel::Badge.recipients.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/badge-recipients-by-ids">/badges/{ids}/recipients</a></td>
-              <td><code>Serel::Badge.recipients(1,2,3).request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/badges-by-tag">/badges/tags</a></td>
-              <td><code>Serel::Badge.tag_based.request</code></td></tr>
-            <tr><td><b>Comments</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/comments">/comments</a></td>
-              <td><code>Serel::Comment.get</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/comments-by-ids">/comments/{ids}</a></td>
-              <td><code>Serel::Comment.find(1,2,3)</code></td></tr>
-            <tr><td><b>Events</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/events">/events</a></td>
-              <td><code>Serel::Event.access_token('token').get</code></td></tr>
-            <tr><td><b>Info</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/info">/info</a></td>
-              <td><code>Serel::Info.get_info</code></td></tr>
-              <tr><td><b>Posts</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/posts">/posts</a></td>
-              <td><code>Serel::Post.get</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/posts-by-ids">/posts/{ids}</a></td>
-              <td><code>Serel::Post.find(1,2,3)</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/comments-on-posts">/posts/{ids}/comments</a></td>
-              <td><code>Serel::Post.with_ids(1,2,3).comments.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/revisions-by-ids">/posts/{ids}/revisions</a></td>
-              <td><code>Serel::Post.with_ids(1,2,3).revisions.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/posts-on-suggested-edits">/posts/{ids}/suggested-edits</a></td>
-              <td><code>Serel::Post.with_ids(1,2,3).suggested_edits.request</code></td></tr>
-            <tr><td><b>Privileges</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/privileges">/privileges</a></td>
-              <td><code>Serel::Privileges.all</code></td></tr>
-            <tr><td><b>Questions</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/questions">/questions</a></td>
-              <td><code>Serel::Question.get</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/questions-by-ids">/questions/{ids}</a></td>
-              <td><code>Serel::Question.find(1,2,3)</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/answers-on-questions">/questions/{ids}/answers</a></td>
-              <td><code>Serel::Question.with_ids(1,2,3).answers.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/comments-on-questions">/questions/{ids}/comments</a></td>
-              <td><code>Serel::Question.with_ids(1,2,3).comments.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/linked-questions">/questions/{ids}/linked</a></td>
-              <td><code>Serel::Question.with_ids(1,2,3).linked.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/related-questions">/questions/{ids}/related</a></td>
-              <td><code>Serel::Question.with_ids(1,2,3).related.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/questions-timeline">/questions/{ids}/timeline</a></td>
-              <td><code>Serel::Question.with_ids(1,2,3).timeline.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/featured-questions">/questions/featured</a></td>
-              <td><code>Serel::Question.featured.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/unanswered-questions">/questions/unanswered</a></td>
-              <td><code>Serel::Question.unanswered.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/no-answer-questions">/questions/no-answers</a></td>
-              <td><code>Serel::Question.no_answers.request</code></td></tr>
-            <tr><td><b>Revisions</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/revisions-by-guids">/revisions/{ids}</a></td>
-              <td><code>Serel::Revision.find(1,2,3)</code></td></tr>
-            <tr><td><b>Search</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/search">/search</a></td>
-              <td><code>Serel::Question.search</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/similar">/similar</a></td>
-              <td><code>Serel::Question.similar</code></td></tr>
-            <tr><td><b>Suggested Edits</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/suggested-edits">/suggested-edits</a></td>
-              <td><code>Serel::SuggestedEdit.get</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/suggested-edits-by-ids">/suggested-edits/{ids}</a></td>
-              <td><code>Serel::SuggestedEdit.find(1,2,3)</code></td></tr>
-            <tr><td><b>Tags</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/tags">/tags</a></td>
-              <td><code>Serel::Tag.get</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/tags-by-name">/tags/{name}/info</a></td>
-              <td><code>Serel::Tag.find_by_name('tag')</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/moderator-only-tags">/tags/moderator-only</a></td>
-              <td><code>Serel::Tag.moderator_only.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/required-tags">/tags/required</a></td>
-              <td><code>Serel::Tag.required.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/tag-synonyms">/tags/synonyms</a></td>
-              <td><code>Serel::Tag.synonyms.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/faqs-by-tags">/tags/{name}/faq</a></td>
-              <td><code>Serel::Tag.find_by_name('tag').faq.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/related-tags">/tags/{name}/related</a></td>
-              <td><code>Serel::Tag.find_by_name('tag').related.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/synonyms-by-tags">/tags/{name}/synonyms</a></td>
-              <td><code>Serel::Tag.find_by_name('tag').synonyms.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/top-answerers-on-tags">/tags/{name}/top-answerers/{period}</a></td>
-              <td><code>Serel::Tag.find_by_name('tag').top_answerers(:all_time/:month).request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/top-askers-on-tags">/tags/{name}/top-askers/{period}</a></td>
-              <td><code>Serel::Tag.find_by_name('tag').top_askers(:all_time/:month).request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/wikis-by-tags">/tags/{name}/wikis</a></td>
-              <td><code>Serel::Tag.find_by_name('tag').wiki.request</code></td></tr>
-            <tr><td><b>Users</b></td><td></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/users">/users</a></td>
-              <td><code>Serel::User.get</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/users-by-ids">/users/{ids}</a></td>
-              <td><code>Serel::User.find(1,2,3)</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/answers-on-users">/users/{ids}/answers</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).answers.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/badges-on-users">/users/{ids}/badges</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).badges.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/comments-on-users">/users/{ids}/comments</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).comments.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/comments-by-users-to-user">/users/{ids}/comments/{toid}</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).comments(4).request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/favorites-on-users">/users/{ids}/favorites</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).favorites.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/mentions-on-users">/users/{ids}/mentioned</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).mentioned.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/privileges-on-users">/users/{ids}/privileges</a></td>
-              <td><code>user.privileges.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/questions-on-users">/users/{ids}/questions</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).questions.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/featured-questions-on-users">/users/{ids}/questions/featured</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).questions_featured.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/no-answer-questions-on-users">/users/{ids}/questions/no-answers</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).questions_no_answers.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/unaccepted-questions-on-users">/users/{ids}/questions/unaccepted</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).questions_unaccepted.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/unanswered-questions-on-users">/users/{ids}/questions/unanswered</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).questions_unanswered.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/reputation-on-users">/users/{ids}/reputation</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).reputation.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/suggested-edits-on-users">/users/{ids}/suggested_edits</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).suggested_edits.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/tags-on-users">/users/{ids}/tags</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).tags.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/top-user-answers-in-tags">/users/{ids}/tags/{tags}/top-answers</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).top_answers_on('tag1', 'tag2').request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/top-user-questions-in-tags">/users/{ids}/tags/{tags}/top-questions</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).top_questions_on('tag1', 'tag2').request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/timeline-on-users">/users/{ids}/timeline</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).timeline.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/top-answer-tags-on-users">/users/{ids}/top-answer-tags</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).top_answer_tags.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/top-question-tags-on-users">/users/{ids}/top-question-tags</a></td>
-              <td><code>Serel::User.with_ids(1,2,3).top_question_tags.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/moderators">/users/moderators</a></td>
-              <td><code>Serel::User.moderators.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/elected-moderators">/users/moderators/elected</a></td>
-              <td><code>Serel::User.elected_moderators.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/user-inbox">/me/inbox</a></td>
-              <td><code>Serel::AccessToken.new('token').inbox.request</code></td></tr>
-            <tr><td><a href="https://api.stackexchange.com/docs/user-unread-inbox">/me/inbox/unread</a></td>
-              <td><code>Serel::AccessToken.new('token').unread_inbox.request</code></td></tr>
-          </tbody>
-        </table>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr><th>API Route</th><th>Sarel Method</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Answers</b></td><td></td></tr>
+            <tr><td><a href="https://api.stackexchange.com/docs/answers">/answers</a></td>
+          <td><code>Serel::Answer.get</code></td></tr>
+            <tr><td><a href="https://api.stackexchange.com/docs/answers-by-ids">/answers/{ids}</a></td>
+          <td><code>Serel::Answer.find(ids)</code></td></tr>
+            <tr><td><a href="https://api.stackexchange.com/docs/comments-on-answers">/answers/{ids}/comments</a></td>
+          <td><code>Serel::Answer.with_ids(1,2,3).comments.request</code></td></tr>
+            <tr><td><b>Badges</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/badges">/badges</a></td>
+            <td><code>Serel::Badge.get</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/badges-by-ids">/badges/{ids}</a></td>
+            <td><code>Serel::Badge.find(1,2,3)</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/badges-by-name">/badges/name</a></td>
+            <td><code>Serel::Badge.named.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/badge-recipients">/badges/recipients</a></td>
+            <td><code>Serel::Badge.recipients.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/badge-recipients-by-ids">/badges/{ids}/recipients</a></td>
+            <td><code>Serel::Badge.recipients(1,2,3).request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/badges-by-tag">/badges/tags</a></td>
+            <td><code>Serel::Badge.tag_based.request</code></td></tr>
+          <tr><td><b>Comments</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/comments">/comments</a></td>
+            <td><code>Serel::Comment.get</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/comments-by-ids">/comments/{ids}</a></td>
+            <td><code>Serel::Comment.find(1,2,3)</code></td></tr>
+          <tr><td><b>Events</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/events">/events</a></td>
+            <td><code>Serel::Event.access_token('token').get</code></td></tr>
+          <tr><td><b>Info</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/info">/info</a></td>
+            <td><code>Serel::Info.get_info</code></td></tr>
+            <tr><td><b>Posts</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/posts">/posts</a></td>
+            <td><code>Serel::Post.get</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/posts-by-ids">/posts/{ids}</a></td>
+            <td><code>Serel::Post.find(1,2,3)</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/comments-on-posts">/posts/{ids}/comments</a></td>
+            <td><code>Serel::Post.with_ids(1,2,3).comments.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/revisions-by-ids">/posts/{ids}/revisions</a></td>
+            <td><code>Serel::Post.with_ids(1,2,3).revisions.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/posts-on-suggested-edits">/posts/{ids}/suggested-edits</a></td>
+            <td><code>Serel::Post.with_ids(1,2,3).suggested_edits.request</code></td></tr>
+          <tr><td><b>Privileges</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/privileges">/privileges</a></td>
+            <td><code>Serel::Privileges.all</code></td></tr>
+          <tr><td><b>Questions</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/questions">/questions</a></td>
+            <td><code>Serel::Question.get</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/questions-by-ids">/questions/{ids}</a></td>
+            <td><code>Serel::Question.find(1,2,3)</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/answers-on-questions">/questions/{ids}/answers</a></td>
+            <td><code>Serel::Question.with_ids(1,2,3).answers.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/comments-on-questions">/questions/{ids}/comments</a></td>
+            <td><code>Serel::Question.with_ids(1,2,3).comments.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/linked-questions">/questions/{ids}/linked</a></td>
+            <td><code>Serel::Question.with_ids(1,2,3).linked.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/related-questions">/questions/{ids}/related</a></td>
+            <td><code>Serel::Question.with_ids(1,2,3).related.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/questions-timeline">/questions/{ids}/timeline</a></td>
+            <td><code>Serel::Question.with_ids(1,2,3).timeline.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/featured-questions">/questions/featured</a></td>
+            <td><code>Serel::Question.featured.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/unanswered-questions">/questions/unanswered</a></td>
+            <td><code>Serel::Question.unanswered.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/no-answer-questions">/questions/no-answers</a></td>
+            <td><code>Serel::Question.no_answers.request</code></td></tr>
+          <tr><td><b>Revisions</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/revisions-by-guids">/revisions/{ids}</a></td>
+            <td><code>Serel::Revision.find(1,2,3)</code></td></tr>
+          <tr><td><b>Search</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/search">/search</a></td>
+            <td><code>Serel::Question.search</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/similar">/similar</a></td>
+            <td><code>Serel::Question.similar</code></td></tr>
+          <tr><td><b>Suggested Edits</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/suggested-edits">/suggested-edits</a></td>
+            <td><code>Serel::SuggestedEdit.get</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/suggested-edits-by-ids">/suggested-edits/{ids}</a></td>
+            <td><code>Serel::SuggestedEdit.find(1,2,3)</code></td></tr>
+          <tr><td><b>Tags</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/tags">/tags</a></td>
+            <td><code>Serel::Tag.get</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/tags-by-name">/tags/{name}/info</a></td>
+            <td><code>Serel::Tag.find_by_name('tag')</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/moderator-only-tags">/tags/moderator-only</a></td>
+            <td><code>Serel::Tag.moderator_only.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/required-tags">/tags/required</a></td>
+            <td><code>Serel::Tag.required.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/tag-synonyms">/tags/synonyms</a></td>
+            <td><code>Serel::Tag.synonyms.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/faqs-by-tags">/tags/{name}/faq</a></td>
+            <td><code>Serel::Tag.find_by_name('tag').faq.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/related-tags">/tags/{name}/related</a></td>
+            <td><code>Serel::Tag.find_by_name('tag').related.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/synonyms-by-tags">/tags/{name}/synonyms</a></td>
+            <td><code>Serel::Tag.find_by_name('tag').synonyms.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/top-answerers-on-tags">/tags/{name}/top-answerers/{period}</a></td>
+            <td><code>Serel::Tag.find_by_name('tag').top_answerers(:all_time/:month).request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/top-askers-on-tags">/tags/{name}/top-askers/{period}</a></td>
+            <td><code>Serel::Tag.find_by_name('tag').top_askers(:all_time/:month).request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/wikis-by-tags">/tags/{name}/wikis</a></td>
+            <td><code>Serel::Tag.find_by_name('tag').wiki.request</code></td></tr>
+          <tr><td><b>Users</b></td><td></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/users">/users</a></td>
+            <td><code>Serel::User.get</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/users-by-ids">/users/{ids}</a></td>
+            <td><code>Serel::User.find(1,2,3)</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/answers-on-users">/users/{ids}/answers</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).answers.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/badges-on-users">/users/{ids}/badges</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).badges.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/comments-on-users">/users/{ids}/comments</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).comments.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/comments-by-users-to-user">/users/{ids}/comments/{toid}</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).comments(4).request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/favorites-on-users">/users/{ids}/favorites</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).favorites.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/mentions-on-users">/users/{ids}/mentioned</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).mentioned.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/privileges-on-users">/users/{ids}/privileges</a></td>
+            <td><code>user.privileges.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/questions-on-users">/users/{ids}/questions</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).questions.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/featured-questions-on-users">/users/{ids}/questions/featured</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).questions_featured.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/no-answer-questions-on-users">/users/{ids}/questions/no-answers</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).questions_no_answers.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/unaccepted-questions-on-users">/users/{ids}/questions/unaccepted</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).questions_unaccepted.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/unanswered-questions-on-users">/users/{ids}/questions/unanswered</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).questions_unanswered.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/reputation-on-users">/users/{ids}/reputation</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).reputation.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/suggested-edits-on-users">/users/{ids}/suggested_edits</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).suggested_edits.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/tags-on-users">/users/{ids}/tags</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).tags.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/top-user-answers-in-tags">/users/{ids}/tags/{tags}/top-answers</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).top_answers_on('tag1', 'tag2').request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/top-user-questions-in-tags">/users/{ids}/tags/{tags}/top-questions</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).top_questions_on('tag1', 'tag2').request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/timeline-on-users">/users/{ids}/timeline</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).timeline.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/top-answer-tags-on-users">/users/{ids}/top-answer-tags</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).top_answer_tags.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/top-question-tags-on-users">/users/{ids}/top-question-tags</a></td>
+            <td><code>Serel::User.with_ids(1,2,3).top_question_tags.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/moderators">/users/moderators</a></td>
+            <td><code>Serel::User.moderators.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/elected-moderators">/users/moderators/elected</a></td>
+            <td><code>Serel::User.elected_moderators.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/user-inbox">/me/inbox</a></td>
+            <td><code>Serel::AccessToken.new('token').inbox.request</code></td></tr>
+          <tr><td><a href="https://api.stackexchange.com/docs/user-unread-inbox">/me/inbox/unread</a></td>
+            <td><code>Serel::AccessToken.new('token').unread_inbox.request</code></td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
