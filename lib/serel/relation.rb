@@ -106,11 +106,18 @@ module Serel
       end
     end
 
+    # Makes a request. If the URL is already set we just call {request}, else
+    # we set the URL to the plural of the type and make the request.
     def get
-      if klass.respond_to?(:get)
-        url("#{@type}s").request
+      if scoping[:url]
+        request
       else
-        raise NoMethodError
+        # Best check that the generic page getter is enabled here.
+        if klass.respond_to?(:get)
+          url("#{@type}s").request
+        else
+          raise NoMethodError
+        end
       end
     end
 
