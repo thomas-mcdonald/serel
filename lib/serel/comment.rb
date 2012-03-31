@@ -25,29 +25,29 @@ module Serel
   # Retrieves a page of comment results, applying any scopes that have previously been defined.
   #
   # == {Answer#comments}
-  #  Serel::Answer.find(id).comments.request
+  #  Serel::Answer.find(id).comments.get
   #
   # Retrieves a page of comments on the specified answer.
   #
   # == {Post#comments}
-  #  Serel::Post.find(id).comments.request
+  #  Serel::Post.find(id).comments.get
   #
   # Retrieves a page of comments on the specified post.
   #
   # == {Question#comments}
-  #  Serel::Question.find(id).comments.request
+  #  Serel::Question.find(id).comments.get
   #
   # Retrieves a page of comments on the specified question.
   #
   # == {User#comments}
-  #  Serel::User.find(id).comments.request
-  #  Serel::User.find(id).comments(other_id).request
+  #  Serel::User.find(id).comments.get
+  #  Serel::User.find(id).comments(other_id).get
   #
   # Retrieves a page of comments by the specified user. If the optional +other_id+ parameter is passed
   # then only comments in reply to +other_id+ are included.
   #
   # == {User#mentioned}
-  #  Serel::User.find(id).mentioned.request
+  #  Serel::User.find(id).mentioned.get
   #
   # Retrieves a page of comments mentioning the specified user.
   class Comment < Base
@@ -70,7 +70,7 @@ module Serel
     # Note that this returns the post, rather than returning a {Serel::Response} wrapped array.
     # @return [Serel::Post] The post the comment is on.
     def post
-      type(:post, :singular).url("posts/#{post_id}").request
+      type(:post, :singular).url("posts/#{post_id}").get
     end
   end
 end

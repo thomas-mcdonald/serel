@@ -71,7 +71,7 @@ module Serel
     #
     # @return [Serel::Question] The parent {Question} for this answer.
     def question
-      type(:question, :singular).url("questions/#{question_id}").request
+      type(:question, :singular).url("questions/#{question_id}").get
     end
 
     # Get the revisions on an answer.

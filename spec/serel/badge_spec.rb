@@ -27,7 +27,7 @@ describe Serel::Badge do
 
   it 'should get only named badges' do
     VCR.use_cassette('badge-named') do
-      badges = Serel::Badge.named.request
+      badges = Serel::Badge.named.get
       badges.should be_a(Array)
 
       badges.each do |badge|
@@ -40,7 +40,7 @@ describe Serel::Badge do
   context 'recipients scope' do
     it 'should retrieve a list of badges recently awarded with recipients' do
       VCR.use_cassette('badge-recipient-sans-id') do
-        badges = Serel::Badge.recipients.request
+        badges = Serel::Badge.recipients.get
         badges.should be_a(Array)
 
         badges.each do |badge|
@@ -53,7 +53,7 @@ describe Serel::Badge do
     it 'should be able to restrict badges by IDs' do
       VCR.use_cassette('badge-recipient-with-id') do
         id = 1
-        badges = Serel::Badge.recipients(id).request
+        badges = Serel::Badge.recipients(id).get
         badges.should be_a(Array)
 
         badges.each do |badge|
@@ -66,7 +66,7 @@ describe Serel::Badge do
 
     it 'should be able to restrict badges by multiple IDs' do
       VCR.use_cassette('badge-recipient-with-ids') do
-        badges = Serel::Badge.recipients(1, 2, 3).request
+        badges = Serel::Badge.recipients(1, 2, 3).get
         badges.should be_a(Serel::Response)
 
         badges.each do |badge|
@@ -80,7 +80,7 @@ describe Serel::Badge do
 
   it 'should get only tag based badges' do
     VCR.use_cassette('badge-tags') do
-      badges = Serel::Badge.tags.request
+      badges = Serel::Badge.tags.get
       badges.should be_a(Array)
 
       badges.each do |badge|

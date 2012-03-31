@@ -14,11 +14,11 @@ module Serel
     # @param [String] name The name of the tag you wish to find
     # @return [Serel::Tag] The tag returned by the Stack Exchange API
     def self.find_by_name(name)
-      new_relation('tag', :singular).url("tags/#{name}/info").request
+      new_relation('tag', :singular).url("tags/#{name}/info").get
     end
 
     # Retrieves tags which can only be added or removed by a moderator
-    #  Serel::Tag.moderator_only.request
+    #  Serel::Tag.moderator_only.get
     #
     # This is a scoping method and can be combined with other scoping methods
     # @return [Serel::Relation] A relation scoped to the moderator only URL.
@@ -27,7 +27,7 @@ module Serel
     end
 
     # Retrieves tags that are required on the site
-    #   Serel::Tag.required.request
+    #   Serel::Tag.required.get
     #
     # This is a scoping method and can be combined with other scoping methods.
     # @return [Serel::Relation] A relation scoped to the required URL.
@@ -36,7 +36,7 @@ module Serel
     end
 
     # Retrieves all the tag synonyms on the site
-    #   Serel::Tag.synonyms.request
+    #   Serel::Tag.synonyms.get
     #
     # This is a scoping method and can be combined with other scoping methods.
     # @return [Serel::Relation] A relation scoped to {Serel::TagSynonym TagSynonym} and the synonym URL.
@@ -49,7 +49,7 @@ module Serel
     end
 
     # Retrieves related tags.
-    #   Serel::Tag.find(1).related.request
+    #   Serel::Tag.find(1).related.get
     #
     # This is a scoping method and can be combined with other scoping methods.
     # @return [Serel::Relation] A relation scoped to the related URL
@@ -68,7 +68,7 @@ module Serel
     end
 
     def wiki
-      type(:tag_wiki, :singular).url("tags/#{name}/wikis").request
+      type(:tag_wiki, :singular).url("tags/#{name}/wikis").get
     end
   end
 end

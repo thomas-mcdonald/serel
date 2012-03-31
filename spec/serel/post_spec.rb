@@ -29,7 +29,7 @@ describe Serel::Post do
   it 'should get the comments on the post' do
     VCR.use_cassette('post-comments') do
       post = Serel::Post.find(29552)
-      comments = post.comments.request
+      comments = post.comments.get
       comments.should be_a(Array)
 
       comments.each do |comment|
@@ -41,7 +41,7 @@ describe Serel::Post do
   it 'should get the revisions on the post' do
     VCR.use_cassette('post-revisions') do
       post = Serel::Post.find(34055)
-      revisions = post.revisions.request
+      revisions = post.revisions.get
       revisions.should be_a(Array)
 
       revisions.each do |revision|
@@ -54,7 +54,7 @@ describe Serel::Post do
   it 'should get the suggested edits on the post' do
     VCR.use_cassette('post-suggested-edits') do
       post = Serel::Post.find(14665)
-      suggested_edits = post.suggested_edits.request
+      suggested_edits = post.suggested_edits.get
       suggested_edits.should be_a(Array)
 
       suggested_edits.each do |edit|

@@ -16,7 +16,7 @@ describe Serel::Tag do
   it 'should get only required badges' do
     VCR.use_cassette('tag-required') do
       configure('meta.gaming')
-      tags = Serel::Tag.required.request
+      tags = Serel::Tag.required.get
       tags.should be_a(Serel::Response)
 
       tags.each do |tag|
@@ -29,7 +29,7 @@ describe Serel::Tag do
   it 'should get moderator only badges' do
     VCR.use_cassette('tag-moderator-only') do
       configure('meta.gaming')
-      tags = Serel::Tag.moderator_only.request
+      tags = Serel::Tag.moderator_only.get
       tags.should be_a(Serel::Response)
 
       tags.each do |tag|
@@ -41,7 +41,7 @@ describe Serel::Tag do
 
   it 'should get related badges' do
     VCR.use_cassette('tag-related') do
-      tags = Serel::Tag.find_by_name('battlefield-3').related.request
+      tags = Serel::Tag.find_by_name('battlefield-3').related.get
       tags.should be_a(Serel::Response)
 
       tags.each do |tag|

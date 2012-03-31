@@ -25,19 +25,19 @@ module Serel
   # Retrieves a page of badge results, applying any scopes that have previously been defined.
   #
   # == {named}
-  #  Serel::Badge.named.request
+  #  Serel::Badge.named.get
   # 
   # See the documentation for {named} below.
   #
   # == {recipients}
-  #   Serel::Badge.recipients.request
-  #   Serel::Badge.recipients(1).request
-  #   Serel::Badge.recipients(1,2,3).request
+  #   Serel::Badge.recipients.get
+  #   Serel::Badge.recipients(1).get
+  #   Serel::Badge.recipients(1,2,3).get
   #
   # See the documentation for {recipients} below.
   #
   # == {tags}
-  #  Serel::Badge.tags.request
+  #  Serel::Badge.tags.get
   #
   # See the documentation for {tags} below.
   class Badge < Base
@@ -57,8 +57,8 @@ module Serel
     # Retrieves only badges that are explicitly defined.
     # This is a scoping method, meaning that it can be used around/with other scoping methods, for
     # example:
-    #  Serel::Badge.pagesize(5).named.request
-    #  Serel::Badge.named.sort('gold').request
+    #  Serel::Badge.pagesize(5).named.get
+    #  Serel::Badge.named.sort('gold').get
     #
     # @return [Serel::Relation] A relation scoped to the named URL.
     def self.named
@@ -66,9 +66,9 @@ module Serel
     end
 
     # Retrieves recently awarded badges.
-    #   Serel::Badge.recipients.request
-    #   Serel::Badge.recipients(1).request
-    #   Serel::Badge.recipients(1,2,3).request
+    #   Serel::Badge.recipients.get
+    #   Serel::Badge.recipients(1).get
+    #   Serel::Badge.recipients(1,2,3).get
     #
     # This is a scoping method and can be combined with other scoping methods.
     #
@@ -85,7 +85,7 @@ module Serel
     end
 
     # Retrieves only badges that have been awarded due to participation in a tag.
-    #  Serel::Badge.tags.request
+    #  Serel::Badge.tags.get
     #
     # This is a scoping method and can be combined with other scoping methods.
     # @return [Serel::Relation] A relation scoped to the tags URL.

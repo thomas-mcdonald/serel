@@ -30,7 +30,7 @@ describe Serel::Answer do
     VCR.use_cassette('answer-comments') do
       # Random awesome answer with comments
       answer = Serel::Answer.find(29552)
-      comments = answer.comments.request
+      comments = answer.comments.get
       comments.should be_a(Array)
       comments.each do |comment|
         comment.should be_a(Serel::Comment)
@@ -41,7 +41,7 @@ describe Serel::Answer do
   it 'should get the revisions on an answer' do
     VCR.use_cassette('answer-revisions') do
       answer = Serel::Answer.find(14545)
-      revisions = answer.revisions.request
+      revisions = answer.revisions.get
       revisions.should be_a(Array)
       revisions.each do |rev|
         rev.should be_a(Serel::Revision)
@@ -52,7 +52,7 @@ describe Serel::Answer do
   it 'should get the suggested edits on an answer' do
     VCR.use_cassette('answer-suggested-edits') do
       answer = Serel::Answer.find(14264)
-      edits = answer.suggested_edits.request
+      edits = answer.suggested_edits.get
       edits.should be_a(Array)
       edits.each do |edit|
         edit.should be_a(Serel::SuggestedEdit)

@@ -28,7 +28,7 @@ module Serel
     #
     # @return [Serel::Info] Information about the site
     def self.get_info
-      new_relation(:info, :singular).url("info").request
+      new_relation(:info, :singular).url("info").get
     end
   end
 end

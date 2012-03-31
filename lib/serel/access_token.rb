@@ -18,8 +18,8 @@ module Serel
     end
 
     # Retrieve the users' inbox items.
-    #  Serel::AccessToken.new(token).inbox.request
-    #  Serel::AccessToken.new(token).scoping_methods.inbox.request
+    #  Serel::AccessToken.new(token).inbox.get
+    #  Serel::AccessToken.new(token).scoping_methods.inbox.get
     #
     # This is a scoping method and can be combined with other scoping methods.
     # @return [Serel::Response] A list of {Serel::Inbox Inbox} items wrapped in our Response wrapper.
@@ -28,7 +28,7 @@ module Serel
     end
 
     # Retrieve the users' unread inbox items.
-    #  Serel::AccessToken.new(token).unread_inbox.request
+    #  Serel::AccessToken.new(token).unread_inbox.get
     #
     # This is a scoping method and can be combined with other scoping methods.
     # @return [Serel::Response] A list of {Serel::Inbox Inbox} wrapped in our Response wrapper.
@@ -39,7 +39,7 @@ module Serel
     # Invalidates the access token
     #   Serel::AccessToken.new(token).invalidate
     def invalidate
-      network.url("access-tokens/#{token}/invalidate").request
+      network.url("access-tokens/#{token}/invalidate").get
     end
 
     # Retrieve the user associated with this access token.
@@ -49,7 +49,7 @@ module Serel
     #
     # @return [Serel::User] The user associated with the access token.
     def user
-      type(:user, :singular).access_token(self.token).url("me").request
+      type(:user, :singular).access_token(self.token).url("me").get
     end
   end
 end

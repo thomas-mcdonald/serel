@@ -24,7 +24,7 @@ describe Serel::User do
 
   it 'should get the moderators' do
     VCR.use_cassette('user-moderators') do
-      users = Serel::User.moderators.request
+      users = Serel::User.moderators.get
       users.should be_a(Serel::Response)
 
       users.each do |user|
@@ -36,7 +36,7 @@ describe Serel::User do
 
   it 'should get the elected moderators' do
     VCR.use_cassette('user-elected-moderators') do
-      users = Serel::User.elected_moderators.request
+      users = Serel::User.elected_moderators.get
       users.should be_a(Serel::Response)
 
       users.each do |user|
@@ -49,7 +49,7 @@ describe Serel::User do
   it "should get a users' answers" do
     VCR.use_cassette('user-answers') do
       user = Serel::User.find(821)
-      answers = user.answers.request
+      answers = user.answers.get
       answers.should be_a(Serel::Response)
 
       answers.each do |answer|
@@ -62,7 +62,7 @@ describe Serel::User do
   it "should get a users' badges" do
     VCR.use_cassette('user-badges') do
       user = Serel::User.find(821)
-      badges = user.badges.request
+      badges = user.badges.get
       badges.should be_a(Serel::Response)
 
       badges.each do |badge|
@@ -75,7 +75,7 @@ describe Serel::User do
   it "should get a users' comments" do
     VCR.use_cassette('users-comments') do
       user = Serel::User.find(821)
-      comments = user.comments.request
+      comments = user.comments.get
       comments.should be_a(Serel::Response)
 
       comments.each do |comment|
@@ -88,7 +88,7 @@ describe Serel::User do
   it "should get a users' comments to another user" do
     VCR.use_cassette('users-comments-to') do
       user = Serel::User.find(821)
-      comments = user.comments(255).request
+      comments = user.comments(255).get
       comments.should be_a(Serel::Response)
 
       comments.each do |comment|
@@ -102,7 +102,7 @@ describe Serel::User do
   it "should get a users' favourites" do
     VCR.use_cassette('users-favouries') do
       user = Serel::User.find(821)
-      favourites = user.favorites.request
+      favourites = user.favorites.get
       favourites.should be_a(Serel::Response)
 
       favourites.each do |fav|
@@ -114,7 +114,7 @@ describe Serel::User do
   it 'should get the comments a user was mentioned in' do
     VCR.use_cassette('users-mentions') do
       user = Serel::User.find(821)
-      mentions = user.mentioned.request
+      mentions = user.mentioned.get
       mentions.should be_a(Serel::Response)
 
       mentions.each do |comment|
@@ -127,7 +127,7 @@ describe Serel::User do
   it "should get a users' privileges" do
     VCR.use_cassette('users-privileges') do
       user = Serel::User.find(821)
-      privileges = user.privileges.request
+      privileges = user.privileges.get
       privileges.should be_a(Serel::Response)
 
       privileges.each do |priv|
@@ -139,7 +139,7 @@ describe Serel::User do
   it "should get a users' questions" do
     VCR.use_cassette('users-questions') do
       user = Serel::User.find(821)
-      questions = user.questions.request
+      questions = user.questions.get
       questions.should be_a(Serel::Response)
 
       questions.each do |question|
@@ -152,7 +152,7 @@ describe Serel::User do
   it "should get a users' reputation changes" do
     VCR.use_cassette('users-reputation') do
       user = Serel::User.find(821)
-      rep_changes = user.reputation.request
+      rep_changes = user.reputation.get
       rep_changes.should be_a(Serel::Response)
 
       rep_changes.each do |rep|
@@ -165,7 +165,7 @@ describe Serel::User do
   it "should get a users' suggested edits" do
     VCR.use_cassette('users-suggested-edits') do
       user = Serel::User.find(3936)
-      suggested_edits = user.suggested_edits.request
+      suggested_edits = user.suggested_edits.get
       suggested_edits.should be_a(Serel::Response)
 
       suggested_edits.each do |edit|
@@ -178,7 +178,7 @@ describe Serel::User do
   it "should get a users' active tags" do
     VCR.use_cassette('user-tags') do
       user = Serel::User.find(821)
-      tags = user.tags.request
+      tags = user.tags.get
       tags.should be_a(Serel::Response)
 
       tags.each do |tag|
@@ -192,7 +192,7 @@ describe Serel::User do
   # it "should get a users' top answers in a tag" do
   #   VCR.use_cassette('user-top-answers-single-tag') do
   #     user = Serel::User.find(821)
-  #     answers = user.top_answers_on('battlefield-3').request
+  #     answers = user.top_answers_on('battlefield-3').get
   #     answers.should be_a(Serel::Response)
   # 
   #     answers.each do |answer|
@@ -205,7 +205,7 @@ describe Serel::User do
   # it "should get a users' top answers in several tags" do
   #   VCR.use_cassette('user-top-answers-multiple-tags') do
   #     user = Serel::User.find(821)
-  #     answers = user.top_answers_on('battlefield-3', 'minecraft').request
+  #     answers = user.top_answers_on('battlefield-3', 'minecraft').get
   #     answers.should be_a(Serel::Response)
   # 
   #     answers.each do |answer|
@@ -218,7 +218,7 @@ describe Serel::User do
   it "should get a user' top questions in a tag" do
     VCR.use_cassette('user-top-questions-in-tag') do
       user = Serel::User.find(821)
-      questions = user.top_questions_on('battlefield-3').request
+      questions = user.top_questions_on('battlefield-3').get
       questions.should be_a(Serel::Response)
 
       questions.each do |question|
