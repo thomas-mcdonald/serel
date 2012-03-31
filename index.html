@@ -21,6 +21,7 @@
         <ul class="nav">
           <li><a href="#install">install</a></li>
           <li><a href="#use">use</a></li>
+          <li><a href="#responses">response wrapper</a></li>
           <li><a href="#api_mapping">api reference</a></li>
 <!--          <ul class="nav">
             <li class="dropdown">
@@ -89,7 +90,6 @@ relation = user.tags.sort('name')
 =&gt; #&lt;Serel::Relation:0x007f8450c09f28 @type=&quot;tag&quot;, @klass=Serel::Tag, @scope={:api_key=&gt;&quot;0p65aJUHxHo0G19*YF272A((&quot;, :site=&gt;:stackoverflow, :url=&gt;&quot;users/11110/tags&quot;, :sort=&gt;&quot;name&quot;}, @qty=:plural&gt; 
 
 </pre>
-        <p>Obviously, once I get my video tour of Serel uploaded to YouTube this will be much more impressive.</p>
       </div>
       <div class="span4">
         <h4>Here, take this with you</h4>
@@ -112,6 +112,27 @@ inbox = token.inbox.request
 </pre>
         <p>Once you have retrieved the user associated with the access token it's simple to access any of the instance methods on the user - see the User documentation for more information</p>
       </div>
+  </div>
+  <div id="responses" class="row">
+    <div class="page-header">
+      <h2>Response Wrapper</h2>
+    </div>
+    <div class="span12">
+      <p><em>Most</em> methods return an instance of <code>Serel::Response</code>. This is a thin wrapper around the <code>Array</code> class that allows easy access to the additional attributes in the <a href="https://api.stackexchange.com/docs/wrapper">common wrapper</a>.</p>
+      <pre class="prettyprint">
+> answers = Serel::Answer.get
+[INFO][2012-03-31 10:44:35] Making request to /2.0/answers?site=stackoverflow&key=0p65aJUHxHo0G19%2AYF272A%28%28
+=> [#&lt;Serel::Answer:70199501159940...&gt;]
+> answers.backoff
+=> nil
+> answers.has_more
+=> true
+> answers.quota_remaining
+=> 99997
+</pre>
+      <p>The methods used to access the information in the response wrapper are named exactly the same as the fields in the wrapper object.</p>
+      <p>Some methods don't return a <code>Serel::Response</code>, instead returning a singular class. This is only done where it is obvious that singular responses will be recieved, e.g <code>Answer#question</code> and <code>Info.get_info</code>. The RDocs should indicate which object a method returns.</p>
+    </div>
   </div>
   <div id="api_mapping" class="row">
     <div class="page-header">
