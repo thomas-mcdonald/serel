@@ -21,6 +21,7 @@
         <ul class="nav">
           <li><a href="#install">install</a></li>
           <li><a href="#use">use</a></li>
+          <li><a href="#scoping">scoping</a></li>
           <li><a href="#responses">response wrapper</a></li>
           <li><a href="#api_mapping">api reference</a></li>
           <li><a href="#changelog">changelog</a></li>
@@ -113,6 +114,35 @@ inbox = token.inbox.request
 </pre>
         <p>Once you have retrieved the user associated with the access token it's simple to access any of the instance methods on the user - see the User documentation for more information</p>
       </div>
+  </div>
+  <div id="scoping" class="row">
+    <div class="page-header">
+      <h2>Scoping Reference <small>Find the data you need</small></h2>
+    </div>
+    <p>Use the data in this table along with the <a href="https://api.stackexchange.com/docs">API documentation</a> to find which methods a particular route accepts. Serel has no way of knowing if a particular scoping method is valid on a particular route, so make sure your scopes are valid.</p>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr><th>API Parameter</th><th>Serel</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>filter</td><td><code>filter(String)</code></td></tr>
+        <tr><td>fromdate</td><td><code>fromdate(DateTime/Integer/Time)</code></td></tr>
+        <tr><td>inname</td><td><code>inname(String)</code></td></tr>
+        <tr><td>intitle</td><td><code>intitle(String)</code></td></tr>
+        <tr><td>max</td><td><code>max(Various)</code></td></tr>
+        <tr><td>min</td><td><code>min(Various)</code></td></tr>
+        <tr><td>nottagged</td><td><code>nottagged(String)</code></td></tr>
+        <tr><td>order</td><td><code>order(String)</code></td></tr>
+        <tr><td>page</td><td><code>page(Integer)</code></td></tr>
+        <tr><td>pagesize</td><td><code>pagesize(Integer)</code></td></tr>
+        <tr><td>since</td><td><code>since(DateTime/Integer/Time)</code></td></tr>
+        <tr><td>sort</td><td><code>sort(Various)</code></td></tr>
+        <tr><td>tagged</td><td><code>tagged(String)</code></td></tr>
+        <tr><td>title</td><td><code>title(String)</code></td></tr>
+        <tr><td>url</td><td><code>url(String)</code></td></tr>
+        <tr><td>todate</td><td><code>todate(DateTime/Integer/Time)</code></td></tr>
+      </tbody>
+    </table>
   </div>
   <div id="responses" class="row">
     <div class="page-header">
