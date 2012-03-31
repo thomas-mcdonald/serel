@@ -14,7 +14,7 @@ module Serel
     # @param [String] name The name of the tag you wish to find
     # @return [Serel::Tag] The tag returned by the Stack Exchange API
     def self.find_by_name(name)
-      url("tags/#{name}/info").request
+      new_relation('tag', :singular).url("tags/#{name}/info").request
     end
 
     # Retrieves tags which can only be added or removed by a moderator

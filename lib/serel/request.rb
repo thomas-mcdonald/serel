@@ -48,9 +48,11 @@ module Serel
       result.page ||= (@scope[:page] || 1)
       result.page_size ||= (@scope[:pagesize] || 30)
 
-      # Insert into the response array the items returned
-      body["items"].each do |item|
-        result << find_constant(@type).new(item)
+      # If any items were returned, iterate over the results and populate the response
+      if body["items"]
+        body["items"].each do |item|
+          result << find_constant(@type).new(item)
+        end
       end
 
       if (@qty == :plural) || (result.length > 1)

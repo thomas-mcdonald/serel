@@ -155,18 +155,18 @@ module Serel
 
     def get
       if self.respond_to?(:get)
-        new_relation.get
+        new_relation(name.split('::').last.to_snake, :plural).get
       else
         raise NoMethodError
       end
     end
 
-    ## Pass these methods direct to a new Relation
+    ## Pass these methods direct to a new Relation, which should *not* be singular. >:
     # TODO: clean these up
     %w(access_token filter fromdate inname intitle min max nottagged order page pagesize since sort tagged title todate url).each do |meth|
       class_eval <<-RUBY, __FILE__, __LINE__ + 1
         def self.#{meth}(val)
-          new_relation.#{meth}(val)
+          new_relation(name.split('::').last.to_snake, :plural).#{meth}(val)
         end
       RUBY
     end
