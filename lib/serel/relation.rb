@@ -59,13 +59,13 @@ module Serel
         end
       RUBY
     end
-    # These methods are for dates. They can take all sorts of values. Date, Time, DateTime, Integer. The whole kaboodle.
-    # Unfortunately there's no easy cross class method to go from Date/Time/DateTime -> Integer,
-    # so we must convert Date/DateTime into Time before converting to Integer.
+    # These methods are for dates. They can take all sorts of values. Time, DateTime, Integer. The whole kaboodle.
+    # Unfortunately there's no easy cross class method to go from Time/DateTime -> Integer,
+    # so we must convert DateTime into Time before converting to Integer.
     %w(fromdate since todate).each do |meth|
       class_eval <<-RUBY, __FILE__, __LINE__ + 1
         def #{meth}(val)
-          if val.is_a?(Date) || val.is_a?(DateTime)
+          if val.is_a?(DateTime)
             val = val.to_time
           end
           @scope[:#{meth}] = val.to_i

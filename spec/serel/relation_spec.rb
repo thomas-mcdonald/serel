@@ -34,11 +34,6 @@ describe Serel::Relation do
       rel.scoping[:fromdate].should == 1000
     end
 
-    it 'accepts Date objects as an argument' do
-      rel.fromdate(Date.new(2012, 10, 1))
-      rel.scoping[:fromdate].should == 1349046000
-    end
-
     it 'accepts DateTime objects as an argument' do
       rel.fromdate(DateTime.new(1970, 1, 1, 0, 16, 40))
       rel.scoping[:fromdate].should == 1000
