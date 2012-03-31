@@ -1,6 +1,11 @@
 module Serel
   class TagSynonym < Base
-    attributes :from_tag, :to_tag, :applied_count, :last_applied_date, :creation_date
+    attribute :from_tag, String
+    attribute :to_tag, String
+    attribute :applied_count, Integer
+    attribute :last_applied_date, DateTime
+    attribute :creation_date, DateTime
+
     finder_methods :none
   end
 end

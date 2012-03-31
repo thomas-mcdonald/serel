@@ -1,6 +1,8 @@
 module Serel
   class TagScore < Base
-    attributes :score, :post_count
+    attribute :score, Integer
+    attribute :post_count, Integer
+
     associations :user => :user
     finder_methods :none
   end

@@ -1,4 +1,5 @@
 # Utilities
+require 'date'
 require 'logger'
 require 'serel/exts'
 require 'serel/relation'

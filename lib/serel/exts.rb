@@ -86,3 +86,7 @@ class String
     downcase
   end
 end
+
+# Dummy class used to make our attributes clearer.
+class Boolean
+end

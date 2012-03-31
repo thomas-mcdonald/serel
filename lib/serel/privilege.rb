@@ -1,6 +1,8 @@
 module Serel
   class Privilege < Base
-    attributes :short_description, :description, :reputation
+    attribute :short_description, String
+    attribute :description, String
+    attribute :reputation, Integer
     finder_methods :all
   end
 end

@@ -5,7 +5,7 @@ describe Serel::Comment do
     VCR.use_cassette('comment') do
       comment = Serel::Comment.find(63977)
       comment.id.should == comment.comment_id
-      comment.creation_date.should == 1325033236
+      comment.creation_date.should == Time.at(1325033236)
       comment.edited.should == false
       comment.post_id.should == 44287
       comment.score.should == 8

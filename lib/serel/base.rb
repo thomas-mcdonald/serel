@@ -5,7 +5,7 @@ module Serel
 
     def initialize(data)
       @data = {}
-      attributes.each { |k| @data[k] = data[k.to_s] }
+      attributes.each { |k,v| @data[k] = data[k.to_s] }
       if associations
         associations.each do |k,v|
           if data[k.to_s]
@@ -18,7 +18,7 @@ module Serel
     # Internal: Provides access to the internal data
     # Rather than store data using attr_writers (problems) we use a hash.
     def [](attr)
-      @data[attr]
+      format_attribute(attr)
     end
 
     def []=(attr, value)
@@ -47,7 +47,7 @@ module Serel
     # Returns a String representation of the class
     def inspect
       attribute_collector = {}
-      self.class.attributes.each { |attr| attribute_collector[attr] = self.send(attr) }
+      self.class.attributes.each { |attr, type| attribute_collector[attr] = self.send(attr) }
       inspected_attributes = attribute_collector.select { |k,v| v != nil }.collect { |k,v| "@#{k}=#{v}" }.join(", ")
       association_collector = {}
       self.class.associations.each { |name, type| association_collector[name] = self[name] }
@@ -56,17 +56,15 @@ module Serel
     end
     alias :to_s :inspect
 
-    # Internal: Defines the attributes for a subclass of Serel::Base
-    #
-    # *splat - The Array or List of attributes for the class
-    #
-    # Returns nothing.
-    def self.attributes(*splat)
-      self.attributes = splat
-      splat.each do |meth|
-        define_method(meth) { self[meth.to_sym] }
-        define_method("#{meth}=") { |val| self[meth.to_sym] = val }
-      end
+    # Defines an attribute on a subclass of Serel::Base
+    # @param [Symbol] name The name of the attribute
+    # @param [Class] klass The type of the returned attributed
+    # @return Nothing of value
+    def self.attribute(name, klass)
+      self.attributes = {} unless self.attributes
+      self.attributes[name] = klass
+      define_method(name) { self[name.to_sym] }
+      define_method("#{name}=") { |val| self[name.to_sym] = val }
     end
 
     # Internal: Defines the associations for a subclass of Serel::Base
@@ -183,6 +181,28 @@ module Serel
       #       requires a rewrite of how method_missing works on the
       #       relation side.
       new_relation.send(sym, *attrs, &block)
+    end
+
+    private
+
+    # Returns a formatted attribute. Used interally to cast attributes into their appropriate types.
+    # Currently only handles DateTime attributes, since Ruby automatically handles all other known
+    # types for us.
+    def format_attribute(attribute)
+      # Handle nil values
+      if @data[attribute] == nil
+        nil
+      else
+        # Use class names as types otherwise case will look at the type of the
+        # arg, which would otherwise always be Class.
+        type = self.attributes[attribute].to_s
+        case type
+        when "DateTime"
+          Time.at(@data[attribute])
+        else
+          @data[attribute]
+        end
+      end
     end
   end
 end

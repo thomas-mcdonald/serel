@@ -1,7 +1,36 @@
 module Serel
   class User < Base
-    attributes :user_id, :user_type, :creation_date, :display_name, :profile_image, :reputation, :reputation_change_day, :reputation_change_week, :reputation_change_month, :reputation_change_quarter, :reputation_change_year, :age, :last_access_date, :last_modified_date, :is_employee, :link, :website_url, :location, :account_id, :timed_penalty_date, :badge_counts, :question_counts, :answer_count, :up_vote_count, :down_vote_count, :about_me, :view_count, :accept_rate
+    attribute :user_id, Integer
     alias :id :user_id
+
+    attribute :user_type, String
+    attribute :creation_date, DateTime
+    attribute :display_name, String
+    attribute :profile_image, String
+    attribute :reputation, Integer
+    attribute :reputation_change_day, Integer
+    attribute :reputation_change_week, Integer
+    attribute :reputation_change_month, Integer
+    attribute :reputation_change_quarter, Integer
+    attribute :reputation_change_year, Integer
+    attribute :age, Integer
+    attribute :last_access_date, DateTime
+    attribute :last_modified_date, DateTime
+    attribute :is_employee, Boolean
+    attribute :link, String
+    attribute :website_url, String
+    attribute :location, String
+    attribute :account_id, Integer
+    attribute :timed_penalty_date, DateTime
+    attribute :badge_counts, Hash
+    attribute :question_count, Integer
+    attribute :answer_count, Integer
+    attribute :up_vote_count, Integer
+    attribute :down_vote_count, Integer
+    attribute :about_me, String
+    attribute :view_count, Integer
+    attribute :accept_rate, Float
+
     finder_methods :every
 
     def self.moderators

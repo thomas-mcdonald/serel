@@ -39,8 +39,22 @@ module Serel
   # 
   # Retrieves answers by a given user
   class Answer < Base
-    attributes :answer_id, :body, :community_owned_date, :creation_date, :down_vote_count, :is_accepted, :last_activity_date, :last_edit_date, :link, :locked_date, :question_id, :score, :title, :up_vote_count
+    attribute :answer_id, Integer
     alias :id :answer_id
+
+    attribute :body, String
+    attribute :community_owned_date, DateTime
+    attribute :creation_date, DateTime
+    attribute :down_vote_count, Integer
+    attribute :is_accepted, Boolean
+    attribute :last_activity_date, DateTime
+    attribute :last_edit_date, DateTime
+    attribute :link, String
+    attribute :locked_date, DateTime
+    attribute :question_id, Integer
+    attribute :score, Integer
+    attribute :title, String
+    attribute :up_vote_count, Integer
 
     associations :comments => :comment, :owner => :user
     finder_methods :every

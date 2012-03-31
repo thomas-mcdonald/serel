@@ -1,7 +1,18 @@
 module Serel
   class SuggestedEdit < Base
-    attributes :suggested_edit_id, :post_id, :post_type, :body, :title, :tags, :comment, :creation_date, :approval_date, :rejection_date
+    attribute :suggested_edit_id, Integer
     alias :id :suggested_edit_id
+
+    attribute :post_id, Integer
+    attribute :post_type, String
+    attribute :body, String
+    attribute :title, String
+    attribute :tags, Array
+    attribute :comment, String
+    attribute :creation_date, DateTime
+    attribute :approval_date, DateTime
+    attribute :rejection_date, DateTime
+
     associations :proposing_user => :user
     finder_methods :every
   end
