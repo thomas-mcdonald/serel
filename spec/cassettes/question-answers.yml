@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stackexchange.com/2.0/questions/44903?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxNCBGZWIgMjAxMyAyMToyODoxNSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NU
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        ZmFsc2U=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NDY2
+    body: !binary |-
+      H4sIAAAAAAAEAI1SsY7bMAz9FUNDJzuOYzs4GzjcUqC4oUCHbkVhMBLtCJEl
+      n0THFwT591JOgqJbtZAgn8hHPl6FJhyDaH9dxceMgbSznVairapmW6ZCeoQ1
+      poBQtEW5q8uyaoomFQYCdSBJnzVd/snXRfwapPMcYg9sWNB30s2WGMMBKXEi
+      VN0j82xYpYI0Gf4l3vvkPTFOnhKwSeSYJos2ht3kgElwRiU6QgIalBSNScCY
+      N8ElYIgDCTXbAZ3NFPZoFfogfqfirHF5MqmrOhVusehFexVzeDB52TFFpcNk
+      4NJZGCOdn0c3Qki+y6/OglHcxeM007obnnHfvKT3AnSZIt7joAOhxwidvOu1
+      wU6PMMTkkWhq83xZls3g4QwEfiPdmN/dfFdJVddwKGC/6/tDUZRweJHbXb+v
+      ZFNuizf1qhVa0tLZL/71xzduYbQ9/a08wKjtsAkE8oSf8gi8iLVDpBhyHjCn
+      daBslOo50F2Uzq9CNvXtv4s+7ybk69Hkus90FqXLwGZRuiwqx152wCwql62I
+      u3LRmIyVYwY6PA6Ct9aSn/HGgn3MjqDzOIK23J+pNU39DI/wyQe15ZeKI4Ru
+      XE+uBxPw9gdbtrlL2wIAAA==
+    http_version: 
+  recorded_at: Thu, 14 Feb 2013 21:28:15 GMT
+- request:
+    method: get
+    uri: https://api.stackexchange.com/2.0/questions/44903/answers?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxNCBGZWIgMjAxMyAyMToyODoxNSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NU
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        ZmFsc2U=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MzE4
+    body: !binary |-
+      H4sIAAAAAAAEAG1Qy26DMBD8lz30ZAWIIQlIUQ899Np7VaGN2YAVbFN7CYmi
+      /HsN6eNSn6zZmZ3ZuYFmMgGq9xt8jhRYO1vrBqo8L1MpAG2YyP8iuQDlCRdW
+      g0xQZXJdSFlkM7nHwDUq1mfN13/mQTkfoa0AHSJP0cAUF7MfSYCbLHmobjCG
+      b8Ms320KAY0OQ4/X2qKJYnjp3CEmAAGehpGXLHGnLMVDyddhpnlqdWDy0UDA
+      4N1R91Rrg+087JiHKkmmaVq1Hs/I6FfKmeTxTXaYHUlKmVK6k4oOcr3JcLPO
+      siZiWbF9bva6IctaOfvk92+v0aLX9vS3uUWjbbsKjOpEF9WhbWlxmCOGZLks
+      Ud+X3O8fIpbvGGtPBrWNUqjKssx/YIOXWEcan4AOQ22WHo/YB7p/AWGMbc3C
+      AQAA
+    http_version: 
+  recorded_at: Thu, 14 Feb 2013 21:28:15 GMT
+recorded_with: VCR 2.0.0.rc1

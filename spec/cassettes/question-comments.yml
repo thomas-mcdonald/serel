@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stackexchange.com/2.0/questions/44903?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxNCBGZWIgMjAxMyAyMTozMjoxMSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NU
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        ZmFsc2U=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NDY2
+    body: !binary |-
+      H4sIAAAAAAAEAI1SsY7bMAz9FUNDJzuOYzs4GzjcUqC4oUCHbkVhMBLtCJEl
+      n0THFwT591JOgqJbtZAgn8hHPl6FJhyDaH9dxceMgbSznVairapmW6ZCeoQ1
+      poBQtEW5q8uyaoomFQYCdSBJnzVd/snXRfwapPMcYg9sWNB30s2WGMMBKXEi
+      VN0j82xYpYI0Gf4l3vvkPTFOnhKwSeSYJos2ht3kgElwRiU6QgIalBSNScCY
+      N8ElYIgDCTXbAZ3NFPZoFfogfqfirHF5MqmrOhVusehFexVzeDB52TFFpcNk
+      4NJZGCOdn0c3Qki+y6/OglHcxeM007obnnHfvKT3AnSZIt7joAOhxwidvOu1
+      wU6PMMTkkWhq83xZls3g4QwEfiPdmN/dfFdJVddwKGC/6/tDUZRweJHbXb+v
+      ZFNuizf1qhVa0tLZL/71xzduYbQ9/a08wKjtsAkE8oSf8gi8iLVDpBhyHjCn
+      daBslOo50F2Uzq9CNvXtv4s+7ybk69Hkus90FqXLwGZRuiwqx152wCwql62I
+      u3LRmIyVYwY6PA6Ct9aSn/HGgn3MjqDzOIK23J+pNU35DI/wyQe15ZeKI4Ru
+      XE+uBxPw9gebyHv/2wIAAA==
+    http_version: 
+  recorded_at: Thu, 14 Feb 2013 21:32:11 GMT
+- request:
+    method: get
+    uri: https://api.stackexchange.com/2.0/questions/44903/comments?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxNCBGZWIgMjAxMyAyMTozMjoxMiBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NU
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        ZmFsc2U=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NDI4
+    body: !binary |-
+      H4sIAAAAAAAEAO2SQW/cIBCF/0rEoSdnDbbxGktRL5V6StVDb1FlzcLYi2LA
+      BTab1cr/PdirKEpySdQee4PhzRvepzkTHdEE0t6diXTGoI2dVqStt03DMjK5
+      cLlXlaBlRqRHiNrZTkFE0rKyqHklapqkQTqfSjQjqJJn6ulhDJgRd7ToSXsm
+      h4B+NWuKpFc6TCOcOgsmtZFfe2cgXN3Kb87CqEhGPE6HuE4jbVmLJrsYxNO0
+      6D0OOkT0uEgn73o9YqcNDMvjPsapzfPj8bgZPDxABL9J6fLLMS8qqTiHHYO6
+      6PsdYyXsGkmLvq6kKCn7qm60SiS0dPaLv/n5PY0Ytb1/cR7AaDtsQgR5j49y
+      D3bAdcLyxZCngHlcA10bqZ4DgZQ4xc6v6ASf14jjqYuuW9peIWKM83eMbv3m
+      6od7QLNL6jeAmu0/BFQKSXuFbFtKuS0LJrkqGyWQo+jLqur/GtASLzf+2r6k
+      eUWHUTrP2ZuV5JQWH1lJXrFC8OJTK/mf9zz/zsifg4vQeTSgbfJLaypE8Vw2
+      8LgqaQK6h9CZle6KdH4Ct2xoz0gEAAA=
+    http_version: 
+  recorded_at: Thu, 14 Feb 2013 21:32:12 GMT
+recorded_with: VCR 2.0.0.rc1

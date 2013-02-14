@@ -67,6 +67,18 @@ module Serel
       type(:question).url("questions/#{id}/related")
     end
 
+    # Get the revisions on a question.
+    # @return [Serel::Relation] A {Revision} relation scoped to the question.
+    def revisions
+      type(:revision).url("posts/#{id}/revisions")
+    end
+
+    # Get the suggested edits on a question
+    # @return [Serel::Relation] A {SuggestedEdit} relation scoped to the question.
+    def suggested_edits
+      type(:suggested_edit).url("posts/#{id}/suggested-edits")
+    end
+
     def timeline
       type(:timeline).url("questions/#{id}/timeline")
     end

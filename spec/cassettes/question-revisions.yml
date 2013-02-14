@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stackexchange.com/2.0/questions/34055?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxNCBGZWIgMjAxMyAyMTo0MTozOSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NU
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        ZmFsc2U=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NDY0
+    body: !binary |-
+      H4sIAAAAAAAEAI1STYucQBD9K9KHnHT8mNE4wrKXQJJDIIfcQpCattRm7W63
+      uxxXhvnvKV2HsLcIDfLq472qVzehCLUX1e+beJ3Qk7KmVo2ojqckz0MxgKca
+      G0V1A4SiSo9ZwqHy9DkU0iFs+R9CxTnby0CSuipaPsTTouS4l9atUBoKMH5G
+      V0s7GWKEASlxJGzqPfJQU4SCFA1cJr7ZOZBggu+BBmWIX0A9BoNdYKAlsG2g
+      lwCvagi0MqzQPwsuhm6dU6x41KFRkxd/QnFVOD/Y84T57WzQieomJr+zlxnD
+      jfLjAEttQK8SfvVWgw9+yC/WwNBwf4fjRNtCWG9xLsP3BrSMa77DTnlCh2vq
+      6GyrBqyVhm4N9kRjFcfzPB86B1cgcAdpdfz+G2cn2eQ5XFIosra9pOkRLqVM
+      srY4yfMxSZ+bJ9WgISWt+eSefn5likGZl3+dO+BFdAdPIF/wTfZgOtwYVok+
+      5gFj2gaKtGweA70bUbvNvXN+/++mj0Py8XZFcW/niO2KVPSwK2K7ot2uyLaR
+      XqLNlt0uJld+958XVpGb8M5evU6WoHa4tmFqVnUuywes4Y3vJ+EvFD34Wm8n
+      1sLg8f4X4l2fHucCAAA=
+    http_version: 
+  recorded_at: Thu, 14 Feb 2013 21:41:39 GMT
+- request:
+    method: get
+    uri: https://api.stackexchange.com/2.0/posts/34055/revisions?key=0p65aJUHxHo0G19*YF272A((&site=gaming
+    body: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxNCBGZWIgMjAxMyAyMTo0MTo0MSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQT1NU
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
+      - !binary |-
+        ZmFsc2U=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NjA3
+    body: !binary |-
+      H4sIAAAAAAAEAK2TXWvbMBSG/4rRxa7sWv7+gFK8pNl2MRhjd2OYE0u2RSwr
+      leSmoeS/7zhp1m7NTbcZjI2k8x69rx49EmG5NKT8/kg0vxdGqLHuJsFISVbL
+      sApvaeFlSbbw4hWtvCqrqJdXt4tFSGmaphVxn8vGSa65JmX4YszutxyljBi7
+      gdeTwXmXbJWx55m7iRuLK8/Dc+copknikkZJyUeLi6ywA3dMP7XtgEpXuLjR
+      HOa6moFFnSAKKZblceYSYWqthmENzYaULQyGu2SAueUsg3If1c5hyvnkbDjf
+      OrbnzqD2MNi9o1pH7h0pRlQ2Ti+6/gZ7vaxrYMRCCWK0+F4oRufDWWEuNtzW
+      s5NpFHZf78RG/NrUMY7y8fg9GY9SlzBhtgPs6xHk3PQr3PPRWaJdeQxP8+1k
+      j9ZJWeRBnJx0znlKxbgGq445a9UKjF1I6Oa53tpt6fu73e6q03APFvQVbs0/
+      /fq0oSHNCp7FjOdJGrWshYzH0AQsz1iW3rBrwfBARKPGd/r6ywdsgcexeVbu
+      QM7HYyxGzx+aHsaOHzvMOzQ+2vP1bMdjT3YOB/c1d0XxngbLVeRFWYDcpVni
+      VQVdeqvodhXRsKiqKrnEXfC/uLuIVlqEl9H6a6qgm+8dmYHxOj6KyZAfb+Ml
+      D4NXvHzrlQTjfG6WaoSB/UFMlBb578Bo3gljuebs7cSEccOSBNYBpGHbroMg
+      gnWOFLVp3BQRDf6ZGDTo26MhTzbsZOhwwJTuJmWh1ny+iCiAV6HIs/OwhAc8
+      NoqPS3owtVSaP4V4+AlUA1FQ8QQAAA==
+    http_version: 
+  recorded_at: Thu, 14 Feb 2013 21:41:41 GMT
+recorded_with: VCR 2.0.0.rc1
