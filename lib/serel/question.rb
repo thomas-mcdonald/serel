@@ -52,23 +52,23 @@ module Serel
     end
 
     def answers
-      type(:answer).url("questions/#{@id}/answers")
+      type(:answer).url("questions/#{id}/answers")
     end
 
     def comments
-      type(:comment).url("questions/#{@id}/comments")
+      type(:comment).url("questions/#{id}/comments")
     end
 
     def linked
-      type(:question).url("questions/#{@id}/linked")
+      type(:question).url("questions/#{id}/linked")
     end
 
     def related
-      type(:question).url("questions/#{@id}/related")
+      type(:question).url("questions/#{id}/related")
     end
 
     def timeline
-      type(:timeline).url("questions/#{@id}/timeline")
+      type(:timeline).url("questions/#{id}/timeline")
     end
   end
 end
