@@ -69,6 +69,7 @@ module Serel
             val = val.to_time
           end
           @scope[:#{meth}] = val.to_i
+          self
         end
       RUBY
     end
