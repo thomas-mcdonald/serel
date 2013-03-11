@@ -1,3 +1,5 @@
+require 'cgi'
+
 module Serel
   class Tag < Base
     attribute :name, String
@@ -14,7 +16,7 @@ module Serel
     # @param [String] name The name of the tag you wish to find
     # @return [Serel::Tag] The tag returned by the Stack Exchange API
     def self.find_by_name(name)
-      new_relation('tag', :singular).url("tags/#{name}/info").get
+      new_relation('tag', :singular).url("tags/#{CGI.escape(name)}/info").get
     end
 
     # Retrieves tags which can only be added or removed by a moderator

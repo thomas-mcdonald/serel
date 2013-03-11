@@ -1,4 +1,7 @@
-## 1.1.0 (upcoming)
+## 1.1.1
+* Escape tag names before making request. #11 
+
+## 1.1.0
 * improve coverage of the Question class
 * return self after scoping by a date method
 

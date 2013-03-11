@@ -13,6 +13,14 @@ describe Serel::Tag do
     end
   end
 
+  it 'should encode the tag name' do
+    VCR.use_cassette('tag-encode') do
+      configure(:stackoverflow)
+      tag = Serel::Tag.find_by_name('c#')
+      tag.name.should == 'c#'
+    end
+  end
+
   it 'should get only required badges' do
     VCR.use_cassette('tag-required') do
       configure('meta.gaming')
