@@ -1,7 +1,8 @@
 # Utilities
 require 'date'
 require 'logger'
-require 'serel/exts'
+require 'active_support/core_ext/class/attribute'
+require 'active_support/core_ext/string/inflections'
 require 'serel/relation'
 require 'serel/response'
 

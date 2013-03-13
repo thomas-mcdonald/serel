@@ -51,7 +51,7 @@ module Serel
       # If any items were returned, iterate over the results and populate the response
       if body["items"]
         body["items"].each do |item|
-          result << find_constant(@type).new(item)
+          result << Serel.const_get(@type.to_s.classify).new(item)
         end
       end
 

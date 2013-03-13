@@ -1,5 +1,8 @@
 module Serel
   class Base
+    # Dummy class used to make our attributes clearer.
+    class Boolean; end
+
     class_attribute :all_finder_methods, :api_key, :associations, :attributes, :finder_methods, :logger, :network, :site
     self.all_finder_methods = %w(find get all)
 
@@ -9,7 +12,7 @@ module Serel
       if associations
         associations.each do |k,v|
           if data[k.to_s]
-            @data[k] = find_constant(v).new(data[k.to_s])
+            @data[k] = Serel.const_get(v.to_s.classify).new(data[k.to_s])
           end
         end
       end
@@ -91,7 +94,7 @@ module Serel
     #
     # Returns an instance of Serel::Relation
     def self.new_relation(klass = nil, qty = :singular)
-      klass = name.split('::').last.to_snake unless klass
+      klass = name.split('::').last.underscore unless klass
       Serel::Relation.new(klass.to_s, qty)
     end
 
@@ -114,7 +117,7 @@ module Serel
     # Create an 'shallow' instance with multiple IDs. Used for vectorized requests
     def self.with_ids(*ids)
       idstr = ids.join(";")
-      n = name.split('::').last.to_snake
+      n = name.split('::').last.underscore
       new({"#{n}_id".to_s => idstr})
     end
 
@@ -155,7 +158,7 @@ module Serel
 
     def get
       if self.respond_to?(:get)
-        new_relation(name.split('::').last.to_snake, :plural).get
+        new_relation(name.split('::').last.underscore, :plural).get
       else
         raise NoMethodError
       end
@@ -166,7 +169,7 @@ module Serel
     %w(access_token filter fromdate inname intitle min max nottagged order page pagesize since sort tagged title todate url).each do |meth|
       class_eval <<-RUBY, __FILE__, __LINE__ + 1
         def self.#{meth}(val)
-          new_relation(name.split('::').last.to_snake, :plural).#{meth}(val)
+          new_relation(name.split('::').last.underscore, :plural).#{meth}(val)
         end
       RUBY
     end
