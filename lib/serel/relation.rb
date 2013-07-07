@@ -133,6 +133,7 @@ module Serel
     private
 
     def all_helper(page)
+      @qty = :plural
       response = page(page).pagesize(100).url("#{@type}s").request
       # TODO: find a query that triggers backoff.
       # if response.backoff
