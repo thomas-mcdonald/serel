@@ -89,7 +89,7 @@ module Serel
       type(:question).url("users/#{id}/questions/unanswered")
     end
 
-    def reputation
+    def rep
       type(:reputation).url("users/#{id}/reputation")
     end
 

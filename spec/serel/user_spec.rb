@@ -152,7 +152,7 @@ describe Serel::User do
   it "should get a users' reputation changes" do
     VCR.use_cassette('users-reputation') do
       user = Serel::User.find(821)
-      rep_changes = user.reputation.get
+      rep_changes = user.rep.get
       rep_changes.should be_a(Serel::Response)
 
       rep_changes.each do |rep|
@@ -194,20 +194,20 @@ describe Serel::User do
   #     user = Serel::User.find(821)
   #     answers = user.top_answers_on('battlefield-3').get
   #     answers.should be_a(Serel::Response)
-  # 
+  #
   #     answers.each do |answer|
   #       answer.should be_a(Serel::Answer)
   #       answer.owner.id.should == user.id
   #     end
   #   end
   # end
-  # 
+  #
   # it "should get a users' top answers in several tags" do
   #   VCR.use_cassette('user-top-answers-multiple-tags') do
   #     user = Serel::User.find(821)
   #     answers = user.top_answers_on('battlefield-3', 'minecraft').get
   #     answers.should be_a(Serel::Response)
-  # 
+  #
   #     answers.each do |answer|
   #       answer.should be_a(Serel::Answer)
   #       answer.owner.id.should == user.id
