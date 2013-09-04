@@ -59,6 +59,14 @@ module Serel
       type(:tag).url("tags/#{name}/related")
     end
 
+    def related
+      type(:tag).url("tags/#{name}/related")
+    end
+
+    def synonyms
+      type(:tag_synonym).url("tags/#{name}/synonyms")
+    end
+
     def top_answerers(period)
       raise ArgumentError, 'period must be :all_time or :month' unless [:all_time, :month].include? period
       type(:tag_score).url("tags/#{name}/top-answerers/#{period}")
