@@ -64,7 +64,7 @@ module Serel
     end
 
     def synonyms
-      type(:tag_synonym).url("tags/#{name}/synonyms")
+      type(:tag_synonym).url("tags/#{CGI.escape(name)}/synonyms")
     end
 
     def top_answerers(period)
