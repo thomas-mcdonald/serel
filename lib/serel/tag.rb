@@ -69,12 +69,12 @@ module Serel
 
     def top_answerers(period)
       raise ArgumentError, 'period must be :all_time or :month' unless [:all_time, :month].include? period
-      type(:tag_score).url("tags/#{name}/top-answerers/#{period}")
+      type(:tag_score).url("tags/#{CGI.escape(name)}/top-answerers/#{period}")
     end
 
     def top_askers(period)
       raise ArgumentError, 'period must be :all_time or :month' unless [:all_time, :month].include? period
-      type(:tag_score).url("tags/#{name}/top-askers/#{period}")
+      type(:tag_score).url("tags/#{CGI.escape(name)}/top-askers/#{period}")
     end
 
     def wiki
