@@ -56,17 +56,21 @@ module Serel
     # This is a scoping method and can be combined with other scoping methods.
     # @return [Serel::Relation] A relation scoped to the related URL
     def related
-      type(:tag).url("tags/#{name}/related")
+      type(:tag).url("tags/#{CGI.escape(name)}/related")
+    end
+
+    def synonyms
+      type(:tag_synonym).url("tags/#{CGI.escape(name)}/synonyms")
     end
 
     def top_answerers(period)
       raise ArgumentError, 'period must be :all_time or :month' unless [:all_time, :month].include? period
-      type(:tag_score).url("tags/#{name}/top-answerers/#{period}")
+      type(:tag_score).url("tags/#{CGI.escape(name)}/top-answerers/#{period}")
     end
 
     def top_askers(period)
       raise ArgumentError, 'period must be :all_time or :month' unless [:all_time, :month].include? period
-      type(:tag_score).url("tags/#{name}/top-askers/#{period}")
+      type(:tag_score).url("tags/#{CGI.escape(name)}/top-askers/#{period}")
     end
 
     def wiki
