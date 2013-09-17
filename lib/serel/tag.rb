@@ -56,11 +56,7 @@ module Serel
     # This is a scoping method and can be combined with other scoping methods.
     # @return [Serel::Relation] A relation scoped to the related URL
     def related
-      type(:tag).url("tags/#{name}/related")
-    end
-
-    def related
-      type(:tag).url("tags/#{name}/related")
+      type(:tag).url("tags/#{CGI.escape(name)}/related")
     end
 
     def synonyms
