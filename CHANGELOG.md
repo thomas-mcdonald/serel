@@ -1,3 +1,5 @@
+## 2.0.0 (unreleased)
+
 ## 1.2.0
 * Replace custom core extensions with ActiveSupport extensions.
 
