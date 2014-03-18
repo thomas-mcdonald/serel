@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.email = 'tom@conceptcoding.co.uk'
   s.summary = "A Ruby library for the Stack Exchange API"
   s.homepage = 'http://serel.tom.is'
+  s.licenses = ['MIT']
 
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'vcr'
