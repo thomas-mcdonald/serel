@@ -2,13 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/info?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/info?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,44 +18,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:39 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:59:18 GMT
       Content-Length:
-      - '256'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+mmRtW+bn
-      RV7Otu99NPpoWq2X7UeP9nY/HX1UNL9/nf+idVHns48enWdlk/Nni2qW11lb
-      1b9/tSyv7TfzrPn9m+tltbxGD/zhL/n+6KNftK7ajOAssmJZLC8+evTwwcGB
-      +XiRvfvo0e4OPfL+oqpz8+7/EwAA//8q2lckrQAAAA==
+      - '150'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3siaGFzX3N5bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJh
+        dG9yX29ubHkiOmZhbHNlLCJpc19yZXF1aXJlZCI6ZmFsc2UsImNvdW50Ijoz
+        NjEsIm5hbWUiOiJiYXR0bGVmaWVsZC0zIn1dLCJoYXNfbW9yZSI6ZmFsc2Us
+        InF1b3RhX21heCI6MTAwMDAsInF1b3RhX3JlbWFpbmluZyI6OTg0OX0=
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:39 GMT
+  recorded_at: Thu, 03 Jul 2014 04:59:19 GMT
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/related?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/related?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -61,41 +59,91 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:39 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:59:20 GMT
       Content-Length:
-      - '597'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+Wk0/Gn00
-      rdbL9qNHewejj4rm96/zX7Qu6nz20aPzrGxy/mxRzfI6a6v696+W5bX9Zp41
-      v39zvayW14DKH/6SkYPd3HPAd3c/DHhbr33Y7ybVu+17n+78rHVQ1cVFsXTg
-      v2HaXObzYlrmjevg02+2g8W6bItVmV3n9TfWR4dE2XRe5Jf5Il+23jj2v9E+
-      1suymr7NJgGp7n2jXSyylQd778Ngd6fhvLwulhc/a+D5peX2VVafZ3W+7cnb
-      N9xR0+bZ4huD3pmBMvvmKNTlnyavt4tlmxOBpvnPVi8X9IN6adqsLLO2qDy9
-      8c121ObT+bKYZuV20TRrXya+2X4m2fTtdlttv83qt9ly9o1102WrWenZn29W
-      gU8qXyt9IOwu3tN5nn2D4DuoT6vtavWzBXxGdo34dHtWNG1dTNYhu35gX106
-      rdb1lFp4gvcNd0DWISuLH3SE7gM76VBsVdXt9nlVk5adBcr8A7vpCUPtadhv
-      GDb7S1BTdesr2w/spcu3ddU02+R0tEStn72xrNbLt5M1WSTPs/mGu7gqlrPq
-      qtl+8A338P3RR79oXbUZwVlkxRLc9Ojhg4MH5uNF9o562qFH3l9Uda5k/n8C
-      AAD//wNqTc29CwAA
+      - '441'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3siaGFzX3N5bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJh
+        dG9yX29ubHkiOmZhbHNlLCJpc19yZXF1aXJlZCI6ZmFsc2UsImNvdW50Ijoz
+        NywibmFtZSI6InBjIn0seyJoYXNfc3lub255bXMiOmZhbHNlLCJpc19tb2Rl
+        cmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVkIjpmYWxzZSwiY291bnQi
+        OjIwLCJuYW1lIjoib3JpZ2luIn0seyJoYXNfc3lub255bXMiOnRydWUsImlz
+        X21vZGVyYXRvcl9vbmx5IjpmYWxzZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJj
+        b3VudCI6MTUsIm5hbWUiOiJ4Ym94LTM2MCJ9LHsiaGFzX3N5bm9ueW1zIjp0
+        cnVlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVkIjpm
+        YWxzZSwiY291bnQiOjE1LCJuYW1lIjoicHMzIn0seyJoYXNfc3lub255bXMi
+        OmZhbHNlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVk
+        IjpmYWxzZSwiY291bnQiOjEyLCJuYW1lIjoiYmF0dGxlbG9nIn0seyJoYXNf
+        c3lub255bXMiOmZhbHNlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlz
+        X3JlcXVpcmVkIjpmYWxzZSwiY291bnQiOjgsIm5hbWUiOiJiYXR0bGVmaWVs
+        ZC00In0seyJoYXNfc3lub255bXMiOnRydWUsImlzX21vZGVyYXRvcl9vbmx5
+        IjpmYWxzZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJjb3VudCI6OCwibmFtZSI6
+        InRlY2huaWNhbC1pc3N1ZXMifSx7Imhhc19zeW5vbnltcyI6dHJ1ZSwiaXNf
+        bW9kZXJhdG9yX29ubHkiOmZhbHNlLCJpc19yZXF1aXJlZCI6ZmFsc2UsImNv
+        dW50Ijo1LCJuYW1lIjoiYWNoaWV2ZW1lbnRzIn0seyJoYXNfc3lub255bXMi
+        OmZhbHNlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVk
+        IjpmYWxzZSwiY291bnQiOjQsIm5hbWUiOiJwdW5rYnVzdGVyIn0seyJoYXNf
+        c3lub255bXMiOmZhbHNlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlz
+        X3JlcXVpcmVkIjpmYWxzZSwiY291bnQiOjIsIm5hbWUiOiJiYXR0bGVmaWVs
+        ZC1wcmVtaXVtIn0seyJoYXNfc3lub255bXMiOnRydWUsImlzX21vZGVyYXRv
+        cl9vbmx5IjpmYWxzZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJjb3VudCI6Miwi
+        bmFtZSI6Inhib3gtbGl2ZSJ9LHsiaGFzX3N5bm9ueW1zIjp0cnVlLCJpc19t
+        b2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVkIjpmYWxzZSwiY291
+        bnQiOjIsIm5hbWUiOiJjb250cm9sbGVycyJ9LHsiaGFzX3N5bm9ueW1zIjp0
+        cnVlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVkIjpm
+        YWxzZSwiY291bnQiOjIsIm5hbWUiOiJuZXR3b3JraW5nIn0seyJoYXNfc3lu
+        b255bXMiOnRydWUsImlzX21vZGVyYXRvcl9vbmx5IjpmYWxzZSwiaXNfcmVx
+        dWlyZWQiOmZhbHNlLCJjb3VudCI6MSwibmFtZSI6Im1hc3MtZWZmZWN0LTMi
+        fSx7Imhhc19zeW5vbnltcyI6ZmFsc2UsImlzX21vZGVyYXRvcl9vbmx5Ijpm
+        YWxzZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJjb3VudCI6MSwibmFtZSI6Indp
+        bmRvd3MtNyJ9LHsiaGFzX3N5bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJhdG9y
+        X29ubHkiOmZhbHNlLCJpc19yZXF1aXJlZCI6ZmFsc2UsImNvdW50IjoxLCJu
+        YW1lIjoibW9kZXJuLXdhcmZhcmUtMyJ9LHsiaGFzX3N5bm9ueW1zIjpmYWxz
+        ZSwiaXNfbW9kZXJhdG9yX29ubHkiOmZhbHNlLCJpc19yZXF1aXJlZCI6ZmFs
+        c2UsImNvdW50IjoxLCJuYW1lIjoicGVyZm9ybWFuY2UifSx7Imhhc19zeW5v
+        bnltcyI6dHJ1ZSwiaXNfbW9kZXJhdG9yX29ubHkiOmZhbHNlLCJpc19yZXF1
+        aXJlZCI6ZmFsc2UsImNvdW50IjoxLCJuYW1lIjoic2t5cmltIn0seyJoYXNf
+        c3lub255bXMiOmZhbHNlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlz
+        X3JlcXVpcmVkIjpmYWxzZSwiY291bnQiOjEsIm5hbWUiOiJ3aW5kb3dzIn0s
+        eyJoYXNfc3lub255bXMiOnRydWUsImlzX21vZGVyYXRvcl9vbmx5IjpmYWxz
+        ZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJjb3VudCI6MSwibmFtZSI6ImtleWJv
+        YXJkIn0seyJoYXNfc3lub255bXMiOmZhbHNlLCJpc19tb2RlcmF0b3Jfb25s
+        eSI6ZmFsc2UsImlzX3JlcXVpcmVkIjpmYWxzZSwiY291bnQiOjEsIm5hbWUi
+        OiJiYWNrLXRvLWthcmthbmQifSx7Imhhc19zeW5vbnltcyI6ZmFsc2UsImlz
+        X21vZGVyYXRvcl9vbmx5IjpmYWxzZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJj
+        b3VudCI6MSwibmFtZSI6ImdyYXBoaWNzLWNhcmQifSx7Imhhc19zeW5vbnlt
+        cyI6ZmFsc2UsImlzX21vZGVyYXRvcl9vbmx5IjpmYWxzZSwiaXNfcmVxdWly
+        ZWQiOmZhbHNlLCJjb3VudCI6MSwibmFtZSI6Im1vdXNlIn0seyJoYXNfc3lu
+        b255bXMiOmZhbHNlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3Jl
+        cXVpcmVkIjpmYWxzZSwiY291bnQiOjEsIm5hbWUiOiJyZWdpb24tbG9ja2Vk
+        In0seyJoYXNfc3lub255bXMiOmZhbHNlLCJpc19tb2RlcmF0b3Jfb25seSI6
+        ZmFsc2UsImlzX3JlcXVpcmVkIjpmYWxzZSwiY291bnQiOjEsIm5hbWUiOiJi
+        YXR0bGVmaWVsZC0xOTQzIn0seyJoYXNfc3lub255bXMiOnRydWUsImlzX21v
+        ZGVyYXRvcl9vbmx5IjpmYWxzZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJjb3Vu
+        dCI6MSwibmFtZSI6InN0ZWFtIn0seyJoYXNfc3lub255bXMiOmZhbHNlLCJp
+        c19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVkIjpmYWxzZSwi
+        Y291bnQiOjEsIm5hbWUiOiJjYWxsLW9mLWR1dHktYmxhY2stb3BzLTIifSx7
+        Imhhc19zeW5vbnltcyI6ZmFsc2UsImlzX21vZGVyYXRvcl9vbmx5IjpmYWxz
+        ZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJjb3VudCI6MSwibmFtZSI6IndpbmRv
+        d3MtOC4xIn0seyJoYXNfc3lub255bXMiOmZhbHNlLCJpc19tb2RlcmF0b3Jf
+        b25seSI6ZmFsc2UsImlzX3JlcXVpcmVkIjpmYWxzZSwiY291bnQiOjEsIm5h
+        bWUiOiJjYWxsLW9mLWR1dHktZ2hvc3RzIn0seyJoYXNfc3lub255bXMiOmZh
+        bHNlLCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVkIjpm
+        YWxzZSwiY291bnQiOjEsIm5hbWUiOiJza3lwZSJ9XSwiaGFzX21vcmUiOnRy
+        dWUsInF1b3RhX21heCI6MTAwMDAsInF1b3RhX3JlbWFpbmluZyI6OTg0OH0=
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:39 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Thu, 03 Jul 2014 04:59:20 GMT
+recorded_with: VCR 2.9.2

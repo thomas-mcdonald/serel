@@ -2,121 +2,104 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/questions/44903?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/questions/44903?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        bmdpbng=
-      !binary "RGF0ZQ==":
-      - !binary |-
-        VGh1LCAxNCBGZWIgMjAxMyAyMToyODoxNSBHTVQ=
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        cHJpdmF0ZQ==
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        R0VULCBQT1NU
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        ZmFsc2U=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        NDY2
-    body: !binary |-
-      H4sIAAAAAAAEAI1SsY7bMAz9FUNDJzuOYzs4GzjcUqC4oUCHbkVhMBLtCJEl
-      n0THFwT591JOgqJbtZAgn8hHPl6FJhyDaH9dxceMgbSznVairapmW6ZCeoQ1
-      poBQtEW5q8uyaoomFQYCdSBJnzVd/snXRfwapPMcYg9sWNB30s2WGMMBKXEi
-      VN0j82xYpYI0Gf4l3vvkPTFOnhKwSeSYJos2ht3kgElwRiU6QgIalBSNScCY
-      N8ElYIgDCTXbAZ3NFPZoFfogfqfirHF5MqmrOhVusehFexVzeDB52TFFpcNk
-      4NJZGCOdn0c3Qki+y6/OglHcxeM007obnnHfvKT3AnSZIt7joAOhxwidvOu1
-      wU6PMMTkkWhq83xZls3g4QwEfiPdmN/dfFdJVddwKGC/6/tDUZRweJHbXb+v
-      ZFNuizf1qhVa0tLZL/71xzduYbQ9/a08wKjtsAkE8oSf8gi8iLVDpBhyHjCn
-      daBslOo50F2Uzq9CNvXtv4s+7ybk69Hkus90FqXLwGZRuiwqx152wCwql62I
-      u3LRmIyVYwY6PA6Ct9aSn/HGgn3MjqDzOIK23J+pNU39DI/wyQe15ZeKI4Ru
-      XE+uBxPw9gdbtrlL2wIAAA==
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:59:01 GMT
+      Content-Length:
+      - '480'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3sidGFncyI6WyJkdW5nZW9uLWRlZmVuZGVycyJdLCJv
+        d25lciI6eyJyZXB1dGF0aW9uIjozOTk4LCJ1c2VyX2lkIjo4MjEsInVzZXJf
+        dHlwZSI6InJlZ2lzdGVyZWQiLCJhY2NlcHRfcmF0ZSI6OTUsInByb2ZpbGVf
+        aW1hZ2UiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzI0Y2Q1
+        NWFiMWE2MmZmYjExM2FiOGMwMmY2NGM5MzAxP3M9MTI4JmQ9aWRlbnRpY29u
+        JnI9UEciLCJkaXNwbGF5X25hbWUiOiJUaG9tYXMgTWNEb25hbGQiLCJsaW5r
+        IjoiaHR0cDovL2dhbWluZy5zdGFja2V4Y2hhbmdlLmNvbS91c2Vycy84MjEv
+        dGhvbWFzLW1jZG9uYWxkIn0sImlzX2Fuc3dlcmVkIjp0cnVlLCJ2aWV3X2Nv
+        dW50Ijo5MTUsImFjY2VwdGVkX2Fuc3dlcl9pZCI6NDQ5MDQsImFuc3dlcl9j
+        b3VudCI6MSwic2NvcmUiOjMsImxhc3RfYWN0aXZpdHlfZGF0ZSI6MTMyNTMz
+        NTEwMywiY3JlYXRpb25fZGF0ZSI6MTMyNTMzNDkxOSwicXVlc3Rpb25faWQi
+        OjQ0OTAzLCJsaW5rIjoiaHR0cDovL2dhbWluZy5zdGFja2V4Y2hhbmdlLmNv
+        bS9xdWVzdGlvbnMvNDQ5MDMvaWYtaS1sb2NrLWFuLWl0ZW0td2lsbC1pdC1i
+        ZS1zb2xkLWlmLWktc2VsZWN0LXNlbGwtYWxsIiwidGl0bGUiOiJJZiBJIGxv
+        Y2sgYW4gaXRlbSwgd2lsbCBpdCBiZSBzb2xkIGlmIEkgc2VsZWN0IHNlbGwg
+        YWxsPyJ9XSwiaGFzX21vcmUiOmZhbHNlLCJxdW90YV9tYXgiOjEwMDAwLCJx
+        dW90YV9yZW1haW5pbmciOjk4NjJ9
     http_version: 
-  recorded_at: Thu, 14 Feb 2013 21:28:15 GMT
+  recorded_at: Thu, 03 Jul 2014 04:59:01 GMT
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/questions/44903/answers?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/questions/44903/answers?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        bmdpbng=
-      !binary "RGF0ZQ==":
-      - !binary |-
-        VGh1LCAxNCBGZWIgMjAxMyAyMToyODoxNSBHTVQ=
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        cHJpdmF0ZQ==
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        R0VULCBQT1NU
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        ZmFsc2U=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        MzE4
-    body: !binary |-
-      H4sIAAAAAAAEAG1Qy26DMBD8lz30ZAWIIQlIUQ899Np7VaGN2YAVbFN7CYmi
-      /HsN6eNSn6zZmZ3ZuYFmMgGq9xt8jhRYO1vrBqo8L1MpAG2YyP8iuQDlCRdW
-      g0xQZXJdSFlkM7nHwDUq1mfN13/mQTkfoa0AHSJP0cAUF7MfSYCbLHmobjCG
-      b8Ms320KAY0OQ4/X2qKJYnjp3CEmAAGehpGXLHGnLMVDyddhpnlqdWDy0UDA
-      4N1R91Rrg+087JiHKkmmaVq1Hs/I6FfKmeTxTXaYHUlKmVK6k4oOcr3JcLPO
-      siZiWbF9bva6IctaOfvk92+v0aLX9vS3uUWjbbsKjOpEF9WhbWlxmCOGZLks
-      Ud+X3O8fIpbvGGtPBrWNUqjKssx/YIOXWEcan4AOQ22WHo/YB7p/AWGMbc3C
-      AQAA
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:59:02 GMT
+      Content-Length:
+      - '332'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3sib3duZXIiOnsicmVwdXRhdGlvbiI6NzkyLCJ1c2Vy
+        X2lkIjoxNDg2NSwidXNlcl90eXBlIjoicmVnaXN0ZXJlZCIsInByb2ZpbGVf
+        aW1hZ2UiOiJodHRwczovL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyLzhhMWZl
+        MzMzMGUwODNjZWIzMjYxYTYyMTFkMzMwMTU3P3M9MTI4JmQ9aWRlbnRpY29u
+        JnI9UEciLCJkaXNwbGF5X25hbWUiOiJDaG9iZWF0IiwibGluayI6Imh0dHA6
+        Ly9nYW1pbmcuc3RhY2tleGNoYW5nZS5jb20vdXNlcnMvMTQ4NjUvY2hvYmVh
+        dCJ9LCJpc19hY2NlcHRlZCI6dHJ1ZSwic2NvcmUiOjcsImxhc3RfYWN0aXZp
+        dHlfZGF0ZSI6MTMyNTMzNTEwMywiY3JlYXRpb25fZGF0ZSI6MTMyNTMzNTEw
+        MywiYW5zd2VyX2lkIjo0NDkwNCwicXVlc3Rpb25faWQiOjQ0OTAzfV0sImhh
+        c19tb3JlIjpmYWxzZSwicXVvdGFfbWF4IjoxMDAwMCwicXVvdGFfcmVtYWlu
+        aW5nIjo5ODYxfQ==
     http_version: 
-  recorded_at: Thu, 14 Feb 2013 21:28:15 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Thu, 03 Jul 2014 04:59:03 GMT
+recorded_with: VCR 2.9.2

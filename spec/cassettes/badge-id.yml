@@ -2,13 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/badges/1?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/badges/1?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,34 +18,28 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:21 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:58:32 GMT
       Content-Length:
-      - '295'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380yWYX+e9fzD56tDv6
-      qM6Wbz969NGkrpY/yD8afbTMFjn9/SbPpvO8pg+yq6ye/f7Tar1sP3q0/+nu
-      vZECaK9XaIkXZtSuLBjQvG1Xj+7evcgWxfJi3LTZ9G3+bjrPlhf5eFot7vK7
-      zd3du6328Eu+P/roF62rNvv963yRFUt67aNHDw92d83Hi+wdYbpDz+ijedb8
-      /ouqpn7Ps7LJf8n/EwAA//+Ne4U71wAAAA==
+      - '185'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3siYmFkZ2VfdHlwZSI6Im5hbWVkIiwiYXdhcmRfY291
+        bnQiOjEzODI3LCJyYW5rIjoiYnJvbnplIiwiYmFkZ2VfaWQiOjEsImxpbmsi
+        OiJodHRwOi8vZ2FtaW5nLnN0YWNrZXhjaGFuZ2UuY29tL2JhZGdlcy8xL3Rl
+        YWNoZXIiLCJuYW1lIjoiVGVhY2hlciJ9XSwiaGFzX21vcmUiOmZhbHNlLCJx
+        dW90YV9tYXgiOjEwMDAwLCJxdW90YV9yZW1haW5pbmciOjk4ODJ9
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:21 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Thu, 03 Jul 2014 04:58:32 GMT
+recorded_with: VCR 2.9.2

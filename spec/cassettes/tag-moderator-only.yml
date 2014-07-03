@@ -2,13 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/tags/moderator-only?key=0p65aJUHxHo0G19*YF272A((&site=meta.gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/tags/moderator-only?key=<STACKAPPS_API_KEY>&site=meta.gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,36 +18,50 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:38 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:59:17 GMT
       Content-Length:
-      - '371'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+atqsXTfb
-      02qxKvM2n300+mharZftR492H+6PPiqa37/Of9G6qOmbR+dZ2eT82aKa5XXW
-      VvXvXy3L648etfWavphnze/fXC+r5TX64Na/ZNTtaXI9y5viYuk6unf/Z6Of
-      WT4ti2UwoG+2n/PsF3mwd79R2DqGZVXnq7py3Tz4RnuhSV+sl0V7vZ3NGtfJ
-      3jfaiQ5lVWbLcDZ+NnqZ5ed5Xf/sdXOeUzc/i/B1GDzrs/XU72jnZ6ejyyK/
-      +mY7+f7oo1+0rtqMwCyyYlksLz569PDBwUPz8SJ7R2TboUfeXxCTm3f/nwAA
-      AP//uNyPeaEEAAA=
+      - '251'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3siaGFzX3N5bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJh
+        dG9yX29ubHkiOnRydWUsImlzX3JlcXVpcmVkIjpmYWxzZSwiY291bnQiOjMw
+        OCwibmFtZSI6InN0YXR1cy1jb21wbGV0ZWQifSx7Imhhc19zeW5vbnltcyI6
+        ZmFsc2UsImlzX21vZGVyYXRvcl9vbmx5Ijp0cnVlLCJpc19yZXF1aXJlZCI6
+        ZmFsc2UsImNvdW50Ijo1NywibmFtZSI6InN0YXR1cy1ieWRlc2lnbiJ9LHsi
+        aGFzX3N5bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJhdG9yX29ubHkiOnRydWUs
+        ImlzX3JlcXVpcmVkIjpmYWxzZSwiY291bnQiOjMzLCJuYW1lIjoic3RhdHVz
+        LWRlY2xpbmVkIn0seyJoYXNfc3lub255bXMiOmZhbHNlLCJpc19tb2RlcmF0
+        b3Jfb25seSI6dHJ1ZSwiaXNfcmVxdWlyZWQiOmZhbHNlLCJjb3VudCI6MTMs
+        Im5hbWUiOiJzdGF0dXMtbm9yZXBybyJ9LHsiaGFzX3N5bm9ueW1zIjpmYWxz
+        ZSwiaXNfbW9kZXJhdG9yX29ubHkiOnRydWUsImlzX3JlcXVpcmVkIjpmYWxz
+        ZSwiY291bnQiOjksIm5hbWUiOiJmYXEifSx7Imhhc19zeW5vbnltcyI6ZmFs
+        c2UsImlzX21vZGVyYXRvcl9vbmx5Ijp0cnVlLCJpc19yZXF1aXJlZCI6ZmFs
+        c2UsImNvdW50Ijo0LCJuYW1lIjoiY29tbXVuaXR5LWFkcyJ9LHsiaGFzX3N5
+        bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJhdG9yX29ubHkiOnRydWUsImlzX3Jl
+        cXVpcmVkIjpmYWxzZSwiY291bnQiOjIsIm5hbWUiOiJzdGF0dXMtZGVmZXJy
+        ZWQifSx7Imhhc19zeW5vbnltcyI6ZmFsc2UsImlzX21vZGVyYXRvcl9vbmx5
+        Ijp0cnVlLCJpc19yZXF1aXJlZCI6ZmFsc2UsImNvdW50IjowLCJuYW1lIjoi
+        c3RhdHVzLXJldmlldyJ9LHsiaGFzX3N5bm9ueW1zIjpmYWxzZSwiaXNfbW9k
+        ZXJhdG9yX29ubHkiOnRydWUsImlzX3JlcXVpcmVkIjpmYWxzZSwiY291bnQi
+        OjAsIm5hbWUiOiJmZWF0dXJlZCJ9LHsiaGFzX3N5bm9ueW1zIjpmYWxzZSwi
+        aXNfbW9kZXJhdG9yX29ubHkiOnRydWUsImlzX3JlcXVpcmVkIjpmYWxzZSwi
+        Y291bnQiOjAsIm5hbWUiOiJzdGF0dXMtcmVwcm9kdWNlZCJ9LHsiaGFzX3N5
+        bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJhdG9yX29ubHkiOnRydWUsImlzX3Jl
+        cXVpcmVkIjpmYWxzZSwiY291bnQiOjAsIm5hbWUiOiJzdGF0dXMtcGxhbm5l
+        ZCJ9XSwiaGFzX21vcmUiOmZhbHNlLCJxdW90YV9tYXgiOjEwMDAwLCJxdW90
+        YV9yZW1haW5pbmciOjk4NTB9
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:38 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Thu, 03 Jul 2014 04:59:17 GMT
+recorded_with: VCR 2.9.2

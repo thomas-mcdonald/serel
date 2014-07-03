@@ -2,4 +2,6 @@ source 'http://rubygems.org'
 
 gemspec
 
-gem 'vcr', :git => 'git://github.com/myronmarston/vcr.git'
+gem 'dotenv'
+gem 'vcr'
+gem 'pry'

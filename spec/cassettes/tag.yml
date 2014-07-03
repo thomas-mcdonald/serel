@@ -2,13 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/info?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/tags/battlefield-3/info?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,33 +18,27 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:36 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:59:13 GMT
       Content-Length:
-      - '256'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+mmRtW+bn
-      RV7Otu99NPpoWq2X7UeP9nY/HX1UNL9/nf+idVHns48enWdlk/Nni2qW11lb
-      1b9/tSyv7TfzrPn9m+tltbxGD/zhL/n+6KNftK7ajOAssmJZLC8+evTwwcNd
-      8/Eie/fRo90deuT9RVXn5t3/JwAA//+pnYn1rQAAAA==
+      - '150'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3siaGFzX3N5bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJh
+        dG9yX29ubHkiOmZhbHNlLCJpc19yZXF1aXJlZCI6ZmFsc2UsImNvdW50Ijoz
+        NjEsIm5hbWUiOiJiYXR0bGVmaWVsZC0zIn1dLCJoYXNfbW9yZSI6ZmFsc2Us
+        InF1b3RhX21heCI6MTAwMDAsInF1b3RhX3JlbWFpbmluZyI6OTg1M30=
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:36 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Thu, 03 Jul 2014 04:59:13 GMT
+recorded_with: VCR 2.9.2
