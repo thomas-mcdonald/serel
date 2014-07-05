@@ -8,7 +8,7 @@ describe Serel::Comment do
       comment.creation_date.should == Time.at(1325033236)
       comment.edited.should == false
       comment.post_id.should == 44287
-      comment.score.should == 8
+      comment.score.should == 13
       comment.owner.should be_a(Serel::User)
     end
   end

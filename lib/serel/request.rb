@@ -35,7 +35,7 @@ module Serel
       http = Net::HTTP.new('api.stackexchange.com', 443)
       http.use_ssl = true
       response = http.get(@path)
-      body = JSON.parse(response.body)
+      body = JSON.parse(response.body.encode('UTF-8', 'binary', invalid: :replace, undef: :replace, replace: ''))
 
       result = Serel::Response.new
 

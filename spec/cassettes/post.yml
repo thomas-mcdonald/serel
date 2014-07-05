@@ -2,13 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/posts/16573?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/posts/16573?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,38 +18,35 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:28 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:58:45 GMT
       Content-Length:
-      - '484'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0qpr29y9mHz3a/fT+
-      g3sj+bu9XuUfPfooWzZXef3R6KPqakk/H/3ij9ZNXnPrg73d0UezolmV2fXv
-      v8wWaP5mXi2yJv1i+rRaZuWM3qvz1brN2qJafvTo3g7AMwAFX+cXRdPmdY6m
-      q7o6L8r89y8W2QW+nLft6tHdu1dXV+OLOrvM2qweT6vFXfn17t7+dHb/fjbZ
-      zT7dOz+f7O7eyyYH052980/3pw/v7ez+HrPPilm+bItptfyF9WcvP6cuymL5
-      1kG+yBbF8mLctNn0bf5uOs+WFzn3ABSbuzTAuy0PaHsxnZkBZdNpvmp//zpr
-      CcfdnZ1fMvpoWuc8wt9/Jh/uPXzwYOfe/sEBdZgRLbNpW1wW7bX7/uHepw8+
-      vb+n3+ezoo1810yrmj7au/9Lvj/66Betqzb7/et8kRVLQvqjRw8PdnbNx4vs
-      HeOyszP6aJ41v/+CXzzPyib/Jf9PAAAA//+wODzf6gEAAA==
+      - '360'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3sib3duZXIiOnsicmVwdXRhdGlvbiI6Mzk5OCwidXNl
+        cl9pZCI6ODIxLCJ1c2VyX3R5cGUiOiJyZWdpc3RlcmVkIiwiYWNjZXB0X3Jh
+        dGUiOjk1LCJwcm9maWxlX2ltYWdlIjoiaHR0cHM6Ly93d3cuZ3JhdmF0YXIu
+        Y29tL2F2YXRhci8yNGNkNTVhYjFhNjJmZmIxMTNhYjhjMDJmNjRjOTMwMT9z
+        PTEyOCZkPWlkZW50aWNvbiZyPVBHIiwiZGlzcGxheV9uYW1lIjoiVGhvbWFz
+        IE1jRG9uYWxkIiwibGluayI6Imh0dHA6Ly9nYW1pbmcuc3RhY2tleGNoYW5n
+        ZS5jb20vdXNlcnMvODIxL3Rob21hcy1tY2RvbmFsZCJ9LCJzY29yZSI6MzUs
+        Imxhc3RfZWRpdF9kYXRlIjoxMjk5MjY3NjUyLCJsYXN0X2FjdGl2aXR5X2Rh
+        dGUiOjEyOTkyNjc2NTIsImNyZWF0aW9uX2RhdGUiOjEyOTc3MDM0ODgsInBv
+        c3RfdHlwZSI6ImFuc3dlciIsInBvc3RfaWQiOjE2NTczfV0sImhhc19tb3Jl
+        IjpmYWxzZSwicXVvdGFfbWF4IjoxMDAwMCwicXVvdGFfcmVtYWluaW5nIjo5
+        ODcyfQ==
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:28 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Thu, 03 Jul 2014 04:58:46 GMT
+recorded_with: VCR 2.9.2

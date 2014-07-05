@@ -2,13 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/tags/required?key=0p65aJUHxHo0G19*YF272A((&site=meta.gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/tags/required?key=<STACKAPPS_API_KEY>&site=meta.gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,34 +18,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:37 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:59:16 GMT
       Content-Length:
-      - '298'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+mhXNdN00
-      RbX8aPTRtFov248effrwweijovn96/wXrYs6n330qK3XOX+0qGZ5nbVV/ftX
-      y/L6o0fnWdnQN/Os+f2b62W1vAZ0/vCXjGwfk/WFA767v/+NAm/Wq1VVt34H
-      977RDs7zrF3X+Tbg5Y3f0e6n30BH3x999IvWVZsRmEVWLIvlxUePHj54uGM+
-      XmTvqKsdeuT9RVXn5t3/JwAA//+G473P0AEAAA==
+      - '191'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3siaGFzX3N5bm9ueW1zIjpmYWxzZSwiaXNfbW9kZXJh
+        dG9yX29ubHkiOmZhbHNlLCJpc19yZXF1aXJlZCI6dHJ1ZSwiY291bnQiOjE0
+        NDcsIm5hbWUiOiJkaXNjdXNzaW9uIn0seyJoYXNfc3lub255bXMiOmZhbHNl
+        LCJpc19tb2RlcmF0b3Jfb25seSI6ZmFsc2UsImlzX3JlcXVpcmVkIjp0cnVl
+        LCJjb3VudCI6NDA1LCJuYW1lIjoic3VwcG9ydCJ9LHsiaGFzX3N5bm9ueW1z
+        IjpmYWxzZSwiaXNfbW9kZXJhdG9yX29ubHkiOmZhbHNlLCJpc19yZXF1aXJl
+        ZCI6dHJ1ZSwiY291bnQiOjI1NiwibmFtZSI6ImJ1ZyJ9LHsiaGFzX3N5bm9u
+        eW1zIjpmYWxzZSwiaXNfbW9kZXJhdG9yX29ubHkiOmZhbHNlLCJpc19yZXF1
+        aXJlZCI6dHJ1ZSwiY291bnQiOjIxNCwibmFtZSI6ImZlYXR1cmUtcmVxdWVz
+        dCJ9XSwiaGFzX21vcmUiOmZhbHNlLCJxdW90YV9tYXgiOjEwMDAwLCJxdW90
+        YV9yZW1haW5pbmciOjk4NTF9
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:37 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Thu, 03 Jul 2014 04:59:16 GMT
+recorded_with: VCR 2.9.2

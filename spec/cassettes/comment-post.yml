@@ -2,13 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/comments/63977?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/comments/63977?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,49 +18,47 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:27 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:58:43 GMT
       Content-Length:
-      - '472'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380rRaLfNn+/sXso0ef
-      3nv44MHoo1XVyN/7+3sH9Pe0zrO2qJa//yxr848e7d7bu79z797evU9HHzXT
-      qqaPDkYf5TOCSe+cZ2WTjz6qrpZ5/dGjX/zRuslrBnawtzv6aFY0qzK7/v2X
-      2YJe++jNvFpkTfrF9Gm1zMrZR6OP6ny1brm3jx7d23lwbyQA2usV2tf5RdG0
-      eZ2j6aquzosy//2LRXaBL+dtu3p09+7V1dX4os4uszarxzS6u/Lr3b396ez+
-      /Wyym326d34+2d29l00Opjt755/uTx/e29n9PWafFTOiRDGtlr+w/uzl59RF
-      WSzfOsgX2aJYXoybNpu+zd9N59nyIucegGJzlwZ4t+UBbS+mMzOgbDrNV+3v
-      XwvpdnZ+yS/5/uijX7Su2uz3r/NFViwJ5EePHh7s3DMfL7J33HJnZ/TRPGt+
-      /wWTmOn6S/6fAAAA///0g0+WugEAAA==
+      - '345'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3sib3duZXIiOnsicmVwdXRhdGlvbiI6Mzk5OCwidXNl
+        cl9pZCI6ODIxLCJ1c2VyX3R5cGUiOiJyZWdpc3RlcmVkIiwiYWNjZXB0X3Jh
+        dGUiOjk1LCJwcm9maWxlX2ltYWdlIjoiaHR0cHM6Ly93d3cuZ3JhdmF0YXIu
+        Y29tL2F2YXRhci8yNGNkNTVhYjFhNjJmZmIxMTNhYjhjMDJmNjRjOTMwMT9z
+        PTEyOCZkPWlkZW50aWNvbiZyPVBHIiwiZGlzcGxheV9uYW1lIjoiVGhvbWFz
+        IE1jRG9uYWxkIiwibGluayI6Imh0dHA6Ly9nYW1pbmcuc3RhY2tleGNoYW5n
+        ZS5jb20vdXNlcnMvODIxL3Rob21hcy1tY2RvbmFsZCJ9LCJlZGl0ZWQiOmZh
+        bHNlLCJzY29yZSI6MTMsImNyZWF0aW9uX2RhdGUiOjEzMjUwMzMyMzYsInBv
+        c3RfaWQiOjQ0Mjg3LCJjb21tZW50X2lkIjo2Mzk3N31dLCJoYXNfbW9yZSI6
+        ZmFsc2UsInF1b3RhX21heCI6MTAwMDAsInF1b3RhX3JlbWFpbmluZyI6OTg3
+        NH0=
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:27 GMT
+  recorded_at: Thu, 03 Jul 2014 04:58:43 GMT
 - request:
     method: get
-    uri: https://api.stackexchange.com/2.0/posts/44287?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    uri: https://api.stackexchange.com/2.0/posts/44287?key=<STACKAPPS_API_KEY>&site=gaming
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -66,38 +66,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:28 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      Date:
+      - Thu, 03 Jul 2014 04:58:44 GMT
       Content-Length:
-      - '468'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0qpr29y9mHz3a3987
-      eDCSv9vrVf7Ro49+0Tpv2qJafjT6qLpa5vVHj37xR+smr7n97r2H90YfzYpm
-      VWbXv/8yW+CN47yixnW+WrcZv/lo99OD3ZG8pVDr/KJo2rzOZ9R0VVfnRZn/
-      /sUiu8CX87ZdPbp79+rqanxRZ5dZm9XjabW4K7/enT3Mznc+neZ7+d6DB/m9
-      bEa/5dnB+e75/nl+b/bw95h9VszyZVtMq+UvrD97+Tl1URbLtw7yRbYolhfj
-      ps2mb/N303m2vMi5B6DY3MWo7mY8imw6zVft719nLSG2u7PzS0YfTeuch/X7
-      z+TDe3v3d+7tPcQIy4zolk3b4rJor/3vDw7u7d/T7/NZ0frf7e8eHByMPmqm
-      Vc0f/ZLvj4joVZv9/nW+yIolYfrRo4cHO3vm40X2jnHZ2Rl9NM+a33/BL55n
-      ZZP/kv8nAAD//y+NgX/WAQAA
+      - '343'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/eyJpdGVtcyI6W3sib3duZXIiOnsicmVwdXRhdGlvbiI6Mjk0NywidXNl
+        cl9pZCI6MTM5MywidXNlcl90eXBlIjoicmVnaXN0ZXJlZCIsImFjY2VwdF9y
+        YXRlIjoxMDAsInByb2ZpbGVfaW1hZ2UiOiJodHRwczovL3d3dy5ncmF2YXRh
+        ci5jb20vYXZhdGFyL2Q5YWYwNmNlMmUyNzdlM2FkZTJlZWE4ZjFmNGZlM2Q5
+        P3M9MTI4JmQ9aWRlbnRpY29uJnI9UEciLCJkaXNwbGF5X25hbWUiOiJBZW8i
+        LCJsaW5rIjoiaHR0cDovL2dhbWluZy5zdGFja2V4Y2hhbmdlLmNvbS91c2Vy
+        cy8xMzkzL2FlbyJ9LCJzY29yZSI6MTcsImxhc3RfZWRpdF9kYXRlIjoxMzI1
+        MDQxODg4LCJsYXN0X2FjdGl2aXR5X2RhdGUiOjEzOTk5MjI0ODUsImNyZWF0
+        aW9uX2RhdGUiOjEzMjUwMzI5ODEsInBvc3RfdHlwZSI6InF1ZXN0aW9uIiwi
+        cG9zdF9pZCI6NDQyODd9XSwiaGFzX21vcmUiOmZhbHNlLCJxdW90YV9tYXgi
+        OjEwMDAwLCJxdW90YV9yZW1haW5pbmciOjk4NzN9
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:28 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Thu, 03 Jul 2014 04:58:44 GMT
+recorded_with: VCR 2.9.2
