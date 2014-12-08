@@ -1,6 +1,9 @@
+$:.push File.expand_path('../lib', __FILE__)
+require 'serel/version'
+
 Gem::Specification.new do |s|
   s.name = "serel"
-  s.version = '1.2.0'
+  s.version = Serel::VERSION.dup
   s.authors = ["Thomas McDonald"]
   s.email = 'tom@conceptcoding.co.uk'
   s.summary = "A Ruby library for the Stack Exchange API"
