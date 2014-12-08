@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,41 +18,27 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:40 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:23 GMT
       Content-Length:
-      - '594'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
-      yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
-      s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
-      uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
-      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7Og3v+J7//dJ4tL3LC
-      /PqjRzuxb67y/C2NKfrdolq2848effog9uUvWmc1UYjevRf9/jrPzJdl1rS/
-      fzad5k1jaHjv3s79/f179x/qt4tqVpwX+Sz4foe/L5rfP1+syuo6py/Os7LJ
-      6Z1i+dZR8yJbFMuLcdNm07f5O+mfqYopbe7S7N5teWa2F9OZmZmrfNIQK/z+
-      67okSPRBWU2Vih+dLi/KbDkbpV8tqcks/b0I/KxaUCMaRbVetsI1nx7sE7Un
-      2YyGyx8TW/3ijy4qgg9iN0V5yQQiEkzqavkDwn///i9hIPmq/f1rGerOzi/5
-      /uijX7Su2uz3r/NFViypt48ePXwABpOPF9k7brhDUOdZQ9SqDS1+yf8TAAD/
-      /6F7oVfRAgAA
+      - '451'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_counts":{"bronze":61,"silver":34,"gold":2},"account_id":86843,"is_employee":false,"last_modified_date":1370240414,"last_access_date":1399547868,"reputation_change_year":180,"reputation_change_quarter":25,"reputation_change_month":0,"reputation_change_week":0,"reputation_change_day":0,"reputation":4073,"creation_date":1279200486,"user_type":"registered","user_id":821,"accept_rate":95,"location":"England,
+        United Kingdom","website_url":"","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald","display_name":"Thomas
+        McDonald","profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG"}],"has_more":false,"quota_max":10000,"quota_remaining":9948}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:40 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:58:24 GMT
+recorded_with: VCR 2.9.3

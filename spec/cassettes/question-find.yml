@@ -3,62 +3,42 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/questions/44903?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        bmdpbng=
-      !binary "RGF0ZQ==":
-      - !binary |-
-        VGh1LCAxNCBGZWIgMjAxMyAyMToyNDo0NiBHTVQ=
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        cHJpdmF0ZQ==
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        R0VULCBQT1NU
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        ZmFsc2U=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        NDY1
-    body: !binary |-
-      H4sIAAAAAAAEAI1SsY7bMAz9FUNDJzuOYzs4GzjcUqC4oUCHbkVhMBLtCJEl
-      n0THFwT591JOgqJbtZAgKb5HPl6FJhyDaH9dxceMgbSznVairapmW6ZCeoQ1
-      poBQtEW5q8uyaoomFQYCdSBJnzVd/snXRfwapPMcYg9sWNB30s2WuIYDUuJE
-      qLpH5glYpYI0Gf4l3vvkPTFOnhKwSeSYJos2ht3kgElwRiU6lgQ0KCkak4Ax
-      b4JbwBAHEmq2AzqbKezRKvRB/E7FWePyZFJXdSrcYtGL9irm8GDysmOKSofJ
-      wKWzMEY6P49uhJB8l1+dBaMYxeM007obnnHfvKT3BnSZYr3HQQdCj7F08q7X
-      Bjs9whCTR6KpzfNlWTaDhzMQ+I10Y353810lVV3DoYD9ru8PRVHC4UVud/2+
-      kk25Ld7Uq1ZoSUtnv/jXH98Ywmh7+tt5gFHbYRMI5Ak/5RF4EStCpBhyHjCn
-      daBslOo50F2Uzq9CNvXtv5s+7ybk69Hkus90FqXLwGZRuiwqx152wCwql60V
-      d+WiMRkrxwx0eBwEb60lP+ONBfuYHUHncQRtGZ+p8XuGR/jkg9ryS8URQjeu
-      J9eDCXj7A5pNTPnbAgAA
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:57:40 GMT
+      Content-Length:
+      - '470'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"tags":["dungeon-defenders"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":991,"accepted_answer_id":44904,"answer_count":1,"score":3,"last_activity_date":1325335103,"creation_date":1325334919,"question_id":44903,"link":"http://gaming.stackexchange.com/questions/44903/if-i-lock-an-item-will-it-be-sold-if-i-select-sell-all","title":"If
+        I lock an item, will it be sold if I select sell all?"}],"has_more":false,"quota_max":10000,"quota_remaining":9966}'
     http_version: 
-  recorded_at: Thu, 14 Feb 2013 21:24:46 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:57:41 GMT
+recorded_with: VCR 2.9.3

@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/moderators/elected?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,61 +18,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:41 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:06 GMT
       Content-Length:
-      - '1486'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz26d+/T
-      kfzVXq/yjx59tKhmeZ21Vf3R6KNpnWdtUS1//1nW0ne7ew8e7u7t7OzSK7Oi
-      WZXZ9e+/zBZ461V2mS/Tp9R+kePNVV2dF2X++xeL7ALfz9t29eju3aurq/FF
-      nV1mbVaPp9Xirvx6d2e6s7fz4GH+YH+WH9z/9N757Dx7kO9n093ZwYPZg09/
-      j9lnxSxftsW0Wv7C+rOXn1MXdb5at4zeR48+vb/78KH/0e8/nWfLi5wQv/7o
-      0cFO7KurPH/70aP9nU9jXy6qZTv/6NH9ew+iYH/ROqtbGuijhw9278UaXOeZ
-      /ZYpsLc3+qjMmvb3z6bTvGkMRe/d27m/9+Devfv6LVG/OC/ymf/9/s69+wSm
-      aH7/fLEqq+ucvjjPyiand4rlW0fdi2xRLC/GTZtN3+bvBBOmMua3uUtTfbfG
-      PG3P7Dxd5ZOGuOL3X9elg7Osljl9V1ZTJS9Nb5kXF/NR+uKEvqAhVOtly/yz
-      u3//U5B+ks1o2Pw5cdgv/uiiKunbPaJ8U5SXINXe3j41q6vlDwj/ew/u/xIG
-      lK/a37/msT48+CUjjzF3QbHbM+bB/Xv39h/u9Rjzy+zt+7Pj+YPZ/mzvPM92
-      Zjnx4KcHk+mDfGcn/3R2cL47m9y/iR337u18ujfIjrsb2PFgfxM37uxuZMbd
-      3Yf3h5lRvhVmfDjIjPv3du7t/BCYkab3bsVzE7JgyHdnTZ3lZYflDh7c//T+
-      EMftO4b79KHjt91PP+3y28GDkN/uHezfvz3H3SN99emn+3ilw3FE4WV78On7
-      c91+ln06ne0eZPv70/vnuzsHewcH9+5NH9w/v5fT1N+oBPf26I1Brvt0A9fd
-      //TBBrbbvxcH6/HdvYOomjSMx18zDe4Nq8H9/YMfDudhou+6WYqqQMzRVdHO
-      q3XbzvMmq6dZswCQkD/f5O+ypqsRd/Y+fTDMoPcdg+77DLrzsKcQHwYMunfv
-      9tzJ+nBnJ8KdhNTq/Vkz/3R/sru3e05a8eAg3z2/n93bn92jP6cH+eR88vBG
-      1tx5eD9qZ29UiPej3ylnfhrXso4x730a7VX5kr+9yTrv79N8/hDYcu/eXZ2b
-      KEO2xI00Jn5B2/l6ss3K6w4fPngI1y7OhPcGmPBejwlhpz0mPHgPFSlM+PDe
-      fo8JP6+zaZ6+qFq4Ge/JirOD2fT+w73z2e7DyfnuZG82O/j0wcPZbGeSTSZ7
-      5zs3seLu/t7DKNcoK27gxV3I0yAz7hIzbOTGvZ17G7SkfDusG/ce3MCE+x0m
-      bOv1+/Lgwf27F5ia7aVMzSbT/KwoL7Ii6yu/3fvD7qDHdvcd233a47qDT0PV
-      t/Pg/dhu/9O9hwc9tvsiW2bvz3APJ/nsYCe7t/dwdzLJ8nz68ODh/ewBeYV7
-      uw/uTfObGO7h3oOvp/o2ctv23r3NRnn73r2otyjcJt/y+HeH2Y68dJDxZ1/3
-      7Ty4u5DJGbTGdd7WVbHMpm1xmUcscUXM1Faj9ITgzLpsef/gYJgrP3VcCZo6
-      i7zfs8g7ocu4/35cuffwUwREHa78zjpbpsSaa3Z035M5sz2KH6fnD+/dpzj5
-      YHb/fvbw/v75fcL9YPJwf+dG5jzYeRjlEmbODbx5L/qdcRgfbmbNB3tRd1M4
-      k78UX3F3WB/u3r9/E2N++g0w5u7+3Z+m6dlemOmJsieanFf1omoqvDvOwAAe
-      bz5Z58uqSY+LOm9G6XEN17Ngbg9UJ2cBboxqELsZFj3Y63Hop7/k+6OPftG6
-      arPfv84XWbGk4SERgcBSPl5k79jOwdLNs4boVxvq/JL/JwAA//8brziaIxIA
-      AA==
+      - '1389'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_counts":{"bronze":781,"silver":504,"gold":90},"account_id":145699,"is_employee":false,"last_modified_date":1416968381,"last_access_date":1418002699,"reputation_change_year":7795,"reputation_change_quarter":889,"reputation_change_month":23,"reputation_change_week":10,"reputation_change_day":5,"reputation":122260,"creation_date":1279120016,"user_type":"moderator","user_id":336,"age":25,"accept_rate":99,"location":"Raleigh,
+        NC","website_url":"http://none","link":"http://gaming.stackexchange.com/users/336/raven-dreamer","display_name":"Raven
+        Dreamer","profile_image":"https://www.gravatar.com/avatar/0c02079e74de8563fdfa7e4ac1d87d76?s=128&d=identicon&r=PG"},{"badge_counts":{"bronze":358,"silver":234,"gold":35},"account_id":69074,"is_employee":false,"last_modified_date":1416736665,"last_access_date":1417999771,"reputation_change_year":4525,"reputation_change_quarter":238,"reputation_change_month":25,"reputation_change_week":0,"reputation_change_day":0,"reputation":50887,"creation_date":1282669348,"user_type":"moderator","user_id":3129,"age":31,"accept_rate":73,"location":"Europa,
+        the Moon of Jupiter.","website_url":"http://www.lesspopmorefizz.com","link":"http://gaming.stackexchange.com/users/3129/lesspop-morefizz","display_name":"LessPop_MoreFizz","profile_image":"http://i.stack.imgur.com/S9g2e.jpg?s=128&g=1"},{"badge_counts":{"bronze":363,"silver":224,"gold":50},"account_id":66721,"is_employee":false,"last_modified_date":1417835029,"last_access_date":1418038172,"reputation_change_year":6285,"reputation_change_quarter":540,"reputation_change_month":40,"reputation_change_week":0,"reputation_change_day":0,"reputation":37486,"creation_date":1280265805,"user_type":"moderator","user_id":1719,"age":28,"accept_rate":94,"location":"New
+        Jersey","website_url":"","link":"http://gaming.stackexchange.com/users/1719/strixvaria","display_name":"StrixVaria","profile_image":"https://www.gravatar.com/avatar/760251b750df5f461099445abcb6d132?s=128&d=identicon&r=PG"},{"badge_counts":{"bronze":315,"silver":145,"gold":22},"account_id":7936,"is_employee":false,"last_modified_date":1415883924,"last_access_date":1418004295,"reputation_change_year":3918,"reputation_change_quarter":904,"reputation_change_month":75,"reputation_change_week":15,"reputation_change_day":0,"reputation":37228,"creation_date":1278530045,"user_type":"moderator","user_id":23,"age":25,"accept_rate":71,"location":"Italy","website_url":"http://twitter.com/badp","link":"http://gaming.stackexchange.com/users/23/badp","display_name":"badp","profile_image":"https://www.gravatar.com/avatar/e64b121f4d288e1f5a34d3f4dc8ebfb9?s=128&d=identicon&r=PG"},{"badge_counts":{"bronze":333,"silver":202,"gold":57},"account_id":124495,"is_employee":false,"last_modified_date":1416490758,"last_access_date":1418040211,"reputation_change_year":4093,"reputation_change_quarter":395,"reputation_change_month":44,"reputation_change_week":0,"reputation_change_day":0,"reputation":34932,"creation_date":1285069741,"user_type":"moderator","user_id":3610,"age":27,"accept_rate":98,"location":"London,
+        United Kingdom","website_url":"http://www.tommedley.com","link":"http://gaming.stackexchange.com/users/3610/fredley","display_name":"fredley","profile_image":"https://www.gravatar.com/avatar/49a1e7b9c43d40de7f75cc6e93397dcb?s=128&d=identicon&r=PG"},{"badge_counts":{"bronze":213,"silver":105,"gold":23},"account_id":507678,"is_employee":false,"last_modified_date":1417824938,"last_access_date":1418012477,"reputation_change_year":2275,"reputation_change_quarter":180,"reputation_change_month":40,"reputation_change_week":10,"reputation_change_day":0,"reputation":20563,"creation_date":1312650942,"user_type":"moderator","user_id":11502,"age":27,"accept_rate":87,"website_url":"http://abortretryflail.blogspot.com","link":"http://gaming.stackexchange.com/users/11502/ashley-nunn","display_name":"Ashley
+        Nunn","profile_image":"http://i.stack.imgur.com/Elkjd.png?s=128&g=1"},{"badge_counts":{"bronze":96,"silver":66,"gold":3},"account_id":102159,"is_employee":true,"last_modified_date":1372424295,"last_access_date":1418042152,"reputation_change_year":1030,"reputation_change_quarter":170,"reputation_change_month":60,"reputation_change_week":10,"reputation_change_day":0,"reputation":19909,"creation_date":1278530934,"user_type":"moderator","user_id":85,"accept_rate":93,"location":"Filgaia","website_url":"","link":"http://gaming.stackexchange.com/users/85/grace-note","display_name":"Grace
+        Note","profile_image":"http://i.stack.imgur.com/f4d1i.jpg?s=128&g=1"},{"badge_counts":{"bronze":164,"silver":82,"gold":22},"account_id":1335,"is_employee":false,"last_modified_date":1400278839,"last_access_date":1417809875,"reputation_change_year":342,"reputation_change_quarter":50,"reputation_change_month":0,"reputation_change_week":0,"reputation_change_day":0,"reputation":12152,"creation_date":1278529620,"user_type":"moderator","user_id":14,"age":33,"accept_rate":98,"location":"Buenos
+        Aires, Argentina","website_url":"http://seniorgeek.com.ar","link":"http://gaming.stackexchange.com/users/14/jmfsg","display_name":"jmfsg","profile_image":"https://www.gravatar.com/avatar/4dfc8f56817006ef21327d5ff19ce04f?s=128&d=identicon&r=PG"}],"has_more":false,"quota_max":10000,"quota_remaining":9953}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:42 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:58:07 GMT
+recorded_with: VCR 2.9.3

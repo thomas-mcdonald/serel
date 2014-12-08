@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,52 +18,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:48 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:42 GMT
       Content-Length:
-      - '595'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
-      yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
-      s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
-      uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
-      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7Og3v+J7//dJ4tL3LC
-      /PqjRzuxb67y/C2NKfrdolq2848effog9uUvWmc1UYjevRf9/jrPzJdl1rS/
-      fzad5k1jaHjv3s79/f179x/qt4tqVpwX+Sz4foe/L5rfP1+syuo6py/Os7LJ
-      6Z1i+dZR8yJbFMuLcdNm07f5O+mfqYopbe7S7N5teWa2F9OZmZmrfNIQK/z+
-      67okSPRBWU2Vih+dLi/KbDkbpV8tqcks/b0I/KxaUCMaRbVetsI1nx7sE7Un
-      2YyGyx8TW/3ijy4qgg9iN0V5yQQiEkzqavkDwn///i9hIPmq/f1rGerOzi/5
-      /uijX7Su2uz3r/NFViypt48ePXzw4L75eJG944Y7BHWeNUSt2tDil/w/AQAA
-      //97Q/ms0QIAAA==
+      - '450'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_counts":{"bronze":61,"silver":34,"gold":2},"account_id":86843,"is_employee":false,"last_modified_date":1370240414,"last_access_date":1399547868,"reputation_change_year":180,"reputation_change_quarter":25,"reputation_change_month":0,"reputation_change_week":0,"reputation_change_day":0,"reputation":4073,"creation_date":1279200486,"user_type":"registered","user_id":821,"accept_rate":95,"location":"England,
+        United Kingdom","website_url":"","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald","display_name":"Thomas
+        McDonald","profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG"}],"has_more":false,"quota_max":10000,"quota_remaining":9939}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:48 GMT
+  recorded_at: Mon, 08 Dec 2014 12:58:42 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821/favorites?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -69,69 +59,35 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:48 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:42 GMT
       Content-Length:
-      - '1875'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3/0i9Z50xbV8vcvZh89
-      2vv0/s6no4/KrGl//3xWtL//LGvzjx7t3tvd3ft0d3/3/uijaZ1n3N59tfvw
-      /v7evr6WTdvismiv7fd7B7t7D+8/2Bl91Eyrmj4iINmyucrr339arZftR4/u
-      0QfTab5q89nvr98oMnsPRx+1RVvSWx99vi5mxfIireq0yXP+ta2ululFXV21
-      87RYpl+u8uWbN08/oneyC4zuo4o+advZR98ffXRZ5Femw0/39kYf0bt5/dGj
-      X/zRutEOdx8SkrOiWZXZ9e+/zBbo9XxS53XeVgS0zlfrlsdOuO3fo7b8Znu9
-      QsM6vyialtrOqOmqrs6LMv/9i0V2gS/nbbt6dPfu1dXV+KLOLrM2q8fTanFX
-      fr17/96DvU/3st3z7P798/39BwcPD2af7jzYe/Bw9/zewcOHv8fss2JGIymm
-      1fIX1p+9/Jy6KIvlWwf5IlsQQcZNm03f5u+m82x5kXMPQLG5SyO7641EqP37
-      1zxDDw9+ya2hGWZp7jKn3L2QOdmu6m2dk23MybbMyXax3DYzMPqoaHRyiUKP
-      2nqd/5JRh/t2P32ICY9x38Gnn+7t7vS5b+/hwd7+zoPdg2Hu2yF67t+33Le7
-      f0v2I2zu7Tv2++48a9OsztN2nqeLqmnTVUVNz9dl2qzysmzSc+JMfFmCD2Yp
-      TX0xTcEdze/hsSR//DbrsuSDhw93ozy5s9fjyfYH+TJvOhx57979T79Blny4
-      /2C6f//BdLKf398/2JlODiZ75zsP8/2HDx7uH9zb/3CW3Nm7awcSMOTBva/D
-      kMw8d69olrZplrZpIrYxS9tmlrZllrZplvhLmaVtno5tnqXb8ejDAR7dIQV5
-      7+Gn9yIaEl+RAt0d5NEH+3sPPt2553j0QZdHDwZ49OFD6KGAR4uGuXBCSKdX
-      2TUpyZTmaJlP8VWZLWf0fXWRU5saSvOLgr6qs/M2YFLzYZdNdx/EVefBLuSq
-      w6fHy57evH9w8A3yaP5gZy/PH+6fH0z29x/ms3v37p0/2H94f/feg91Pp9kH
-      8yhGdTdb9nXm7s7O1+LRh5ZHi4a5ELO0TbNEanNbZ2lbZ2nbzBLUqJuQWzHp
-      7n6USfce7uw/3P90/2FMkdJXu7v37g8z6b29hw/2nRkHI4RMujfApLv793bj
-      TMp6ND8/z9Fbns7yprhYsiLNlsSc58WSHBVi38mkpOFVyzy9II1Bc1DVt2NX
-      sp4HMX69twcCdfj1Rfa2KIlLO4r1/v43x7Kzab5/j5Tp7v2DbHd/eu88n+3s
-      TfLswcMHk3w6e/DBLIuB3V3agQRce//B12JaMFPAtKxX7axty6yxYs2W22bW
-      tr1Z27azdjv2/XR/3xj00A/Y29vbeQAPtc++D+7v7tz/dNgPIP26sw/to+z7
-      8Lbc++n+fU/FnhBjnhEXtumbvMxXVd2matHTPKvL63RC/yurK7ini+smL8/T
-      9eoW9n/vwYN7MUbd34Vd6DDqs2xSZF0+3T3Yu//gm+PUTz+d0v/2Zw8fZA8m
-      03sH9x9mB/f37t8739m5l++eTz6YUzGyu+dmJKEH8OnXYlSwzd0peJAYrt1u
-      dYK2leTbPEHbE/qfTNC2TND2enU7tiSHPM6V98hXB+17XEkOPJn2+8Ncieho
-      /2DXcuW9nlJ94Hjv29VV2syrdTkjFixpNEsYdzBG+vQqq8/TZzTaOm8Cf3OG
-      byCc/E1PQZK1jLLdp331uCjzusd0n+5+cyy3u3e+P8vJwyCkdvbOPz3Yn90j
-      4k0enD84uH8+m304y3368K6M4mvxF83/3Xl1tS1zQFzGcwDTDTJtdyh9G5Y6
-      uIegpm+nSdoOdg+iLEVfEcN8al7rsxQ5PxRA7jlFd9Blqd2BiIew2eVJa0mz
-      01c+yIf3HnqcCBv+C3/83sPD0IwX04Kmx7mUKdEUirBpIdcX17e02bv3P40y
-      5e4OsggdrszWhAF44iLP33a9TU47fFPsSSYmy8mG3J/dm+af7p7vHBC7Ptib
-      HRzsZgfnn34DUTqN7253PGGs/rUsOLiMDXhovmW2nGu5LbO1bWbrVhy8u7f/
-      IGqPydfd+fT+YFZo596Dg5374HCj+XZua5D3KP6Mu5PVqi0W60W6ylqaY6Md
-      p+RB1tWq+RrRDqnHqFW+t3+/H+58p1pmLdE/fVpnRVdRfnrv4Bs0zg/39u7d
-      Pz/Y3dm/T3mj/F52vrO3mz3IP32YZZ/OPv1wTYkB3v1pHdD2TAcU8OKD/a/D
-      i8wvgTepk7atk6bqdEoOJCbt5uCH5uwXras2+/3rfJExB0NOHuybjxfZO6gO
-      ekYfzbPm918wu51nZZP/kv8nAAD//4gkqF8JFQAA
+      - '1602'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"tags":["minecraft"],"owner":{"reputation":9217,"user_id":1070,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/975ae0485d3ce61f08f4d72d881a8f69?s=128&d=identicon&r=PG","display_name":"authenticgeek","link":"http://gaming.stackexchange.com/users/1070/authenticgeek"},"is_answered":true,"view_count":298317,"protected_date":1321379397,"accepted_answer_id":8311,"answer_count":20,"score":192,"last_activity_date":1407427166,"creation_date":1285948160,"last_edit_date":1285981857,"question_id":8310,"link":"http://gaming.stackexchange.com/questions/8310/whats-the-most-efficient-minecraft-mining-strategy","title":"What&#39;s
+        the most efficient Minecraft mining strategy?"},{"tags":["minecraft"],"owner":{"reputation":893,"user_id":8114,"user_type":"registered","accept_rate":100,"profile_image":"https://www.gravatar.com/avatar/9e702ee94f8b449ed333f749513716ca?s=128&d=identicon&r=PG","display_name":"Anto","link":"http://gaming.stackexchange.com/users/8114/anto"},"is_answered":true,"view_count":8816,"accepted_answer_id":19930,"answer_count":8,"score":20,"last_activity_date":1401701173,"creation_date":1302611121,"last_edit_date":1302613963,"question_id":19929,"link":"http://gaming.stackexchange.com/questions/19929/what-is-the-best-way-to-connect-islands-together-in-minecraft","title":"What
+        is the best way to connect islands together in Minecraft?"},{"tags":["minecraft"],"owner":{"reputation":533,"user_id":3229,"user_type":"registered","accept_rate":50,"profile_image":"https://www.gravatar.com/avatar/dce43cb8158a14c3fed02bea797becd7?s=128&d=identicon&r=PG","display_name":"Nakilon","link":"http://gaming.stackexchange.com/users/3229/nakilon"},"is_answered":true,"view_count":49045,"protected_date":1375459142,"accepted_answer_id":32498,"answer_count":3,"score":31,"last_activity_date":1393786180,"creation_date":1290491135,"last_edit_date":1290494649,"question_id":11429,"link":"http://gaming.stackexchange.com/questions/11429/what-is-the-most-effective-design-for-an-infinite-cobblestone-generator","title":"What
+        is the most effective design for an infinite cobblestone generator?"},{"tags":["magicka"],"owner":{"reputation":40208,"user_id":102,"user_type":"registered","accept_rate":84,"profile_image":"https://www.gravatar.com/avatar/947c457cb4e5480cb8b2f09e49794834?s=128&d=identicon&r=PG","display_name":"tzenes","link":"http://gaming.stackexchange.com/users/102/tzenes"},"is_answered":true,"view_count":45420,"protected_date":1339006370,"accepted_answer_id":16934,"answer_count":3,"score":17,"last_activity_date":1384228121,"creation_date":1298240718,"last_edit_date":1311866210,"question_id":16929,"link":"http://gaming.stackexchange.com/questions/16929/what-are-the-most-powerful-spells-for-the-listed-magic-types","title":"What
+        are the most powerful spells for the listed magic types?"},{"tags":["dwarf-fortress"],"owner":{"reputation":251,"user_id":469,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/12f4de72249502f684d3758b7f785fdd?s=128&d=identicon&r=PG","display_name":"mlern","link":"http://gaming.stackexchange.com/users/469/mlern"},"is_answered":true,"view_count":3995,"answer_count":7,"score":50,"last_activity_date":1374550410,"creation_date":1279142758,"last_edit_date":1312307257,"question_id":1727,"link":"http://gaming.stackexchange.com/questions/1727/how-should-i-learn-to-play-dwarf-fortress","title":"How
+        should I learn to play Dwarf Fortress?"},{"tags":["minecraft"],"owner":{"reputation":11143,"user_id":3454,"user_type":"registered","accept_rate":75,"profile_image":"https://www.gravatar.com/avatar/92235f8104562ae3af021a7e69aa6d6d?s=128&d=identicon&r=PG","display_name":"Jonathan
+        Drain","link":"http://gaming.stackexchange.com/users/3454/jonathan-drain"},"is_answered":true,"view_count":46618,"accepted_answer_id":12483,"answer_count":2,"score":43,"last_activity_date":1365560274,"creation_date":1291990654,"question_id":12476,"link":"http://gaming.stackexchange.com/questions/12476/what-is-the-optimum-pattern-to-place-crops-in-minecraft","title":"What
+        is the optimum pattern to place crops in Minecraft?"},{"tags":["magicka"],"owner":{"reputation":32733,"user_id":4103,"user_type":"registered","accept_rate":67,"profile_image":"https://www.gravatar.com/avatar/66c66c4d97a7bc3859a85253f003e1fb?s=128&d=identicon&r=PG","display_name":"Mad
+        Scientist","link":"http://gaming.stackexchange.com/users/4103/mad-scientist"},"is_answered":true,"view_count":4125,"accepted_answer_id":16450,"answer_count":1,"score":9,"last_activity_date":1358007190,"creation_date":1297510568,"last_edit_date":1312220706,"question_id":16448,"link":"http://gaming.stackexchange.com/questions/16448/can-i-get-teleport-magicka-early-by-blowing-myself-up","title":"Can
+        I get Teleport magicka early by blowing myself up?"},{"tags":["openttd"],"owner":{"reputation":4689,"user_id":190,"user_type":"registered","accept_rate":92,"profile_image":"https://www.gravatar.com/avatar/537262a1fa55f447898d6072791f3899?s=128&d=identicon&r=PG","display_name":"fbrereto","link":"http://gaming.stackexchange.com/users/190/fbrereto"},"is_answered":true,"view_count":6964,"accepted_answer_id":26529,"answer_count":3,"score":5,"last_activity_date":1328129570,"creation_date":1311195424,"last_edit_date":1311261415,"question_id":26506,"link":"http://gaming.stackexchange.com/questions/26506/guiding-or-seeding-town-growth-in-openttd","title":"Guiding
+        or seeding town growth in OpenTTD"}],"has_more":false,"quota_max":10000,"quota_remaining":9938}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:49 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:58:43 GMT
+recorded_with: VCR 2.9.3

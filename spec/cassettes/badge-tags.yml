@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/badges/tags?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,46 +18,25 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:23 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:55:01 GMT
       Content-Length:
-      - '847'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380yWYX+e9fzD56tPtw
-      b/RRnS3ffvToo0ldLX+QfzT6aJktcvq7abN6Wmfn7fYefZhdZfXs959W62WL
-      10YKpL1eoW2bXfz+k6zJZ9SyLBjcvG1Xj+7evcgWxfJiTMCmb/N303m2vMjH
-      02pxl99v7hIGd/2efskoxO/eIH4zwuh8+7yq2zpvmi6K975BDO/d7fTVRfL+
-      IJLT4rIoix9kbVEtt+93kfz0G0Ty/t1OXyGSezvDlLyq6nK2XZ1vX+k8dPHc
-      +8bwJDTu9rvroro/iOp5VpbVut1e5lfbl/lF1pv33W8Q1f27/e66qA5PPUHP
-      o9TcPfgGcbx/1/XTwW13ZxC3Ns8Wlp0j8v3NIbi7c7fbWRfNYRW0opeyso/f
-      N8iPu3t3bS9dxIYlpp3n21dFO53n9c8u9e7dDbvqojjMftl0XuSX+SJftj+b
-      QrJ7/27QUxfBTzfYF+KLnz21TV3flS66KB0MolTm2cU6h2oq84t8OesR7ptk
-      vIO7/e46qO49GES1mBG5i/Pr7XZeNNsX+PBnD9e9B3cj/XWRHaZrm9d1VhfZ
-      zyIf7h3ctb10ELs3rAebt9d10WPC3QffHF73du5qJ12shtXeJGvbMj8vcjKT
-      934Wp/Xe3t2wqy6KwwrwB/RCtk0jA2rbzVVVz342Eb13N9ZhF91ht6G5aqu6
-      i+D+N4jg/l3poovSBvegmuX1Ej7QeVbn/Xn+BmXjHjkJ3d66iA7r6XeT6t32
-      vU93fjYR/PSu7aWL2MNBxN4S0Fm1aLazRVau6+06n76tlvThzyYnPrw73G0n
-      LDhw2rspysu8dqhviq2+MWQJgQ2h1d693WH0omrxm5SX3QGtuDeM1KA//Q1O
-      797usDt9z9m3i6qcedT6YUwmdR9O5vdHH/2iddVmv3+dL7KC+e/Rw4Odh+bj
-      RfaO+t+hZ/TRPGt+/0VVEwYU0DT5L/l/AgAA///5CD7wDRAAAA==
+      - '784'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_type":"tag_based","award_count":24,"rank":"bronze","badge_id":192,"link":"http://gaming.stackexchange.com/badges/192/starcraft-2","name":"starcraft-2"},{"badge_type":"tag_based","award_count":7,"rank":"bronze","badge_id":193,"link":"http://gaming.stackexchange.com/badges/193/dwarf-fortress","name":"dwarf-fortress"},{"badge_type":"tag_based","award_count":9,"rank":"bronze","badge_id":195,"link":"http://gaming.stackexchange.com/badges/195/civilization-5","name":"civilization-5"},{"badge_type":"tag_based","award_count":7,"rank":"bronze","badge_id":203,"link":"http://gaming.stackexchange.com/badges/203/world-of-warcraft","name":"world-of-warcraft"},{"badge_type":"tag_based","award_count":2,"rank":"bronze","badge_id":204,"link":"http://gaming.stackexchange.com/badges/204/fallout-new-vegas","name":"fallout-new-vegas"},{"badge_type":"tag_based","award_count":50,"rank":"bronze","badge_id":205,"link":"http://gaming.stackexchange.com/badges/205/minecraft","name":"minecraft"},{"badge_type":"tag_based","award_count":7,"rank":"bronze","badge_id":210,"link":"http://gaming.stackexchange.com/badges/210/team-fortress-2","name":"team-fortress-2"},{"badge_type":"tag_based","award_count":2,"rank":"bronze","badge_id":212,"link":"http://gaming.stackexchange.com/badges/212/portal-2","name":"portal-2"},{"badge_type":"tag_based","award_count":2,"rank":"bronze","badge_id":213,"link":"http://gaming.stackexchange.com/badges/213/the-witcher-2","name":"the-witcher-2"},{"badge_type":"tag_based","award_count":3,"rank":"bronze","badge_id":215,"link":"http://gaming.stackexchange.com/badges/215/achievements","name":"achievements"},{"badge_type":"tag_based","award_count":7,"rank":"bronze","badge_id":216,"link":"http://gaming.stackexchange.com/badges/216/steam","name":"steam"},{"badge_type":"tag_based","award_count":22,"rank":"bronze","badge_id":218,"link":"http://gaming.stackexchange.com/badges/218/league-of-legends","name":"league-of-legends"},{"badge_type":"tag_based","award_count":3,"rank":"bronze","badge_id":232,"link":"http://gaming.stackexchange.com/badges/232/battlefield-3","name":"battlefield-3"},{"badge_type":"tag_based","award_count":2,"rank":"bronze","badge_id":233,"link":"http://gaming.stackexchange.com/badges/233/zelda-skyward-sword","name":"zelda-skyward-sword"},{"badge_type":"tag_based","award_count":5,"rank":"bronze","badge_id":234,"link":"http://gaming.stackexchange.com/badges/234/swtor","name":"swtor"},{"badge_type":"tag_based","award_count":1,"rank":"bronze","badge_id":235,"link":"http://gaming.stackexchange.com/badges/235/modern-warfare-3","name":"modern-warfare-3"},{"badge_type":"tag_based","award_count":3,"rank":"bronze","badge_id":236,"link":"http://gaming.stackexchange.com/badges/236/xbox-360","name":"xbox-360"},{"badge_type":"tag_based","award_count":2,"rank":"bronze","badge_id":239,"link":"http://gaming.stackexchange.com/badges/239/kingdoms-amalur-reckoning","name":"kingdoms-amalur-reckoning"},{"badge_type":"tag_based","award_count":12,"rank":"bronze","badge_id":240,"link":"http://gaming.stackexchange.com/badges/240/mass-effect-3","name":"mass-effect-3"},{"badge_type":"tag_based","award_count":3,"rank":"bronze","badge_id":228,"link":"http://gaming.stackexchange.com/badges/228/terraria","name":"terraria"},{"badge_type":"tag_based","award_count":25,"rank":"bronze","badge_id":230,"link":"http://gaming.stackexchange.com/badges/230/skyrim","name":"skyrim"},{"badge_type":"tag_based","award_count":36,"rank":"bronze","badge_id":245,"link":"http://gaming.stackexchange.com/badges/245/diablo-3","name":"diablo-3"},{"badge_type":"tag_based","award_count":1,"rank":"bronze","badge_id":251,"link":"http://gaming.stackexchange.com/badges/251/pc","name":"pc"},{"badge_type":"tag_based","award_count":5,"rank":"bronze","badge_id":252,"link":"http://gaming.stackexchange.com/badges/252/dota-2","name":"dota-2"},{"badge_type":"tag_based","award_count":3,"rank":"bronze","badge_id":253,"link":"http://gaming.stackexchange.com/badges/253/guild-wars-2","name":"guild-wars-2"},{"badge_type":"tag_based","award_count":3,"rank":"bronze","badge_id":256,"link":"http://gaming.stackexchange.com/badges/256/borderlands-2","name":"borderlands-2"},{"badge_type":"tag_based","award_count":4,"rank":"bronze","badge_id":257,"link":"http://gaming.stackexchange.com/badges/257/xcom-enemy-unknown","name":"xcom-enemy-unknown"},{"badge_type":"tag_based","award_count":1,"rank":"bronze","badge_id":258,"link":"http://gaming.stackexchange.com/badges/258/zerg","name":"zerg"},{"badge_type":"tag_based","award_count":1,"rank":"bronze","badge_id":270,"link":"http://gaming.stackexchange.com/badges/270/saints-row-the-third","name":"saints-row-the-third"},{"badge_type":"tag_based","award_count":2,"rank":"bronze","badge_id":271,"link":"http://gaming.stackexchange.com/badges/271/bioshock-infinite","name":"bioshock-infinite"}],"has_more":true,"quota_max":10000,"quota_remaining":9986}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:23 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:55:02 GMT
+recorded_with: VCR 2.9.3

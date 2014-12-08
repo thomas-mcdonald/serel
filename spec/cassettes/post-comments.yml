@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/posts/29552?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,49 +18,39 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:30 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:09 GMT
       Content-Length:
-      - '468'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0qpr29y9mHz3ae3j/
-      /t5I/m6vV/lHjz7Kls1VXn80+qi6WtLPR7/4o3WT19z6YG939NGsaFZldv37
-      L7MFmr+ZV4usSb+YPq2WWTmj9+p8tW6ztqiWHz26t/Pg3kgAKPg6vyiaNq9z
-      NF3V1XlR5r9/scgu8OW8bVeP7t69uroaX9TZZdZm9XhaLe7Kr3f39qez+/ez
-      yW726d75+WR39142OZju7J1/uj99eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVEW
-      y7cO8kW2KJYX46bNpm/zd9N5trzIuQeg2NylAd5teUDbi+nMDCibTvNV+/vX
-      WUs47u7s/JLRR9M65xH+/jP58N7u/d39vYMdomWZES2zaVtcFu115PtmWtUM
-      55d8f/TRL1pXbfb71/kiK5aE2EePHj54+NB8vMjecX87O6OP5lnz+y/4xfOs
-      bPJf8v8EAAD//9SprJ/OAQAA
+      - '337'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"score":12,"last_activity_date":1315142802,"creation_date":1315142802,"post_type":"answer","post_id":29552}],"has_more":false,"quota_max":10000,"quota_remaining":9978}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:30 GMT
+  recorded_at: Mon, 08 Dec 2014 12:56:09 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/posts/29552/comments?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -66,38 +58,26 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:30 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:09 GMT
       Content-Length:
-      - '459'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380rRaLfNn+/sXso0f7
-      9z7duT/6aFU18vfew/v390YfTes8a4tq+fvPsjb/6NHuvd37e5/uPXhIX+Uz
-      gkQtz7OyyUcfVVfLvP7o0S/+aN3kNYM4ePiQIM6KZlVm17//MlsQgI++k5+f
-      p1/k9TSbVR+NPqrz1brlHj569GD3wacjeb29XqFxnV8UTZvX1A2hVlfnRZn/
-      /sUiu8CX87ZdPbp79+rqanxRZ5dZm9VjGtFd+fXuvYcHe7v5wW42ne7PZoTK
-      9NNsb//gIN+5v7u3t3v+e8w+K2Y0+mJaLX9h/dnLz6mLsli+dZAvskWxvBg3
-      bTZ9m7+bzrPlRc49AMXmLoZ396dpONsLOxzqLF+1v3/NxHqw90t+yfdHH/2i
-      ddVmv3+dL7JiSfA+evTwwcMD8/Eie0dU3aFn9NE8a37/RVXnStJf8v8EAAD/
-      /7Oe/SCrAQAA
+      - '330'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"owner":{"reputation":12069,"user_id":8995,"user_type":"registered","accept_rate":93,"profile_image":"https://www.gravatar.com/avatar/39821e81acc4dd995c6a2488e051221f?s=128&d=identicon&r=PG","display_name":"Jeff
+        Mercado","link":"http://gaming.stackexchange.com/users/8995/jeff-mercado"},"edited":false,"score":0,"creation_date":1315262792,"post_id":29552,"comment_id":43605}],"has_more":false,"quota_max":10000,"quota_remaining":9977}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:30 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:56:10 GMT
+recorded_with: VCR 2.9.3

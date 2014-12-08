@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/tags/required?key=0p65aJUHxHo0G19*YF272A((&site=meta.gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,34 +18,25 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:37 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:57:56 GMT
       Content-Length:
-      - '298'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+mhXNdN00
-      RbX8aPTRtFov248effrwweijovn96/wXrYs6n330qK3XOX+0qGZ5nbVV/ftX
-      y/L6o0fnWdnQN/Os+f2b62W1vAZ0/vCXjGwfk/WFA767v/+NAm/Wq1VVt34H
-      977RDs7zrF3X+Tbg5Y3f0e6n30BH3x999IvWVZsRmEVWLIvlxUePHj54uGM+
-      XmTvqKsdeuT9RVXn5t3/JwAA//+G473P0AEAAA==
+      - '183'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"has_synonyms":false,"is_moderator_only":false,"is_required":true,"count":1545,"name":"discussion"},{"has_synonyms":false,"is_moderator_only":false,"is_required":true,"count":433,"name":"support"},{"has_synonyms":false,"is_moderator_only":false,"is_required":true,"count":262,"name":"bug"},{"has_synonyms":false,"is_moderator_only":false,"is_required":true,"count":227,"name":"feature-request"}],"has_more":false,"quota_max":10000,"quota_remaining":9959}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:37 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:57:57 GMT
+recorded_with: VCR 2.9.3

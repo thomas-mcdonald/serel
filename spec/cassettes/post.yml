@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/posts/16573?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,38 +18,26 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:28 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:08 GMT
       Content-Length:
-      - '484'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0qpr29y9mHz3a/fT+
-      g3sj+bu9XuUfPfooWzZXef3R6KPqakk/H/3ij9ZNXnPrg73d0UezolmV2fXv
-      v8wWaP5mXi2yJv1i+rRaZuWM3qvz1brN2qJafvTo3g7AMwAFX+cXRdPmdY6m
-      q7o6L8r89y8W2QW+nLft6tHdu1dXV+OLOrvM2qweT6vFXfn17t7+dHb/fjbZ
-      zT7dOz+f7O7eyyYH052980/3pw/v7ez+HrPPilm+bItptfyF9WcvP6cuymL5
-      1kG+yBbF8mLctNn0bf5uOs+WFzn3ABSbuzTAuy0PaHsxnZkBZdNpvmp//zpr
-      CcfdnZ1fMvpoWuc8wt9/Jh/uPXzwYOfe/sEBdZgRLbNpW1wW7bX7/uHepw8+
-      vb+n3+ezoo1810yrmj7au/9Lvj/66Betqzb7/et8kRVLQvqjRw8PdnbNx4vs
-      HeOyszP6aJ41v/+CXzzPyib/Jf9PAAAA//+wODzf6gEAAA==
+      - '352'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"score":37,"last_edit_date":1417349191,"last_activity_date":1417349191,"creation_date":1297703488,"post_type":"answer","post_id":16573}],"has_more":false,"quota_max":10000,"quota_remaining":9979}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:28 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:56:09 GMT
+recorded_with: VCR 2.9.3

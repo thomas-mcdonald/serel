@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,52 +18,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:56 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:51 GMT
       Content-Length:
-      - '595'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
-      yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
-      s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
-      uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
-      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7Og3v+J7//dJ4tL3LC
-      /PqjRzuxb67y/C2NKfrdolq2848effog9uUvWmc1UYjevRf9/jrPzJdl1rS/
-      fzad5k1jaHjv3s79/f179x/qt4tqVpwX+Sz4foe/L5rfP1+syuo6py/Os7LJ
-      6Z1i+dZR8yJbFMuLcdNm07f5O+mfqYopbe7S7N5teWa2F9OZmZmrfNIQK/z+
-      67okSPRBWU2Vih+dLi/KbDkbpV8tqcks/b0I/KxaUCMaRbVetsI1nx7sE7Un
-      2YyGyx8TW/3ijy4qgg9iN0V5yQQiEkzqavkDwn///i9hIPmq/f1rGerOzi/5
-      /uijX7Su2uz3r/NFViypt48ePXzw6UPz8SJ7xw13COo8a4hataHFL/l/AgAA
-      //9YRYST0QIAAA==
+      - '450'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_counts":{"bronze":61,"silver":34,"gold":2},"account_id":86843,"is_employee":false,"last_modified_date":1370240414,"last_access_date":1399547868,"reputation_change_year":180,"reputation_change_quarter":25,"reputation_change_month":0,"reputation_change_week":0,"reputation_change_day":0,"reputation":4073,"creation_date":1279200486,"user_type":"registered","user_id":821,"accept_rate":95,"location":"England,
+        United Kingdom","website_url":"","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald","display_name":"Thomas
+        McDonald","profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG"}],"has_more":false,"quota_max":10000,"quota_remaining":9933}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:56 GMT
+  recorded_at: Mon, 08 Dec 2014 12:58:52 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821/questions?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -69,88 +59,67 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:56 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:53 GMT
       Content-Length:
-      - '2715'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3/0i9Z50xbV8vcvZh89
-      undvZ39n9NG0zjP+bJa1+UePdu/tPry3s3Ow92D0UZk17e+fTdvismiv7fd7
-      9x883Lt3b3/0UTOtavro09FH2bK5yuvff1qtly21oQ+m03zV5rPfX78xHdJX
-      bdGW9NZH366u0lmVnqVtdXFR5mk7z9OrYjlrCKN8Sb+u8rpJq2WaLWdpdX7+
-      e3xE72YXGMlHF3W23G7XddEsqu37H31/9NFlkV/Z/g+om+pqmdcfPfrFH60b
-      7f9gjz6eFc2qzK5//2W2ABJv5tUia9Ivpk+rZVbOqIs6X61bpghhvPPg3kgA
-      tNcrtK/zi6Jp8zpH01VdnRdl/vsXi+wCX87bdvXo7t2rq6sxIXiZtVk9nlaL
-      u/Lr3b396ez+/Wyym326d34+2d29l00Opjt755/uT4nmu7/H7LNili/bYlot
-      f2H92cvPqYuyWL51kC+yRbG8GDdtNn2bv5vOs+VFzj0AxeYuDfBuywPaXkxn
-      ZkAyFb9/LdO3s/NLbg3VsEtzl3nl7ry62p5V28W2zNg2zdi2m7FtmbHtarlN
-      M7ZNM0adF41yABHsUVuv818y6rDh/v7DnXsRNty7Tzz2cPfhMBveu3d/F68q
-      G967JRuiw33HhmfnxIJlNX1LfJZCVEbEemVJv6aTPG2qcpYWaNLkZT5t8aNM
-      s7L0uXG2JorRsGf5eb6cEQ16DHn/3o8Y8htlSOaau8U5MSPmjjhuG3O3jamj
-      37Yn+TambptbyNThR7lNU3dLtrx3cD/KljsH93YfbGBL872y5V6XLXcc7313
-      nrXpPFut8mWTXs1J652lNM5Vmbd5epx+Oy9XRIj02yRPPr9Ni7bIm+1iub2o
-      mC867Lb3I277prmNmOHuFc3Wts7WNmaLWMvM1na2PZfZohbLWZfFzrOy6fPY
-      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
-      kv8nAAD//ylIcCqxNQAA
+      - '2389'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"tags":["minecraft"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":20770,"accepted_answer_id":37009,"answer_count":1,"score":6,"last_activity_date":1416505815,"creation_date":1321626469,"question_id":37008,"link":"http://gaming.stackexchange.com/questions/37008/what-does-the-server-difficulty-property-do","title":"What
+        does the server difficulty property do?"},{"tags":["minecraft"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":8907,"protected_date":1398111695,"accepted_answer_id":30370,"answer_count":3,"score":25,"last_activity_date":1398092526,"creation_date":1316009096,"question_id":30365,"link":"http://gaming.stackexchange.com/questions/30365/what-does-right-clicking-with-the-sword-equipped-do","title":"What
+        does right clicking with the sword equipped do?"},{"tags":["battlefield-3"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":11450,"accepted_answer_id":33734,"answer_count":2,"score":11,"last_activity_date":1397479356,"creation_date":1319994547,"question_id":33733,"link":"http://gaming.stackexchange.com/questions/33733/how-do-i-climb-onto-the-top-of-the-train","title":"How
+        do I climb onto the top of the train?"},{"tags":["magicka"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":1337,"accepted_answer_id":23836,"answer_count":1,"score":7,"last_activity_date":1391075705,"creation_date":1307037513,"last_edit_date":1391075705,"question_id":23827,"link":"http://gaming.stackexchange.com/questions/23827/how-do-i-access-the-items-unlocked-in-the-nippon-dlc","title":"How
+        do I access the items unlocked in the Nippon DLC?"},{"tags":["minecraft"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":7188,"accepted_answer_id":12365,"answer_count":3,"score":7,"last_activity_date":1378590976,"creation_date":1291844139,"question_id":12364,"link":"http://gaming.stackexchange.com/questions/12364/how-often-are-smp-maps-automatically-saved","title":"How
+        often are SMP maps automatically saved?"},{"tags":["team-fortress-2","tf2-heavy"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":3003,"accepted_answer_id":12686,"answer_count":7,"score":10,"last_activity_date":1364713957,"creation_date":1292110624,"last_edit_date":1322256813,"question_id":12539,"link":"http://gaming.stackexchange.com/questions/12539/what-use-is-the-shotgun-for-the-heavy","title":"What
+        use is the shotgun for the heavy?"},{"tags":["evil-genius"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":4065,"accepted_answer_id":34056,"answer_count":1,"score":13,"last_activity_date":1361137879,"creation_date":1320340692,"last_edit_date":1320340847,"question_id":34055,"link":"http://gaming.stackexchange.com/questions/34055/how-can-i-maintain-the-loyalty-of-my-evil-minions","title":"How
+        can I maintain the loyalty of my evil minions?"},{"tags":["terraria"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":1239,"accepted_answer_id":27571,"answer_count":4,"score":16,"last_activity_date":1355314123,"creation_date":1312977063,"last_edit_date":1312983819,"question_id":27567,"link":"http://gaming.stackexchange.com/questions/27567/how-does-a-tiki-torch-differ-from-a-standard-torch","title":"How
+        does a Tiki Torch differ from a standard Torch?"},{"tags":["magicka"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":511,"accepted_answer_id":19977,"answer_count":3,"score":10,"last_activity_date":1350613605,"creation_date":1302647072,"last_edit_date":1302647499,"question_id":19976,"link":"http://gaming.stackexchange.com/questions/19976/what-disadvantages-are-there-from-being-wet","title":"What
+        disadvantages are there from being wet?"},{"tags":["team-fortress-2"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":995,"accepted_answer_id":26726,"answer_count":1,"score":8,"last_activity_date":1341421127,"creation_date":1311628861,"last_edit_date":1341421127,"question_id":26724,"link":"http://gaming.stackexchange.com/questions/26724/what-does-the-enable-glow-effect-checkbox-do","title":"What
+        does the &quot;Enable Glow Effect&quot; checkbox do?"},{"tags":["portal-2"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":3420,"accepted_answer_id":20379,"answer_count":3,"score":27,"last_activity_date":1337435443,"creation_date":1303225715,"question_id":20370,"link":"http://gaming.stackexchange.com/questions/20370/what-determines-which-character-i-play-in-portal-2-co-op","title":"What
+        determines which character I play in Portal 2 co-op?"},{"tags":["cities-in-motion"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":96,"answer_count":1,"score":4,"last_activity_date":1334310893,"creation_date":1325083179,"question_id":44385,"link":"http://gaming.stackexchange.com/questions/44385/what-happens-when-i-complete-a-helping-hand","title":"What
+        happens when I complete A Helping Hand?"},{"tags":["gran-turismo-5"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":1242,"accepted_answer_id":33041,"answer_count":2,"score":7,"last_activity_date":1332398821,"creation_date":1319300827,"question_id":33040,"link":"http://gaming.stackexchange.com/questions/33040/how-do-i-toggle-the-windscreen-wipers-on-and-off","title":"How
+        do I toggle the windscreen wipers on and off?"},{"tags":["dungeon-defenders"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":991,"accepted_answer_id":44904,"answer_count":1,"score":3,"last_activity_date":1325335103,"creation_date":1325334919,"question_id":44903,"link":"http://gaming.stackexchange.com/questions/44903/if-i-lock-an-item-will-it-be-sold-if-i-select-sell-all","title":"If
+        I lock an item, will it be sold if I select sell all?"},{"tags":["team-fortress-2"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":541,"accepted_answer_id":24263,"answer_count":2,"score":18,"last_activity_date":1322211025,"creation_date":1307646492,"last_edit_date":1322211025,"question_id":24261,"link":"http://gaming.stackexchange.com/questions/24261/how-can-i-distinguish-which-gun-a-medic-is-using","title":"How
+        can I distinguish which gun a medic is using?"},{"tags":["battlefield-3"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":1292,"accepted_answer_id":37238,"answer_count":1,"score":16,"last_activity_date":1321713089,"creation_date":1321635755,"question_id":37051,"link":"http://gaming.stackexchange.com/questions/37051/what-is-the-range-of-the-eod-bot","title":"What
+        is the range of the EOD bot?"},{"tags":["gran-turismo-5"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":651,"accepted_answer_id":33042,"answer_count":1,"score":3,"last_activity_date":1319301330,"creation_date":1319280976,"question_id":33028,"link":"http://gaming.stackexchange.com/questions/33028/how-do-i-customise-my-suspension-settings","title":"How
+        do I customise my suspension settings?"},{"tags":["deus-ex-human-revolution"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":2318,"accepted_answer_id":29029,"answer_count":1,"score":15,"last_activity_date":1314776106,"creation_date":1314654043,"question_id":29019,"link":"http://gaming.stackexchange.com/questions/29019/does-it-make-a-difference-whether-i-make-a-panel-active-or-inactive","title":"Does
+        it make a difference whether I make a panel active or inactive?"},{"tags":["deus-ex-human-revolution"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":1632,"accepted_answer_id":29015,"answer_count":1,"score":21,"last_activity_date":1314649482,"creation_date":1314648289,"question_id":29014,"link":"http://gaming.stackexchange.com/questions/29014/does-the-laser-targeting-system-alert-enemies","title":"Does
+        the Laser Targeting System alert enemies?"},{"tags":["rock-band-3"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":439,"accepted_answer_id":27507,"answer_count":1,"score":4,"last_activity_date":1312902943,"creation_date":1312901592,"question_id":27505,"link":"http://gaming.stackexchange.com/questions/27505/can-i-disable-the-background-video-effects","title":"Can
+        I disable the background video effects?"},{"tags":["minecraft"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":3373,"accepted_answer_id":14545,"answer_count":2,"score":11,"last_activity_date":1302480013,"creation_date":1294940814,"question_id":14541,"link":"http://gaming.stackexchange.com/questions/14541/what-dyes-are-now-available-in-minecraft","title":"What
+        dyes are now available in Minecraft?"}],"has_more":false,"quota_max":10000,"quota_remaining":9932}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:56 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:58:53 GMT
+recorded_with: VCR 2.9.3

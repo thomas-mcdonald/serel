@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,52 +18,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:57 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:52 GMT
       Content-Length:
-      - '594'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
-      yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
-      s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
-      uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
-      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7Og3v+J7//dJ4tL3LC
-      /PqjRzuxb67y/C2NKfrdolq2848effog9uUvWmc1UYjevRf9/jrPzJdl1rS/
-      fzad5k1jaHjv3s79/f179x/qt4tqVpwX+Sz4foe/L5rfP1+syuo6py/Os7LJ
-      6Z1i+dZR8yJbFMuLcdNm07f5O+mfqYopbe7S7N5teWa2F9OZmZmrfNIQK/z+
-      67okSPRBWU2Vih+dLi/KbDkbpV8tqcks/b0I/KxaUCMaRbVetsI1nx7sE7Un
-      2YyGyx8TW/3ijy4qgg9iN0V5yQQiEkzqavkDwn///i9hIPmq/f1rGerOzi/5
-      /uijX7Su2uz3r/NFViypt48ePXwAusvHi+wdN9whqPOsIWrVhha/5P8JAAD/
-      /+aW4PvRAgAA
+      - '451'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_counts":{"bronze":61,"silver":34,"gold":2},"account_id":86843,"is_employee":false,"last_modified_date":1370240414,"last_access_date":1399547868,"reputation_change_year":180,"reputation_change_quarter":25,"reputation_change_month":0,"reputation_change_week":0,"reputation_change_day":0,"reputation":4073,"creation_date":1279200486,"user_type":"registered","user_id":821,"accept_rate":95,"location":"England,
+        United Kingdom","website_url":"","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald","display_name":"Thomas
+        McDonald","profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG"}],"has_more":false,"quota_max":10000,"quota_remaining":9931}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:57 GMT
+  recorded_at: Mon, 08 Dec 2014 12:58:53 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821/reputation?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -69,45 +59,25 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:58 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:52 GMT
       Content-Length:
-      - '805'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
-      fbSqmpb/2v30/oN7+nd7vco/evRRtmyu8vqj0UeXVZubD9er3x9/NvRxna/W
-      bdYW1fL3n86z5QV9vXd/Z/QR/T3LWvpr9969nb17+/d2HvyS0WDH9z59eGD+
-      /vodPwz73Xv4YP/+3qf3N/X7YOd+p99ftM4bQH2vnh/c7/S8d/Bg52BnQ897
-      O/cO9j94xPudER9Qt59+uru53wc738CIu7Q++HT34cOHm+Z4b58m+RsYcafj
-      B5/u7uzv7G8e8v0P73i3O8cPdh/ce/hwE3dRx58+/OCO97oj/vTh7v2Dew83
-      sfX+zv3738Ak3+8M+dO93d2dg4NNQ364s9th66/V80FnzPcPdu7d+3Tvhp47
-      xP5aPX/aGTP3vPPphp739x/udLTm1+p5t9vzp9Tv/iYG29+/d/BNzPNul9o7
-      B/d39zeNmZTITkemvl7PnTFT1/cONnIYer6NUGXTab5qB7rtjHf34MG9nXs3
-      6ZBPb9HrTXTudvxgd/fTb2S4NwhyrN/7mwZ8796De98EU0d7vrfJTpAdedAh
-      9dfqeb/DWrv79x/u7mwSJyLJvQ+n9W5XmnZJgx8cbOSu/b1Pvwk3pGuUiXU+
-      3Tu4t3Gad+BDfHDP98Ked6nfnfv7Gxmb3MKfBQ2y+3B/59Pd3U097+71pvlr
-      9dxhsN2Dg4f7Dzf2vHdv536H2l+HwTrGkbTXw9179zdOM3ki34Sh6DDY7sG9
-      ew83MxhJ3f43wdodPbL76UOaxQcb/c2H9+/vfTixOyp79/79fRryxll+cH/n
-      myD2XrfnvXufUmjxDQx5o23sChR5Avd3Hx78ku+PaBhVm/3+db7IimWxvCB+
-      ePDpp+bjRfaOyQWCzbPm919UNQFo63X+S/6fAAAA//8b8WyVew4AAA==
+      - '588'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"on_date":1415775064,"reputation_change":65,"vote_type":"up_votes","post_type":"question","post_id":34055,"user_id":821},{"on_date":1415128009,"reputation_change":370,"vote_type":"up_votes","post_type":"answer","post_id":16573,"user_id":821},{"on_date":1414708006,"reputation_change":270,"vote_type":"up_votes","post_type":"answer","post_id":20369,"user_id":821},{"on_date":1411140708,"reputation_change":580,"vote_type":"up_votes","post_type":"answer","post_id":24698,"user_id":821},{"on_date":1408709947,"reputation_change":125,"vote_type":"up_votes","post_type":"question","post_id":30365,"user_id":821},{"on_date":1406197843,"reputation_change":80,"vote_type":"up_votes","post_type":"question","post_id":27567,"user_id":821},{"on_date":1393786735,"reputation_change":35,"vote_type":"up_votes","post_type":"question","post_id":33040,"user_id":821},{"on_date":1388138854,"reputation_change":105,"vote_type":"up_votes","post_type":"question","post_id":29014,"user_id":821},{"on_date":1387976490,"reputation_change":110,"vote_type":"up_votes","post_type":"question","post_id":20370,"user_id":821},{"on_date":1379008532,"reputation_change":55,"vote_type":"up_votes","post_type":"question","post_id":14541,"user_id":821},{"on_date":1377248380,"reputation_change":50,"vote_type":"up_votes","post_type":"question","post_id":19976,"user_id":821},{"on_date":1377248317,"reputation_change":35,"vote_type":"up_votes","post_type":"question","post_id":23827,"user_id":821},{"on_date":1372033360,"reputation_change":75,"vote_type":"up_votes","post_type":"question","post_id":29019,"user_id":821},{"on_date":1371060765,"reputation_change":30,"vote_type":"up_votes","post_type":"question","post_id":37008,"user_id":821},{"on_date":1371060764,"reputation_change":90,"vote_type":"up_votes","post_type":"answer","post_id":37009,"user_id":821},{"on_date":1365793230,"reputation_change":80,"vote_type":"up_votes","post_type":"question","post_id":37051,"user_id":821},{"on_date":1361632262,"reputation_change":215,"vote_type":"up_votes","post_type":"answer","post_id":20358,"user_id":821},{"on_date":1357910313,"reputation_change":120,"vote_type":"up_votes","post_type":"answer","post_id":36981,"user_id":821},{"on_date":1356946119,"reputation_change":110,"vote_type":"up_votes","post_type":"answer","post_id":20356,"user_id":821},{"on_date":1353849069,"reputation_change":35,"vote_type":"up_votes","post_type":"question","post_id":12364,"user_id":821},{"on_date":1348864138,"reputation_change":50,"vote_type":"up_votes","post_type":"question","post_id":12539,"user_id":821},{"on_date":1341421152,"reputation_change":40,"vote_type":"up_votes","post_type":"question","post_id":26724,"user_id":821},{"on_date":1341085388,"reputation_change":55,"vote_type":"up_votes","post_type":"question","post_id":33733,"user_id":821},{"on_date":1340725922,"reputation_change":120,"vote_type":"up_votes","post_type":"answer","post_id":29552,"user_id":821},{"on_date":1340230742,"reputation_change":60,"vote_type":"up_votes","post_type":"answer","post_id":54673,"user_id":821},{"on_date":1333742664,"reputation_change":20,"vote_type":"up_votes","post_type":"question","post_id":44385,"user_id":821},{"on_date":1328870661,"reputation_change":40,"vote_type":"up_votes","post_type":"answer","post_id":20384,"user_id":821},{"on_date":1325630645,"reputation_change":15,"vote_type":"up_votes","post_type":"question","post_id":44903,"user_id":821},{"on_date":1321873034,"reputation_change":0,"vote_type":"accepts","post_type":"answer","post_id":37009,"user_id":821},{"on_date":1321200884,"reputation_change":110,"vote_type":"up_votes","post_type":"answer","post_id":16539,"user_id":821}],"has_more":true,"quota_max":10000,"quota_remaining":9930}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:58 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:58:54 GMT
+recorded_with: VCR 2.9.3

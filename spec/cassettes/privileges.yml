@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/privileges?key=0p65aJUHxHo0G19*YF272A((&page=1&pagesize=100&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,44 +18,57 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:35 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:28 GMT
       Content-Length:
-      - '729'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3/UzKu6/f1neTOti1Vb
-      VMuPHn00rfOszdNV1bTNR6OPwi+Pm7dptpzR/5urvE5/0Tpv8A0a1vlq3WbS
-      bveXjOLAV1ndFtNihR6KZbrI26zXx8uwzSqvtxtC2TT2+7k/1E+dL6rLPF3m
-      V+m6IURrwrMupgbXsPGrzY2Dge0M9ahkuyreFgO0O5EW02qxWC+L9no7aHu7
-      Xs7L7GIA/DP/qwDaIJUuK8JnveqB+kn53E2vN+e3h95m5VtM4HSetb0u3oRf
-      +hD3hmlMpMuXbZpf5vX11Tyv8z6RY00ClhmE3uRtOqnWy7bI+9R9TV9m8vV1
-      Wi3pd0OcDvwHg/TIZ0XrZp85pdfNab/NsJDt3MSMIG5aV9VimBn9FrcEzlwz
-      q66WPaA/ab65HefsDTNmQbI4LasmT9FbH/2f7DcIWGh4lpU0bXYxSBQoAv3e
-      B3pvmCQ1qaaLYKK6Gqb7fciSg4DphWxSFs08n7Fu6jOM1+AradCZxpsocZGV
-      JcnKLZgl2vK2vTH3D7FFRAhuw0F7N48OdG+ul9XyOjKu1+uLC+qFe2CuJsHu
-      vNDhquHuMoIjDAlodV6t8uUA855sbNthucEes9WqhtkCwqwnQOGIxdZmFeza
-      T+fTtv9ChxeHe5xO86ZJ2ypdVLO8zlqC2VZVGel0Q8suwwx2R3i3wHdYrF5G
-      WoS2aQP4tl437ZBYvczr86pepKbR+Xop/gCzyDxP4ZFEuHHnl3x/9NEvWldt
-      9vuTC5IVy2J58dGjhw8e3jMfL7J3Ou7RR/Os+f0XFZmoR+dZ2eS/5P8JAAD/
-      /zOBSK+bCQAA
+      - '965'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"reputation":1,"description":"Ask a question or contribute
+        an answer","short_description":"create posts"},{"reputation":5,"description":"Discuss
+        the site itself,  bugs, feedback, and governance","short_description":"participate
+        in meta"},{"reputation":10,"description":"Post more links, answer protected
+        questions","short_description":"remove new user restrictions"},{"reputation":10,"description":"Create
+        answers that can be easily edited by most users","short_description":"create
+        wiki posts"},{"reputation":15,"description":"Bring content to the attention
+        of the community via flags","short_description":"flag posts"},{"reputation":15,"description":"Indicate
+        when questions and answers are useful","short_description":"vote up"},{"reputation":20,"description":"Participate
+        in this site''s chat rooms","short_description":"talk in chat"},{"reputation":50,"description":"Leave
+        comments on other people''s posts","short_description":"comment everywhere"},{"reputation":75,"description":"Offer
+        some of your reputation as bounty on a question","short_description":"set
+        bounties"},{"reputation":100,"description":"Collaborate on the editing and
+        improvement of wiki posts","short_description":"edit community wiki"},{"reputation":100,"description":"Create
+        new chat rooms","short_description":"create chat rooms"},{"reputation":125,"description":"Indicate
+        when questions and answers are not useful","short_description":"vote down"},{"reputation":250,"description":"View
+        and cast close/reopen votes on your own questions","short_description":"view
+        close votes"},{"reputation":300,"description":"Add new tags to the site","short_description":"create
+        tags"},{"reputation":500,"description":"Access first posts and late answers
+        review queues","short_description":"access review queues"},{"reputation":1000,"description":"You''ve
+        been around for a while; see vote counts","short_description":"established
+        user"},{"reputation":1000,"description":"Create chat rooms where only specific
+        users may talk","short_description":"create gallery chat rooms"},{"reputation":2000,"description":"Edits
+        to any question or answer are applied immediately","short_description":"edit
+        questions and answers"},{"reputation":2500,"description":"Decide which tags
+        have the same meaning as others","short_description":"create tag synonyms"},{"reputation":3000,"description":"Help
+        decide whether posts are off-topic or duplicates","short_description":"cast
+        close and reopen votes"},{"reputation":5000,"description":"Approve edits to
+        tag wikis made by regular users","short_description":"approve tag wiki edits"},{"reputation":10000,"description":"Handle
+        flags, access reports, delete questions","short_description":"access to moderator
+        tools"},{"reputation":15000,"description":"Mark questions as protected","short_description":"protect
+        questions"},{"reputation":20000,"description":"Expanded editing, deletion
+        and undeletion privileges","short_description":"trusted user"}],"has_more":false,"quota_max":10000,"quota_remaining":9971}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:35 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:56:29 GMT
+recorded_with: VCR 2.9.3

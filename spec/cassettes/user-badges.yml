@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,52 +18,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:44 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:08 GMT
       Content-Length:
-      - '595'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
-      yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
-      s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
-      uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
-      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7Og3v+J7//dJ4tL3LC
-      /PqjRzuxb67y/C2NKfrdolq2848effog9uUvWmc1UYjevRf9/jrPzJdl1rS/
-      fzad5k1jaHjv3s79/f179x/qt4tqVpwX+Sz4foe/L5rfP1+syuo6py/Os7LJ
-      6Z1i+dZR8yJbFMuLcdNm07f5O+mfqYopbe7S7N5teWa2F9OZmZmrfNIQK/z+
-      67okSPRBWU2Vih+dLi/KbDkbpV8tqcks/b0I/KxaUCMaRbVetsI1nx7sE7Un
-      2YyGyx8TW/3ijy4qgg9iN0V5yQQiEkzqavkDwn///i9hIPmq/f1rGerOzi/5
-      /uijX7Su2uz3r/NFViypt48ePXxwsGs+XmTvuOEOQZ1nDVGrNrT4Jf9PAAAA
-      //9+EpNj0QIAAA==
+      - '451'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_counts":{"bronze":61,"silver":34,"gold":2},"account_id":86843,"is_employee":false,"last_modified_date":1370240414,"last_access_date":1399547868,"reputation_change_year":180,"reputation_change_quarter":25,"reputation_change_month":0,"reputation_change_week":0,"reputation_change_day":0,"reputation":4073,"creation_date":1279200486,"user_type":"registered","user_id":821,"accept_rate":95,"location":"England,
+        United Kingdom","website_url":"","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald","display_name":"Thomas
+        McDonald","profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG"}],"has_more":false,"quota_max":10000,"quota_remaining":9950}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:44 GMT
+  recorded_at: Mon, 08 Dec 2014 12:58:08 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821/badges?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -69,54 +59,61 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:44 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:08 GMT
       Content-Length:
-      - '1200'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380yWYX+e9fzD56tDv6
-      qM6Wbz969NGkrpY/yD8afbTMFjn9/SbPpvO8pg+yq6ye/f7Tar1s+QV5u71e
-      oRlaz6jRuqG2j34x/2TIB3vUdFY0qzK7/v0NzHm1yJr0i+nTapmVeK3OV+s2
-      a4tq+dGjezsP7gkgA7zOL4qmzWvuYVVX50VJaC+yC3w5b9vVo7t3r66uxhd1
-      dpm1WT2eVou78uvdvf3p7P79bLKbfbp3fj7Z3b2XTQ6mO3vnn+5PH97b2f09
-      Zp8Vs3zZFtNq+Qvrz15+Tl2UBZNCIV9ki2J5MW7abPo2fzedZ8uLnHsAis1d
-      GuDdlge0vZjOzICy6TRftb9/nbWE4+7Ozi+5NVQma3OXgCrlf8nIn6m9wZl6
-      3a4xkB/N1A95pvbuNkr5cKbuDc7U6axoqx+J1A97ou7dzYXw4TzdH5ynL+uL
-      bFn84Efa74c+VffvVpb24Wx9Oqz/1qtVVbc/mq0f+mx9erextA9n68HgbJ3U
-      BY3jR1P1Q56qB3enQvhwng6G54la/yBfpi+ztq7KH83XD3m+Du5OZQK2VzIB
-      4bw9HJy343VbTYqKaLH6kfv+w5+3h3ezcALCedvdGTZj03lVZj+asR/2jO3u
-      3G2U9J252h+eq7w8336eZ/XyRyL2w5+w/bsN6F8q/Ttx8rCEvSimefoT67xh
-      ananbedH8/azO297O3eXNAPbv8jMQGfihuNmnrjjZXMVkbYfTdvP9rTdk2nL
-      hP6dSRsOy15WqzUp1UGBu/+jiftZnrhP765kDoZEbnd/2MR9QWFdVk8qmrEf
-      Wbgf8szRvNxdePTvzNqD4ajtbHlJM/2jHOMPf8oeHNwtDPE783UwvMpyXLb1
-      moj1o/n6Yc/Xwe7dzBC/O1/D8vUmu0h/lMX/OZqxg7ttdrEdzeXvHmzIiCyX
-      NEXTH0VqPwdTRukQS/3OjD0cnrE3WfmWCHmZ/2jGvrEZu+WMPXxIQmao342s
-      h+3YT6yrer340XT9kKeLpuTuLxLSd9agh6fqpFosaCjZj2zYD3++7u3enXrk
-      78jXhgzI6bsphv6jKfuhTxnNyt3cUr87Y/c3eB1ZeU2jycofTdkPfcruk9th
-      yd/RjHt2ypqivGSv0GjG4rKYpk/X7fWPpuyHPGX39mi9k6i/PQP1wxl74GxZ
-      d8ZOl+183RTZjwLoH/qMPdi9mzvqdz1FlxbuTtmX67ZZVW/z/gLMj2bsZ3fG
-      aFbuVpb63Rl7MDhjT0HJH6nEH/50Pbg7E9J3I2e3xNmdqydVBTr9aLJ+yJNF
-      c3J3orTvSNawYL2o2mxSbliS/tGs/ezO2t6Du0uZg8FFabdA1p29z6tqNrAo
-      vfejiftZnrj9uxdEfrsm/f3RR5QGabPfv84XWbGkdz969PDBwY75eJG94452
-      6JN51vz+tLhGPVP2P/8l/08AAAD//4pQF48YMwAA
+      - '974'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":1,"link":"http://gaming.stackexchange.com/badges/1/teacher","name":"Teacher"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":2,"link":"http://gaming.stackexchange.com/badges/2/student","name":"Student"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":3,"link":"http://gaming.stackexchange.com/badges/3/editor","name":"Editor"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":5,"link":"http://gaming.stackexchange.com/badges/5/organizer","name":"Organizer"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":6,"link":"http://gaming.stackexchange.com/badges/6/supporter","name":"Supporter"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":7,"link":"http://gaming.stackexchange.com/badges/7/critic","name":"Critic"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":8,"link":"http://gaming.stackexchange.com/badges/8/citizen-patrol","name":"Citizen
+        Patrol"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":9,"link":"http://gaming.stackexchange.com/badges/9/autobiographer","name":"Autobiographer"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":10,"link":"http://gaming.stackexchange.com/badges/10/scholar","name":"Scholar"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":14,"link":"http://gaming.stackexchange.com/badges/14/self-learner","name":"Self-Learner"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":12,"rank":"bronze","badge_id":20,"link":"http://gaming.stackexchange.com/badges/20/nice-question","name":"Nice
+        Question"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":11,"rank":"bronze","badge_id":23,"link":"http://gaming.stackexchange.com/badges/23/nice-answer","name":"Nice
+        Answer"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":14,"rank":"bronze","badge_id":26,"link":"http://gaming.stackexchange.com/badges/26/popular-question","name":"Popular
+        Question"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":31,"link":"http://gaming.stackexchange.com/badges/31/commentator","name":"Commentator"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":144,"link":"http://gaming.stackexchange.com/badges/144/mortarboard","name":"Mortarboard"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":178,"link":"http://gaming.stackexchange.com/badges/178/investor","name":"Investor"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":181,"link":"http://gaming.stackexchange.com/badges/181/altruist","name":"Altruist"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":188,"link":"http://gaming.stackexchange.com/badges/188/tag-editor","name":"Tag
+        Editor"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":189,"link":"http://gaming.stackexchange.com/badges/189/announcer","name":"Announcer"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":199,"link":"http://gaming.stackexchange.com/badges/199/talkative","name":"Talkative"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":201,"link":"http://gaming.stackexchange.com/badges/201/quorum","name":"Quorum"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":223,"link":"http://gaming.stackexchange.com/badges/223/excavator","name":"Excavator"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":225,"link":"http://gaming.stackexchange.com/badges/225/analytical","name":"Analytical"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":3,"rank":"bronze","badge_id":248,"link":"http://gaming.stackexchange.com/badges/248/caucus","name":"Caucus"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"bronze","badge_id":286,"link":"http://gaming.stackexchange.com/badges/286/curious","name":"Curious"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":3,"rank":"silver","badge_id":249,"link":"http://gaming.stackexchange.com/badges/249/constituent","name":"Constituent"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"silver","badge_id":206,"link":"http://gaming.stackexchange.com/badges/206/outspoken","name":"Outspoken"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"silver","badge_id":207,"link":"http://gaming.stackexchange.com/badges/207/deputy","name":"Deputy"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"silver","badge_id":190,"link":"http://gaming.stackexchange.com/badges/190/booster","name":"Booster"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"badge_type":"named","award_count":1,"rank":"silver","badge_id":32,"link":"http://gaming.stackexchange.com/badges/32/civic-duty","name":"Civic
+        Duty"}],"has_more":true,"quota_max":10000,"quota_remaining":9949}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:44 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:58:09 GMT
+recorded_with: VCR 2.9.3

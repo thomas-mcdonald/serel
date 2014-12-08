@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/posts/34055?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,49 +18,39 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:31 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:09 GMT
       Content-Length:
-      - '483'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0qpr29y9mHz26t79z
-      //5I/m6vV/lHjz76Reu8aYtq+dHoo+pqmdcfPfrFH62bvOb2B3u7o49mRbMq
-      s+vff5kt8MKbebXImvSL6dNqmZUzeq/OV+s2YyCP7u08uDcSANpBnV8UTZvX
-      OZqu6uq8KPPfv1hkF/hy3rarR3fvXl1djS/q7DJrs3o8rRZ35de7e/vT2f37
-      2WQ3+3Tv/Hyyu3svmxxMd/bOP92fPry3s/t7zD4rZvmyLabV8hfWn738nLoo
-      i+VbB/kiWxTLi3HTZtO3+bvpPFte5NwDUGzu0gDvtjyg7cV0ZgaUTaf5qv39
-      66wlHHd3dn7J6KNpnfMIf/+ZfHhvb4eI+enDPeowI2pm07a4LNrr4PvdTw/M
-      9/msaMN3D/YfjD5qplWNj3Z/yfdHNBVVm/3+db7IiiUh/dGjhw8ePjAfL7J3
-      jMvOzuijedb8/gt+8Twrm/yX/D8BAAD//1mDyO3sAQAA
+      - '353'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"score":13,"last_edit_date":1320340847,"last_activity_date":1361137879,"creation_date":1320340692,"post_type":"question","post_id":34055}],"has_more":false,"quota_max":10000,"quota_remaining":9976}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:31 GMT
+  recorded_at: Mon, 08 Dec 2014 12:56:10 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/posts/34055/revisions?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -66,45 +58,30 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:32 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:10 GMT
       Content-Length:
-      - '776'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF39U55dFU1TL3/9iXcw+
-      evTRs6d7x3unOw+3H9x/cLK9/2znePv4wfHO9sHx6cnJ3s7Op59+evzRyL22
-      XC8mef3Roz3vs/Z6lROoplhelPnvv27o+9FHq6ppzTe/aJ03LbU0H6Pne/s7
-      9++PPppWi0W+bKlRW7Rlnjbz9fl5SZDG1Hha5xne+/1nWUtwdu/t7dBrB/sP
-      Rh8Vze9fV2U5yaZvP3p0npVNPvqozNAlwBC4b1dX6axKz9K3eb5K23meltV1
-      VrbXaXWeLq7TRbEkyE06Ly7mvwf15b83zZb04iIrli39P/Iyjbw0EPByk7e/
-      P0ayXhbt9e9/VbwtLFJMjke/mH/KwO99OvpoVjSrMrv+/ZfZAp2+yi7zZfqU
-      hrtg4tX5at3y0D969On93YcPBY6h56Ka5XXWVkznujoviOzFIrvAd/O2XT26
-      e/fq6mp8UWeXWZvVY0Ltrvx6d2e6s7fz4GH+YH+WH9z/9N757Dx7kO9n093Z
-      wYPZg09/j9lnxYwmpJhWy19Yf/byc+qCpuOtg3yRLTA9TUukz99N59nyIuce
-      gGFzl4Z3t8Zwtmc6nF/yS0Z9vnv48MnO7tNn97bvPdglvvv0wf3t44c7T7ef
-      3Tt9dm9n7+Hx8fH9GN/tflN8F2WtTx/uxVnra3NVdgG5+wgMs32RL4t189H3
-      349fDvZ2e/zyZl4tsib9Yvq0WmblrMMx93Ye3AsZps4viqbN63z2/hyztz+d
-      3b+fTXazT/fOzye7u/eyyQFx0fmn+9OH93Z2P5hjaIB3Wx7Q9mI6kwH9kl9C
-      VPpF66rNfv86hyASgI8ePXzw8FPz8SJ7R9O2Q8/oo3nW/P6Lqs6ViL/k/wkA
-      AP//ZcagCPEEAAA=
+      - '613'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"user":{"reputation":122260,"user_id":336,"user_type":"moderator","profile_image":"https://www.gravatar.com/avatar/0c02079e74de8563fdfa7e4ac1d87d76?s=128&d=identicon&r=PG","display_name":"Raven
+        Dreamer","link":"http://gaming.stackexchange.com/users/336/raven-dreamer"},"set_community_wiki":false,"is_rollback":false,"creation_date":1320340847,"post_id":34055,"post_type":"question","revision_type":"single_user","revision_number":2,"title":"How
+        can I maintain the loyalty of my evil minions?","last_title":"How do I keep
+        the loyalty of my minions high?","comment":"title shuffling.","revision_guid":"FD2A2E09-757C-4F0A-A7A0-8AECC200666A"},{"user":{"reputation":4073,"user_id":821,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"tags":["evil-genius"],"set_community_wiki":false,"is_rollback":false,"creation_date":1320340692,"post_id":34055,"post_type":"question","revision_type":"single_user","revision_number":1,"title":"How
+        do I keep the loyalty of my minions high?","revision_guid":"99B01DF3-371C-4675-A90D-F3EF3029AAA5"}],"has_more":false,"quota_max":10000,"quota_remaining":9975}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:32 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:56:11 GMT
+recorded_with: VCR 2.9.3

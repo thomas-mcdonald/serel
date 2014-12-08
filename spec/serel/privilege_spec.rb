@@ -11,7 +11,7 @@ describe Serel::Privilege do
 
       privilege = privileges.first
       privilege.short_description.should == "create posts"
-      privilege.description.should == "Ask and answer questions"
+      privilege.description.should == "Ask a question or contribute an answer"
       privilege.reputation.should == 1
     end
   end

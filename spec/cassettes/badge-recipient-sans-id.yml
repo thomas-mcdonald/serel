@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/badges/recipients?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,81 +18,41 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:23 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:54:49 GMT
       Content-Length:
-      - '2407'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380yWYX+e9fzD56tPfp
-      6KM6W7796NFHk7pa/iD/aPTRMlvk9PfLarUuszr9iXXetEW1pG/kvfZ6he/R
-      bEYfrpu8/ujRL+afDPPewe7D0UezolmV2fXvr9BO37V19nYNKHW+WrcZg3z0
-      8P6BQDBQ6/yiaNq8ZtCrujovSsJ0kV3gy3nbrh7dvXt1dTW+qLPLrM3q8bRa
-      3JVf7x5MJ5PpweTezsP9h3l+nj/cfXCQ70/un2e7Dx7kD7PfY/ZZMcuXbTGt
-      lr+w/uzl59RFWfDgFfJFtiiWF+OmzaZv83fTeba8yLkHoNjcxcju5m4k2XSa
-      r9rfv85awu7B3i+5NTgmZHN379O7K6Hy9i8yVP4lI39+dncG5+f1dF7Rm7ee
-      lr2dTz/d6c3L26qsJlXTmZZ7+9/crMwmB9PzT+9N92YPHzzM9+7t7mYH5/nk
-      3mS2M7s3mx588KzwwO6agbz3JOzu3G2UlCHt9+4N0v5FMc3T42Vzld+e/gf3
-      e8T/vM4IzouqBWif/rv7ew/3wilYVLOcGK2qv8YMHMym9x/unc92H07Odyd7
-      s9nBpw8ezmY7k2wy2Tvf+eAZOLh/9wJD2V7KUAK5OPj0vadk797dJVF4OxMK
-      /6xOy+7DTx8c9GbmdVvn6yWDCeYFEvRNCcYkP9/b2Z3NJg/3DiY7Dz7dm04e
-      PPh0Or13kM0Ozu/f++Bp4aHdbcxQvuFpGFZM7Rpo33oGSH4P+jPw04RcTyxC
-      4q+XH0L+3ft7s+zT2f6D6XT/3s79h/v3J/ezbGc228vu3b+3s/fB5Odx3ZVx
-      vD/tad6EjB2D4Li/KcpL5lCl2O+TZzV1cnF7wt9/8KBH9yd510bvfZPWYHLv
-      3k72ILtP1J/u39+dPtjdOzh4kO1OP832sr3d/MOpToMi0Vq+P8l37929NiTs
-      8Pru7iC3/2T1LmVXqbg93Xfu7XzaI/xXS6L2PLt622X6ex22/xDyH+zs3fv0
-      0+mD+/cPssnD2fn96f3dvft5djDdObh/MN3/cPJjbHfXdizvPQtE67uX1bvt
-      ldD0Z0vp7O7v7+z1mb++zrrsf+/ewb1vbgIm96f5/fO98wf7B1PyUc/PDyaf
-      Zvfv39slm3w/23vwwRPAA7s74YG8P/GHtM7DQa1zuiyLi3mbL5katyP+3s5B
-      n/ZtPp0vq0VWVhfFNCu7SujBNzgJD86z6YzIfn6+t39/dkBK6GBv/zyffpo/
-      yB/cm336wZOAAd7tDui9ZwPBhkfdn9Up2X0QCdrICyre/WRWF1lXJz24d/8b
-      1EoPPt3Zu787eXB/hzTS+f6nuzsPH+7v388m08mns917H26KMTo4QsW7Sx1N
-      4KI+fPjNzs037aJ+urPTN9Tfya47s/LpN2kpSEftTvdJm09mu/cfnD+cPszO
-      H0zye9nebH+SZd+AosKoyD267s7GNx4wHNjZuKjKmZuLZ9miWjfvn+C4v3vv
-      Xl9WrsvLrFimT/PzOm+WPdf1HlIt39TkHHx6cH93f/IpeVC7+7Od+7Pd/P6D
-      2acPdrPd3U8n9z4804Eh3m1kSNszN6RgonZ3dt5/pg7unjPZfwgZj939g73+
-      RH2nqmfZMn1Vzfvh3TeYjLr/MD+//2m+/+mn+zsHB6TgDs4PHuTT3Wl2/2Dy
-      8NPJB08Rj+7uT/NotmsezXvPxmDu496ww3tSLRaEt6YibjcTP/J4N0zCvd27
-      U4+mHeU1LA5sSt5bee0+3N/Z7U3Fcd1my6LZPfi0MxddM/9hMfdOfv5w/9O9
-      g9n5p5OdTycHO7v3s93z7NMHe7vZ/U+/gUwUj+5u5kbz3rOxtyOmZEg9DU7H
-      mzybikq53URQeuB+P+1B4Xf6tLrsq6ZvdB52J7PJzr3Jgyx7SP/NKDG4fz6d
-      3dvPdx/M7u98ev7B88CDQxi+PePBvPc07JL7LPT8WaR/JCX7omryWV1Vvfjj
-      Gww/KELbf/hg78Gnk/sPsk8fHkzvPdiZfkpJ7P3pbD87/wZyIBja3aUdyjdG
-      /eHVotfr1aqq2/egPy3OPOyHHN8tyrLIFl3u3/kGLQJFeRRc7OzNpg+m989J
-      e9/PyaelHOz57u6D+58+/GDy88juXulI3pv4n95tLDG7Md+mCTg/rzH+29L/
-      RzZ5Y3iHWVCK/ixb5Ie7e3u9ecjy5azOr7qzcP8bVEO70/P9B+e0+jDNdqaT
-      83sPJvuT3em9/U+nD3NC6cM9VAzsrhnIe0/BDYb4G5+G3Z1Pd/vycF7U+VNK
-      iX36oDsV+9+kTqIluv37e2QT7uW0BpHvUPKDUlOTB7v5Trazsz/74LnYxeju
-      YjQzM5owBbL/TU/QN7lS8emn9/qu0sk8a/L0WVnVedkz1wgjv6nJmdybHTzM
-      7u8cZA/PHx5M7u99eu/e7sN7tESb5Q93J7sfPDkY3t0phrN9rsN579nYsHox
-      bDR44SKr319YfqSz4iLx6d2VkHRQbTkHtisVn1fV7P1ngnKl9/f7YUTVNm+r
-      F3nbnYy9h9/cZEw/peXrhw8Ozh/uPaScICU6JjvTg73zfVrNzqezb0Jp0dju
-      TngsyxyLErd938zH7t0LouoPJZh70I+qEcy9rElHdmfhGw3m9mf3p7O9fO/g
-      wb1pvn9+vrNznlHOaWf2YJLtEQE/eBp4cBzMrXgw7z0NQ+GEW8Lo0v943VaT
-      oqLhrt5zGg76wvAqW5fpF1mdLy+q7kx8k0Z8bzp7ON15SBrqU1rS3ts7v39v
-      lk8+fTg92L3/8ODeh6fMeXh3axrO9kKH895z8fBuFtL2Zy/CA7p9oZiu67Zo
-      evHFNzkRO7OH+9N7n04/fZjde7C3Nzuf7O092L8/y3b3H84o1PtGJoKydjqS
-      956D4QjvZ0UifjQHP7dysHvv/n7ffV1Mu/T/JkPse/nk4f1JfrA32aUge//T
-      8/18f2d/d+f+/r3znYPzDyc/D+ouBvHepB9m/weDVD+pC8L11iT/UXJjA/0f
-      3J0KNX/J90cf/aJ11Wa/f50vaKWP3iIVdLBzYD5eZO94mW+HoikKT37/BQUn
-      Hz1q63X+S/6fAAAA//+Yby53UC4AAA==
+      - '1962'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"user":{"reputation":355,"user_id":87786,"user_type":"registered","accept_rate":100,"profile_image":"https://www.gravatar.com/avatar/651df87ae9fb4be84a26ced38500f9a5?s=128&d=identicon&r=PG","display_name":"Sebie","link":"http://gaming.stackexchange.com/users/87786/sebie"},"badge_type":"named","rank":"bronze","badge_id":290,"link":"http://gaming.stackexchange.com/badges/290/explainer","name":"Explainer"},{"user":{"reputation":101,"user_id":80107,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/a5388307045a08c547fa7eb150da8650?s=128&d=identicon&r=PG","display_name":"Pedro
+        Henrique","link":"http://gaming.stackexchange.com/users/80107/pedro-henrique"},"badge_type":"named","rank":"bronze","badge_id":9,"link":"http://gaming.stackexchange.com/badges/9/autobiographer","name":"Autobiographer"},{"user":{"reputation":11,"user_id":94010,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/9b2fba85f66ef9b0963f4985b76a85e2?s=128&d=identicon&r=PG","display_name":"Kim","link":"http://gaming.stackexchange.com/users/94010/kim"},"badge_type":"named","rank":"bronze","badge_id":2,"link":"http://gaming.stackexchange.com/badges/2/student","name":"Student"},{"user":{"reputation":1,"user_id":94214,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/4aae9252188b1352a3bdea94207678b7?s=128&d=identicon&r=PG","display_name":"LisMorski","link":"http://gaming.stackexchange.com/users/94214/lismorski"},"badge_type":"named","rank":"bronze","badge_id":9,"link":"http://gaming.stackexchange.com/badges/9/autobiographer","name":"Autobiographer"},{"user":{"reputation":33,"user_id":93168,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/7a2ab47c82dbf41f3b722f2767e836cf?s=128&d=identicon&r=PG&f=1","display_name":"SirMeepington","link":"http://gaming.stackexchange.com/users/93168/sirmeepington"},"badge_type":"named","rank":"bronze","badge_id":8,"link":"http://gaming.stackexchange.com/badges/8/citizen-patrol","name":"Citizen
+        Patrol"},{"user":{"reputation":33,"user_id":93168,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/7a2ab47c82dbf41f3b722f2767e836cf?s=128&d=identicon&r=PG&f=1","display_name":"SirMeepington","link":"http://gaming.stackexchange.com/users/93168/sirmeepington"},"badge_type":"named","rank":"bronze","badge_id":223,"link":"http://gaming.stackexchange.com/badges/223/excavator","name":"Excavator"},{"user":{"reputation":108,"user_id":93871,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/5306bf2ccf264604def009d25d88f338?s=128&d=identicon&r=PG","display_name":"sh1ftst0rm","link":"http://gaming.stackexchange.com/users/93871/sh1ftst0rm"},"badge_type":"named","rank":"bronze","badge_id":10,"link":"http://gaming.stackexchange.com/badges/10/scholar","name":"Scholar"},{"user":{"reputation":31,"user_id":91258,"user_type":"unregistered","profile_image":"https://www.gravatar.com/avatar/ed6f7a9c37baa31e3abfec0552ec0b58?s=128&d=identicon&r=PG","display_name":"user91258","link":"http://gaming.stackexchange.com/users/91258/user91258"},"badge_type":"named","rank":"bronze","badge_id":2,"link":"http://gaming.stackexchange.com/badges/2/student","name":"Student"},{"user":{"reputation":108,"user_id":93871,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/5306bf2ccf264604def009d25d88f338?s=128&d=identicon&r=PG","display_name":"sh1ftst0rm","link":"http://gaming.stackexchange.com/users/93871/sh1ftst0rm"},"badge_type":"named","rank":"bronze","badge_id":6,"link":"http://gaming.stackexchange.com/badges/6/supporter","name":"Supporter"},{"user":{"reputation":111,"user_id":86473,"user_type":"registered","profile_image":"http://i.stack.imgur.com/iRagT.jpg?s=128&g=1","display_name":"Florin
+        Coada","link":"http://gaming.stackexchange.com/users/86473/florin-coada"},"badge_type":"named","rank":"bronze","badge_id":6,"link":"http://gaming.stackexchange.com/badges/6/supporter","name":"Supporter"},{"user":{"reputation":11,"user_id":74587,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/0a07db9367c932c466e25c7124a814e1?s=128&d=identicon&r=PG&f=1","display_name":"davogotland","link":"http://gaming.stackexchange.com/users/74587/davogotland"},"badge_type":"named","rank":"bronze","badge_id":1,"link":"http://gaming.stackexchange.com/badges/1/teacher","name":"Teacher"},{"user":{"reputation":1667,"user_id":16125,"user_type":"registered","accept_rate":94,"profile_image":"https://www.gravatar.com/avatar/55d7fb2e6e2c49f5bfa2bf873eb06d09?s=128&d=identicon&r=PG","display_name":"aditya
+        menon","link":"http://gaming.stackexchange.com/users/16125/aditya-menon"},"badge_type":"named","rank":"silver","badge_id":13,"link":"http://gaming.stackexchange.com/badges/13/yearling","name":"Yearling"},{"user":{"reputation":612,"user_id":65180,"user_type":"registered","accept_rate":50,"profile_image":"http://graph.facebook.com/671455515/picture?type=large","display_name":"Tim
+        B","link":"http://gaming.stackexchange.com/users/65180/tim-b"},"badge_type":"named","rank":"bronze","badge_id":38,"link":"http://gaming.stackexchange.com/badges/38/peer-pressure","name":"Peer
+        Pressure"},{"user":{"reputation":190,"user_id":53780,"user_type":"registered","accept_rate":100,"profile_image":"http://i.stack.imgur.com/5epnN.jpg?s=128&g=1","display_name":"iMAGEbox","link":"http://gaming.stackexchange.com/users/53780/imagebox"},"badge_type":"named","rank":"silver","badge_id":27,"link":"http://gaming.stackexchange.com/badges/27/notable-question","name":"Notable
+        Question"},{"user":{"reputation":1,"user_id":86491,"user_type":"registered","profile_image":"http://i.stack.imgur.com/BWeyn.png?s=128&g=1","display_name":"RadicalConstruct","link":"http://gaming.stackexchange.com/users/86491/radicalconstruct"},"badge_type":"named","rank":"bronze","badge_id":9,"link":"http://gaming.stackexchange.com/badges/9/autobiographer","name":"Autobiographer"},{"user":{"reputation":288,"user_id":71931,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/fc4bc12e62be354d11c5d2261a489b1c?s=128&d=identicon&r=PG","display_name":"Epoc","link":"http://gaming.stackexchange.com/users/71931/epoc"},"badge_type":"named","rank":"bronze","badge_id":31,"link":"http://gaming.stackexchange.com/badges/31/commentator","name":"Commentator"},{"user":{"reputation":604,"user_id":1007,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/292e61f1d625c5a7eb5c387af394e1ce?s=128&d=identicon&r=PG","display_name":"didi","link":"http://gaming.stackexchange.com/users/1007/didi"},"badge_type":"named","rank":"silver","badge_id":13,"link":"http://gaming.stackexchange.com/badges/13/yearling","name":"Yearling"},{"user":{"reputation":18,"user_id":52758,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/8daabbf5b7a01653ec1db2169c9b103e?s=128&d=identicon&r=PG","display_name":"ibnu","link":"http://gaming.stackexchange.com/users/52758/ibnu"},"badge_type":"named","rank":"gold","badge_id":28,"link":"http://gaming.stackexchange.com/badges/28/famous-question","name":"Famous
+        Question"},{"user":{"reputation":6821,"user_id":15726,"user_type":"registered","accept_rate":97,"profile_image":"https://www.gravatar.com/avatar/ccc77aa6695d14df88b033c59442cd2c?s=128&d=identicon&r=PG","display_name":"Anto","link":"http://gaming.stackexchange.com/users/15726/anto"},"badge_type":"named","rank":"silver","badge_id":27,"link":"http://gaming.stackexchange.com/badges/27/notable-question","name":"Notable
+        Question"},{"user":{"reputation":101,"user_id":94207,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/6fff982d350764a7f0545c546b148e1f?s=128&d=identicon&r=PG","display_name":"Karthic
+        Raghupathi","link":"http://gaming.stackexchange.com/users/94207/karthic-raghupathi"},"badge_type":"named","rank":"bronze","badge_id":9,"link":"http://gaming.stackexchange.com/badges/9/autobiographer","name":"Autobiographer"},{"user":{"reputation":14469,"user_id":11047,"user_type":"registered","accept_rate":93,"profile_image":"https://www.gravatar.com/avatar/fadacf0501f7055f3419a485e1e69b6a?s=128&d=identicon&r=PG","display_name":"Decency","link":"http://gaming.stackexchange.com/users/11047/decency"},"badge_type":"named","rank":"gold","badge_id":28,"link":"http://gaming.stackexchange.com/badges/28/famous-question","name":"Famous
+        Question"},{"user":{"reputation":1236,"user_id":28378,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/708635a25f88e14d85a0a5af43c93ef5?s=128&d=identicon&r=PG","display_name":"gkimsey","link":"http://gaming.stackexchange.com/users/28378/gkimsey"},"badge_type":"named","rank":"silver","badge_id":27,"link":"http://gaming.stackexchange.com/badges/27/notable-question","name":"Notable
+        Question"},{"user":{"reputation":1,"user_id":94205,"user_type":"registered","profile_image":"https://lh5.googleusercontent.com/-IL6bDEiP4SQ/AAAAAAAAAAI/AAAAAAAAAzo/CBkQ01EFA_A/photo.jpg?sz=128","display_name":"LyricWulf","link":"http://gaming.stackexchange.com/users/94205/lyricwulf"},"badge_type":"named","rank":"bronze","badge_id":9,"link":"http://gaming.stackexchange.com/badges/9/autobiographer","name":"Autobiographer"},{"user":{"reputation":101,"user_id":94204,"user_type":"registered","profile_image":"http://i.stack.imgur.com/zBdsF.png?s=128&g=1","display_name":"Hobo
+        Sapiens","link":"http://gaming.stackexchange.com/users/94204/hobo-sapiens"},"badge_type":"named","rank":"bronze","badge_id":9,"link":"http://gaming.stackexchange.com/badges/9/autobiographer","name":"Autobiographer"},{"user":{"reputation":101,"user_id":94204,"user_type":"registered","profile_image":"http://i.stack.imgur.com/zBdsF.png?s=128&g=1","display_name":"Hobo
+        Sapiens","link":"http://gaming.stackexchange.com/users/94204/hobo-sapiens"},"badge_type":"named","rank":"bronze","badge_id":8,"link":"http://gaming.stackexchange.com/badges/8/citizen-patrol","name":"Citizen
+        Patrol"},{"user":{"reputation":6,"user_id":92903,"user_type":"unregistered","profile_image":"https://www.gravatar.com/avatar/3937b9769d0b9bbea73e4ec3a3137418?s=128&d=identicon&r=PG","display_name":"user92903","link":"http://gaming.stackexchange.com/users/92903/user92903"},"badge_type":"named","rank":"bronze","badge_id":2,"link":"http://gaming.stackexchange.com/badges/2/student","name":"Student"},{"user":{"reputation":108,"user_id":93871,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/5306bf2ccf264604def009d25d88f338?s=128&d=identicon&r=PG","display_name":"sh1ftst0rm","link":"http://gaming.stackexchange.com/users/93871/sh1ftst0rm"},"badge_type":"named","rank":"bronze","badge_id":2,"link":"http://gaming.stackexchange.com/badges/2/student","name":"Student"},{"user":{"reputation":21,"user_id":94202,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/e93cefbcd3d39ca4445f272d67970523?s=128&d=identicon&r=PG","display_name":"dsmryder","link":"http://gaming.stackexchange.com/users/94202/dsmryder"},"badge_type":"named","rank":"bronze","badge_id":1,"link":"http://gaming.stackexchange.com/badges/1/teacher","name":"Teacher"},{"user":{"reputation":259,"user_id":9134,"user_type":"registered","accept_rate":64,"profile_image":"https://www.gravatar.com/avatar/1259a4d142a285d86f1c83a413fa8e17?s=128&d=identicon&r=PG","display_name":"DailyDoggy","link":"http://gaming.stackexchange.com/users/9134/dailydoggy"},"badge_type":"named","rank":"bronze","badge_id":20,"link":"http://gaming.stackexchange.com/badges/20/nice-question","name":"Nice
+        Question"},{"user":{"reputation":101,"user_id":94200,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/092770076bb0cf421bacba912565331d?s=128&d=identicon&r=PG","display_name":"NateSHolland","link":"http://gaming.stackexchange.com/users/94200/natesholland"},"badge_type":"named","rank":"bronze","badge_id":6,"link":"http://gaming.stackexchange.com/badges/6/supporter","name":"Supporter"}],"has_more":true,"quota_max":10000,"quota_remaining":9988}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:23 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:54:50 GMT
+recorded_with: VCR 2.9.3

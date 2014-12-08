@@ -3,122 +3,84 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/questions/44903?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        bmdpbng=
-      !binary "RGF0ZQ==":
-      - !binary |-
-        VGh1LCAxNCBGZWIgMjAxMyAyMTozMjoxMSBHTVQ=
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        cHJpdmF0ZQ==
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        R0VULCBQT1NU
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        ZmFsc2U=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        NDY2
-    body: !binary |-
-      H4sIAAAAAAAEAI1SsY7bMAz9FUNDJzuOYzs4GzjcUqC4oUCHbkVhMBLtCJEl
-      n0THFwT591JOgqJbtZAgn8hHPl6FJhyDaH9dxceMgbSznVairapmW6ZCeoQ1
-      poBQtEW5q8uyaoomFQYCdSBJnzVd/snXRfwapPMcYg9sWNB30s2WGMMBKXEi
-      VN0j82xYpYI0Gf4l3vvkPTFOnhKwSeSYJos2ht3kgElwRiU6QgIalBSNScCY
-      N8ElYIgDCTXbAZ3NFPZoFfogfqfirHF5MqmrOhVusehFexVzeDB52TFFpcNk
-      4NJZGCOdn0c3Qki+y6/OglHcxeM007obnnHfvKT3AnSZIt7joAOhxwidvOu1
-      wU6PMMTkkWhq83xZls3g4QwEfiPdmN/dfFdJVddwKGC/6/tDUZRweJHbXb+v
-      ZFNuizf1qhVa0tLZL/71xzduYbQ9/a08wKjtsAkE8oSf8gi8iLVDpBhyHjCn
-      daBslOo50F2Uzq9CNvXtv4s+7ybk69Hkus90FqXLwGZRuiwqx152wCwql62I
-      u3LRmIyVYwY6PA6Ct9aSn/HGgn3MjqDzOIK23J+pNU35DI/wyQe15ZeKI4Ru
-      XE+uBxPw9gebyHv/2wIAAA==
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:29 GMT
+      Content-Length:
+      - '470'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"tags":["dungeon-defenders"],"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"is_answered":true,"view_count":991,"accepted_answer_id":44904,"answer_count":1,"score":3,"last_activity_date":1325335103,"creation_date":1325334919,"question_id":44903,"link":"http://gaming.stackexchange.com/questions/44903/if-i-lock-an-item-will-it-be-sold-if-i-select-sell-all","title":"If
+        I lock an item, will it be sold if I select sell all?"}],"has_more":false,"quota_max":10000,"quota_remaining":9968}'
     http_version: 
-  recorded_at: Thu, 14 Feb 2013 21:32:11 GMT
+  recorded_at: Mon, 08 Dec 2014 12:56:30 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/questions/44903/comments?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        bmdpbng=
-      !binary "RGF0ZQ==":
-      - !binary |-
-        VGh1LCAxNCBGZWIgMjAxMyAyMTozMjoxMiBHTVQ=
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        cHJpdmF0ZQ==
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        R0VULCBQT1NU
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        ZmFsc2U=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        NDI4
-    body: !binary |-
-      H4sIAAAAAAAEAO2SQW/cIBCF/0rEoSdnDbbxGktRL5V6StVDb1FlzcLYi2LA
-      BTab1cr/PdirKEpySdQee4PhzRvepzkTHdEE0t6diXTGoI2dVqStt03DMjK5
-      cLlXlaBlRqRHiNrZTkFE0rKyqHklapqkQTqfSjQjqJJn6ulhDJgRd7ToSXsm
-      h4B+NWuKpFc6TCOcOgsmtZFfe2cgXN3Kb87CqEhGPE6HuE4jbVmLJrsYxNO0
-      6D0OOkT0uEgn73o9YqcNDMvjPsapzfPj8bgZPDxABL9J6fLLMS8qqTiHHYO6
-      6PsdYyXsGkmLvq6kKCn7qm60SiS0dPaLv/n5PY0Ytb1/cR7AaDtsQgR5j49y
-      D3bAdcLyxZCngHlcA10bqZ4DgZQ4xc6v6ASf14jjqYuuW9peIWKM83eMbv3m
-      6od7QLNL6jeAmu0/BFQKSXuFbFtKuS0LJrkqGyWQo+jLqur/GtASLzf+2r6k
-      eUWHUTrP2ZuV5JQWH1lJXrFC8OJTK/mf9zz/zsifg4vQeTSgbfJLaypE8Vw2
-      8LgqaQK6h9CZle6KdH4Ct2xoz0gEAAA=
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:30 GMT
+      Content-Length:
+      - '435'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"owner":{"reputation":4073,"user_id":821,"user_type":"registered","accept_rate":95,"profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG","display_name":"Thomas
+        McDonald","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald"},"reply_to_user":{"reputation":4183,"user_id":1155,"user_type":"registered","accept_rate":100,"profile_image":"https://www.gravatar.com/avatar/39c0fde173cc7321c5d38d9e5e9f344f?s=128&d=identicon&r=PG","display_name":"Mr.
+        November","link":"http://gaming.stackexchange.com/users/1155/mr-november"},"edited":false,"score":0,"creation_date":1326549601,"post_id":44903,"comment_id":67881},{"owner":{"reputation":4183,"user_id":1155,"user_type":"registered","accept_rate":100,"profile_image":"https://www.gravatar.com/avatar/39c0fde173cc7321c5d38d9e5e9f344f?s=128&d=identicon&r=PG","display_name":"Mr.
+        November","link":"http://gaming.stackexchange.com/users/1155/mr-november"},"edited":false,"score":0,"creation_date":1325412952,"post_id":44903,"comment_id":65002}],"has_more":false,"quota_max":10000,"quota_remaining":9967}'
     http_version: 
-  recorded_at: Thu, 14 Feb 2013 21:32:12 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:56:30 GMT
+recorded_with: VCR 2.9.3

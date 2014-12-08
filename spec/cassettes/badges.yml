@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/badges?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,51 +18,31 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:20 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:55:00 GMT
       Content-Length:
-      - '1040'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF380yWYX+e9fzD56tDv6
-      qM6Wbz969NGkrpY/yD8afbTMFjn9/SbPpvO8pg+yq6ye/f7Tar1sP3q0/+nu
-      vZECaK9XaIkXZtSuLBjQvG1Xj+7evcgWxfJi3LTZ9G3+bjrPlhf5eFot7vK7
-      zd3du6328EtGPkZ7gxi9bteznHDoYrS7c/8bwWjvbqM9hBjdG8TodFa0VY9E
-      e3v7D78RhO7dzaWDEJ/9QXxOyjxbrlddhHZ3d74RfPbvTrWDEKH7gwh9WV9k
-      y+IHETbaOfhGULp/t7JdhEh9OsxH69Wqqts+Uvfv33vwjWD16d3G9hFi9WB4
-      7uqiLaa9qdvZ+WbE7cHdqXQQ4nMwjA+1/kG+TF9mbV2VXbw+3d39RtA6uDuV
-      frZX0k+I3sNB9I7XbTUpqos6W8W01MODb0YEH97Nwo5C/CBYQ1w2nVdl1lcO
-      Dz799BvBbHfnbqNddHAa1g+v8/J8+3me1cs+ye59Q4y2u3+3QTeldtPR7sME
-      e1FM8/Qn1nnTFtWyR7b7n34zCmNv5+6SOtr+RaajDn7Dyp7xO142VxHa7e5/
-      M+Kwd0+wy6SbDm7DKu1ltVoTJwyS796DB9+MZtv79O5K+hqi4L1hl+KkWizI
-      vGYRm3nw8JsxUfd27069XjqoDWvfp0UzLVbUF/cZ6pK9bwazB3dnXicdzIb1
-      8Ms8r9OXdd406zrv4vbpN0S1g7sr6mZ7ZbrpmNJhoXizXkzK/Crvk21v55vR
-      c5/eu9u6TrqqbljXfUHmN6snFaHURW33G/LPqPu7C6+bDnIPhif1bHlJwtMX
-      g0+/GU+Wur5bmC66WA3b1Jd1tagiftHuwTeF1sO7K9NHB62DYcPwJF/m59k0
-      Qq7d3W/GKFDvdyeuly5qwxrtuGzrddH0YpL734w5oK7vZqaLLlbD3PUmu0jj
-      ocnug29GKKn3u212sR2NT3YPNrhtyyVhMo3w2N43o2ap87uZ7aSD2MO9QcQI
-      YD2ts/N2e6+HWldb0Mh//0nWfB3sHiLIdD118RtWtDPC6Hz7nLQNdHQXxa7r
-      9iEY3rvb6auL5HC4Ny0ui7L4QQa3YPt+T7l9g0jev9vpq4vkpvDv/LzOLnq2
-      dPfhN2QVHiL80z66aA0L7av8srjMeoHW3sP9bwirg7u1dvFLvj/66Betqzb7
-      /et8kRVLepFCrYPdPfPxInvHoecOKeV51vz+ZOSoZ9JD+S/5fwIAAP//NU9Y
-      qUcSAAA=
+      - '862'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_type":"named","award_count":14984,"rank":"bronze","badge_id":1,"link":"http://gaming.stackexchange.com/badges/1/teacher","name":"Teacher"},{"badge_type":"named","award_count":12464,"rank":"bronze","badge_id":2,"link":"http://gaming.stackexchange.com/badges/2/student","name":"Student"},{"badge_type":"named","award_count":7056,"rank":"bronze","badge_id":3,"link":"http://gaming.stackexchange.com/badges/3/editor","name":"Editor"},{"badge_type":"named","award_count":320,"rank":"bronze","badge_id":4,"link":"http://gaming.stackexchange.com/badges/4/cleanup","name":"Cleanup"},{"badge_type":"named","award_count":881,"rank":"bronze","badge_id":5,"link":"http://gaming.stackexchange.com/badges/5/organizer","name":"Organizer"},{"badge_type":"named","award_count":14742,"rank":"bronze","badge_id":6,"link":"http://gaming.stackexchange.com/badges/6/supporter","name":"Supporter"},{"badge_type":"named","award_count":2503,"rank":"bronze","badge_id":7,"link":"http://gaming.stackexchange.com/badges/7/critic","name":"Critic"},{"badge_type":"named","award_count":2010,"rank":"bronze","badge_id":8,"link":"http://gaming.stackexchange.com/badges/8/citizen-patrol","name":"Citizen
+        Patrol"},{"badge_type":"named","award_count":17244,"rank":"bronze","badge_id":9,"link":"http://gaming.stackexchange.com/badges/9/autobiographer","name":"Autobiographer"},{"badge_type":"named","award_count":7004,"rank":"bronze","badge_id":10,"link":"http://gaming.stackexchange.com/badges/10/scholar","name":"Scholar"},{"badge_type":"named","award_count":851,"rank":"bronze","badge_id":14,"link":"http://gaming.stackexchange.com/badges/14/self-learner","name":"Self-Learner"},{"badge_type":"named","award_count":6215,"rank":"bronze","badge_id":20,"link":"http://gaming.stackexchange.com/badges/20/nice-question","name":"Nice
+        Question"},{"badge_type":"named","award_count":8107,"rank":"bronze","badge_id":23,"link":"http://gaming.stackexchange.com/badges/23/nice-answer","name":"Nice
+        Answer"},{"badge_type":"named","award_count":2318,"rank":"bronze","badge_id":31,"link":"http://gaming.stackexchange.com/badges/31/commentator","name":"Commentator"},{"badge_type":"named","award_count":24253,"rank":"bronze","badge_id":26,"link":"http://gaming.stackexchange.com/badges/26/popular-question","name":"Popular
+        Question"},{"badge_type":"named","award_count":90,"rank":"bronze","badge_id":37,"link":"http://gaming.stackexchange.com/badges/37/disciplined","name":"Disciplined"},{"badge_type":"named","award_count":432,"rank":"bronze","badge_id":38,"link":"http://gaming.stackexchange.com/badges/38/peer-pressure","name":"Peer
+        Pressure"},{"badge_type":"named","award_count":1030,"rank":"bronze","badge_id":63,"link":"http://gaming.stackexchange.com/badges/63/tumbleweed","name":"Tumbleweed"},{"badge_type":"named","award_count":332,"rank":"bronze","badge_id":144,"link":"http://gaming.stackexchange.com/badges/144/mortarboard","name":"Mortarboard"},{"badge_type":"named","award_count":186,"rank":"bronze","badge_id":178,"link":"http://gaming.stackexchange.com/badges/178/investor","name":"Investor"},{"badge_type":"named","award_count":481,"rank":"bronze","badge_id":179,"link":"http://gaming.stackexchange.com/badges/179/promoter","name":"Promoter"},{"badge_type":"named","award_count":298,"rank":"bronze","badge_id":180,"link":"http://gaming.stackexchange.com/badges/180/benefactor","name":"Benefactor"},{"badge_type":"named","award_count":145,"rank":"bronze","badge_id":181,"link":"http://gaming.stackexchange.com/badges/181/altruist","name":"Altruist"},{"badge_type":"named","award_count":557,"rank":"bronze","badge_id":188,"link":"http://gaming.stackexchange.com/badges/188/tag-editor","name":"Tag
+        Editor"},{"badge_type":"named","award_count":478,"rank":"bronze","badge_id":189,"link":"http://gaming.stackexchange.com/badges/189/announcer","name":"Announcer"},{"badge_type":"tag_based","award_count":24,"rank":"bronze","badge_id":192,"link":"http://gaming.stackexchange.com/badges/192/starcraft-2","name":"starcraft-2"},{"badge_type":"tag_based","award_count":7,"rank":"bronze","badge_id":193,"link":"http://gaming.stackexchange.com/badges/193/dwarf-fortress","name":"dwarf-fortress"},{"badge_type":"tag_based","award_count":9,"rank":"bronze","badge_id":195,"link":"http://gaming.stackexchange.com/badges/195/civilization-5","name":"civilization-5"},{"badge_type":"named","award_count":477,"rank":"bronze","badge_id":196,"link":"http://gaming.stackexchange.com/badges/196/suffrage","name":"Suffrage"},{"badge_type":"named","award_count":1537,"rank":"bronze","badge_id":198,"link":"http://gaming.stackexchange.com/badges/198/revival","name":"Revival"}],"has_more":true,"quota_max":10000,"quota_remaining":9987}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:20 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:55:01 GMT
+recorded_with: VCR 2.9.3

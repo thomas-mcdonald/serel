@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,52 +18,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:53:00 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:26 GMT
       Content-Length:
-      - '595'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0bvL69y9mHz062Nsd
-      yV/t9Sr/6NFHdX5RNG1e57OPRh9N6zxri2r5+8+ylr7c3XvwcG9nZ//g09FH
-      s6JZldn177/MFnjtzbxaZE36xfRptcxKvLuqq/OizH//YpFdoMW8bVeP7t69
-      uroaX9TZZdZm9XhaLe7Kr3f39qez+/ezyW726d75+WR39142OZju7J1/uj99
-      eG9n9/eYfVbM8mVbTKvlL6w/e/k5dVHnq3XLCH706N7Og3v+J7//dJ4tL3LC
-      /PqjRzuxb67y/C2NKfrdolq2848effog9uUvWmc1UYjevRf9/jrPzJdl1rS/
-      fzad5k1jaHjv3s79/f179x/qt4tqVpwX+Sz4foe/L5rfP1+syuo6py/Os7LJ
-      6Z1i+dZR8yJbFMuLcdNm07f5O+mfqYopbe7S7N5teWa2F9OZmZmrfNIQK/z+
-      67okSPRBWU2Vih+dLi/KbDkbpV8tqcks/b0I/KxaUCMaRbVetsI1nx7sE7Un
-      2YyGyx8TW/3ijy4qgg9iN0V5yQQiEkzqavkDwn///i9hIPmq/f1rGerOzi/5
-      /uijX7Su2uz3r/NFViypt48ePXzw6T3z8SJ7xw13COo8a4hataHFL/l/AgAA
-      //9ZwLOV0QIAAA==
+      - '451'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"badge_counts":{"bronze":61,"silver":34,"gold":2},"account_id":86843,"is_employee":false,"last_modified_date":1370240414,"last_access_date":1399547868,"reputation_change_year":180,"reputation_change_quarter":25,"reputation_change_month":0,"reputation_change_week":0,"reputation_change_day":0,"reputation":4073,"creation_date":1279200486,"user_type":"registered","user_id":821,"accept_rate":95,"location":"England,
+        United Kingdom","website_url":"","link":"http://gaming.stackexchange.com/users/821/thomas-mcdonald","display_name":"Thomas
+        McDonald","profile_image":"https://www.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301?s=128&d=identicon&r=PG"}],"has_more":false,"quota_max":10000,"quota_remaining":9943}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:53:00 GMT
+  recorded_at: Mon, 08 Dec 2014 12:58:26 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/users/821/tags?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -69,40 +59,25 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:53:00 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:58:26 GMT
       Content-Length:
-      - '557'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+WhTLfFpn
-      5+1Ho4+m1XrZfvToYPRR0fz+df6L1kWdzz56dJ6VTc6fLapZXmdtVf/+1bK8
-      tt+sm7z+/QtqebC3O/ponjW/f3O9rJbX6Kmt1/kvGdnuVlXdZuX2nutt/5vs
-      jZt43U2yti3z8yIvZ9v3XJ/3fjb7nOXrZjt/tz1fL7Lldp1fVuW6LarlD6n7
-      Ns8W2+dE5jpvGp/Q32ivnWm9qGmo7boumkW1fd/1ufdN9tkd6bxq2mJ58bPU
-      W2eEi+yimL7NfpY66w7NSuV2s1j9LPXZHeC6bItVmV3n9Q+nw9XU9bP7TfbT
-      JWadY1jNz1JvnVHV1fTt9iRbBvrmG+2wO7wmu8y3L+j3H9IIG2iYH05Xs/Jn
-      i0e6Ha2XF3m13J7l5/mSgP1skbI7d/llUW5f5Mti/cPqcbJ++7bwjP3PamfT
-      rCy3q/Pt2bq93p6UGYlGtfphjXRatEXebBfL7UUV2t+f1W7bvK6zuvAsxc9u
-      d+d72/M8u7z+We3v+6OPftG6ajOCusiKJazuo4cPPt0zHy+yd9TvDj3y/qKq
-      c/Pu/xMAAP//+F0FXnUKAAA=
+      - '338'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"has_synonyms":true,"user_id":821,"is_moderator_only":false,"is_required":false,"count":7,"name":"minecraft"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":4,"name":"portal-2"},{"has_synonyms":true,"user_id":821,"is_moderator_only":false,"is_required":false,"count":4,"name":"team-fortress-2"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":3,"name":"battlefield-3"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":3,"name":"deus-ex-human-revolution"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":2,"name":"gran-turismo-5"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":2,"name":"magicka"},{"has_synonyms":true,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"minecraft-bukkit"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"dungeon-defenders"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"evil-genius"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"call-of-duty-black-ops"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"cities-in-motion"},{"has_synonyms":true,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"terraria"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"tf2-heavy"},{"has_synonyms":false,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"rock-band-3"},{"has_synonyms":true,"user_id":821,"is_moderator_only":false,"is_required":false,"count":1,"name":"steam"}],"has_more":false,"quota_max":10000,"quota_remaining":9942}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:53:00 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:58:27 GMT
+recorded_with: VCR 2.9.3

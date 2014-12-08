@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/sites?key=0p65aJUHxHo0G19*YF272A((
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,100 +18,141 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:35 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:57:43 GMT
       Content-Length:
-      - '3247'
-    body: !binary |-
-      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
-      iP82MPL5ffw3bFDMAljMoOw9uM9rYB2D8vDh7q68dKN4GGrcUjK6/HCDURma
-      zfexKeCUn21JGTApxFG3STQOEeVGSXk/mzEkMhsp/Y3Kzf+3LYE/gK/J7u+l
-      sm5tDH72OfwWTAyeTV+vKUROvyLOuJF9GzRdU8v3Y2L72jAr2yYxFl6s1gTN
-      y5ILL6+qK/oUL93MyH3Mv0F2vtEebI4ubsvL/THckqODGe5PQJf2t+ZhN6//
-      L+HkvL6kgT7L1uXNTkvDjc/R9j252b24gZ9do0hWi9JX+SLNZpS7oixKnVn1
-      fPYm9N5v5uvIKP4/yNmRUdyWt8M5j3B3byZuz9/eTP+QObzvlX9+9vpGnr4o
-      3FLMdkNebLmJmy8Gcnb0+Y1uRVa7lclRepHbP5iNCdf35GOD+W1492YHfffB
-      p88OflYddLPiH3PQ7326+2nUQd+/T5/fxkE31LilDIDc6n4OqKOhKX0fnxzs
-      8rMrBYM+ufD+QGj7XisgHqluFKXALNwsTpZI7z0LP8uC9bNhGH54Hrw/gNvL
-      w3sptlsbhJ99EbiFIXiT/97pdvo8o583cnGbv7uVY0PtopjT5zdxLPvfaXWe
-      Ej4jQWuUnlRL+tmOmGlN+hFDaiCrlLkUF+hm9jUDuA3r3mwXbnRn9vnZxLWn
-      9N/xkF1wC+Qxu/Bg50EscXPwcP/evU9vZRcMNW4pBx6n3GAfhub5fewDeOhn
-      VzgG7YOIwjdhHyIku1HC3i98GBK1jfPww5S3/2+bC38A7y8m76UEb202fvYl
-      4xZm47h5m341IaFZ38jTWfN2zS1vxdW2dXQQ9ts+Jws2ksBhxp1hCYs05y3y
-      OSGKt154VlT6RH3/JeV7/Gxg6fun+G8DS58enD44HYwxXKI/ZkuwphyzJSRE
-      stx8o6CEFLylqDgmusGgdKf9fQyJY6ifXaEZNCdWTL4Ji9In2S2F7/3MymYp
-      jM7JNy2KNxmOvjgyWreWyVvamj1+vhnBvL0Uva/RCdTxzWrz1rbmhyU8EJ9f
-      tK6I3esc1oan4uGDh3vm4wWtNj/aFS01z5rff0Ez8dGjtl7nv+T/CQAA//9d
-      45liBV8AAA==
+      - '2918'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"styling":{"tag_background_color":"#E0EAF1","tag_foreground_color":"#3E6D8E","link_color":"#0077CC"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.stackoverflow","site_url":"http://meta.stackoverflow.com","name":"Meta
+        Stack Overflow"},{"relation":"chat","site_url":"http://chat.stackoverflow.com","name":"Stack
+        Overflow Chat"}],"aliases":["http://www.stackoverflow.com","http://facebook.stackoverflow.com"],"markdown_extensions":["Prettify"],"launch_date":1221436800,"site_state":"normal","favicon_url":"http://cdn.sstatic.net/stackoverflow/img/favicon.ico","icon_url":"http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png","audience":"professional
+        and enthusiast programmers","site_url":"http://stackoverflow.com","api_site_parameter":"stackoverflow","logo_url":"http://cdn.sstatic.net/stackoverflow/img/logo.png","name":"Stack
+        Overflow","site_type":"main_site"},{"styling":{"tag_background_color":"#F3F1D9","tag_foreground_color":"#444444","link_color":"#10456A"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.serverfault","site_url":"http://meta.serverfault.com","name":"Meta
+        Server Fault"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"markdown_extensions":["Prettify"],"launch_date":1243296000,"site_state":"normal","twitter_account":"ServerFault","favicon_url":"http://cdn.sstatic.net/serverfault/img/favicon.ico","icon_url":"http://cdn.sstatic.net/serverfault/img/apple-touch-icon.png","audience":"professional
+        system and network administrators","site_url":"http://serverfault.com","api_site_parameter":"serverfault","logo_url":"http://cdn.sstatic.net/serverfault/img/logo.png","name":"Server
+        Fault","site_type":"main_site"},{"styling":{"tag_background_color":"#FFFFFF","tag_foreground_color":"#1087A4","link_color":"#1086A4"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.superuser","site_url":"http://meta.superuser.com","name":"Meta
+        Super User"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"markdown_extensions":["Prettify"],"launch_date":1250553600,"site_state":"normal","twitter_account":"super_user","favicon_url":"http://cdn.sstatic.net/superuser/img/favicon.ico","icon_url":"http://cdn.sstatic.net/superuser/img/apple-touch-icon.png","audience":"computer
+        enthusiasts and power users","site_url":"http://superuser.com","api_site_parameter":"superuser","logo_url":"http://cdn.sstatic.net/superuser/img/logo.png","name":"Super
+        User","site_type":"main_site"},{"styling":{"tag_background_color":"#F7FDFF","tag_foreground_color":"#566E76","link_color":"#4E82C2"},"related_sites":[{"relation":"chat","site_url":"http://chat.meta.stackexchange.com","name":"Meta
+        Stack Exchange Chat"}],"markdown_extensions":["Prettify"],"launch_date":1246147200,"site_state":"normal","favicon_url":"http://cdn.sstatic.net/stackexchangemeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/stackexchangemeta/img/apple-touch-icon.png","audience":"meta-discussion
+        of the Stack Exchange family of Q&amp;A websites","site_url":"http://meta.stackexchange.com","api_site_parameter":"meta","logo_url":"http://cdn.sstatic.net/stackexchangemeta/img/logo.png","name":"Meta
+        Stack Exchange","site_type":"main_site"},{"styling":{"tag_background_color":"#E2EDFA","tag_foreground_color":"#5D7A9C","link_color":"#426389"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.webapps","site_url":"http://meta.webapps.stackexchange.com","name":"Web
+        Applications Meta Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://nothingtoinstall.com"],"launch_date":1285804800,"open_beta_date":1278460800,"closed_beta_date":1277856000,"site_state":"normal","twitter_account":"StackWebApps","favicon_url":"http://cdn.sstatic.net/webapps/img/favicon.ico","icon_url":"http://cdn.sstatic.net/webapps/img/apple-touch-icon.png","audience":"power
+        users of web applications","site_url":"http://webapps.stackexchange.com","api_site_parameter":"webapps","logo_url":"http://cdn.sstatic.net/webapps/img/logo.png","name":"Web
+        Applications","site_type":"main_site"},{"styling":{"tag_background_color":"#EBEBEB","tag_foreground_color":"#666","link_color":"#333C43"},"related_sites":[{"relation":"parent","api_site_parameter":"webapps","site_url":"http://webapps.stackexchange.com","name":"Web
+        Applications Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://meta.nothingtoinstall.com"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/webappsmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/webappsmeta/img/apple-touch-icon.png","audience":"power
+        users of web applications","site_url":"http://meta.webapps.stackexchange.com","api_site_parameter":"meta.webapps","logo_url":"http://cdn.sstatic.net/webappsmeta/img/logo.png","name":"Web
+        Applications Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666","link_color":"#5A8F53"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.gaming","site_url":"http://meta.gaming.stackexchange.com","name":"Arqade
+        Meta"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://arqade.com","http://thearqade.com"],"launch_date":1286323200,"open_beta_date":1279065600,"closed_beta_date":1278460800,"site_state":"normal","twitter_account":"TheArqade","favicon_url":"http://cdn.sstatic.net/gaming/img/favicon.ico","icon_url":"http://cdn.sstatic.net/gaming/img/apple-touch-icon.png","audience":"passionate
+        videogamers on all platforms","site_url":"http://gaming.stackexchange.com","api_site_parameter":"gaming","logo_url":"http://cdn.sstatic.net/gaming/img/logo.png","name":"Arqade","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666","link_color":"#666666"},"related_sites":[{"relation":"parent","api_site_parameter":"gaming","site_url":"http://gaming.stackexchange.com","name":"Arqade"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://meta.arqade.com","http://meta.thearqade.com"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/gamingmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/gamingmeta/img/apple-touch-icon.png","audience":"passionate
+        videogamers on all platforms","site_url":"http://meta.gaming.stackexchange.com","api_site_parameter":"meta.gaming","logo_url":"http://cdn.sstatic.net/gamingmeta/img/logo.png","name":"Arqade
+        Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#1B8FBB","link_color":"#1C69A4"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.webmasters","site_url":"http://meta.webmasters.stackexchange.com","name":"Webmasters
+        Meta Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://webmaster.stackexchange.com"],"markdown_extensions":["Prettify"],"launch_date":1286928000,"open_beta_date":1279152000,"closed_beta_date":1278547200,"site_state":"normal","twitter_account":"StackWebmasters","favicon_url":"http://cdn.sstatic.net/webmasters/img/favicon.ico","icon_url":"http://cdn.sstatic.net/webmasters/img/apple-touch-icon.png","audience":"pro
+        webmasters","site_url":"http://webmasters.stackexchange.com","api_site_parameter":"webmasters","logo_url":"http://cdn.sstatic.net/webmasters/img/logo.png","name":"Webmasters","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"webmasters","site_url":"http://webmasters.stackexchange.com","name":"Webmasters
+        Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://meta.webmaster.stackexchange.com"],"markdown_extensions":["Prettify"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/webmastersmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/webmastersmeta/img/apple-touch-icon.png","audience":"pro
+        webmasters","site_url":"http://meta.webmasters.stackexchange.com","api_site_parameter":"meta.webmasters","logo_url":"http://cdn.sstatic.net/webmastersmeta/img/logo.png","name":"Webmasters
+        Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#FFF5E4","tag_foreground_color":"#847454","link_color":"#AB2020"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.cooking","site_url":"http://meta.cooking.stackexchange.com","name":"Seasoned
+        Advice Meta"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://seasonedadvice.com"],"launch_date":1287014400,"open_beta_date":1279238400,"closed_beta_date":1278633600,"site_state":"normal","twitter_account":"StackCooking","favicon_url":"http://cdn.sstatic.net/cooking/img/favicon.ico","icon_url":"http://cdn.sstatic.net/cooking/img/apple-touch-icon.png","audience":"professional
+        and amateur chefs","site_url":"http://cooking.stackexchange.com","api_site_parameter":"cooking","logo_url":"http://cdn.sstatic.net/cooking/img/logo.png","name":"Seasoned
+        Advice","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"cooking","site_url":"http://cooking.stackexchange.com","name":"Seasoned
+        Advice"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://meta.seasonedadvice.com"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/cookingmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/cookingmeta/img/apple-touch-icon.png","audience":"professional
+        and amateur chefs","site_url":"http://meta.cooking.stackexchange.com","api_site_parameter":"meta.cooking","logo_url":"http://cdn.sstatic.net/cookingmeta/img/logo.png","name":"Seasoned
+        Advice Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#eeeeee","tag_foreground_color":"#444444","link_color":"#416D63"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.gamedev","site_url":"http://meta.gamedev.stackexchange.com","name":"Game
+        Development Meta Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"markdown_extensions":["Prettify"],"launch_date":1287619200,"open_beta_date":1279670400,"closed_beta_date":1279065600,"site_state":"normal","twitter_account":"StackGameDev","favicon_url":"http://cdn.sstatic.net/gamedev/img/favicon.ico","icon_url":"http://cdn.sstatic.net/gamedev/img/apple-touch-icon.png","audience":"professional
+        and independent game developers","site_url":"http://gamedev.stackexchange.com","api_site_parameter":"gamedev","logo_url":"http://cdn.sstatic.net/gamedev/img/logo.png","name":"Game
+        Development","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"gamedev","site_url":"http://gamedev.stackexchange.com","name":"Game
+        Development Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/gamedevmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/gamedevmeta/img/apple-touch-icon.png","audience":"professional
+        and independent game developers","site_url":"http://meta.gamedev.stackexchange.com","api_site_parameter":"meta.gamedev","logo_url":"http://cdn.sstatic.net/gamedevmeta/img/logo.png","name":"Game
+        Development Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#F7F7F7","tag_foreground_color":"#444","link_color":"#0077CC"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.photo","site_url":"http://meta.photo.stackexchange.com","name":"Photography
+        Meta Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://photography.stackexchange.com","http://photos.stackexchange.com"],"launch_date":1288224000,"open_beta_date":1279756800,"closed_beta_date":1279152000,"site_state":"normal","twitter_account":"StackPhotos","favicon_url":"http://cdn.sstatic.net/photo/img/favicon.ico","icon_url":"http://cdn.sstatic.net/photo/img/apple-touch-icon.png","audience":"professional,
+        enthusiast and amateur photographers","site_url":"http://photo.stackexchange.com","api_site_parameter":"photo","logo_url":"http://cdn.sstatic.net/photo/img/logo.png","name":"Photography","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"photo","site_url":"http://photo.stackexchange.com","name":"Photography
+        Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://meta.photography.stackexchange.com","http://meta.photos.stackexchange.com"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/photometa/img/favicon.ico","icon_url":"http://cdn.sstatic.net/photometa/img/apple-touch-icon.png","audience":"professional,
+        enthusiast and amateur photographers","site_url":"http://meta.photo.stackexchange.com","api_site_parameter":"meta.photo","logo_url":"http://cdn.sstatic.net/photometa/img/logo.png","name":"Photography
+        Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#edefed","tag_foreground_color":"#5D5D5D","link_color":"#0077CC"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.stats","site_url":"http://meta.stats.stackexchange.com","name":"Cross
+        Validated Meta"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://statistics.stackexchange.com","http://crossvalidated.com"],"markdown_extensions":["MathJax","Prettify"],"launch_date":1288828800,"open_beta_date":1280102400,"closed_beta_date":1279497600,"site_state":"normal","twitter_account":"StackStats","favicon_url":"http://cdn.sstatic.net/stats/img/favicon.ico","icon_url":"http://cdn.sstatic.net/stats/img/apple-touch-icon.png","audience":"people
+        interested in statistics, machine learning, data analysis, data mining, and
+        data visualization","site_url":"http://stats.stackexchange.com","api_site_parameter":"stats","logo_url":"http://cdn.sstatic.net/stats/img/logo.png","name":"Cross
+        Validated","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"stats","site_url":"http://stats.stackexchange.com","name":"Cross
+        Validated"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://meta.statistics.stackexchange.com"],"markdown_extensions":["MathJax"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/statsmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/statsmeta/img/apple-touch-icon.png","audience":"people
+        interested in statistics, machine learning, data analysis, data mining, and
+        data visualization","site_url":"http://meta.stats.stackexchange.com","api_site_parameter":"meta.stats","logo_url":"http://cdn.sstatic.net/statsmeta/img/logo.png","name":"Cross
+        Validated Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#888888","tag_foreground_color":"#000","link_color":"#0077CC"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.math","site_url":"http://meta.math.stackexchange.com","name":"Mathematics
+        Meta Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://maths.stackexchange.com","http://mathematics.stackexchange.com"],"markdown_extensions":["MathJax"],"launch_date":1287964800,"open_beta_date":1280188800,"closed_beta_date":1279584000,"site_state":"normal","twitter_account":"StackMath","favicon_url":"http://cdn.sstatic.net/math/img/favicon.ico","icon_url":"http://cdn.sstatic.net/math/img/apple-touch-icon.png","audience":"people
+        studying math at any level and professionals in related fields","site_url":"http://math.stackexchange.com","api_site_parameter":"math","logo_url":"http://cdn.sstatic.net/math/img/logo.png","name":"Mathematics","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"math","site_url":"http://math.stackexchange.com","name":"Mathematics
+        Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"markdown_extensions":["MathJax"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/mathmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/mathmeta/img/apple-touch-icon.png","audience":"people
+        studying math at any level and professionals in related fields","site_url":"http://meta.math.stackexchange.com","api_site_parameter":"meta.math","logo_url":"http://cdn.sstatic.net/mathmeta/img/logo.png","name":"Mathematics
+        Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#f5f5f5","tag_foreground_color":"#696969","link_color":"#0077CC"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.diy","site_url":"http://meta.diy.stackexchange.com","name":"Home
+        Improvement Meta Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"launch_date":1299110400,"open_beta_date":1280275200,"closed_beta_date":1279670400,"site_state":"normal","twitter_account":"StackDIY","favicon_url":"http://cdn.sstatic.net/diy/img/favicon.ico","icon_url":"http://cdn.sstatic.net/diy/img/apple-touch-icon.png","audience":"contractors
+        and serious DIYers","site_url":"http://diy.stackexchange.com","api_site_parameter":"diy","logo_url":"http://cdn.sstatic.net/diy/img/logo.png","name":"Home
+        Improvement","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"diy","site_url":"http://diy.stackexchange.com","name":"Home
+        Improvement Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/diymeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/diymeta/img/apple-touch-icon.png","audience":"contractors
+        and serious DIYers","site_url":"http://meta.diy.stackexchange.com","api_site_parameter":"meta.diy","logo_url":"http://cdn.sstatic.net/diymeta/img/logo.png","name":"Home
+        Improvement Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#000","link_color":"#0077CC"},"related_sites":[{"relation":"parent","api_site_parameter":"superuser","site_url":"http://superuser.com","name":"Super
+        User"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"markdown_extensions":["Prettify"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/superusermeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/superusermeta/img/apple-touch-icon.png","audience":"computer
+        enthusiasts and power users","site_url":"http://meta.superuser.com","api_site_parameter":"meta.superuser","logo_url":"http://cdn.sstatic.net/superusermeta/img/logo.png","name":"Meta
+        Super User","site_type":"meta_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#000","link_color":"#0077CC"},"related_sites":[{"relation":"parent","api_site_parameter":"serverfault","site_url":"http://serverfault.com","name":"Server
+        Fault"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/serverfaultmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/serverfaultmeta/img/apple-touch-icon.png","audience":"system
+        administrators and IT professionals","site_url":"http://meta.serverfault.com","api_site_parameter":"meta.serverfault","logo_url":"http://cdn.sstatic.net/serverfaultmeta/img/logo.png","name":"Meta
+        Server Fault","site_type":"meta_site"},{"styling":{"tag_background_color":"#f5f5f5","tag_foreground_color":"#696969","link_color":"#176F8C"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.gis","site_url":"http://meta.gis.stackexchange.com","name":"Geographic
+        Information Systems Meta Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"markdown_extensions":["Prettify"],"launch_date":1299456000,"open_beta_date":1280361600,"closed_beta_date":1279756800,"site_state":"normal","twitter_account":"StackGIS","favicon_url":"http://cdn.sstatic.net/gis/img/favicon.ico","icon_url":"http://cdn.sstatic.net/gis/img/apple-touch-icon.png","audience":"cartographers,
+        geographers and GIS professionals","site_url":"http://gis.stackexchange.com","api_site_parameter":"gis","logo_url":"http://cdn.sstatic.net/gis/img/logo-small.png","name":"Geographic
+        Information Systems","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"gis","site_url":"http://gis.stackexchange.com","name":"Geographic
+        Information Systems Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/gismeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/gismeta/img/apple-touch-icon.png","audience":"cartographers,
+        geographers and GIS professionals","site_url":"http://meta.gis.stackexchange.com","api_site_parameter":"meta.gis","logo_url":"http://cdn.sstatic.net/gismeta/img/logo-small.png","name":"Geographic
+        Information Systems Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#FEFEFA","tag_foreground_color":"#444444","link_color":"#0077CC"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.tex","site_url":"http://meta.tex.stackexchange.com","name":"TeX
+        - LaTeX Meta Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"markdown_extensions":["Prettify"],"launch_date":1289433600,"open_beta_date":1280707200,"closed_beta_date":1280102400,"site_state":"normal","twitter_account":"StackTeX","favicon_url":"http://cdn.sstatic.net/tex/img/favicon.ico","icon_url":"http://cdn.sstatic.net/tex/img/apple-touch-icon.png","audience":"users
+        of TeX, LaTeX, ConTeXt, and related typesetting systems","site_url":"http://tex.stackexchange.com","api_site_parameter":"tex","logo_url":"http://cdn.sstatic.net/tex/img/logo.png","name":"TeX
+        - LaTeX","site_type":"main_site"},{"styling":{"tag_background_color":"#FFF","tag_foreground_color":"#666666","link_color":"#3D3D3D"},"related_sites":[{"relation":"parent","api_site_parameter":"tex","site_url":"http://tex.stackexchange.com","name":"TeX
+        - LaTeX Stack Exchange"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/texmeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/texmeta/img/apple-touch-icon.png","audience":"users
+        of TeX, LaTeX, ConTeXt, and related typesetting systems","site_url":"http://meta.tex.stackexchange.com","api_site_parameter":"meta.tex","logo_url":"http://cdn.sstatic.net/texmeta/img/logo.png","name":"TeX
+        - LaTeX Meta","site_type":"meta_site"},{"styling":{"tag_background_color":"#E8E7E5","tag_foreground_color":"#5E5E5E","link_color":"#333333"},"related_sites":[{"relation":"meta","api_site_parameter":"meta.askubuntu","site_url":"http://meta.askubuntu.com","name":"Ask
+        Ubuntu Meta"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://ubuntu.stackexchange.com"],"markdown_extensions":["Prettify"],"launch_date":1286668800,"open_beta_date":1280880000,"closed_beta_date":1280275200,"site_state":"normal","twitter_account":"AskUbuntu","favicon_url":"http://cdn.sstatic.net/askubuntu/img/favicon.ico","icon_url":"http://cdn.sstatic.net/askubuntu/img/apple-touch-icon.png","audience":"Ubuntu
+        users and developers","site_url":"http://askubuntu.com","api_site_parameter":"askubuntu","logo_url":"http://cdn.sstatic.net/askubuntu/img/logo.png","name":"Ask
+        Ubuntu","site_type":"main_site"},{"styling":{"tag_background_color":"#E8E7E5","tag_foreground_color":"#5E5E5E","link_color":"#222222"},"related_sites":[{"relation":"parent","api_site_parameter":"askubuntu","site_url":"http://askubuntu.com","name":"Ask
+        Ubuntu"},{"relation":"chat","site_url":"http://chat.stackexchange.com","name":"Chat
+        Stack Exchange"}],"aliases":["http://meta.ubuntu.stackexchange.com"],"site_state":"linked_meta","favicon_url":"http://cdn.sstatic.net/askubuntumeta/img/favicon.ico","icon_url":"http://cdn.sstatic.net/askubuntumeta/img/apple-touch-icon.png","audience":"Ubuntu
+        users and developers","site_url":"http://meta.askubuntu.com","api_site_parameter":"meta.askubuntu","logo_url":"http://cdn.sstatic.net/askubuntumeta/img/logo.png","name":"Ask
+        Ubuntu Meta","site_type":"meta_site"}],"has_more":true,"quota_max":10000,"quota_remaining":9961}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:35 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:57:44 GMT
+recorded_with: VCR 2.9.3

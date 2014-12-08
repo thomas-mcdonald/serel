@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/posts/14665?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,49 +18,38 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:33 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:10 GMT
       Content-Length:
-      - '462'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0qpr29y9mHz3a3f/0
-      0/sj+bu9XuUfPfroF63zpi2q5Uejj6qrZV5/9OgXf7Ru8prbf3rv093RR7Oi
-      WZXZ9e+/zBZ442mdX1HrOl+t24xffbR7795I3lKodX5RNG1e5zNquaqr86LM
-      f/9ikV3gy3nbrh7dvXt1dTW+qLPLrM3q8bRa3JVf7+6d3//0fHf/wXR/f/fB
-      3oPz89neg+z+g9mD/Qfnu/d2p7/H7LNili/bYlotf2H92cvPqYuyWL51kC+y
-      RbG8GDdtNn2bv5vOs+VFzj0AxeYuRnV3hlH8ktFH0zrnQfz+s6wl5Hb3Ht7f
-      3Xuwe0BkKjMiUzZti8uivTbf39v99P69Bw/3H+j3+axoI98106qmjz79Jd8f
-      EYmrNvv963yRFUvC66NHDx88vG8+XmTv6M0dekYfzbPm91/we+dZ2eS/5P8J
-      AAD//wtzTDfEAQAA
+      - '323'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"owner":{"reputation":138,"user_id":6361,"user_type":"registered","profile_image":"https://www.gravatar.com/avatar/2f56f147c441727ffd27a57d747f131c?s=128&d=identicon&r=PG","display_name":"Drew","link":"http://gaming.stackexchange.com/users/6361/drew"},"score":7,"last_edit_date":1344351433,"last_activity_date":1344351433,"creation_date":1295127185,"post_type":"question","post_id":14665}],"has_more":false,"quota_max":10000,"quota_remaining":9974}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:33 GMT
+  recorded_at: Mon, 08 Dec 2014 12:56:11 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/posts/14665/suggested-edits?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -66,40 +57,26 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:34 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:56:11 GMT
       Content-Length:
-      - '554'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3/UrC8u8qbNZ79/Piva
-      37+YffTo0093Rh+tqkb+2t3/9NP7+nd7vco/evTRL1rTG0W1/Gj0UVu0JT76
-      dnWVtlW6bvL05et76VXRztMsXVTLoq3q3wMNswt0+NGquUd/rcrsumkzBZKt
-      Z0X10fdHH02rxSJftgTvpMzq4rzIZyn3MEpNn2NqP61zfvX3n2Utdb57b+fT
-      3Qd7Dz79lECtVnV1mZXBVwcP9/epz7qiQRTLi9+fsKw/evSLP8JPHuPe3qd7
-      o49mRQO8fv9ltsCQfi/qI/+9qLs6X60V10e7Dx/eG8mLSow6vyiIfnU++4j7
-      OC/K/PcvFtkFvpy37erR3btXV1fjizq7zNqsHtMg78qvd3d2Hx5kB/cn57N8
-      99Ppp9nD2eTg/s69nf17k+mnB+f7v8fss2JGBCmm1fIX1p+9/Jy6KIvlWwf5
-      IlvQiMZEy+nb/N10ni0vcu4BKDZ3MbC7bzGQt6DzdJqv2t+/ZtIcPPwlv4RI
-      /ovWVZv9/nW+yIolQfro0cMHD/fNx4vsHQ15h57RR/Os+f0XVU1vnmdlk/+S
-      /ycAAP//z7tdqkUCAAA=
+      - '410'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"tags":["ps3","playstation","audio"],"proposing_user":{"reputation":4988,"user_id":2262,"user_type":"registered","accept_rate":87,"profile_image":"https://www.gravatar.com/avatar/0198a85bfde16c6a9db8503043bc68f4?s=128&d=identicon&r=PG","display_name":"KatieK","link":"http://gaming.stackexchange.com/users/2262/katiek"},"approval_date":1306178944,"creation_date":1306172766,"post_type":"question","post_id":14665,"suggested_edit_id":660,"comment":"Clarified
+        title, question.","title":"How to use PS3 with a monitor?"}],"has_more":false,"quota_max":10000,"quota_remaining":9973}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:34 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:56:12 GMT
+recorded_with: VCR 2.9.3

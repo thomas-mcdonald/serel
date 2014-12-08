@@ -3,55 +3,40 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/tags/c%23/info?key=0p65aJUHxHo0G19*YF272A((&site=stackoverflow
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        bmdpbng=
-      !binary "RGF0ZQ==":
-      - !binary |-
-        TW9uLCAxMSBNYXIgMjAxMyAyMDoxMDowNyBHTVQ=
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        cHJpdmF0ZQ==
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
-      - !binary |-
-        Kg==
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
-      - !binary |-
-        R0VULCBQT1NU
-      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctQ3JlZGVudGlhbHM=":
-      - !binary |-
-        ZmFsc2U=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        MTQw
-    body: !binary |-
-      H4sIAAAAAAAEAD2MywrCMBBF/+W6zUJFaJNfEQlDO2qgmaF5gKH0363PuzyX
-      cxaEwjHDnRcIRYbDsIPBoFUK3OnY274zCNknnmtIPMJdacr8ZlFHTlQ0eZWp
-      /Z87ZZ+bqLRXuaTK68Vgrlpoy0QKEuQGZ63tfjjSA+6w3/bRoyb+9tYnAg83
-      BaQAAAA=
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:57:56 GMT
+      Content-Length:
+      - '140'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":729712,"name":"c#"}],"has_more":false,"quota_max":10000,"quota_remaining":9960}'
     http_version: 
-  recorded_at: Mon, 11 Mar 2013 20:10:07 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:57:56 GMT
+recorded_with: VCR 2.9.3

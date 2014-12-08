@@ -3,12 +3,14 @@ http_interactions:
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/tags/battlefield-3/info?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -16,44 +18,38 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:39 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:57:57 GMT
       Content-Length:
-      - '256'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+mmRtW+bn
-      RV7Otu99NPpoWq2X7UeP9nY/HX1UNL9/nf+idVHns48enWdlk/Nni2qW11lb
-      1b9/tSyv7TfzrPn9m+tltbxGD/zhL/n+6KNftK7ajOAssmJZLC8+evTwwcGB
-      +XiRvfvo0e4OPfL+oqpz8+7/EwAA//8q2lckrQAAAA==
+      - '143'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":361,"name":"battlefield-3"}],"has_more":false,"quota_max":10000,"quota_remaining":9957}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:39 GMT
+  recorded_at: Mon, 08 Dec 2014 12:57:58 GMT
 - request:
     method: get
     uri: https://api.stackexchange.com/2.0/tags/battlefield-3/related?key=0p65aJUHxHo0G19*YF272A((&site=gaming
-    body: ''
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -61,41 +57,25 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 29 Feb 2012 19:52:39 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Cache-Control:
       - private
-      Content-Encoding:
-      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - GET, POST
       Access-Control-Allow-Credentials:
       - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 08 Dec 2014 12:57:57 GMT
       Content-Length:
-      - '597'
-    body: !binary |-
-      H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3m
-      kuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZk
-      AWz2zkrayZ4hgKrIHz9+fB8/In7xR0WbL5qPHn3vF3+0zBb5R48+Wk0/Gn00
-      rdbL9qNHewejj4rm96/zX7Qu6nz20aPzrGxy/mxRzfI6a6v696+W5bX9Zp41
-      v39zvayW14DKH/6SkYPd3HPAd3c/DHhbr33Y7ybVu+17n+78rHVQ1cVFsXTg
-      v2HaXObzYlrmjevg02+2g8W6bItVmV3n9TfWR4dE2XRe5Jf5Il+23jj2v9E+
-      1suymr7NJgGp7n2jXSyylQd778Ngd6fhvLwulhc/a+D5peX2VVafZ3W+7cnb
-      N9xR0+bZ4huD3pmBMvvmKNTlnyavt4tlmxOBpvnPVi8X9IN6adqsLLO2qDy9
-      8c121ObT+bKYZuV20TRrXya+2X4m2fTtdlttv83qt9ly9o1102WrWenZn29W
-      gU8qXyt9IOwu3tN5nn2D4DuoT6vtavWzBXxGdo34dHtWNG1dTNYhu35gX106
-      rdb1lFp4gvcNd0DWISuLH3SE7gM76VBsVdXt9nlVk5adBcr8A7vpCUPtadhv
-      GDb7S1BTdesr2w/spcu3ddU02+R0tEStn72xrNbLt5M1WSTPs/mGu7gqlrPq
-      qtl+8A338P3RR79oXbUZwVlkxRLc9Ojhg4MH5uNF9o562qFH3l9Uda5k/n8C
-      AAD//wNqTc29CwAA
+      - '442'
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":38,"name":"pc"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":20,"name":"origin"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":15,"name":"xbox-360"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":15,"name":"ps3"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":12,"name":"battlelog"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":8,"name":"battlefield-4"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":8,"name":"technical-issues"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":5,"name":"achievements"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":4,"name":"punkbuster"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":2,"name":"skyrim"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":2,"name":"xbox-live"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":2,"name":"networking"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":2,"name":"controllers"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":2,"name":"battlefield-premium"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"call-of-duty-ghosts"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":1,"name":"keyboard"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"windows"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"modern-warfare-3"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"back-to-karkand"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"windows-7"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":1,"name":"mass-effect-3"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"performance"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"graphics-card"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"medal-of-honor"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"region-locked"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"bad-company-2"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"battlefield-1943"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"mouse"},{"has_synonyms":true,"is_moderator_only":false,"is_required":false,"count":1,"name":"steam"},{"has_synonyms":false,"is_moderator_only":false,"is_required":false,"count":1,"name":"skype"}],"has_more":true,"quota_max":10000,"quota_remaining":9956}'
     http_version: 
-  recorded_at: Wed, 29 Feb 2012 19:52:39 GMT
-recorded_with: VCR 2.0.0.rc1
+  recorded_at: Mon, 08 Dec 2014 12:57:58 GMT
+recorded_with: VCR 2.9.3
